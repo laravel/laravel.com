@@ -1,0 +1,196 @@
+// Fonts
+    $headingFont: scandia-web, sans-serif;
+    $bodyFont: scandia-web, sans-serif;
+    $codeFont: source-code-pro, monospace;
+
+// Default Typography Styles
+
+body, input, textarea, button {
+	font-family: $bodyFont;
+	font-weight: 400;
+    color: $black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+	margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headingFont;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 500;
+	letter-spacing: -1px;
+	
+	@include fl-break(48.75em) {	
+		font-size: 2.5em;
+	}
+	
+	@include fl-break(60em) {
+        font-size: 3em;
+	}
+	
+	@include fl-break(82em) {
+		font-size: 3.5em;
+	}
+	
+	@include fl-break(95em) {		
+		font-size: 4em;	
+	}
+}
+
+h2 {
+	font-size: 1.75em;
+	font-weight: 400;
+    letter-spacing: -.5px;
+
+	@include fl-break(48.75em) {
+		font-size: 2.25em;
+	}
+	
+	@include fl-break(60em) {
+		font-size: 3em;
+	}
+}
+
+h3 {
+	font-size: 1.25em;
+	font-weight: 500;
+    line-height: 1.25em;
+    letter-spacing: -.33px;
+	
+	@include fl-break(55em) {
+		font-size: 1.75em;
+	}
+	
+	@include fl-break(70em) {
+		font-size: 2em;
+	}
+}
+
+h4 {
+	font-size: 1em;
+	font-weight: 400;
+    letter-spacing: -.25px;
+	
+	@include fl-break(55em) {
+		font-size: 1.5em;
+	}
+}
+
+h5 {
+	font-size: .95em;
+	font-weight: 700;
+    line-height: 1.666em;
+    color: rgba($black, .7);
+    
+    @include fl-break(35em) {
+        font-size: 1.125em;    
+    }
+}
+
+h6 {
+	font-size: .875em;
+	font-weight: 500;
+    color: rgba($black, .5);
+}
+
+a {
+	position: relative;
+	text-decoration: none;
+	transition: all .3s ease;
+    
+    &.learn_more {
+        color: $red;
+        font-family: $headingFont;
+        font-weight: 500;
+        
+        span {
+            display: inline-block;
+            transition: transform .3s ease;
+        }
+        
+        &:hover {
+            span {
+                transform: translateX(.5em);
+            }
+        }
+    }
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.666em;
+    color: rgba($black, .7);
+    
+    strong {
+        font-weight: 500;
+    }
+    
+    &.small {
+        font-size: .75em;
+        line-height: 1.714em;
+    }
+	
+	@include fl-break(55em) {
+		font-size: 1.125em;
+        
+        &.small {
+            font-size: .875em;
+        }
+	}
+}
+
+p, ul, ol {
+	margin-bottom: 2em;
+    
+    a {
+        color: $red;
+        text-decoration: underline;
+        
+        &:hover {
+            color: darken($red, 10%);
+        }
+    }
+}
+
+q, blockquote {
+    p {
+	   quotes: "“" "”" "‘" "’";
+    }
+}
+
+span.small_text {
+    display: block;
+    font-size: .625em;
+    line-height: 1.4em;
+    color: rgba($black, .8);
+}
+
+span.label, label {
+    display: block;
+    font-size: .625em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    opacity: .4;
+    margin-bottom: .875em;
+    letter-spacing: 2.5px;
+}
+
+code {
+    font-size: .875em;
+    font-family: $codeFont;
+    line-height: 1.714em;
+    color: $black;
+}
+
+:not(pre) > code {
+    background: $light_gray;
+    color: $code_red;
+    padding: 0 .25em;
+}
