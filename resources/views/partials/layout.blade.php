@@ -155,6 +155,14 @@
     </div>
 </footer>
 
+<script>
+    var algolia_app_id = '{{ config('algolia.connections.main.id', false) }}';
+    var algolia_search_key = '{{ config('algolia.connections.main.key', false) }}';
+    var version = '{{ isset($currentVersion) ? $currentVersion : DEFAULT_VERSION }}';
+</script>
+
+@include('partials.algolia_template')
+
 <script src="/js/app.js"></script>
 </body>
 </html>

@@ -4688,6 +4688,10 @@ ul.partners_list li img {
   margin-left: auto;
 }
 
+.twitter-typeahead {
+  width: 100%;
+}
+
 .twitter-typeahead .tt-dropdown-menu .footer {
   border-bottom: solid 1px #dee0df !important;
 }
@@ -4718,7 +4722,7 @@ ul.partners_list li img {
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion.tt-cursor .autocomplete-wrapper {
-  background-color: rgba(238, 238, 238, 0.3);
+  background-color: #eeeef3;
   cursor: pointer;
 }
 

@@ -26,6 +26,10 @@ $(document).ready(function () {
         require('./docs.js');
     }
 
+    if (window.algolia_app_id != '') {
+        require('./search.js');
+    }
+
 
     // Handling scrolling to sections of the page...
     $('a[href*="#"]').not('[href="#"]').click(function (e) {

@@ -1,185 +1,190 @@
 .search_contain, .search_box {
-    position: relative;
+  position: relative;
 }
 
 .autocomplete-wrapper {
-    padding: 0 2em;
-    background: $light_gray;
-    
-    .h1 {
-        display: block;
-        font-size: 14px;
-        font-weight: 500;
-        margin-bottom: .5em;
+  padding: 0 2em;
+  background: $light_gray;
+
+  .h1 {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: .5em;
+  }
+
+  .h2, .h3, .h4 {
+    font-size: 14px;
+    color: rgba($black, .7);
+    display: inline-block;
+
+    .hash {
+      color: rgba($red, .7);
     }
-    
-    .h2, .h3, .h4 {
-        font-size: 14px;
-        color: rgba($black, .7);
-        display: inline-block;
-        
-        .hash {
-            color: rgba($red, .7);
-        }
+  }
+
+  em {
+    font-style: normal;
+    background: rgba($red, .2);
+  }
+
+  .content {
+    font-size: 14px;
+    background-color: $white;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 3px;
+    margin-top: 14px;
+
+    p {
+      font-size: 14px;
     }
-    
+
     em {
-        font-style: normal;
-        background: rgba($red, .2);
+      background: $white;
+      font-weight: 500;
     }
-    
-    .content {
-        font-size: 14px;
-        background-color: $white;
-        padding: 10px;
-        border-radius: 3px;
-        margin-left: 3px;
-        margin-top: 14px;
-        
-        p {
-            font-size: 14px;
-        }
-        
-        em {
-            background: $white;
-            font-weight: 500;
-        }
-        
-        :last-child {
-            margin-bottom: 0;
-        }
+
+    :last-child {
+      margin-bottom: 0;
     }
-    
-    .tt-suggestion {
-        padding: 2em 0;
-        border-bottom: 1px solid $gray;
-    }
+  }
+
+  .tt-suggestion {
+    padding: 2em 0;
+    border-bottom: 1px solid $gray;
+  }
 }
 
 .tt-dropdown-menu {
-    position: absolute;
-    z-index: 1;
-    top: 100%; left: 0;
-    width: 100%;
-    
-    .footer {
-        background: $light_gray;
-        padding: 1em 2em;
-        text-align: right;
-        
-        img {
-            margin-left: auto;
-        }
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  .footer {
+    background: $light_gray;
+    padding: 1em 2em;
+    text-align: right;
+
+    img {
+      margin-left: auto;
     }
+  }
+}
+
+.twitter-typeahead {
+  width: 100%;
 }
 
 .twitter-typeahead .tt-dropdown-menu .footer {
-    border-bottom: solid 1px #dee0df !important;
+  border-bottom: solid 1px #dee0df !important;
 }
 
 .twitter-typeahead .tt-dropdown-menu .autocomplete-wrapper {
-    text-align: left;
-    padding: 12px 18px;
-    font-size: 16px;
-    line-height: 24px;
-    border-bottom: solid 1px #EEE;
+  text-align: left;
+  padding: 12px 18px;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: solid 1px #EEE;
 }
 
 .autocomplete-wrapper.empty {
-    padding-top: 30px !important;
+  padding-top: 30px !important;
 }
 
 .twitter-typeahead .tt-dropdown-menu .footer {
-    padding: 10px;
-    color: #777777;
+  padding: 10px;
+  color: #777777;
 }
 
 .twitter-typeahead .tt-dropdown-menu .footer img {
-    float: right;
+  float: right;
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion.tt-cursor .autocomplete-wrapper .content {
-    background-color: rgba(238, 238, 238, 0.7);
+  background-color: rgba(238, 238, 238, 0.7);
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion.tt-cursor .autocomplete-wrapper {
-    background-color: rgba(238, 238, 238, 0.3);
-    cursor: pointer;
+  background-color: #eeeef3;
+  cursor: pointer;
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion p {
-    margin: 0;
+  margin: 0;
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion .autocomplete-wrapper em {
-    background-color: rgba(255, 116, 116, 0.2);
-    font-style: normal;
+  background-color: rgba(255, 116, 116, 0.2);
+  font-style: normal;
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion.tt-cursor .autocomplete-wrapper em {
-    background-color: rgba(255, 116, 116, 0.4);
-    font-style: normal;
+  background-color: rgba(255, 116, 116, 0.4);
+  font-style: normal;
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion .autocomplete-wrapper .content em,
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion.tt-cursor .autocomplete-wrapper .content em {
-    background-color: transparent;
-    font-weight: bold;
+  background-color: transparent;
+  font-weight: bold;
 }
 
 .twitter-typeahead .tt-dropdown-menu .category {
-    font-weight: bold;
-    font-size: 15px;
-    padding: 5px 20px;
-    background: #EEE;
-    margin-top: 4px;
-    margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 20px;
+  background: #EEE;
+  margin-top: 4px;
+  margin-bottom: 3px;
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-dataset-all {
-    border-top: 1px solid #DDD;
-    background: #F7F7F7;
-    margin-top: 8px;
+  border-top: 1px solid #DDD;
+  background: #F7F7F7;
+  margin-top: 8px;
 }
 
 .twitter-typeahead .suggestion_typehead img {
-    display: inline-block;
-    float: left;
-    margin-right: 10px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
 }
 
 .twitter-typeahead .suggestion_typehead .infos {
-    display: inline-block;
+  display: inline-block;
 }
 
 .twitter-typeahead .brand {
-    font-size: 12px;
-    font-weight: bold;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .twitter-typeahead .name {
-    font-size: 12px;
-    font-weight: normal;
-    max-width: 310px;
-    line-height: 1.2;
+  font-size: 12px;
+  font-weight: normal;
+  max-width: 310px;
+  line-height: 1.2;
 }
 
 .twitter-typeahead .suggestion_typehead .price {
-    display: inline-block;
-    float: right;
-    font-size: 14px;
-    padding-top: 8px;
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  padding-top: 8px;
 }
 
 .twitter-typeahead .suggestion_typehead.brand_in {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .twitter-typeahead .suggestion_typehead.brand_in .keyword_in {
-    color: #888;
+  color: #888;
 }
