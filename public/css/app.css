@@ -4440,12 +4440,6 @@ ul.partners_list li img {
   .docs_nav .page_title {
     display: none;
   }
-
-  .docs_nav > ul {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 1em;
-  }
 }
 
 .docs_main .page_title {

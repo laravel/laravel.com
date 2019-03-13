@@ -1,7 +1,7 @@
 @extends('partials.layout')
 
 @section('content')
-    <div class="sidebar_layout">
+    <div class="sidebar_layout" id="docsScreen">
 
         <div class="page_contain">
             <div class="contain">
@@ -25,7 +25,7 @@
                     </div>
                 </aside>
 
-                <section class="body_content">
+                <section class="body_content"  style="display: none;">
                     <header class="docs_actions">
                         <div class="version_drop">
                             <div class="input_group">
@@ -55,16 +55,10 @@
                     </header>
                     <section class="docs_body">
                         <nav class="docs_nav">
-                            <h1 class="page_title">Installation</h1>
+                            <h1 class="page_title">{{$title}}</h1>
                         </nav>
                         <section class="docs_main">
                             {!! $content !!}
-
-                            {{--<div class="pagination_links">--}}
-                                {{--<a href="#" class="btn prev_link"><span><img src="/img/icons/arrow.min.svg" alt="Previous Section"><span class="text">Configuration</span></span></a>--}}
-
-                                {{--<a href="#" class="btn next_link"><span><span class="text">Configuration</span><img src="/img/icons/arrow.min.svg" alt="Next Section"></span></a>--}}
-                            {{--</div>--}}
                         </section>
                     </section>
                 </section>
