@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Contracts\Cache\Repository as Cache;
+use ParsedownExtra;
 
 class Documentation
 {
@@ -46,7 +47,7 @@ class Documentation
             $path = base_path('resources/docs/'.$version.'/documentation.md');
 
             if ($this->files->exists($path)) {
-                return $this->replaceLinks($version, markdown($this->files->get($path)));
+                return $this->replaceLinks($version, (new ParsedownExtra())->text($this->files->get($path)));
             }
 
             return null;
@@ -66,7 +67,7 @@ class Documentation
             $path = base_path('resources/docs/'.$version.'/'.$page.'.md');
 
             if ($this->files->exists($path)) {
-                return $this->replaceLinks($version, markdown($this->files->get($path)));
+                return $this->replaceLinks($version, (new ParsedownExtra)->text($this->files->get($path)));
             }
 
             return null;

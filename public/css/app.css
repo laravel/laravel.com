@@ -4102,6 +4102,22 @@ ul.partners_list li img {
   padding: 0.65em 0;
 }
 
+.sidebar_layout .sidebar nav .navigation_contain ul li h2 {
+  display: block;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: #090910;
+  text-decoration: none;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar_layout .sidebar nav .navigation_contain ul li h2:hover {
+  -webkit-transform: translateX(0.25em);
+          transform: translateX(0.25em);
+}
+
 .sidebar_layout .sidebar nav .navigation_contain ul li a {
   display: block;
   font-size: 0.875em;
@@ -4137,7 +4153,7 @@ ul.partners_list li img {
   background: url(/img/icons/active_marker.min.svg) no-repeat center;
 }
 
-.sidebar_layout .sidebar nav .navigation_contain ul li.sub--on > a {
+.sidebar_layout .sidebar nav .navigation_contain ul li.sub--on > h2 {
   margin-bottom: 1em;
 }
 
@@ -4498,7 +4514,13 @@ ul.partners_list li img {
   background: #FFFFFF;
   box-shadow: 0 20px 30px -16px rgba(9, 9, 16, 0.2);
   margin-bottom: 2.5em;
+  margin-left: 0;
+  margin-right: 0;
   max-width: 43.75em;
+}
+
+.callout p {
+  margin-bottom: 0;
 }
 
 .callout .icon {

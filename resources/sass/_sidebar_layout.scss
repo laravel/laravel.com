@@ -117,14 +117,29 @@
                     li {
                         display: block;
                         padding: .65em 0;
-                        
+
+                        h2{
+                            display: block;
+                            font-size: 0.875em;
+                            font-weight: 500;
+                            color: #090910;
+                            text-decoration: none;
+                            margin-bottom: 0;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+
+                            &:hover {
+                                transform: translateX(.25em);
+                            }
+                        }
+
                         a {
                             display: block;
                             font-size: .875em;
                             font-weight: 500;
                             color: $black;
                             text-decoration: none;
-                            
+
                             &:hover {
                                 transform: translateX(.25em);
                             }
@@ -154,7 +169,7 @@
                     }
                     
                     li.sub--on {
-                        &> a {
+                        &> h2 {
                             margin-bottom: 1em;
                         }
                         

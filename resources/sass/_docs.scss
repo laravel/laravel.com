@@ -168,7 +168,13 @@
     background: $white;
     box-shadow: 0 20px 30px -16px rgba($black, .2);
     margin-bottom: 2.5em;
+    margin-left: 0;
+    margin-right: 0;
     max-width: 43.75em;
+
+    p{
+        margin-bottom: 0;
+    }
     
     .icon {
         position: relative;
