@@ -39,7 +39,7 @@
                     <h2>Become a Laravel Partner</h2>
                     <p>Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
                 </div>
-                <a href="#" class="btn"><span>Our Partners</span></a>
+                <a href="/partners" class="btn"><span>Our Partners</span></a>
             </section>
         </div>
 
@@ -50,10 +50,7 @@
                         <img src="/img/logotype.min.svg" alt="Laravel">
                     </div>
                     <div class="search_box">
-                        <div class="input_group search icon">
-                            <input type="search" placeholder="Search Docs">
-                            <input type="submit" class="search_submit icon_display">
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="footer_content">

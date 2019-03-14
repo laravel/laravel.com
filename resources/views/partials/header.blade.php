@@ -47,14 +47,14 @@
                                         </a>
                                     </li>
                                     <li class="sys_echo">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/broadcasting">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/echo.min.svg" alt="Icon"></div>
                                             <div class="system_info">Echo <span>Event Listener</span></div>
                                         </a>
                                     </li>
                                     <li class="sys_lumen">
-                                        <a href="#">
+                                        <a href="https://lumen.laravel.com">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/lumen.min.svg" alt="Icon"></div>
                                             <div class="system_info">Lumen <span>Micro Framework</span>
@@ -62,7 +62,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_homestead">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/homestead">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/homestead.min.svg" alt="Icon">
                                             </div>
@@ -72,7 +72,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_spark">
-                                        <a href="#">
+                                        <a href="https://spark.laravel.com">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/spark.min.svg" alt="Icon"></div>
                                             <div class="system_info">Spark <span>SaaS App Scaffolding</span>
@@ -80,7 +80,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_valet">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/valet">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/valet.min.svg" alt="Icon"></div>
                                             <div class="system_info">Valet
@@ -89,7 +89,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_mix">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/mix">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/mix.min.svg" alt="Icon"></div>
                                             <div class="system_info">Mix
@@ -98,7 +98,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_cashier">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/billing">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/cashier.min.svg" alt="Icon">
                                             </div>
@@ -107,7 +107,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_dusk">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/dusk">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/dusk.min.svg" alt="Icon"></div>
                                             <div class="system_info">Dusk
@@ -115,7 +115,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_passport">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/passport">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/passport.min.svg" alt="Icon">
                                             </div>
@@ -124,7 +124,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_scout">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/scout">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/scout.min.svg" alt="Icon"></div>
                                             <div class="system_info">Scout <span>Full-Text Search</span>
@@ -132,7 +132,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_socialite">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/socialite">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/socialite.min.svg" alt="Icon">
                                             </div>
@@ -142,7 +142,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_telescope">
-                                        <a href="#">
+                                        <a href="/docs/{{DEFAULT_VERSION}}/telescope">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/telescope.min.svg" alt="Icon">
                                             </div>
@@ -151,7 +151,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_tinker">
-                                        <a href="#">
+                                        <a href="https://github.com/laravel/tinker">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/tinker.min.svg" alt="Icon"></div>
                                             <div class="system_info">Tinker <span>REPL</span></div>
