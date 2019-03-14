@@ -6,7 +6,7 @@
         <div class="page_contain">
             <div class="contain">
                 <aside class="sidebar">
-                    <a href="#" class="logo">
+                    <a href="/" class="logo">
                         <img class="mark" src="/img/logomark.min.svg" alt="Laravel">
                         <img class="type" src="/img/logotype.min.svg" alt="Laravel">
                     </a>
@@ -31,17 +31,10 @@
                             <div class="input_group">
                                 <label>Version</label>
                                 <div class="custom_select">
-                                    <select>
-                                        <option>Master</option>
-                                        <option>5.7</option>
-                                        <option>5.6</option>
-                                        <option>5.5</option>
-                                        <option>5.4</option>
-                                        <option>5.3</option>
-                                        <option>5.2</option>
-                                        <option>5.1</option>
-                                        <option>5.0</option>
-                                        <option>4.2</option>
+                                    <select id="version_switcher">
+                                        @foreach ($versions as $key => $display)
+                                            <option {{$currentVersion == $key ? 'selected="yes"' : ''}}" value="{{ url('docs/'.$key.$currentSection) }}">{{ $display }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

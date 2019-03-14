@@ -14,6 +14,10 @@ $(".docs_sidebar h2").click(function (e) {
     $(this).parent().addClass("sub--on");
 });
 
+$('#version_switcher').change(function(e){
+    window.location = $('#version_switcher').val();
+});
+
 $('.docs_main ul').first().appendTo('.docs_nav');
 $('.body_content').css('display', 'block');
 

@@ -1,7 +1,7 @@
 <header class="main">
     <div class="contain">
         <div class="header_content">
-            <a href="#" class="logo">
+            <a href="/" class="logo">
                 <img class="mark" src="/img/logomark.min.svg" alt="Laravel">
                 <img class="type" src="/img/logotype.min.svg" alt="Laravel">
             </a>
@@ -15,10 +15,10 @@
                             <div class="drop_contain">
                                 <ul class="ecosystem">
                                     <li class="sys_forge">
-                                        <a href="#">
+                                        <a href="https://forge.laravel.com">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/forge.min.svg" alt="Icon"></div>
-                                            <div class="system_info">Forge <span>Deployment</span></div>
+                                            <div class="system_info">Forge <span>Server Management</span></div>
                                         </a>
                                     </li>
                                     <li class="sys_envoyer">
@@ -26,11 +26,11 @@
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/envoyer.min.svg" alt="Icon">
                                             </div>
-                                            <div class="system_info">Envoyer <span>Deployment</span></div>
+                                            <div class="system_info">Envoyer <span>Zero-downtime Deployment</span></div>
                                         </a>
                                     </li>
                                     <li class="sys_horizon">
-                                        <a href="#">
+                                        <a href="https://horizon.laravel.com/">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/horizon.min.svg" alt="Icon">
                                             </div>
@@ -39,7 +39,7 @@
                                         </a>
                                     </li>
                                     <li class="sys_nova">
-                                        <a href="#">
+                                        <a href="https://nova.laravel.com/">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/nova.min.svg" alt="Icon"></div>
                                             <div class="system_info">Nova <span>Administration Panel</span>
@@ -160,58 +160,16 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="resources_link"><a href="#">Resources</a></li>
-                        <li class="partners_link"><a href="#">Partners</a></li>
+                        <li class="resources_link"><a href="https://laravel-news.com">News</a></li>
+                        <li class="partners_link"><a href="/partners">Partners</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="search_box">
                 <div class="input_group search icon">
-                    <input type="search" placeholder="Search Docs">
+                    <input type="text" class="search_input" placeholder="Search Docs">
                     <input type="submit" class="search_submit icon_display">
                 </div>
-
-                <!--
-                <div class="tt-dropdown-menu">
-                    <div class="autocomplete-wrapper">
-                        <div class="tt-suggestion">
-                            <div class="h1">Installation</div>
-                            <div class="sub-section">
-                                <div class="h2"><span class="hash">#</span> <em>Install</em>ation</div>
-                                <div class="h3">> <em>Install</em>ing Laravel</div>
-                                <div class="h4">> Via Laravel <em>Installer</em></div>
-                            </div>
-                        </div>
-                        <div class="tt-suggestion">
-                            <div class="h1">Installation</div>
-                            <div class="sub-section">
-                                <div class="h2"><span class="hash">#</span> <em>Install</em>ation</div>
-                                <div class="h3">> <em>Install</em>ing Laravel</div>
-                                <div class="h4">> Via Laravel <em>Install</em>er</div>
-                            </div>
-                            <div class="content">
-                                <p>Make sure to place composer’s system-wide vendor bin directory in your <code>‘$PATH’</code> so the laravel executable can be located by your system. This directory exists in different locations based on your operating system; hover, some common locations include:</p>
-                            </div>
-                        </div>
-                        <div class="tt-suggestion">
-                            <div class="h1">Compiling Assets (Mix)</div>
-                            <div class="sub-section">
-                                <div class="h2"><span class="hash">#</span> <em>Install</em>ation &amp; Setup</div>
-                                <div class="h3">> <em>Install</em>ing Node</div>
-                            </div>
-                            <div class="content">
-                                <p>By default, Laravel Homestead includes everything you need; however, if you aren’t using Vagrant, then you can easily <em>install</em> the latest version of Node and NPM using simple graphical <em>Install</em>ers from [their download page] (https://nodejs.org/en/download/)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <a href="#">
-                            <img width="105" src="/img/icons/algolia.min.svg" alt="Algolia">
-                        </a>
-                    </div>
-                </div>
-                -->
-
             </div>
             <div class="trigger_contain">
                 <a href="#" class="nav_trigger">

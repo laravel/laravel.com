@@ -59,7 +59,7 @@ class DocsController extends Controller
             return response()->view('docs', [
                 'title' => 'Page not found',
                 'index' => $this->docs->getIndex($version),
-                'content' => view('partials.doc-missing'),
+                'content' => view('docs-missing'),
                 'currentVersion' => $version,
                 'versions' => Documentation::getDocVersions(),
                 'currentSection' => '',

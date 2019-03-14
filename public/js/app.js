@@ -669,6 +669,9 @@ $(".docs_sidebar h2").click(function (e) {
   $(".navigation_contain ul li").removeClass("sub--on");
   $(this).parent().addClass("sub--on");
 });
+$('#version_switcher').change(function (e) {
+  window.location = $('#version_switcher').val();
+});
 $('.docs_main ul').first().appendTo('.docs_nav');
 $('.body_content').css('display', 'block');
 $('.docs_main blockquote p').each(function () {
