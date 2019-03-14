@@ -50,7 +50,7 @@
                         <img src="/img/logotype.min.svg" alt="Laravel">
                     </div>
                     <div class="search_box">
-                        
+
                     </div>
                 </div>
                 <div class="footer_content">
@@ -59,17 +59,16 @@
                             <span class="footer_nav_trigger">Documentation</span>
                             <div class="footer_nav_contain">
                                 <ul>
-                                    <li><a href="#">Prologue</a></li>
-                                    <li><a href="#">Getting Started</a></li>
-                                    <li><a href="#">Architecture Concepts</a></li>
-                                    <li><a href="#">The Basics</a></li>
-                                    <li><a href="#">Frontend</a></li>
-                                    <li><a href="#">Security</a></li>
-                                    <li><a href="#">Digging Deeper</a></li>
-                                    <li><a href="#">Database</a></li>
-                                    <li><a href="#">Eloquent ORM</a></li>
-                                    <li><a href="#">Testing</a></li>
-                                    <li><a href="#">Official Packages</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/releases">Release Notes</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/installation">Getting Started</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/routing">Routing</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/blade">Blade Templates</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/authentication">Authentication</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/authorization">Authorization</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/artisan">Artisan Console</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/database">Database</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/eloquent">Eloquent ORM</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/testing">Testing</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -77,17 +76,17 @@
                             <span class="footer_nav_trigger">Resources</span>
                             <div class="footer_nav_contain">
                                 <ul>
-                                    <li><a href="#">Laracasts</a></li>
-                                    <li><a href="#">Laravel News</a></li>
-                                    <li><a href="#">LaraJobs</a></li>
-                                    <li><a href="#">Laracon</a></li>
-                                    <li><a href="#">Certification</a></li>
-                                    <li><a href="#">Forums</a></li>
-                                    <li><a href="#">Podcast</a></li>
-                                    <li><a href="#">Test-driven Laravel</a></li>
-                                    <li><a href="#">Statamic</a></li>
-                                    <li><a href="#">StyleCI</a></li>
-                                    <li><a href="#">Cachet</a></li>
+                                    <li><a href="https://laracasts.com">Laracasts</a></li>
+                                    <li><a href="https://laravel-news.com">Laravel News</a></li>
+                                    <li><a href="https://http://larajobs.com">LaraJobs</a></li>
+                                    <li><a href="https://laracon.us">Laracon</a></li>
+                                    <li><a href="https://certification.laravel.com/">Certification</a></li>
+                                    <li><a href="https://laracasts.com/discuss">Forums</a></li>
+                                    <li><a href="http://www.laravelpodcast.com/">Podcast</a></li>
+                                    <li><a href="https://course.testdrivenlaravel.com/">Test-driven Laravel</a></li>
+                                    <li><a href="https://statamic.com/">Statamic</a></li>
+                                    <li><a href="https://styleci.io/">StyleCI</a></li>
+                                    <li><a href="https://cachethq.io/">Cachet</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -112,43 +111,43 @@
                             <span class="footer_nav_trigger">Ecosystem</span>
                             <div class="footer_nav_contain">
                                 <ul>
-                                    <li><a href="#">Forge</a></li>
-                                    <li><a href="#">Envoyer</a></li>
-                                    <li><a href="#">Horizon</a></li>
-                                    <li><a href="#">Lumen</a></li>
-                                    <li><a href="#">Nova</a></li>
-                                    <li><a href="#">Echo</a></li>
-                                    <li><a href="#">Valet</a></li>
-                                    <li><a href="#">Mix</a></li>
-                                    <li><a href="#">Spark</a></li>
-                                    <li><a href="#">Cashier</a></li>
-                                    <li><a href="#">Homestead</a></li>
-                                    <li><a href="#">Dusk</a></li>
-                                    <li><a href="#">Passport</a></li>
-                                    <li><a href="#">Scout</a></li>
-                                    <li><a href="#">Socialite</a></li>
-                                    <li><a href="#">Telescope</a></li>
+                                    <li><a href="https://forge.laravel.com">Forge</a></li>
+                                    <li><a href="https://envoyer.io">Envoyer</a></li>
+                                    <li><a href="https://horizon.laravel.com">Horizon</a></li>
+                                    <li><a href="https://lumen.laravel.com">Lumen</a></li>
+                                    <li><a href="https://nova.laravel.com">Nova</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/broadcasting">Echo</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/valet">Valet</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/mix">Mix</a></li>
+                                    <li><a href="https://spark.laravel.com">Spark</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/billing">Cashier</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/homestead">Homestead</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/dusk">Dusk</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/passport">Passport</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/scout">Scout</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/socialite">Socialite</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/telescope">Telescope</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="footer_info">
                         <p class="small">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in most web projects.</p>
-                        <p class="small copyright">Laravel is a Trademark of Taylor Otwell.<br>Copyright &copy;2011-2018 Taylor Otwell.
+                        <p class="small copyright">Laravel is a Trademark of Taylor Otwell.<br>Copyright &copy;2011-{{now()->format('Y')}} Taylor Otwell.
                         </p>
                         <ul class="social_links">
-                            <li><a href="#"><img src="/img/social/twitter.min.svg" alt="Twitter"></a>
+                            <li><a href="https://twitter.com/laravelphp"><img src="/img/social/twitter.min.svg" alt="Twitter"></a>
                             </li>
-                            <li><a href="#"><img src="/img/social/github.min.svg" alt="GitHub"></a>
+                            <li><a href="https://github.com/laravel"><img src="/img/social/github.min.svg" alt="GitHub"></a>
                             </li>
-                            <li><a href="#"><img src="/img/social/discord.min.svg" alt="Discord"></a>
+                            <li><a href="https://discordapp.com/invite/VB3drhA"><img src="/img/social/discord.min.svg" alt="Discord"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="logomark"><img src="/img/logomark.min.svg" alt="Laravel"></a>
+        <a href="/" class="logomark"><img src="/img/logomark.min.svg" alt="Laravel"></a>
     </div>
 </footer>
 

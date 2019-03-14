@@ -1784,7 +1784,7 @@ pre[class*=language-] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #D7D7DC;
+  color: #93939e;
 }
 
 .token.punctuation {
@@ -4389,6 +4389,23 @@ ul.partners_list li img {
     min-width: 0;
     margin-right: 2.25em;
   }
+}
+
+.docs_body table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+}
+
+.docs_body table th,
+.docs_body table td {
+  border: 1px solid #D7D7DC;
+  padding: 10px;
+  text-align: left;
+}
+
+.docs_body table th {
+  font-size: 16px;
 }
 
 .docs_nav {

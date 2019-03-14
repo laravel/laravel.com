@@ -45,6 +45,21 @@
             margin-right: 2.25em;
         }
     }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 13px;
+        th,
+        td {
+            border: 1px solid $gray;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            font-size: 16px;
+        }
+    }
 }
 
 .docs_nav {
