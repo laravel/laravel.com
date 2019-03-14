@@ -4463,6 +4463,23 @@ ul.partners_list li img {
   display: none;
 }
 
+.docs_main h1 {
+  font-size: 3em;
+}
+
+.docs_main h2 {
+  font-size: 2.5em;
+}
+
+.docs_main h3 {
+  font-size: 1.75em;
+}
+
+.docs_main h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
 .docs_main p {
   font-size: 0.75em;
   line-height: 1.714em;
