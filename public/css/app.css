@@ -2700,7 +2700,7 @@ header.main .header_content {
 header.main .header_content .trigger_contain {
   display: block;
   width: 1.3125em;
-  margin-left: 1.25em;
+  margin-left: 2em;
 }
 
 header.main .header_content .trigger_contain .nav_trigger {

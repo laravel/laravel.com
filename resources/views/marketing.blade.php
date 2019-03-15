@@ -214,7 +214,7 @@
                                     <li><a href="https://laracasts.com/discuss">Forums</a></li>
                                     <li><a href="https://laracon.us/">Laracon</a></li>
                                 </ul>
-                                {{--<a href="#" class="btn"><span>Learn more</span></a>--}}
+                                <a href="#" class="btn"><span>Learn more</span></a>
                             </div>
                             <div class="featured_resource">
                                 <div class="resource_icon">
