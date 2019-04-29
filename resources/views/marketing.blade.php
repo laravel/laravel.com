@@ -216,6 +216,7 @@
                                 </ul>
                                 <a href="#" class="btn"><span>Learn more</span></a>
                             </div>
+
                             <div class="featured_resource">
                                 <div class="resource_icon">
                                     <img src="/img/icons/laracasts.min.svg" alt="Laracasts">
