@@ -44,6 +44,10 @@
             min-width: 0;
             margin-right: 2.25em;
         }
+
+        .docs_main ul:first-of-type {
+            display: none;
+        }
     }
 
     table {
@@ -118,15 +122,15 @@
     }
 
     h1 {
-        font-size: 3em;
-    }
-
-    h2 {
         font-size: 2.5em;
     }
 
-    h3 {
+    h2 {
         font-size: 1.75em;
+    }
+
+    h3 {
+        font-size: 1.25em;
     }
 
     h4 {

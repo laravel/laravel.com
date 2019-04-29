@@ -1,11 +1,11 @@
 .pages {
 	padding-bottom: 1em;
     background: $light_gray;
-    
+
     .hide {
         display: none;
     }
-    
+
     .pages_header {
         .header_contain {
             padding: 2em 0;
@@ -13,7 +13,7 @@
             justify-content: center;
         }
     }
-    
+
     .main {
         background: $light_gray;
         padding-bottom: 2.5em;
@@ -25,7 +25,7 @@
     background: $white;
 	list-style-type: none;
 	margin: 0 auto 3.5em; padding: 5%;
-	
+
 	li {
         a {
             display: flex;
@@ -67,16 +67,16 @@
                 }
             }
         }
-        
+
         &:last-child a {
             border-bottom: none;
         }
 	}
-	
+
 	@include fl-break(45em) {
 		li a {
             align-items: center;
-            
+
             h5 span {
                 display: inline-block;
                 margin: 0;

@@ -1,3 +1,5 @@
+// $('.body_content').css('display', 'block');
+
 require('./vendor/prism.js');
 
 var current = $('.docs_sidebar ul').find('li a[href="' + window.location.pathname + '"]');
@@ -19,7 +21,6 @@ $('#version_switcher').change(function(e){
 });
 
 $('.docs_main ul').first().appendTo('.docs_nav');
-$('.body_content').css('display', 'block');
 
 $('.docs_main blockquote p').each(function () {
     var str = $(this).html();

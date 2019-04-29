@@ -655,6 +655,7 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+// $('.body_content').css('display', 'block');
 __webpack_require__(/*! ./vendor/prism.js */ "./resources/js/vendor/prism.js");
 
 var current = $('.docs_sidebar ul').find('li a[href="' + window.location.pathname + '"]');
@@ -673,7 +674,6 @@ $('#version_switcher').change(function (e) {
   window.location = $('#version_switcher').val();
 });
 $('.docs_main ul').first().appendTo('.docs_nav');
-$('.body_content').css('display', 'block');
 $('.docs_main blockquote p').each(function () {
   var str = $(this).html();
   var match = str.match(/\{(.*?)\}/);

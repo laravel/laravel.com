@@ -4389,6 +4389,10 @@ ul.partners_list li img {
     min-width: 0;
     margin-right: 2.25em;
   }
+
+  .docs_body .docs_main ul:first-of-type {
+    display: none;
+  }
 }
 
 .docs_body table {
@@ -4464,15 +4468,15 @@ ul.partners_list li img {
 }
 
 .docs_main h1 {
-  font-size: 3em;
-}
-
-.docs_main h2 {
   font-size: 2.5em;
 }
 
-.docs_main h3 {
+.docs_main h2 {
   font-size: 1.75em;
+}
+
+.docs_main h3 {
+  font-size: 1.25em;
 }
 
 .docs_main h4 {
