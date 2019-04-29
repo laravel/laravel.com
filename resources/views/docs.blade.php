@@ -48,7 +48,7 @@
                     </header>
                     <section class="docs_body">
                         <nav class="docs_nav">
-                            <!-- <h1 class="page_title">{{$title}}</h1> -->
+                            <h1 class="page_title">{{$title}}</h1>
                         </nav>
                         <section class="docs_main">
                             {!! $content !!}

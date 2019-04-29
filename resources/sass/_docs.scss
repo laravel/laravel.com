@@ -44,10 +44,6 @@
             min-width: 0;
             margin-right: 2.25em;
         }
-
-        .docs_main ul:first-of-type {
-            display: none;
-        }
     }
 
     table {
@@ -287,3 +283,6 @@
     }
 }
 
+.docs_main h1 + ul {
+    display: none !important;
+}

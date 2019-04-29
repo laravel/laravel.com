@@ -4389,10 +4389,6 @@ ul.partners_list li img {
     min-width: 0;
     margin-right: 2.25em;
   }
-
-  .docs_body .docs_main ul:first-of-type {
-    display: none;
-  }
 }
 
 .docs_body table {
@@ -4642,6 +4638,10 @@ ul.partners_list li img {
   .pagination_links .btn .text {
     display: block;
   }
+}
+
+.docs_main h1 + ul {
+  display: none !important;
 }
 
 .search_contain,
