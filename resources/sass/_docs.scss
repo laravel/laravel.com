@@ -31,8 +31,8 @@
 
 .docs_body {
     @include fl-break(65em) {
-        display: flex;
-        flex-direction: row-reverse;
+        // display: flex;
+        // flex-direction: row-reverse;
 
         .docs_nav {
             flex: none;
@@ -42,7 +42,8 @@
         .docs_main {
             flex: 1;
             min-width: 0;
-            margin-right: 2.25em;
+            max-width: 42em;
+            // margin-right: 2.25em;
         }
     }
 
@@ -143,7 +144,7 @@
         }
     }
 
-    ul:not(:first-of-type) {
+    ul:not(:first-of-type), .content-list ul {
         list-style-type: none;
         margin: 0 0 2.5em 0; padding: 0;
 
@@ -154,6 +155,7 @@
             margin-bottom: 1rem;
             font-size: .875em;
             color: rgba($black, .7);
+            line-height: 1.714em;
 
             code {
                 font-size: 1em;
@@ -163,7 +165,7 @@
             &::before {
                 content: "";
                 position: absolute;
-                top: .15em; left: 0;
+                top: .40em; left: 0;
                 width: 9px; height: 10px;
                 background: url(/img/icons/ul_marker.min.svg) no-repeat center;
                 background-size: contain;
@@ -179,7 +181,8 @@
 
     @include fl-break(55em) {
         p {
-            font-size: 1em;
+            // font-size: 1em;
+            font-size: .9375em;
         }
 
         ul:not(:first-of-type) {
@@ -322,6 +325,7 @@
     ul {
         margin-top: 1.25em;
         padding: 0;
+        margin-bottom: 0;
 
         li {
             padding-left: 1.5em;

@@ -4374,11 +4374,6 @@ ul.partners_list li img {
 }
 
 @media (min-width:65em) {
-  .docs_body {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
   .docs_body .docs_nav {
     flex: none;
     width: 11em;
@@ -4387,7 +4382,7 @@ ul.partners_list li img {
   .docs_body .docs_main {
     flex: 1;
     min-width: 0;
-    margin-right: 2.25em;
+    max-width: 42em;
   }
 }
 
@@ -4489,30 +4484,35 @@ ul.partners_list li img {
   font-size: 1em;
 }
 
-.docs_main ul:not(:first-of-type) {
+.docs_main ul:not(:first-of-type),
+.docs_main .content-list ul {
   list-style-type: none;
   margin: 0 0 2.5em 0;
   padding: 0;
 }
 
-.docs_main ul:not(:first-of-type) li {
+.docs_main ul:not(:first-of-type) li,
+.docs_main .content-list ul li {
   position: relative;
   display: block;
   padding-left: 1.25em;
   margin-bottom: 1rem;
   font-size: 0.875em;
   color: rgba(9, 9, 16, 0.7);
+  line-height: 1.714em;
 }
 
-.docs_main ul:not(:first-of-type) li code {
+.docs_main ul:not(:first-of-type) li code,
+.docs_main .content-list ul li code {
   font-size: 1em;
   line-height: 1em;
 }
 
-.docs_main ul:not(:first-of-type) li::before {
+.docs_main ul:not(:first-of-type) li::before,
+.docs_main .content-list ul li::before {
   content: "";
   position: absolute;
-  top: 0.15em;
+  top: 0.4em;
   left: 0;
   width: 9px;
   height: 10px;
@@ -4528,7 +4528,7 @@ ul.partners_list li img {
 
 @media (min-width:55em) {
   .docs_main p {
-    font-size: 1em;
+    font-size: 0.9375em;
   }
 
   .docs_main ul:not(:first-of-type) {
@@ -4669,6 +4669,7 @@ ul.partners_list li img {
 .docs_main h1 + ul ul {
   margin-top: 1.25em;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .docs_main h1 + ul ul li {
