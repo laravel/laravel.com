@@ -51,6 +51,7 @@
         border-collapse: collapse;
         width: 100%;
         font-size: 13px;
+        margin-bottom: 2em;
         th,
         td {
             border: 1px solid $gray;
@@ -120,27 +121,42 @@
 
     h1 {
         font-size: 2.5em;
+        letter-spacing: 0em;
     }
 
     h2 {
         font-size: 1.75em;
+        letter-spacing: 0;
     }
 
     h3 {
         font-size: 1.25em;
+        letter-spacing: 0;
+        font-weight: 500;
     }
 
     h4 {
         font-size: 1em;
-        font-weight: bold;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+
+    code {
+        font-size: .75em;
+        font-weight: 400;
+        // font-family: $codeFont;
+        // line-height: 1.714em;
+        line-height: 1em;
+        color: $black;
     }
 
     p {
-        font-size: .75em;
-        line-height: 1.714em;
+        font-size: .90em;
+        // line-height: 1.714em;
+        line-height: 1.9em;
 
         code {
-            font-size: 1em;
+            font-size: .875em;
         }
     }
 
@@ -149,17 +165,18 @@
         margin: 0 0 2.5em 0; padding: 0;
 
         li {
+            // font-weight: 500;
             position: relative;
             display: block;
             padding-left: 1.25em;
             margin-bottom: 1rem;
-            font-size: .875em;
+            font-size: .80em;
             color: rgba($black, .7);
             line-height: 1.714em;
 
             code {
-                font-size: 1em;
-                line-height: 1em;
+                font-size: .875em;
+                // line-height: 1em;
             }
 
             &::before {
@@ -181,11 +198,10 @@
 
     @include fl-break(55em) {
         p {
-            // font-size: 1em;
-            font-size: .9375em;
+            font-size: .88em;
         }
 
-        ul:not(:first-of-type) {
+        ul:not(:first-of-type), .content-list ul {
             margin-left: 1.75em;
         }
     }
@@ -309,7 +325,7 @@
 
         a {
             position: relative;
-            display: block;
+            // display: block;
             font-size: .75em;
             font-weight: 500;
             color: $black;

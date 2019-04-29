@@ -4390,6 +4390,7 @@ ul.partners_list li img {
   border-collapse: collapse;
   width: 100%;
   font-size: 13px;
+  margin-bottom: 2em;
 }
 
 .docs_body table th,
@@ -4460,28 +4461,40 @@ ul.partners_list li img {
 
 .docs_main h1 {
   font-size: 2.5em;
+  letter-spacing: 0em;
 }
 
 .docs_main h2 {
   font-size: 1.75em;
+  letter-spacing: 0;
 }
 
 .docs_main h3 {
   font-size: 1.25em;
+  letter-spacing: 0;
+  font-weight: 500;
 }
 
 .docs_main h4 {
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.docs_main code {
+  font-size: 0.75em;
+  font-weight: 400;
+  line-height: 1em;
+  color: #090910;
 }
 
 .docs_main p {
-  font-size: 0.75em;
-  line-height: 1.714em;
+  font-size: 0.9em;
+  line-height: 1.9em;
 }
 
 .docs_main p code {
-  font-size: 1em;
+  font-size: 0.875em;
 }
 
 .docs_main ul:not(:first-of-type),
@@ -4497,15 +4510,14 @@ ul.partners_list li img {
   display: block;
   padding-left: 1.25em;
   margin-bottom: 1rem;
-  font-size: 0.875em;
+  font-size: 0.8em;
   color: rgba(9, 9, 16, 0.7);
   line-height: 1.714em;
 }
 
 .docs_main ul:not(:first-of-type) li code,
 .docs_main .content-list ul li code {
-  font-size: 1em;
-  line-height: 1em;
+  font-size: 0.875em;
 }
 
 .docs_main ul:not(:first-of-type) li::before,
@@ -4528,10 +4540,11 @@ ul.partners_list li img {
 
 @media (min-width:55em) {
   .docs_main p {
-    font-size: 0.9375em;
+    font-size: 0.88em;
   }
 
-  .docs_main ul:not(:first-of-type) {
+  .docs_main ul:not(:first-of-type),
+  .docs_main .content-list ul {
     margin-left: 1.75em;
   }
 }
@@ -4654,7 +4667,6 @@ ul.partners_list li img {
 
 .docs_main h1 + ul li a {
   position: relative;
-  display: block;
   font-size: 0.75em;
   font-weight: 500;
   color: #090910;
