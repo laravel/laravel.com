@@ -672,8 +672,8 @@ $(".docs_sidebar h2").click(function (e) {
 });
 $('#version_switcher').change(function (e) {
   window.location = $('#version_switcher').val();
-});
-$('.docs_main ul').first().appendTo('.docs_nav');
+}); // $('.docs_main ul').first().appendTo('.docs_nav');
+
 $('.docs_main blockquote p').each(function () {
   var str = $(this).html();
   var match = str.match(/\{(.*?)\}/);

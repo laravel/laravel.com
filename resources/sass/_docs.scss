@@ -143,7 +143,7 @@
         }
     }
 
-    ul {
+    ul:not(:first-of-type) {
         list-style-type: none;
         margin: 0 0 2.5em 0; padding: 0;
 
@@ -182,7 +182,7 @@
             font-size: 1em;
         }
 
-        ul {
+        ul:not(:first-of-type) {
             margin-left: 1.75em;
         }
     }
@@ -284,5 +284,57 @@
 }
 
 .docs_main h1 + ul {
-    display: none !important;
+    // @include fl-break(65em) {
+    //     flex: none;
+    //     width: 11em;
+    // }
+
+    // display: none !important;
+
+    margin-bottom: 4em;
+
+    // .page_title {
+    //     margin-bottom: .5em;
+    // }
+
+    list-style-type: none;
+    margin: 0; padding: 0;
+
+    li {
+        display: block;
+        margin-bottom: 1.25em;
+
+        a {
+            position: relative;
+            display: block;
+            font-size: .75em;
+            font-weight: 500;
+            color: $black;
+            text-decoration: none;
+
+            &::before {
+                content: "# ";
+                color: $red;
+            }
+        }
+    }
+
+    ul {
+        margin-top: 1.25em;
+        padding: 0;
+
+        li {
+            padding-left: 1.5em;
+
+            a {
+                font-weight: 400;
+            }
+        }
+    }
+
+    @include fl-break(65em) {
+        .page_title {
+            display: none;
+        }
+    }
 }

@@ -20,7 +20,7 @@ $('#version_switcher').change(function(e){
     window.location = $('#version_switcher').val();
 });
 
-$('.docs_main ul').first().appendTo('.docs_nav');
+// $('.docs_main ul').first().appendTo('.docs_nav');
 
 $('.docs_main blockquote p').each(function () {
     var str = $(this).html();

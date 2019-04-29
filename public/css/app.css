@@ -4489,13 +4489,13 @@ ul.partners_list li img {
   font-size: 1em;
 }
 
-.docs_main ul {
+.docs_main ul:not(:first-of-type) {
   list-style-type: none;
   margin: 0 0 2.5em 0;
   padding: 0;
 }
 
-.docs_main ul li {
+.docs_main ul:not(:first-of-type) li {
   position: relative;
   display: block;
   padding-left: 1.25em;
@@ -4504,12 +4504,12 @@ ul.partners_list li img {
   color: rgba(9, 9, 16, 0.7);
 }
 
-.docs_main ul li code {
+.docs_main ul:not(:first-of-type) li code {
   font-size: 1em;
   line-height: 1em;
 }
 
-.docs_main ul li::before {
+.docs_main ul:not(:first-of-type) li::before {
   content: "";
   position: absolute;
   top: 0.15em;
@@ -4531,7 +4531,7 @@ ul.partners_list li img {
     font-size: 1em;
   }
 
-  .docs_main ul {
+  .docs_main ul:not(:first-of-type) {
     margin-left: 1.75em;
   }
 }
@@ -4641,7 +4641,48 @@ ul.partners_list li img {
 }
 
 .docs_main h1 + ul {
-  display: none !important;
+  margin-bottom: 4em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.docs_main h1 + ul li {
+  display: block;
+  margin-bottom: 1.25em;
+}
+
+.docs_main h1 + ul li a {
+  position: relative;
+  display: block;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #090910;
+  text-decoration: none;
+}
+
+.docs_main h1 + ul li a::before {
+  content: "# ";
+  color: #ff2d20;
+}
+
+.docs_main h1 + ul ul {
+  margin-top: 1.25em;
+  padding: 0;
+}
+
+.docs_main h1 + ul ul li {
+  padding-left: 1.5em;
+}
+
+.docs_main h1 + ul ul li a {
+  font-weight: 400;
+}
+
+@media (min-width:65em) {
+  .docs_main h1 + ul .page_title {
+    display: none;
+  }
 }
 
 .search_contain,
