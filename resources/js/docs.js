@@ -48,6 +48,7 @@ $('.docs_main blockquote p').each(function () {
                 break;
         }
 
+        $(this).wrap('<div></div>');
         $(this).before('<div class="icon ' + color + '"><img src="' + img + '"></div>');
         $(this).html(str.replace(/\{(.*?)\}/, ''));
         $(this).addClass('content');
