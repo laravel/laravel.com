@@ -4489,7 +4489,7 @@ ul.partners_list li img {
 }
 
 .docs_main p {
-  font-size: 0.9em;
+  font-size: 0.89em;
   line-height: 1.9em;
 }
 
@@ -4540,7 +4540,7 @@ ul.partners_list li img {
 
 @media (min-width:55em) {
   .docs_main p {
-    font-size: 0.88em;
+    font-size: 0.89em;
   }
 
   .docs_main ul:not(:first-of-type),
@@ -4667,7 +4667,7 @@ ul.partners_list li img {
 
 .docs_main h1 + ul li a {
   position: relative;
-  font-size: 0.75em;
+  font-size: 0.89em;
   font-weight: 500;
   color: #090910;
   text-decoration: none;
