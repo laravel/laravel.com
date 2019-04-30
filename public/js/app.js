@@ -598,6 +598,9 @@ $(document).ready(function () {
     e.preventDefault();
     $("html").toggleClass("nav--on");
     $(".bar").toggleClass("animate");
+  });
+  Mousetrap.bind('/', function () {
+    $('#search-docs-input').focus();
   }); // Footer Navigation Menu opener for small screens...
 
   $(".footer_nav_trigger").click(function (e) {
@@ -11567,8 +11570,8 @@ Prism.languages["markup-templating"] = {}, Object.defineProperties(Prism.languag
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/taylor/Documents/Code/Repositories/laravel-website-next/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/taylor/Documents/Code/Repositories/laravel-website-next/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/mac/sites/laravelcom-new/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/mac/sites/laravelcom-new/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -6,6 +6,10 @@ $(document).ready(function () {
         $(".bar").toggleClass("animate");
     });
 
+    Mousetrap.bind('/', function () {
+        $('#search-docs-input').focus();
+    });
+
 
     // Footer Navigation Menu opener for small screens...
     $(".footer_nav_trigger").click(function (e) {

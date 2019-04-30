@@ -167,7 +167,7 @@
             </nav>
             <div class="search_box">
                 <div class="input_group search icon">
-                    <input type="text" class="search_input" placeholder="Search Docs">
+                    <input type="text" class="search_input" id="search-docs-input" placeholder="Search Docs">
                     <input type="submit" class="search_submit icon_display">
                 </div>
             </div>
