@@ -6,7 +6,8 @@ $(document).ready(function () {
         $(".bar").toggleClass("animate");
     });
 
-    Mousetrap.bind('/', function () {
+    Mousetrap.bind('/', function (e) {
+        e.preventDefault();
         $('#search-docs-input').focus();
     });
 

@@ -599,7 +599,8 @@ $(document).ready(function () {
     $("html").toggleClass("nav--on");
     $(".bar").toggleClass("animate");
   });
-  Mousetrap.bind('/', function () {
+  Mousetrap.bind('/', function (e) {
+    e.preventDefault();
     $('#search-docs-input').focus();
   }); // Footer Navigation Menu opener for small screens...
 
