@@ -11,7 +11,7 @@
                     <div class="contain">
                         <h6>Laravel Partner</h6>
                         <div class="hero_heading">
-                            <img src="/img/partners/large/vehikl.min.svg" alt="Vehikl">
+                            <img src="/img/partners/vehikl.min.svg" alt="Vehikl">
                             <div class="actions">
                                 <a href="mailto:go+partner@vehikl.com" class="btn"><span>Hire Vehikl</span></a>
                                 <a href="http://vehikl.com/" class="btn secondary"><span>Visit website →</span></a>
