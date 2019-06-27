@@ -4,10 +4,8 @@
     @include('partials.header')
 
     <div class="home standard_layout">
-
         <div class="remodal-bg">
-
-            <div class="content_contain">
+            <div class="content_contain" style="padding-bottom: 4.5em;">
                 <div class="page_contain">
                     <div class="banner">
                         <a href="https://nova.laravel.com/">
@@ -234,7 +232,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

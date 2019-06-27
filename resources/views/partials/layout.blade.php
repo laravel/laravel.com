@@ -33,7 +33,7 @@
 @yield('content')
 
 <footer>
-    <div class="footer_contain">
+    <div class="footer_contain" style="padding-top: 0;">
         <div class="contain">
             <section class="partner_block">
                 <div class="content">
