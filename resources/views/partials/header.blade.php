@@ -26,7 +26,7 @@
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/envoyer.min.svg" alt="Icon">
                                             </div>
-                                            <div class="system_info">Envoyer <span>Zero-downtime Deployment</span></div>
+                                            <div class="system_info">Envoyer <span>Zero Downtime Deployment</span></div>
                                         </a>
                                     </li>
                                     <li class="sys_horizon">
@@ -50,14 +50,14 @@
                                         <a href="/docs/{{DEFAULT_VERSION}}/broadcasting">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/echo.min.svg" alt="Icon"></div>
-                                            <div class="system_info">Echo <span>Event Listener</span></div>
+                                            <div class="system_info">Echo <span>Realtime Events</span></div>
                                         </a>
                                     </li>
                                     <li class="sys_lumen">
                                         <a href="https://lumen.laravel.com">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/lumen.min.svg" alt="Icon"></div>
-                                            <div class="system_info">Lumen <span>Micro Framework</span>
+                                            <div class="system_info">Lumen <span>Micro-Framework</span>
                                             </div>
                                         </a>
                                     </li>
@@ -93,7 +93,7 @@
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/mix.min.svg" alt="Icon"></div>
                                             <div class="system_info">Mix
-                                                <span>Webpack and Asset Compilation</span>
+                                                <span>Webpack Asset Compilation</span>
                                             </div>
                                         </a>
                                     </li>
@@ -111,7 +111,7 @@
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/dusk.min.svg" alt="Icon"></div>
                                             <div class="system_info">Dusk
-                                                <span>Browser Testing and Automation API</span></div>
+                                                <span>Browser Testing and Automation</span></div>
                                         </a>
                                     </li>
                                     <li class="sys_passport">
@@ -120,7 +120,7 @@
                                                 <img src="/img/ecosystem/passport.min.svg" alt="Icon">
                                             </div>
                                             <div class="system_info">Passport
-                                                <span>Fast OAuth2 Implementation</span></div>
+                                                <span>Painless OAuth2 Implementation</span></div>
                                         </a>
                                     </li>
                                     <li class="sys_scout">
@@ -154,7 +154,7 @@
                                         <a href="https://github.com/laravel/tinker">
                                             <div class="system_icon">
                                                 <img src="/img/ecosystem/tinker.min.svg" alt="Icon"></div>
-                                            <div class="system_info">Tinker <span>REPL</span></div>
+                                            <div class="system_info">Tinker <span>Interactive REPL</span></div>
                                         </a>
                                     </li>
                                 </ul>

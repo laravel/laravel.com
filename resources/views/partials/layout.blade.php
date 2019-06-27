@@ -57,7 +57,7 @@
                 <div class="footer_content">
                     <div class="footer_nav">
                         <div class="nav_col">
-                            <span class="footer_nav_trigger">Documentation</span>
+                            <span class="footer_nav_trigger">Highlights</span>
                             <div class="footer_nav_contain">
                                 <ul>
                                     <li><a href="/docs/{{DEFAULT_VERSION}}/releases">Release Notes</a></li>
@@ -134,7 +134,7 @@
                     </div>
                     <div class="footer_info">
                         <p class="small">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in most web projects.</p>
-                        <p class="small copyright">Laravel is a Trademark of Taylor Otwell.<br>Copyright &copy;2011-{{now()->format('Y')}} Taylor Otwell.
+                        <p class="small copyright">Laravel is a Trademark of Taylor Otwell.<br>Copyright &copy; 2011-{{now()->format('Y')}} Laravel LLC.
                         </p>
                         <ul class="social_links">
                             <li><a href="https://twitter.com/laravelphp"><img src="/img/social/twitter.min.svg" alt="Twitter"></a>

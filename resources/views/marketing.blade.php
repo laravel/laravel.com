@@ -61,10 +61,10 @@
                                 <img src="/img/homepage/forge.jpg" alt="Forge">
                             </div>
                             <div class="content">
-                                <h6>Push-button Deployment</h6>
+                                <!-- <h6>Servers Made Easy</h6> -->
                                 <h1>Laravel Forge</h1>
-                                <p>Instant PHP Platforms on Linode, DigitalOcean, and more. Featuring Push-To-Deploy, HHVM, queues, and everything else you could need to launch and deploy impressive Laravel applications.</p>
-                                <a href="https://forge.laravel.com" class="btn"><span>Get Forge</span></a>
+                                <p>Instant PHP Platforms on DigitalOcean, Linode, and more. Featuring push-to-deploy, Redis, queues, and everything else you could need to launch and deploy impressive Laravel applications.</p>
+                                <a href="https://forge.laravel.com" class="btn"><span>Learn More</span></a>
                             </div>
                         </div>
 
@@ -78,14 +78,14 @@
                                     <a href="https://forge.laravel.com">
                                         <div class="system_icon"><img src="/img/ecosystem/forge.min.svg" alt="Icon">
                                         </div>
-                                        <div class="system_info">Forge <span>Deployment</span></div>
+                                        <div class="system_info">Forge <span>Server Management</span></div>
                                     </a>
                                 </li>
                                 <li class="sys_envoyer">
                                     <a href="https://envoyer.io">
                                         <div class="system_icon"><img src="/img/ecosystem/envoyer.min.svg" alt="Icon">
                                         </div>
-                                        <div class="system_info">Envoyer <span>Deployment</span></div>
+                                        <div class="system_info">Envoyer <span>Zero Downtime Deployment</span></div>
                                     </a>
                                 </li>
                                 <li class="sys_horizon">
@@ -106,14 +106,14 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/broadcasting">
                                         <div class="system_icon"><img src="/img/ecosystem/echo.min.svg" alt="Icon">
                                         </div>
-                                        <div class="system_info">Echo <span>Event Listener</span></div>
+                                        <div class="system_info">Echo <span>Realtime Events</span></div>
                                     </a>
                                 </li>
                                 <li class="sys_lumen">
                                     <a href="https://lumen.laravel.com">
                                         <div class="system_icon"><img src="/img/ecosystem/lumen.min.svg" alt="Icon">
                                         </div>
-                                        <div class="system_info">Lumen <span>Micro Framework</span></div>
+                                        <div class="system_info">Lumen <span>Micro-Framework</span></div>
                                     </a>
                                 </li>
                                 <li class="sys_homestead">
@@ -141,14 +141,14 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/mix">
                                         <div class="system_icon"><img src="/img/ecosystem/mix.min.svg" alt="Icon">
                                         </div>
-                                        <div class="system_info">Mix <span>Webpack and Asset Compilation</span></div>
+                                        <div class="system_info">Mix <span>Webpack Asset Compilation</span></div>
                                     </a>
                                 </li>
                                 <li class="sys_cashier">
                                     <a href="/docs/{{DEFAULT_VERSION}}/billing">
                                         <div class="system_icon"><img src="/img/ecosystem/cashier.min.svg" alt="Icon">
                                         </div>
-                                        <div class="system_info">Cashier <span>Subscription Billing Integration</span>
+                                        <div class="system_info">Cashier <span>Subscription Billing</span>
                                         </div>
                                     </a>
                                 </li>
@@ -156,7 +156,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/dusk">
                                         <div class="system_icon"><img src="/img/ecosystem/dusk.min.svg" alt="Icon">
                                         </div>
-                                        <div class="system_info">Dusk <span>Browser Testing and Automation API</span>
+                                        <div class="system_info">Dusk <span>Browser Testing and Automation</span>
                                         </div>
                                     </a>
                                 </li>
@@ -164,7 +164,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/passport">
                                         <div class="system_icon">
                                             <img src="/img/ecosystem/passport.min.svg" alt="Icon"></div>
-                                        <div class="system_info">Passport <span>Fast OAuth2 Implementation</span></div>
+                                        <div class="system_info">Passport <span>Painless OAuth2 Implementation</span></div>
                                     </a>
                                 </li>
                                 <li class="sys_scout">
@@ -192,7 +192,7 @@
                                     <a href="https://github.com/laravel/tinker">
                                         <div class="system_icon"><img src="/img/ecosystem/tinker.min.svg" alt="Icon">
                                         </div>
-                                        <div class="system_info">Tinker <span>REPL</span></div>
+                                        <div class="system_info">Tinker <span>Interactive REPL</span></div>
                                     </a>
                                 </li>
                             </ul>
