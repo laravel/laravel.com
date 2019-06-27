@@ -14,7 +14,7 @@
                             <img src="/img/partners/64robots.min.svg" alt="64Robots">
                             <div class="actions">
                                 <a href="mailto:jon@64robots.com" class="btn"><span>Hire 64Robots</span></a>
-                                <a href="https://64robots.com/" class="btn secondary"><span>Visit website →</span></a>
+                                <a href="https://64robots.com/" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>

@@ -14,7 +14,7 @@
                             <img src="/img/partners/tighten.min.svg" alt="Tighten">
                             <div class="actions">
                                 <a href="mailto:matt@tighten.co" class="btn"><span>Hire Tighten</span></a>
-                                <a href="https://tighten.co/laravel" class="btn secondary"><span>Visit website →</span></a>
+                                <a href="https://tighten.co/laravel" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>

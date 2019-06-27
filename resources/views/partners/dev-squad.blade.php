@@ -14,7 +14,7 @@
                             <img src="/img/partners/devsquad.png" alt="Dev Squad">
                             <div class="actions">
                                 <a href="mailto:phil@devsquad.com" class="btn"><span>Hire Dev Squad</span></a>
-                                <a href="http://devsquad.com/" class="btn secondary"><span>Visit website →</span></a>
+                                <a href="http://devsquad.com/" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>

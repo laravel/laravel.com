@@ -14,7 +14,7 @@
                             <img src="/img/partners/cyberduck.png" alt="Hire Cyber Duck" style="max-width: 300px">
                             <div class="actions">
                                 <a href="https://www.cyber-duck.co.uk/our-culture/careers" class="btn"><span>Get Hired</span></a>
-                                <a href="https://www.cyber-duck.co.uk/how-we-work/technology/laravel?utm_source=Laravel%20Partner&utm_medium=Sponsorship" class="btn secondary"><span>Visit website →</span></a>
+                                <a href="https://www.cyber-duck.co.uk/how-we-work/technology/laravel?utm_source=Laravel%20Partner&utm_medium=Sponsorship" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>

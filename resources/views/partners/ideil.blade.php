@@ -14,7 +14,7 @@
                             <img src="/img/partners/ideil.min.svg" alt="ideil">
                             <div class="actions">
                                 <a href="mailto:welcome@ideil.com" class="btn"><span>Hire ideil</span></a>
-                                <a href="https://about.ideil.com/" class="btn secondary"><span>Visit website →</span></a>
+                                <a href="https://about.ideil.com/" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>

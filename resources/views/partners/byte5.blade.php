@@ -14,7 +14,7 @@
                             <img src="/img/partners/byte5.png" alt="Byte5">
                             <div class="actions">
                                 <a href="mailto:cwendler@byte5.de" class="btn"><span>Hire Byte5</span></a>
-                                <a href="http://www.byte5.net/" class="btn secondary"><span>Visit website →</span></a>
+                                <a href="http://www.byte5.net/" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>

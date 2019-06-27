@@ -14,7 +14,7 @@
                             <img src="/img/partners/cubet.min.svg" alt="Cubet">
                             <div class="actions">
                                 <a href="mailto:sales@cubettech.com" class="btn"><span>Hire Cubet</span></a>
-                                <a href="https://cubettech.com/" class="btn secondary"><span>Visit website →</span></a>
+                                <a href="https://cubettech.com/" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>

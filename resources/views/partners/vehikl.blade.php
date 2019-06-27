@@ -14,7 +14,7 @@
                             <img src="/img/partners/vehikl.min.svg" alt="Vehikl">
                             <div class="actions">
                                 <a href="mailto:go+partner@vehikl.com" class="btn"><span>Hire Vehikl</span></a>
-                                <a href="http://vehikl.com/" class="btn secondary"><span>Visit website →</span></a>
+                                <a href="http://vehikl.com/" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
                                 </ul>
                             </div>
 
-                            <p>We integrate fully with your existing workflow and will dramatically increase your project’s velocity. We also provide mentorship to more junior developers and work to assist knowledge transfer to any new developers you onboard internally. As a development partner, Vehikl provides a flexible, scalable option while you ramp up an internal team.. Over the years we have built a variety of web applications for customers using Laravel as our framework of choice and implemented Lean Agile development techniques to build professional applications that are functional and easy to use.</p>
+                            <p>We integrate fully with your existing workflow and will dramatically increase your project’s velocity. We also provide mentorship to more junior developers and work to assist knowledge transfer to any new developers you onboard internally. As a development partner, Vehikl provides a flexible, scalable option while you ramp up an internal team. Over the years we have built a variety of web applications for customers using Laravel as our framework of choice and implemented Lean Agile development techniques to build professional applications that are functional and easy to use.</p>
 
                             <ul class="social_links">
                                 <li><a href="https://twitter.com/vehikl"><img src="/img/social/twitter.min.svg" alt="Twitter"></a></li>
