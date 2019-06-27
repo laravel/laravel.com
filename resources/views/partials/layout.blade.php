@@ -79,15 +79,15 @@
                                 <ul>
                                     <li><a href="https://laracasts.com">Laracasts</a></li>
                                     <li><a href="https://laravel-news.com">Laravel News</a></li>
-                                    <li><a href="https://http://larajobs.com">LaraJobs</a></li>
                                     <li><a href="https://laracon.us">Laracon</a></li>
+                                    <li><a href="https://http://larajobs.com">Jobs</a></li>
                                     <li><a href="https://certification.laravel.com/">Certification</a></li>
                                     <li><a href="https://laracasts.com/discuss">Forums</a></li>
-                                    <li><a href="http://www.laravelpodcast.com/">Podcast</a></li>
-                                    <li><a href="https://course.testdrivenlaravel.com/">Test-driven Laravel</a></li>
-                                    <li><a href="https://statamic.com/">Statamic</a></li>
-                                    <li><a href="https://styleci.io/">StyleCI</a></li>
-                                    <li><a href="https://cachethq.io/">Cachet</a></li>
+                                    <!-- <li><a href="http://www.laravelpodcast.com/">Podcast</a></li> -->
+                                    <!-- <li><a href="https://course.testdrivenlaravel.com/">Test-driven Laravel</a></li> -->
+                                    <!-- <li><a href="https://statamic.com/">Statamic</a></li> -->
+<!--                                     <li><a href="https://styleci.io/">StyleCI</a></li>
+                                    <li><a href="https://cachethq.io/">Cachet</a></li> -->
                                 </ul>
                             </div>
                         </div>

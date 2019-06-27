@@ -2232,7 +2232,7 @@ ul.ecosystem li.sys_tinker a .system_icon {
 
 @media (min-width:70em) {
   .hero {
-    padding: 12em 0;
+    padding: 12em 0 6em 0;
   }
 
   .hero .hero_bg {
