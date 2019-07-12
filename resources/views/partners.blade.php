@@ -19,7 +19,7 @@
                             <p>Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
                         </div>
                         <div class="hero_btn">
-                            <a href="mailto:taylor+Partners@laravel.com" class="btn"><span>Become A Partner</span></a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform?usp=sf_link" class="btn"><span>Become A Partner</span></a>
                         </div>
                     </section>
                 </div>
