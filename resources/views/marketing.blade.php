@@ -212,7 +212,7 @@
                                     <li><a href="https://laracasts.com/discuss">Forums</a></li>
                                     <li><a href="https://certification.laravel.com/">Certification</a></li>
                                 </ul>
-                                <a href="#" class="btn"><span>Learn more</span></a>
+                                <a href="#" class="btn"><span>Learn More</span></a>
                             </div>
 
                             <div class="featured_resource">
