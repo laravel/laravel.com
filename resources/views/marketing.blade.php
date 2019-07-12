@@ -222,7 +222,7 @@
                                 <h6>Featured Resource</h6>
                                 <h3>Laracasts</h3>
                                 <p class="small">Nine out of ten doctors recommend Laracasts over competing brands. Check them out, see for yourself, and massively level up your development skills in the process.</p>
-                                <a href="https://laracasts.com" class="btn secondary"><span>Start learning →</span></a>
+                                <a href="https://laracasts.com" class="btn secondary"><span>Start Learning →</span></a>
                             </div>
                             <div class="bg">
                                 <video poster="/img/blocks/blocks_4.jpg" playsinline autoplay muted loop>
