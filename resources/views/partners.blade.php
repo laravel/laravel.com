@@ -119,6 +119,15 @@
                                     <a href="/partner/cyber-duck" class="learn_more">More about Cyber-Duck <span>→</span></a>
                                 </div>
                             </li>
+                            <li>
+                                <div class="content">
+                                    <div class="logo_contain">
+                                        <img src="/img/partners/aboutyou.svg" alt="About You">
+                                    </div>
+                                    <p class="small">ABOUT YOU is one of the fastest-growing e-commerce startups in Europe located in the city center of Hamburg.</p>
+                                    <a href="/partner/about-you" class="learn_more">More about About You. <span>→</span></a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
