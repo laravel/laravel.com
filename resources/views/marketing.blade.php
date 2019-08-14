@@ -59,7 +59,7 @@
                             </div>
                             @if (SHOW_VAPOR)
                                 <div class="image">
-                                    <img src="/img/homepage/forge.jpg" alt="Vapor">
+                                    <img src="/img/homepage/vapor.jpg" alt="Vapor">
                                 </div>
                                 <div class="content">
                                     <h1>Laravel Vapor</h1>
