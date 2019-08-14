@@ -95,16 +95,17 @@
                             <span class="footer_nav_trigger">Partners</span>
                             <div class="footer_nav_contain">
                                 <ul>
-                                    <li><a href="#">Vehikl</a></li>
-                                    <li><a href="#">Tighten Co.</a></li>
-                                    <li><a href="#">Kirschbaum</a></li>
-                                    <li><a href="#">Byte 5</a></li>
-                                    <li><a href="#">64Robots</a></li>
-                                    <li><a href="#">Cubet</a></li>
-                                    <li><a href="#">DevSquad</a></li>
-                                    <li><a href="#">Ideil</a></li>
-                                    <li><a href="#">Cyber-duck</a></li>
-                                    <li><a href="#">Become A Partner</a></li>
+                                    <li><a href="https://vehikl.com">Vehikl</a></li>
+                                    <li><a href="https://tighten.co">Tighten Co.</a></li>
+                                    <li><a href="https://kirschbaumdevelopment.com/">Kirschbaum</a></li>
+                                    <li><a href="https://www.byte5.net/">Byte 5</a></li>
+                                    <li><a href="https://64robots.com/">64Robots</a></li>
+                                    <li><a href="https://cubettech.com/">Cubet</a></li>
+                                    <li><a href="https://devsquad.com/">DevSquad</a></li>
+                                    <li><a href="https://www.ideil.com/">Ideil</a></li>
+                                    <li><a href="https://www.cyber-duck.co.uk/how-we-work/technology/laravel?utm_source=Laravel%20Partner&utm_medium=Sponsorship">Cyber-duck</a></li>
+                                    <li><a href="https://corporate.aboutyou.de/app/uploads/2019/07/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&utm_medium=socialgroups&utm_campaign=tech">ABOUT YOU</a></li>
+                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform">Become A Partner</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -112,6 +113,7 @@
                             <span class="footer_nav_trigger">Ecosystem</span>
                             <div class="footer_nav_contain">
                                 <ul>
+                                    <li><a href="https://vapor.laravel.com">Vapor</a></li>
                                     <li><a href="https://forge.laravel.com">Forge</a></li>
                                     <li><a href="https://envoyer.io">Envoyer</a></li>
                                     <li><a href="https://horizon.laravel.com">Horizon</a></li>
