@@ -21,7 +21,7 @@
                                     <li class="sys_vapor">
                                         <a href="https://forge.laravel.com">
                                             <div class="system_icon">
-                                                <img src="/img/ecosystem/forge.min.svg" alt="Icon"></div>
+                                                <img src="/img/ecosystem/vapor.min.svg" alt="Icon"></div>
                                             <div class="system_info">Vapor <span>Serverless Platform</span></div>
                                         </a>
                                     </li>
