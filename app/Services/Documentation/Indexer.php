@@ -183,7 +183,7 @@ class Indexer
             }
         }
 
-        $this->index->addObjects($markup);
+        $this->index->saveObjects($markup);
 
         echo "Indexed $version.$slug" . PHP_EOL;
     }
