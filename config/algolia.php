@@ -41,7 +41,8 @@ return [
 
         'main' => [
             'id' => '8BB87I11DE',
-            'key' => '60b61cc4ab41ce7967bd36b002e9ea74',
+            'search_key' => '8e1d446d61fce359f69cd7c8b86a50de',
+            'key' => env('ALGOLIA_KEY'),
         ],
 
     ],
