@@ -102,7 +102,7 @@ class Indexer
 
         $this->setSettings();
 
-        $this->client->moveIndex($this->index->indexName, static::$index_name);
+        $this->client->moveIndex($this->index->getIndexName(), static::$index_name);
     }
 
     /**
