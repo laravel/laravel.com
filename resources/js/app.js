@@ -66,4 +66,9 @@ $(document).ready(function () {
             container.removeClass("search--on");
         }
     });
+
+    $('.docs_body').find('a[name]').each(function () {
+        var anchor = $('<a href="#' + this.name + '"/>');
+        $(this).parent().next().wrapInner(anchor);
+    });
 });
