@@ -11,7 +11,7 @@
                     <div class="contain">
                         <h6>Laravel Partner</h6>
                         <div class="hero_heading">
-                            <img src="/img/partners/64robots.min.svg" alt="64Robots">
+                            <img src="/img/partners/64Robots.min.svg" alt="64Robots">
                             <div class="actions">
                                 <a href="mailto:jon@64robots.com" class="btn"><span>Hire 64Robots</span></a>
                                 <a href="https://64robots.com/" class="btn secondary"><span>Visit Website →</span></a>
