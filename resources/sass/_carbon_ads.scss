@@ -1,0 +1,26 @@
+#carbonads {
+    margin-top: 2.375em;
+    background: $white;
+    padding: 1em;
+    max-width: 10.125em;
+    
+    img {
+        display: block;
+        margin-bottom: .75em;
+    }
+    
+    .carbon-text {
+        display: block;
+        font-size: .625em;
+        line-height: 1.4em;
+        margin-bottom: 1rem;
+        color: rgba($black, .8);
+    }
+    
+    .carbon-poweredby {
+        font-size: .625em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgba($black, .4);
+    }
+}

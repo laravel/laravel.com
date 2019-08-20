@@ -1,0 +1,17 @@
+.standard_layout {
+    header .contain {
+        padding: 0;
+    }
+
+    @include fl-break(45em) {
+        header .contain {
+            padding: 0 2em;
+        }
+    }
+
+    @include fl-break(55em) {
+        .content_contain {
+            overflow: hidden;
+        }
+    }
+}

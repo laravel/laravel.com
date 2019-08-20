@@ -1,0 +1,86 @@
+.pages {
+	padding-bottom: 1em;
+    background: $light_gray;
+
+    .hide {
+        display: none;
+    }
+
+    .pages_header {
+        .header_contain {
+            padding: 2em 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .main {
+        background: $light_gray;
+        padding-bottom: 2.5em;
+    }
+}
+
+.pages_list {
+    max-width: 800px;
+    background: $white;
+	list-style-type: none;
+	margin: 0 auto 3.5em; padding: 5%;
+
+	li {
+        a {
+            display: flex;
+            padding: 1em 0;
+            color: $gray;
+            font-weight: 500;
+            text-decoration: none;
+            justify-content: space-between;
+            border-bottom: 1px solid $gray;
+
+            &::after {
+                content: "View";
+                display: block;
+                color: $red;
+                opacity: 0;
+                font-size: .875em;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 3.5px;
+                transition: opacity .3s ease;
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            h5 {
+                margin: 0;
+
+                span {
+                    margin-top: .5em;
+                    display: block;
+                    text-transform: none;
+                    opacity: .5;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+        &:last-child a {
+            border-bottom: none;
+        }
+	}
+
+	@include fl-break(45em) {
+		li a {
+            align-items: center;
+
+            h5 span {
+                display: inline-block;
+                margin: 0;
+            }
+		}
+	}
+}
