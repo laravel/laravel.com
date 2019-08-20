@@ -3,7 +3,7 @@
 @section('content')
     @include('partials.header')
 
-    <div class="remodal-bg">
+    <div class="remodal-bg partners_page">
 
         <div class="content_contain">
             <div class="page_contain">
@@ -49,10 +49,10 @@
                             <li>
                                 <div class="content">
                                     <div class="logo_contain">
-                                        <img src="/img/partners/tighten.min.svg" alt="Tighten Co.">
+                                        <img src="/img/partners/tighten.min.svg" alt="Tighten">
                                     </div>
                                     <p class="small">Their team of top-notch Laravel developers will build your product, help you take it to market, and iterate with you as things change.</p>
-                                    <a href="/partner/tighten" class="learn_more">More about Tighten Co. <span>→</span></a>
+                                    <a href="/partner/tighten" class="learn_more">More about Tighten <span>→</span></a>
                                 </div>
                             </li>
                             <li>
