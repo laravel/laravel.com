@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
 
     <!-- Load styles -->
-    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
 
     <!-- Load JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -162,6 +162,6 @@
 
 @include('partials.algolia_template')
 
-<script src="/js/app.js"></script>
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
