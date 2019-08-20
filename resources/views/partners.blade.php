@@ -76,7 +76,7 @@
                             <li>
                                 <div class="content">
                                     <div class="logo_contain">
-                                        <img src="/img/partners/64robots.min.svg" alt="64 Robots">
+                                        <img src="/img/partners/64Robots.min.svg" alt="64 Robots">
                                     </div>
                                     <p class="small">64 Robots is a team of Laravel experts with a background in building successful startups and SaaS products.</p>
                                     <a href="/partner/64robots" class="learn_more">More about 64 Robots <span>→</span></a>
