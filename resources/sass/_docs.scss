@@ -141,6 +141,21 @@
         letter-spacing: 0;
     }
 
+    h3 a, h2 a {
+		color: $black;
+	}
+
+	h3 a:before,
+    h2 a:before {
+        content: "#";
+        font-weight: 400;
+        margin-left: -25px;
+        position: absolute;
+        font-size: 28px;
+        color: $red;
+        opacity: .6;
+    }
+
     code {
         font-size: .75em;
         font-weight: 400;
