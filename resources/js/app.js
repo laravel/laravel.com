@@ -8,6 +8,7 @@ $(document).ready(function () {
 
     Mousetrap.bind('/', function (e) {
         e.preventDefault();
+        $(".header_content .search_box").addClass("search--on");
         $('#search-docs-input').focus();
     });
 
