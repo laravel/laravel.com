@@ -108,6 +108,7 @@
             .navigation_contain {
                 transform: translateX(-100%);
                 opacity: 0;
+                overflow: hidden;
                 transition: opacity .3s ease, transform .3s ease;
 
                 ul {
