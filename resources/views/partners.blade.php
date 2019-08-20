@@ -3,7 +3,7 @@
 @section('content')
     @include('partials.header')
 
-    <div class="remodal-bg">
+    <div class="remodal-bg partners_page">
 
         <div class="content_contain">
             <div class="page_contain">
