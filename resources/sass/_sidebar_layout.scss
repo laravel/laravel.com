@@ -104,6 +104,8 @@
             padding: 0 1em;
             width: 15em;
             overflow: auto;
+            position: sticky;
+            top: .65em;
 
             .navigation_contain {
                 display: none;
