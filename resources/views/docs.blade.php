@@ -16,7 +16,8 @@
                                 {!! $index !!}
                             </div>
 
-                            <div id="carbonads"><span><span class="carbon-wrap"><a href="//srv.carbonads.net/ads/click/x/GTND42QWFTSDE2QUCA74YKQMCEADKKJWCWSDEZ3JCWBDE2Q7CVYI523KC6BIV53UCTAI6K3EHJNCLSIZ?segment=placement:laravelcom;" class="carbon-img" target="_blank" rel="noopener"><img src="https://cdn4.buysellads.net/uu/1/41312/1547165213-HS1.png" alt="" border="0" height="100" width="130" style="max-width: 130px;"></a><a href="//srv.carbonads.net/ads/click/x/GTND42QWFTSDE2QUCA74YKQMCEADKKJWCWSDEZ3JCWBDE2Q7CVYI523KC6BIV53UCTAI6K3EHJNCLSIZ?segment=placement:laravelcom;" class="carbon-text" target="_blank" rel="noopener">HelloSign: The Simple, Secure, Send in Seconds eSignature. Try it free today.</a></span><a href="http://carbonads.net/?utm_source=laravelcom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener">ads via Carbon</a></span></div>
+                            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
+
 
                         </div>
                     </nav>
