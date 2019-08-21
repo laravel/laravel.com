@@ -5,6 +5,10 @@
 
 // Default Typography Styles
 
+html {
+    font-size: 16px;
+}
+
 body, input, textarea, button {
 	font-family: $bodyFont;
 	font-weight: 400;
