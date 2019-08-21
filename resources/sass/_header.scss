@@ -235,7 +235,8 @@ nav.main {
                 display: block;
                 color: $black;
                 text-decoration: none;
-
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                
                 &.drop_trigger {
                     display: flex;
                     align-items: center;
