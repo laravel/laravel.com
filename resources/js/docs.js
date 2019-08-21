@@ -15,9 +15,9 @@ if (current.length) {
 }
 
 $(".docs_sidebar h2").click(function (e) {
-    e.preventDefault();
-    $(".navigation_contain ul li").removeClass("sub--on");
-    $(this).parent().addClass("sub--on");
+	this.parentNode.classList.toggle('sub--on')
+	
+	return false
 });
 
 $('#version_switcher').change(function(e){
