@@ -133,7 +133,7 @@
                             transition: all 0.3s ease;
 
                             &:hover {
-                                transform: translateX(.25em);
+                                transform: translate3d(5px, 0, 0); // translate3d uses hardware acceleration
                             }
                         }
 
@@ -145,7 +145,7 @@
                             text-decoration: none;
 
                             &:hover {
-                                transform: translateX(.25em);
+                                transform: translate3d(5px, 0, 0); // translate3d uses hardware acceleration
                             }
                         }
                     }
