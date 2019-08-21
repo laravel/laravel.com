@@ -285,12 +285,12 @@
         }
 
         .sidebar {
-            display: block;
             overflow: visible;
-            position: relative;
+            position: sticky;
+            top: 0;
             background: none;
-            flex: none;
-            width: 15em; height: auto;
+            width: 15em; 
+            height: 100vh;
 
             &::before {
                 content: "";
