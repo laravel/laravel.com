@@ -31,19 +31,10 @@
 
 .docs_body {
     @include fl-break(65em) {
-        // display: flex;
-        // flex-direction: row-reverse;
-
-        .docs_nav {
-            flex: none;
-            width: 11em;
-        }
-
         .docs_main {
             flex: 1;
             min-width: 0;
             max-width: 42em;
-            // margin-right: 2.25em;
         }
     }
 
@@ -60,56 +51,6 @@
         }
         th {
             font-size: 16px;
-        }
-    }
-}
-
-.docs_nav {
-    margin-bottom: 4em;
-
-    .page_title {
-        margin-bottom: .5em;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0; padding: 0;
-
-        li {
-            display: block;
-            margin-bottom: 1.25em;
-
-            a {
-                position: relative;
-                display: block;
-                font-size: .75em;
-                font-weight: 500;
-                color: $black;
-                text-decoration: none;
-
-                &::before {
-                    content: "# ";
-                    color: $red;
-                }
-            }
-        }
-
-        ul {
-            margin-top: 1.25em;
-
-            li {
-                padding-left: 1.5em;
-
-                a {
-                    font-weight: 400;
-                }
-            }
-        }
-    }
-
-    @include fl-break(65em) {
-        .page_title {
-            display: none;
         }
     }
 }
@@ -159,15 +100,12 @@
     code {
         font-size: .75em;
         font-weight: 400;
-        // font-family: $codeFont;
-        // line-height: 1.714em;
         line-height: 1.9em;
         color: $black;
     }
 
     p {
         font-size: .94em;
-        // line-height: 1.714em;
         line-height: 1.9em;
 
         code {
@@ -180,7 +118,6 @@
         margin: 0 0 2.5em 0; padding: 0;
 
         li {
-            // font-weight: 500;
             position: relative;
             display: block;
             padding-left: 1.25em;
@@ -191,7 +128,6 @@
 
             code {
                 font-size: .875em;
-                // line-height: 1em;
             }
 
             &::before {
@@ -278,7 +214,7 @@
 .pagination_links {
     display: flex;
     justify-content: space-between;
-    margin-top: 2.5em; //4.5em;
+    margin-top: 2.5em;
 
     .btn {
         max-width: 45%;
@@ -318,19 +254,7 @@
 }
 
 .docs_main h1 + ul {
-    // @include fl-break(65em) {
-    //     flex: none;
-    //     width: 11em;
-    // }
-
-    // display: none !important;
-
     margin-bottom: 4em;
-
-    // .page_title {
-    //     margin-bottom: .5em;
-    // }
-
     list-style-type: none;
     margin: 0; padding: 0;
 
@@ -340,7 +264,6 @@
 
         a {
             position: relative;
-            // display: block;
             font-size: .89em;
             font-weight: 500;
             color: $black;
