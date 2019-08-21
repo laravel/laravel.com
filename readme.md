@@ -21,7 +21,7 @@ If you want to work on this project on your local machine, you may follow the in
     ./bin/setup.sh
     ```
 
-### Syncing The "upstream" Change Into Your Fork 
+### Syncing Upstream Changes Into Your Fork 
 
 This [GitHub article](https://help.github.com/en/articles/syncing-a-fork) provides instructions on how to pull the latest changes from this repository into your fork.
 
