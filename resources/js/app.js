@@ -8,6 +8,7 @@ $(document).ready(function () {
 
     Mousetrap.bind('/', function (e) {
         e.preventDefault();
+        $(".header_content .search_box").addClass("search--on");
         $('#search-docs-input').focus();
     });
 
@@ -34,24 +35,6 @@ $(document).ready(function () {
     if (window.algolia_app_id != '') {
         require('./search.js');
     }
-
-
-    // Handling scrolling to sections of the page...
-    // $('a[href*="#"]').not('[href="#"]').click(function (e) {
-    //     e.preventDefault();
-
-    //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    //         var target = $(this.hash);
-    //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
-    //         if (target.length) {
-    //             $('html, body').animate({
-    //                 scrollTop: target.offset().top
-    //             }, 800);
-    //         }
-    //     }
-    // });
-
 
     // Header Search Box...
     $(".header_content .search_box").click(function (e) {
