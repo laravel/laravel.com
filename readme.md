@@ -2,13 +2,9 @@
 
 This is the source of the official [Laravel website](https://laravel.com).
 
-### Documentation
+## Local Development
 
-The website's documentation is loaded from the `resources/docs` directory. You will need to clone each version of the documentation into this directory. For example, `resources/docs/5.3`, etc. All of the documentation is stored on GitHub at [laravel/docs](https://github.com/laravel/docs).
-
-## Initial setup
-
-If you want to work on this project on your local machine, take the following steps, which assume you are serving the site with Valet out of your `~/Sites` directory:
+If you want to work on this project on your local machine, you may follow the instructions below. These instructions assume you are serving the site using Laravel Valet out of your `~/Sites` directory:
 
 1. Fork this repository 
 2. Open your terminal and `cd` to your `~/Sites` folder
@@ -25,13 +21,13 @@ If you want to work on this project on your local machine, take the following st
     ./bin/setup.sh
     ```
 
-## Syncing the "upstream" changes from the original Laravel repo into your fork 
+### Syncing The "upstream" Change Into Your Fork 
 
-Follow the instructions on the GitHub article [Syncing a fork](https://help.github.com/en/articles/syncing-a-fork) to pull the latest changes from this repo into your fork.
+This [GitHub article](https://help.github.com/en/articles/syncing-a-fork) provides instructions on how to pull the latest changes from this repository into your fork.
 
-## Updating after remote code changes
+### Updating After Remote Code Changes
 
-If you pull down the upstream changes from the original repo into your local repo, you'll want to update your Composer and NPM dependencies. This is also helpful if there are new docs branches available. Run this command to perform an update:
+If you pull down the upstream changes from this repository into your local repository, you'll want to update your Composer and NPM dependencies, as well as update your documentation branches. For convenience, you may run the `bin/update.sh` script to update these things:
 
 ```bash
 ./bin/update.sh
