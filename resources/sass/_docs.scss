@@ -31,11 +31,6 @@
 
 .docs_body {
     @include fl-break(65em) {
-        .docs_nav {
-            flex: none;
-            width: 11em;
-        }
-
         .docs_main {
             flex: 1;
             min-width: 0;
