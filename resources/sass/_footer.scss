@@ -232,6 +232,7 @@ footer {
     .footer_nav_contain {
         max-height: 0;
         transition: max-height .4s ease;
+        display: none;
         
         ul {
             list-style-type: none;
@@ -261,6 +262,7 @@ footer {
         
         .footer_nav_contain {
             max-height: 33em;
+            display: block;
         }
     }
     
@@ -287,6 +289,7 @@ footer {
         
         .footer_nav_contain {
             max-height: 33em;
+            display: block;
         }
     }
     
