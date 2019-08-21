@@ -59,7 +59,7 @@
                             <p>DevSquad gives you the proven proves and all the experience you need to build your software better, faster, and right the first time.</p>
 
                             <ul class="social_links">
-                                <li><a href="https://twitter.com/teamdevsquad"><img src="/img/social/twitter.min.svg" alt="Twitter"></a></li>
+                                <li><a href="https://facebook.com/teamdevsquad"><img src="/img/social/facebook.min.svg" alt="Facebook"></a></li>
                                 <li><a href="https://www.linkedin.com/company/teamdevsquad/"><img src="/img/social/linkedin.min.svg" alt="LinkedIn"></a></li>
                             </ul>
                         </div>
