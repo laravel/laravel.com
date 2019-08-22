@@ -105,7 +105,7 @@
     }
 
     p {
-        font-size: 0.94em;
+        font-size: 1rem;
         line-height: 1.8em;
 
         code {
@@ -149,7 +149,7 @@
 
     @include fl-break(55em) {
         p {
-            font-size: .94em;
+            font-size: 1rem;
         }
 
         ul:not(:first-of-type), .content-list ul {
