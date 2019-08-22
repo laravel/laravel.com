@@ -47,9 +47,6 @@
         <div class="footer_bg">
             <div class="contain">
                 <div class="footer_content">
-                    <div class="logotype">
-                        <img src="/img/logotype.min.svg" alt="Laravel">
-                    </div>
                     <div class="search_box">
 
                     </div>
