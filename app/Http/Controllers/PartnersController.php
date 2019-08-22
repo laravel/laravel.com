@@ -23,6 +23,8 @@ class PartnersController extends Controller
      */
     public function show($partner)
     {
-        return view('partners.'.$partner);
+        $view = 'partners.'.$partner;
+
+        return view()->exists($view) ? view($view) : abort(404);
     }
 }
