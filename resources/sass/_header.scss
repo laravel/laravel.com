@@ -253,7 +253,7 @@ nav.main {
                 }
 
                 &:hover {
-                    transform: scale(1.03);
+                    transform: perspective(1px) scale3d(1.03, 1.03, 1.03);
                 }
             }
 
