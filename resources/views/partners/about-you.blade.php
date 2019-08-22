@@ -14,7 +14,7 @@
                             <img src="/img/partners/aboutyou.svg" alt="About You">
                             <div class="actions">
                                 <a href="https://corporate.aboutyou.de/en/departments/tech?utm_source=laravelpartnersgethired&utm_medium=socialgroups&utm_campaign=tech" class="btn"><span>Get Hired</span></a>
-                                <a href="https://corporate.aboutyou.de/app/uploads/2019/07/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&utm_medium=socialgroups&utm_campaign=tech" class="btn secondary"><span>Find Out More</span></a>
+                                <a href="https://corporate.aboutyou.de/app/uploads/2019/08/INTRO-Pitch-I-AY-Tech.pdf?utm_source=larvelpartnersfindoutmore&utm_medium=socialgroups&utm_campaign=techlaravel" class="btn secondary"><span>Find Out More</span></a>
                             </div>
                         </div>
                     </div>
