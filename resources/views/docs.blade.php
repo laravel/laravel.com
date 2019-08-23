@@ -34,7 +34,7 @@
                                 <div class="custom_select">
                                     <select id="version_switcher">
                                         @foreach ($versions as $key => $display)
-                                            <option {{$currentVersion == $key ? 'selected="yes"' : ''}}" value="{{ url('docs/'.$key.$currentSection) }}">{{ $display }}</option>
+                                            <option {{ $currentVersion == $key ? 'selected' : '' }} value="{{ url('docs/'.$key.$currentSection) }}">{{ $display }}</option>
                                         @endforeach
                                     </select>
                                 </div>
