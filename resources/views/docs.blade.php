@@ -13,6 +13,7 @@
                     <nav>
                         <div class="navigation_contain">
                             <div class="docs_sidebar">
+                                <small><a href="#" id="doc-expand" style="font-size: 11px; color: #656565;">Expand All</a></small>
                                 {!! $index !!}
                             </div>
 
