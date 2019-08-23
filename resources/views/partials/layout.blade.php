@@ -106,7 +106,7 @@
                                     <li><a href="https://devsquad.com/">DevSquad</a></li>
                                     <li><a href="https://www.ideil.com/">Ideil</a></li>
                                     <li><a href="https://www.cyber-duck.co.uk/how-we-work/technology/laravel?utm_source=Laravel%20Partner&utm_medium=Sponsorship">Cyber-Duck</a></li>
-                                    <li><a href="https://corporate.aboutyou.de/app/uploads/2019/07/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&utm_medium=socialgroups&utm_campaign=tech">ABOUT YOU</a></li>
+                                    <li><a href="https://corporate.aboutyou.de/app/uploads/2019/08/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&utm_medium=socialgroups&utm_campaign=tech">ABOUT YOU</a></li>
                                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform">Become A Partner</a></li>
                                 </ul>
                             </div>
