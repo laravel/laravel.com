@@ -53,6 +53,27 @@
             font-size: 16px;
         }
     }
+
+    @include fl-break-max(40em) {
+        thead > tr, tbody > tr {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        table tr th:last-child {
+            display: none;
+        }
+
+        tbody > tr > td:first-child {
+            border-bottom: none;
+            border-top: none;
+        }
+
+        tbody > tr > td:last-child {
+            border-top: none;
+        }
+    }
 }
 
 .docs_main {
@@ -98,7 +119,7 @@
     }
 
     code {
-        font-size: 0.75em;
+        font-size: 0.8rem;
         font-weight: 500;
         line-height: 1.9;
         color: $black;
@@ -109,7 +130,7 @@
         line-height: 1.8em;
 
         code {
-            font-size: .875em;
+            font-size: 0.8rem;
         }
     }
 
