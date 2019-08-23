@@ -225,10 +225,10 @@
                                     <!-- <li><a href="http://laravelpodcast.com/">Podcast</a></li> -->
                                     <li><a href="https://laravel-news.com">Laravel News</a></li>
                                     <li><a href="https://laracon.us/">Laracon</a></li>
-                                    <li><a href="https://larajobs.com/">Jobs</a></li>
                                     <li><a href="https://laracon.eu/">Laracon EU</a></li>
-                                    <li><a href="https://laracasts.com/discuss">Forums</a></li>
                                     <li><a href="https://laracon.com.au/">Laracon AU</a></li>
+                                    <li><a href="https://larajobs.com/">Jobs</a></li>
+                                    <li><a href="https://laracasts.com/discuss">Forums</a></li>
                                     <li><a href="https://certification.laravel.com/">Certification</a></li>
                                 </ul>
                             </div>
