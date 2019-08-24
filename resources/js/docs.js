@@ -14,8 +14,11 @@ if (current.length) {
 
 $(".docs_sidebar h2").click(function (e) {
     e.preventDefault();
+    let currenty_active = $(this).parent().hasClass('sub--on');
     $(".navigation_contain ul li").removeClass("sub--on");
-    $(this).parent().addClass("sub--on");
+    if(!currenty_active) {
+        $(this).parent().addClass("sub--on");
+    }
 });
 
 $('#version_switcher').change(function(e){
