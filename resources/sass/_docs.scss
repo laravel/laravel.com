@@ -38,6 +38,11 @@
         }
     }
 
+    a[name] {
+        position: relative;
+        top: -45px;
+    }
+
     table {
         border-collapse: collapse;
         width: 100%;
@@ -55,6 +60,10 @@
     }
 
     @include fl-break-max(40em) {
+        a[name] {
+            position: relative;
+            top: -30px;
+        }
         thead > tr, tbody > tr {
             display: flex;
             width: 100%;
