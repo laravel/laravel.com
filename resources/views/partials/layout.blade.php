@@ -40,7 +40,11 @@
                     <h2>Become a Laravel Partner</h2>
                     <p>Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
                 </div>
+                @if(request()->is('partners'))
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform?usp=sf_link" class="btn"><span>Become A Partner</span></a>
+                @else
                 <a href="/partners" class="btn"><span>Our Partners</span></a>
+                @endif
             </section>
         </div>
 
