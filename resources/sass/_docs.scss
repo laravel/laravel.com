@@ -40,6 +40,8 @@
 
     a[name] {
         position: relative;
+        display: block;
+        visibility: hidden;
         top: -45px;
     }
 
@@ -62,6 +64,8 @@
     @include fl-break-max(40em) {
         a[name] {
             position: relative;
+            display: block;
+            visibility: hidden;
             top: -30px;
         }
         thead > tr, tbody > tr {
