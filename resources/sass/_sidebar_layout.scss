@@ -104,6 +104,7 @@
             padding: 0 1em;
             width: 15em;
             overflow: auto;
+            -webkit-overflow-scrolling: touch;
             position: sticky;
             top: 10px;
 
