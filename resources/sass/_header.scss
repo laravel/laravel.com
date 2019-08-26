@@ -207,6 +207,7 @@ nav.main {
     .nav_contain {
         max-height: 0;
         overflow: scroll;
+        -webkit-overflow-scrolling: touch;
         opacity: 0;
         padding: 0 5.5%;
         transform: translateY(-2em);
