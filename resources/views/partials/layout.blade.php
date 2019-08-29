@@ -149,7 +149,7 @@
                             </li>
                             <li><a href="https://github.com/laravel"><img src="/img/social/github.min.svg" alt="GitHub"></a>
                             </li>
-                            <li><a href="https://discordapp.com/invite/VB3drhA"><img src="/img/social/discord.min.svg" alt="Discord"></a>
+                            <li><a href="https://discord.gg/mPZNm7A"><img src="/img/social/discord.min.svg" alt="Discord"></a>
                             </li>
                         </ul>
                     </div>
