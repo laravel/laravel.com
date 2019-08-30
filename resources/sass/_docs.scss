@@ -156,9 +156,13 @@
             display: block;
             padding-left: 1.25em;
             margin-bottom: 1rem;
-            font-size: .80em;
+            font-size: .89em;
             color: rgba($black, .7);
             line-height: 1.714em;
+
+            a {
+                text-decoration: none;
+            }
 
             code {
                 font-size: .875em;
