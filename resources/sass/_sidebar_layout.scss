@@ -115,6 +115,13 @@
                 overflow: hidden;
                 transition: opacity .3s ease, transform .3s ease;
 
+                .expand-docs-switcher {
+                    font-size: 11px;
+                    color: rgba($black, .4);
+                    padding: 0.4em 0;
+                    display: inline-block;
+                }
+
                 ul {
                     list-style-type: none;
                     margin: 0; padding: 0;
@@ -157,6 +164,7 @@
                         transition: max-height .45s ease;
 
                         li {
+                            transition: padding .15s ease;
                             a {
                                 position: relative;
                                 padding-left: 1em;
@@ -183,7 +191,28 @@
                         }
                     }
                 }
+
+                .main--on {
+                    margin-bottom: 2em;
+                    ul {
+                        li {
+                            &> h2 {
+                                margin-bottom: .5em;
+                            }
+
+                            ul {
+                                max-height: 28em;
+
+                                li {
+                                    padding: 0.35em 0;
+                                }
+                            }
+                        }
+                    }
+                }
             }
+
+
         }
     }
 
@@ -290,7 +319,7 @@
             position: sticky;
             top: 0;
             background: none;
-            width: 15em; 
+            width: 15em;
             height: 100vh;
 
             &::before {
