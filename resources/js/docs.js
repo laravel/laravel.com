@@ -58,3 +58,67 @@ $('.docs_main blockquote p').each(function () {
         $(this).parent().addClass('callout');
     }
 });
+
+// Track the state of the docs collapse
+var docsCollapsed = true;
+var $docsSwitcher = $('.expand-docs-switcher');
+var $docsSidebar = $('.docs_sidebar');
+
+// Load the users previous preference if available
+if (storageAvailable('localStorage')) {
+    // Can't use if(var) since this is a boolean, LS returns null for unset keys
+    if (localStorage.getItem('laravel_docsCollapsed') === null) {
+        localStorage.setItem('laravel_docsCollapsed', true)
+    } else {
+        // Load previous state, and if it was false, then expand the doc
+        // LS will store booleans as strings, we will "cast" them back here
+        localStorage.getItem('laravel_docsCollapsed') == 'false' ? expandDocs() : null;
+    }
+}
+
+// Register event listener
+$docsSwitcher.click(function (e) {
+    e.preventDefault();
+    expandDocs()
+});
+
+// Toggle sidebar status
+function expandDocs(e) {
+    // Expand sidebar
+    docsCollapsed ? $docsSidebar.addClass('main--on') : $docsSidebar.removeClass('main--on');
+
+    // Modify states
+    docsCollapsed = !docsCollapsed;
+    docsCollapsed ? $docsSwitcher.text('Expand All') : $docsSwitcher.text('Collapse All');
+
+    // Modify LS if we can
+    storageAvailable('localStorage') ? localStorage.setItem('laravel_docsCollapsed', docsCollapsed) : null;
+}
+
+// Via https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API#Testing_for_availability
+function storageAvailable(type) {
+    try {
+        var storage = window[type],
+            x = '__storage_test__';
+        storage.setItem(x, x);
+        storage.removeItem(x);
+        return true;
+    } catch (e) {
+        return e instanceof DOMException && (
+            // everything except Firefox
+            e.code === 22 ||
+            // Firefox
+            e.code === 1014 ||
+            // test name field too, because code might not be present
+            // everything except Firefox
+            e.name === 'QuotaExceededError' ||
+            // Firefox
+            e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+            // acknowledge QuotaExceededError only if there's something already stored
+            storage.length !== 0;
+    }
+}
+
+
+
+

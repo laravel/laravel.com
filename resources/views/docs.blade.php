@@ -13,6 +13,7 @@
                     <nav>
                         <div class="navigation_contain">
                             <div class="docs_sidebar">
+                                <small><a href="#" class="expand-docs-switcher">Expand All</a></small>
                                 {!! $index !!}
                             </div>
 
