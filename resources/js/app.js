@@ -54,4 +54,14 @@ $(document).ready(function () {
         var anchor = $('<a href="#' + this.name + '"/>');
         $(this).parent().next().wrapInner(anchor);
     });
+
+    $(this).on('keyup', function(event){
+        var searchInput = $("#search-docs-input");
+        if (event.isComposing || event.keyCode === 229) {
+            return;
+        }
+        if (event.key.toLocaleLowerCase() === "s" && !searchInput.focus()) {
+            searchInput.focus();
+        }
+    });
 });
