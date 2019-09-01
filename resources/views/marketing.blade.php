@@ -221,6 +221,7 @@
                                 <h1>A community built for people like you</h1>
                                 <p>Whether you’re a solo developer or a 20-person team, getting started is simple thanks to our great community.</p>
                                 <ul class="resource_list">
+                                    <li><a href="https://blog.laravel.com">Blog</a></li>
                                     <li><a href="https://laracasts.com">Laracasts</a></li>
                                     <!-- <li><a href="http://laravelpodcast.com/">Podcast</a></li> -->
                                     <li><a href="https://laravel-news.com">Laravel News</a></li>
