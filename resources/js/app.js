@@ -6,7 +6,11 @@ $(document).ready(function () {
         $(".bar").toggleClass("animate");
     });
 
-    Mousetrap.bind('/', function (e) {
+    $(document).on('keydown', function(e) {
+        var slashKey = e.key === '/' || e.which === 191 || e.keyCode === 191;
+        if (!slashKey) {
+            return;
+        }
         e.preventDefault();
         $(".header_content .search_box").addClass("search--on");
         $('#search-docs-input').focus();
