@@ -42,14 +42,6 @@
                             </div>
                         </section>
                     </div>
-<!--                     <ul class="logos_list">
-                        <li><img src="/img/logos/wwe.min.svg" alt="WWE"></li>
-                        <li><img src="/img/logos/discovery.min.svg" alt="Discovery"></li>
-                        <li><img src="/img/logos/mcdonalds.min.svg" alt="McDonalds"></li>
-                        <li><img src="/img/logos/apple.min.svg" alt="Apple"></li>
-                        <li><img src="/img/logos/fox.min.svg" alt="20th Century Fox"></li>
-                        <li><img src="/img/logos/mcgraw_hill.min.svg" alt="McGraw Hill"></li>
-                    </ul> -->
                     <div class="contain">
                         <div class="content_block img_left">
                             <div class="bg">
