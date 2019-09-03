@@ -24,7 +24,7 @@ $versions = GitVersionCollection::create($dir)
 	->add('5.6', 'Laravel 5.6')
     ->add('5.7', 'Laravel 5.7')
 	->add('5.8', 'Laravel 5.8')
-    ->add('6.0', 'Laravel 6.0')
+    ->add('6.x', 'Laravel 6.x')
 	->add('master', 'Laravel Dev');
 
 return new Sami($iterator, array(
