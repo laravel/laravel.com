@@ -1,7 +1,7 @@
 <?php
 
 if (! defined('DEFAULT_VERSION')) {
-    define('DEFAULT_VERSION', '5.8');
+    define('DEFAULT_VERSION', '6.0');
 }
 
 if (! defined('SHOW_VAPOR')) {
