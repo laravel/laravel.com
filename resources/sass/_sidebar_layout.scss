@@ -225,6 +225,7 @@
     }
 
     .body_content {
+        position: relative;
         padding: 1.25em 0 0;
         min-height: 100vh;
 
@@ -252,10 +253,6 @@
     @include fl-break-height(25em) {
         .sidebar .logo {
             padding: 1.5em 1em;
-        }
-
-        .body_content {
-            padding-top: 1.75em;
         }
     }
 

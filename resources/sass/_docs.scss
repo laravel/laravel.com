@@ -1,4 +1,11 @@
 .docs_actions {
+    position: sticky;
+    top: 0;
+    margin-left: -4.25em;
+    padding-left: 4.25em;
+    padding-top: 1.25em;
+    background: #FFFFFF;
+    z-index: 10;
     margin-bottom: 2.5em;
 
     .version_drop {
