@@ -134,7 +134,8 @@
                                     <li><a href="/docs/{{DEFAULT_VERSION}}/passport">Passport</a></li>
                                     <li><a href="/docs/{{DEFAULT_VERSION}}/scout">Scout</a></li>
                                     <li><a href="/docs/{{DEFAULT_VERSION}}/socialite">Socialite</a></li>
-                                    <li><a href="/docs/{{DEFAULT_VERSION}}/telescope">Telescope</a></li>
+									<li><a href="/docs/{{DEFAULT_VERSION}}/telescope">Telescope</a></li>
+									<li><a href="https://github.com/laravel/tinker">Tinker</a></li>
                                 </ul>
                             </div>
                         </div>
