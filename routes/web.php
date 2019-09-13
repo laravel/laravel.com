@@ -12,6 +12,7 @@ Route::get('docs', 'DocsController@showRootPage');
 
 Route::get('docs/6.0/{page?}', function ($page = null) {
     $page = $page ?: 'installation';
+    $page = $page == '6.x' ? 'installation' : $page;
 
     return redirect(trim('/docs/6.x/'.$page, '/'), 301);
 });
