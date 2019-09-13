@@ -14,16 +14,16 @@ fancy_echo () {
     echo -e "------------------------------\n"
 }
 
-fancy_echo "Composer install..."
+fancy_echo "Installing Composer dependencies..."
 composer install
 
-fancy_echo "Update docs repos..."
+fancy_echo "Updating documentation..."
 source "$(dirname "$0")/checkout_latest_docs.sh"
 
 fancy_echo "Install NPM dependencies..."
 npm install
 
-fancy_echo "Run Laravel Mix..."
+fancy_echo "Running Laravel Mix..."
 npm run dev
 
 fancy_echo "Update complete!"
