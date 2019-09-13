@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Pull docs repos for each docs version or, if already pulled, pull the latest commits
-
 DOCS_VERSIONS=(
   master
   6.x
@@ -19,7 +17,7 @@ DOCS_VERSIONS=(
 
 for v in "${DOCS_VERSIONS[@]}"; do
     if [ -d "resources/docs/$v" ]; then
-        echo "Pulling latest for $v..."
+        echo "Pulling latest documentation updates for $v..."
         (cd resources/docs/$v && git pull)
     else
         echo "Cloning $v..."
