@@ -178,12 +178,12 @@
             </nav>
             <div class="search_box">
                 <div class="input_group search icon">
-                    <input type="text" class="search_input" id="search-docs-input" placeholder="Search Docs">
+                    <input type="text" class="search_input" id="search-docs-input" placeholder="Search Docs" aria-label="Search in the documentation">
                     <input type="submit" class="search_submit icon_display">
                 </div>
             </div>
             <div class="trigger_contain">
-                <a href="#" class="nav_trigger">
+                <a href="#" class="nav_trigger" aria-label="Menu">
                     <div class="bar"></div>
                 </a>
             </div>
