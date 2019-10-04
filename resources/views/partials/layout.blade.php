@@ -121,7 +121,7 @@
                                     <li><a href="https://vapor.laravel.com">Vapor</a></li>
                                     <li><a href="https://forge.laravel.com">Forge</a></li>
                                     <li><a href="https://envoyer.io">Envoyer</a></li>
-                                    <li><a href="https://horizon.laravel.com">Horizon</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/horizon">Horizon</a></li>
                                     <li><a href="https://lumen.laravel.com">Lumen</a></li>
                                     <li><a href="https://nova.laravel.com">Nova</a></li>
                                     <li><a href="/docs/{{DEFAULT_VERSION}}/broadcasting">Echo</a></li>
