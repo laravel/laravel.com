@@ -56,7 +56,7 @@
 
                             <p>The company was founded in 2014 and has evolved into the second largest fashion e-commerce retailer in Europe operating in 8 countries with a company valuation of more than 1 billion USD  in 2018, we became Hamburg’s first so-called “unicorn”. </p>
 
-                            <p>Recognizing the advantages of our custom-built shop system, which is mostly based on Laravel, we took the next step by offering our infrastructure as a service to other companies. This SASS, the ABOUT YOU CLOUD, allows other eCommerce players to take advantage of our e-commerce backend system and build their business on it.</p>
+                            <p>Recognizing the advantages of our custom-built shop system, which is mostly based on Laravel, we took the next step by offering our infrastructure as a service to other companies. This SAAS, the ABOUT YOU CLOUD, allows other eCommerce players to take advantage of our e-commerce backend system and build their business on it.</p>
 
                             <p>Our aim is to achieve the best online shopping experience for our customers while being fast in our product development. To ensure that developers have a satisfactory working-environment and stay fast at the same time, we developed our own organization model called MOVE. It will support you to grow and learn new things. Find out more about MOVE in this 2 minute video.</p>
 
