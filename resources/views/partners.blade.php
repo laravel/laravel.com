@@ -86,7 +86,7 @@
                             <li>
                                 <div class="content">
                                     <div class="logo_contain">
-                                        <img src="/img/partners/cubet.min.svg" alt="Cubet">
+                                        <img src="/img/partners/cubet.png" alt="Cubet">
                                     </div>
                                     <p class="small">Cubet Techno Labs is a 150+ member Digital Engineering company, helping to deliver your digital dreams to perfection.</p>
                                     <a href="/partner/cubet" class="learn_more">More about Cubet <span>→</span></a>
