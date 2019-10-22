@@ -11,16 +11,16 @@
                     <div class="contain">
                         <h6>Laravel Partner</h6>
                         <div class="hero_heading">
-                            <img src="/img/partners/cubet.min.svg" alt="Cubet">
+                            <img src="/img/partners/cubet.png" alt="Cubet">
                             <div class="actions">
                                 <a href="mailto:sales@cubettech.com" class="btn"><span>Hire Cubet</span></a>
-                                <a href="https://cubettech.com/" class="btn secondary"><span>Visit Website →</span></a>
+                                <a href="https://cubettech.com/services/laravel" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>
                     <div class="content">
                         <div class="contain">
-                            <h3>Cubet Techno Labs is a 150+ member Digital Engineering company with offices in India and London, helping to deliver your digital dreams to perfection. Formed in 2007, Cubet has been focused on SMAC (Social/Mobile/Analytics/Cloud) development and consulting to help enterprises and online businesses go from idea to execution.</h3>
+                            <h3>CUBET is an IT consultancy and software product development company with a strong presence in the US, UK, and India. Trusted by more than 200 customers worldwide, Cubet has been creating applications that are both resilient and scalable, adding value to the end customers, making organizations digital and delivering Agile projects with confidence. </h3>
                             <div class="hero_img"><img src="/img/partners/img_cubet_detail.jpeg" alt="Cubet">
                             </div>
                         </div>
@@ -36,26 +36,28 @@
                         </div>
 
                         <div class="content">
-                            <p>Our extensive Laravel development services are perfect for highly agile business methodologies. Our certified Laravel developers create brilliant extensions and accurately map web applications to ensure faster, optimal performance of your solutions. With a clear focus on creating optimized database integrations that reduce lag and increase performance, our Laravel development services provide speed, agility and performance.</p>
+                            <p>Cubet follows a lean-agile software development methodology and has been consulting for start-ups, mid-size companies to established companies making upgrades faster, lowering the IT costs and reducing business risks. Cubet helps them shift from their legacy systems to Laravel, build new applications or migrate existing solutions to Laravel.</p>
 
                             <div class="list_block">
                                 <h3>Proficiencies</h3>
                                 <ul>
-                                    <li>Laravel Development</li>
-                                    <li>Vue / Angular / React</li>
+                                    <li>Laravel - Development / Code Audit / Consultation</li>
+                                    <li>Vue / Angular / React - Frontend Development</li>
                                     <li>UI / UX Product Design</li>
-                                    <li>API Design</li>
-                                    <li>Software Architecture</li>
-                                    <li>Consulting</li>
-                                    <li>Staff Augmentation</li>
-                                    <li>SaaS Products</li>
+                                    <li>API Design and Development </li>
+                                    <li>Consulting Services</li>
+                                    <li>Rescue Projects</li>
+                                    <li>Performance Review & Improvements</li>
+                                    <li>Technical Leadership</li>
                                     <li>Startup Guidance</li>
+                                    <li>Product Ideation and Development</li>
+                                    <li>Staff Augmentation</li>
                                 </ul>
                             </div>
 
-                            <p>We always place great emphasis on FOSS (Free, Open-Source Software) front end and back end technologies including JavaScript Frameworks like Vue/Node/Angular/React/Meteor and Mobile app technologies- iOS/Android/React Native as well as cloud deployment on AWS. There is a dedicated team of UI/UX/HTML developers, Project Management and QA experts to support all projects and ensure bug free releases, all working alongside our London based account management teams.</p>
+                            <p>Cubet is a constant contributor to the Laravel powered software development and also offers code auditing, performance optimization and supports its customers with a successful product launch. They have different proven engagement models depending on your project size and specific requirements.</p>
 
-                            <p>We have over 30+ portfolio of enterprise mobile/web application projects built on the Laravel framework and we would be happy to talk with you about the enormous possibilities of using it for your next idea - however big or small. Some of our clients include enterprises like The British Medical Journal as well innovative Tech Start-ups like Active Inspiration from the UK, US, EU & Australia.</p>
+                            <p>Cubet is always willing to talk with you about the enormous possibilities of using Laravel for your next idea - however big or small. Do reach out to them for your next project. </p>
 
                             <ul class="social_links">
                                 <li><a href="https://twitter.com/CubetTech"><img src="/img/social/twitter.min.svg" alt="Twitter"></a></li>
