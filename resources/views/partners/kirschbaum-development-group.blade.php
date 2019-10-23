@@ -61,7 +61,7 @@
                             <ul class="social_links">
                                 <li><a href="https://twitter.com/n_kirschbaum"><img src="/img/social/twitter.min.svg" alt="Twitter"></a></li>
                                 <li><a href="https://github.com/kirschbaum-development"><img src="/img/social/github.min.svg" alt="GitHub"></a></li>
-                                <li><a href="https://www.linkedin.com/company-beta/11089184/"><img src="/img/social/linkedin.min.svg" alt="LinkedIn"></a></li>
+                                <li><a href="https://www.linkedin.com/company/kirschbaumdevelopmentgroupllc"><img src="/img/social/linkedin.min.svg" alt="LinkedIn"></a></li>
                             </ul>
                         </div>
                     </div>
