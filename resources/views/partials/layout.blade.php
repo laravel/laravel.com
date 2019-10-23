@@ -93,6 +93,7 @@
                                     <!-- <li><a href="https://statamic.com/">Statamic</a></li> -->
 <!--                                     <li><a href="https://styleci.io/">StyleCI</a></li>
                                     <li><a href="https://cachethq.io/">Cachet</a></li> -->
+                                    <li><a href="https://status.laravel.com">Status</a></li>
                                 </ul>
                             </div>
                         </div>

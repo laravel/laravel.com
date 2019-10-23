@@ -173,6 +173,7 @@
                         </li>
                         <li class="resources_link"><a href="https://laravel-news.com">News</a></li>
                         <li class="partners_link"><a href="/partners">Partners</a></li>
+                        <li class="status_link"><a href="https://status.laravel.com">Status</a></li>
                     </ul>
                 </div>
             </nav>
