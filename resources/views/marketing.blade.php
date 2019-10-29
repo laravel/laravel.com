@@ -106,7 +106,7 @@
                                     </a>
                                 </li>
                                 <li class="sys_horizon">
-                                    <a href="https://horizon.laravel.com">
+                                    <a href="/docs/{{DEFAULT_VERSION}}/horizon">
                                         <div class="system_icon"><img src="/img/ecosystem/horizon.min.svg" alt="Icon">
                                         </div>
                                         <div class="system_info">Horizon <span>Queue Monitoring</span></div>

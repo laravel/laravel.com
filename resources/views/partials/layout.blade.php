@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>{{ isset($title) ? $title . ' - ' : null }}Laravel - The PHP Framework For Web Artisans</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
@@ -121,7 +121,7 @@
                                     <li><a href="https://vapor.laravel.com">Vapor</a></li>
                                     <li><a href="https://forge.laravel.com">Forge</a></li>
                                     <li><a href="https://envoyer.io">Envoyer</a></li>
-                                    <li><a href="https://horizon.laravel.com">Horizon</a></li>
+                                    <li><a href="/docs/{{DEFAULT_VERSION}}/horizon">Horizon</a></li>
                                     <li><a href="https://lumen.laravel.com">Lumen</a></li>
                                     <li><a href="https://nova.laravel.com">Nova</a></li>
                                     <li><a href="/docs/{{DEFAULT_VERSION}}/broadcasting">Echo</a></li>
