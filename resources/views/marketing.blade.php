@@ -8,12 +8,12 @@
             <div class="content_contain" style="padding-bottom: 4.5em;">
                 <div class="page_contain">
                     <div class="banner">
-                        <a href="https://nova.laravel.com/">
+                        <a href="https://vapor.laravel.com/">
                             <div class="banner_icon icon_nova">
-                                <img src="/img/ecosystem/nova.min.svg" alt="Nova">
+                                <img src="/img/ecosystem/vapor.min.svg" alt="Nova">
                             </div>
                             <div class="banner_content">
-                                <p class="small">Laravel Nova is now available! Get your copy today!
+                                <p class="small">Laravel Vapor is now available! Sign up today!
                                     <span class="arrow">→</span></p>
                             </div>
                         </a>
