@@ -103,6 +103,12 @@ ul.ecosystem {
     }
 }
 
+.home {
+    @include fl-break-min-max(48em, 64em) {
+        overflow-x: hidden;
+    }
+}
+
 .page_contain {
     position: relative;
 }
