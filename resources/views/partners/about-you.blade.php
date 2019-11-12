@@ -13,8 +13,8 @@
                         <div class="hero_heading">
                             <img src="/img/partners/aboutyou.svg" alt="About You">
                             <div class="actions">
-                                <a href="https://corporate.aboutyou.de/en/departments/tech?utm_source=laravelpartnersgethired&utm_medium=socialgroups&utm_campaign=tech" class="btn"><span>Get Hired</span></a>
-                                <a href="https://corporate.aboutyou.de/app/uploads/2019/08/INTRO-Pitch-I-AY-Tech.pdf?utm_source=larvelpartnersfindoutmore&utm_medium=socialgroups&utm_campaign=techlaravel" class="btn secondary"><span>Find Out More</span></a>
+                                <a href="https://corporate.aboutyou.de/de/jobs/backend-php-developer?utm_source=laravelpartners&utm_medium=socialgroups&utm_campaign=tech&utm_content=backend-php-developer&trid=0f3372fc-9ea7-4efc-bdcd-7b6bbaec857d" class="btn"><span>Get Hired</span></a>
+                                <a href="https://corporate.aboutyou.de/en/departments/tech?utm_source=laravelpartnersgethired&utm_medium=socialgroups&utm_campaign=tech" class="btn secondary"><span>Find Out More</span></a>
                             </div>
                         </div>
                     </div>
