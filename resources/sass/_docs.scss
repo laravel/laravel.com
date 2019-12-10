@@ -179,9 +179,25 @@
         }
     }
 
+    .go_to_top {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        background: $light_gray;
+        padding: 10px;
+        opacity: 0;
+        img {
+            width:10px;
+            height:10px;
+        }
+    }
+
     @include fl-break(65em) {
         .page_title {
             display: block;
+        }
+        .go_to_top.visible {
+            opacity: 1;
         }
     }
 
@@ -194,6 +210,9 @@
             margin-left: 1.75em;
         }
     }
+
+    
+    
 }
 
 .callout {
@@ -335,3 +354,4 @@
         }
     }
 }
+

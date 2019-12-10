@@ -58,3 +58,16 @@ $('.docs_main blockquote p').each(function () {
         $(this).parent().addClass('callout');
     }
 });
+
+$(document).scroll(function(pos) {
+    if ($(document).scrollTop() >= 50) {
+        $('.go_to_top').addClass('visible');
+    } else {
+        $('.go_to_top').removeClass('visible');
+    }
+});
+
+$('.go_to_top').click(function() {
+    $("html, body").stop().animate({scrollTop:0}, 500, 'swing');
+    return false;
+});

@@ -52,6 +52,7 @@
                     <section class="docs_body">
                         <section class="docs_main">
                             {!! $content !!}
+                            <a href="#" class="go_to_top" title="go to top"><img src="/img/icons/up-arrow.min.svg" alt="Go to top"></a>
                         </section>
                     </section>
                 </section>
