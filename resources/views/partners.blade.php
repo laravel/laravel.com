@@ -28,11 +28,11 @@
                     <div class="contain">
                         <div class="featured_contain">
                             @if($featured == 'tighten')
-                                <img class="featured_img" src="/img/partners/img_tighten_detail.png" alt="Tighten">
+                                <img class="featured_img" src="/img/partners/img_tighten_detail.jpeg" alt="Tighten" style="right: 48%;">
                                 <div class="featured_content">
                                     <h6>Featured Partner</h6>
                                     <img class="logo" src="/img/partners/tighten.min.svg" alt="Tighten">
-                                    <p>Their team of top-notch Laravel developers will build your product, help you take it to market, and iterate with you as things change.</p>
+                                    <p>Tighten is a team of Laravel community leaders, web development industry veterans, and multi-disciplinary creators. We’ve built, rescued, refactored, and supported a huge number of Laravel applications since Laravel’s earliest days. Whatever your challenge, we have the experience and knowledge to help.</p>
                                     <a href="/partner/tighten" class="learn_more">More about Tighten <span>→</span></a>
                                 </div>
                             @elseif($featured == 'vehikl')
@@ -148,6 +148,15 @@
                                     </div>
                                     <p class="small">ABOUT YOU is one of the fastest-growing e-commerce startups in Europe located in the city center of Hamburg.</p>
                                     <a href="/partner/about-you" class="learn_more">More about About You. <span>→</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <div class="logo_contain">
+                                        <img src="/img/partners/a2design.svg" alt="A2 Design" style="height: 80px;margin-left: -14px;">
+                                    </div>
+                                    <p class="small">A2 Design is a team of top-notch Laravel developers with a deep history in building successful startups and SaaS platforms by employing agile and lean development techniques.</p>
+                                    <a href="/partner/a2-design" class="learn_more">More about A2 Design. <span>→</span></a>
                                 </div>
                             </li>
                         </ul>
