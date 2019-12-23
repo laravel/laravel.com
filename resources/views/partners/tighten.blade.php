@@ -13,16 +13,15 @@
                         <div class="hero_heading">
                             <img src="/img/partners/tighten.min.svg" alt="Tighten">
                             <div class="actions">
-                                <a href="mailto:matt@tighten.co" class="btn"><span>Hire Tighten</span></a>
+                                <a href="mailto:hello@tighten.co" class="btn"><span>Hire Tighten</span></a>
                                 <a href="https://tighten.co/laravel" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
                     </div>
                     <div class="content">
                         <div class="contain">
-                            <h3>We turn great ideas into software that works.
-                                You've got an amazing product idea and you've got some funding. Now all you need is a development team. But building one from scratch is daunting and expensive. The better move: Let Tighten be your dev team.</h3>
-                            <div class="hero_img"><img src="/img/partners/img_tighten_detail.png" alt="Tighten">
+                            <h3>Tighten is a team of Laravel community leaders, web development industry veterans, and multi-disciplinary creators. We’ve built, rescued, refactored, and supported a huge number of Laravel applications since Laravel’s earliest days. Whatever your challenge, we have the experience and knowledge to help.</h3>
+                            <div class="hero_img"><img src="/img/partners/img_tighten_detail-2.jpeg" alt="Tighten">
                             </div>
                         </div>
                     </div>
@@ -37,7 +36,8 @@
                         </div>
 
                         <div class="content">
-                            <p>Our team of top-notch Laravel developers will build your product, help you take it to market, and iterate with you as things change. We work with big enterprises, small-to-medium sized businesses, and early-stage startups to devise, design, and deliver world-class applications that are loved by users and developers alike.</p>
+                            <p>We work with big enterprises, SMBs, non-profit organizations, and early-stage startups to devise, design, and deliver world-class applications that are loved by users and developers alike.
+                            </p>
 
                             <div class="list_block">
                                 <h3>Proficiencies</h3>
@@ -53,7 +53,9 @@
                                 </ul>
                             </div>
 
-                            <p>Constant learning and open sharing with the Laravel community are essential to how we work. We are tireless advocates for the Laravel ecosystem, and we’re proud to be a part of the Laravel Partners program right from the start.</p>
+                            <p>But we don’t just work on brand new apps.  If you have an existing codebase that needs some love, we’re happy to come in for a code audit or rescue.  We’ve seen more Laravel codebases than just about anybody, so we’re well-equipped to help you chart your best course forward.</p>
+
+                            <p>Constant learning and open sharing with the Laravel community are essential to how we work. We are tireless advocates for the Laravel ecosystem, and we’re proud to have been a part of the Laravel Partners program right from the start.</p>
 
                             <ul class="social_links">
                                 <li><a href="https://twitter.com/tightenco"><img src="/img/social/twitter.min.svg" alt="Twitter"></a></li>
