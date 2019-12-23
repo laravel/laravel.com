@@ -28,7 +28,7 @@
                             <div class="hero_content">
                                 <h1>The PHP Framework for Web Artisans</h1>
                                 <p>Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.</p>
-                                <div class="hero_actions">
+                                <div class="hero_actions" style="z-index: -999;">
                                     <a href="/docs" class="btn"><span>Documentation</span></a>
                                     <a href="https://laracasts.com" data-remodal-target="video_modal" class="btn secondary"><span><img src="/img/icons/play.min.svg" alt="Play Video"><span>Watch Laracasts</span></span></a>
 
