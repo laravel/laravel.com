@@ -13,7 +13,11 @@ class PartnersController extends Controller
      */
     public function index()
     {
-        return view('partners');
+        $featured = ['tighten', 'vehikl'];
+
+        return view('partners', [
+            'featured' => $featured[array_rand($featured)]
+        ]);
     }
 
     /**

@@ -27,13 +27,23 @@
                 <section class="featured_partner">
                     <div class="contain">
                         <div class="featured_contain">
-                            <img class="featured_img" src="/img/partners/img_vehikl.jpg" alt="Vehikl">
-                            <div class="featured_content">
-                                <h6>Featured Partner</h6>
-                                <img class="logo" src="/img/partners/vehikl.min.svg" alt="Vehikl">
-                                <p>Vehikl is a team of code-crushing Laravel experts. Over the years we have built a variety of web applications for customers using Laravel as our framework of choice and implemented Lean Agile development techniques to build professional applications that are functional and easy to use.</p>
-                                <a href="/partner/vehikl" class="learn_more">More about Vehikl <span>→</span></a>
-                            </div>
+                            @if($featured == 'tighten')
+                                <img class="featured_img" src="/img/partners/img_tighten_detail.png" alt="Tighten">
+                                <div class="featured_content">
+                                    <h6>Featured Partner</h6>
+                                    <img class="logo" src="/img/partners/tighten.min.svg" alt="Tighten">
+                                    <p>Their team of top-notch Laravel developers will build your product, help you take it to market, and iterate with you as things change.</p>
+                                    <a href="/partner/tighten" class="learn_more">More about Tighten <span>→</span></a>
+                                </div>
+                            @elseif($featured == 'vehikl')
+                                <img class="featured_img" src="/img/partners/img_vehikl.jpg" alt="Vehikl">
+                                <div class="featured_content">
+                                    <h6>Featured Partner</h6>
+                                    <img class="logo" src="/img/partners/vehikl.min.svg" alt="Vehikl">
+                                    <p>Vehikl is a team of code-crushing Laravel experts. Over the years we have built a variety of web applications for customers using Laravel as our framework of choice and implemented Lean Agile development techniques to build professional applications that are functional and easy to use.</p>
+                                    <a href="/partner/vehikl" class="learn_more">More about Vehikl <span>→</span></a>
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </section>
@@ -48,11 +58,19 @@
                         <ul class="partners_list">
                             <li>
                                 <div class="content">
-                                    <div class="logo_contain">
-                                        <img src="/img/partners/tighten.min.svg" alt="Tighten">
-                                    </div>
-                                    <p class="small">Their team of top-notch Laravel developers will build your product, help you take it to market, and iterate with you as things change.</p>
-                                    <a href="/partner/tighten" class="learn_more">More about Tighten <span>→</span></a>
+                                    @if($featured == 'tighten')
+                                        <div class="logo_contain">
+                                            <img src="/img/partners/vehikl.min.svg" alt="Vehikl">
+                                        </div>
+                                        <p class="small">A team of code-crushing Laravel experts. Over the years we have built a variety of web applications for customers using Laravel.</p>
+                                        <a href="/partner/vehikl" class="learn_more">More about Vehikl <span>→</span></a>
+                                    @elseif($featured == 'vehikl')
+                                        <div class="logo_contain">
+                                            <img src="/img/partners/tighten.min.svg" alt="Tighten">
+                                        </div>
+                                        <p class="small">Their team of top-notch Laravel developers will build your product, help you take it to market, and iterate with you as things change.</p>
+                                        <a href="/partner/tighten" class="learn_more">More about Tighten <span>→</span></a>
+                                    @endif
                                 </div>
                             </li>
                             <li>
@@ -61,7 +79,8 @@
                                         <img src="/img/partners/kirschbaum.min.svg" alt="Kirschbaum">
                                     </div>
                                     <p class="small">A team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems.</p>
-                                    <a href="/partner/kirschbaum-development-group" class="learn_more">More about Kirschbaum <span>→</span></a>
+                                    <a href="/partner/kirschbaum-development-group" class="learn_more">More about Kirschbaum
+                                        <span>→</span></a>
                                 </div>
                             </li>
                             <li>
@@ -79,7 +98,8 @@
                                         <img src="/img/partners/64Robots.min.svg" alt="64 Robots">
                                     </div>
                                     <p class="small">64 Robots is a team of Laravel experts with a background in building successful startups and SaaS products.</p>
-                                    <a href="/partner/64robots" class="learn_more">More about 64 Robots <span>→</span></a>
+                                    <a href="/partner/64robots" class="learn_more">More about 64 Robots
+                                        <span>→</span></a>
                                 </div>
                             </li>
 
@@ -98,7 +118,8 @@
                                         <img src="/img/partners/devsquad.png" width="183" alt="DevSquad">
                                     </div>
                                     <p class="small">DevSquad team members have unique and diverse skills, and this cross-functionality lets us successfully complete any mission.</p>
-                                    <a href="/partner/dev-squad" class="learn_more">More about DevSquad <span>→</span></a>
+                                    <a href="/partner/dev-squad" class="learn_more">More about DevSquad
+                                        <span>→</span></a>
                                 </div>
                             </li>
                             <li>
@@ -116,7 +137,8 @@
                                         <img src="/img/partners/cyberduck.png" width="245" alt="Cyber-Duck">
                                     </div>
                                     <p class="small">The Cyber-Duck team is comprised of 45+ user experience experts, software developers and marketing strategists based in the UK and USA.</p>
-                                    <a href="/partner/cyber-duck" class="learn_more">More about Cyber-Duck <span>→</span></a>
+                                    <a href="/partner/cyber-duck" class="learn_more">More about Cyber-Duck
+                                        <span>→</span></a>
                                 </div>
                             </li>
                             <li>
