@@ -11,7 +11,7 @@
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
-        "erusev/parsedown-extra": "0.7.0",
+        "erusev/parsedown-extra": "0.8.0",
         "symfony/browser-kit": "~3.1",
         "vinkla/algolia": "~4.0"
     },
