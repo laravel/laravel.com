@@ -159,6 +159,15 @@
                                     <a href="/partner/a2-design" class="learn_more">More about A2 Design. <span>→</span></a>
                                 </div>
                             </li>
+                            <li>
+                                <div class="content">
+                                    <div class="logo_contain">
+                                        <img src="/img/partners/romega.svg" alt="Romega Software" style="height: 80px;margin-left: -14px;">
+                                    </div>
+                                    <p class="small">Braden and Ben are infrastructure, development, and business management leaders who offer you their expertise and partnership so you can move from ideation to deployment and beyond with confidence.</p>
+                                    <a href="/partner/romega-software" class="learn_more">More about Romega. <span>→</span></a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
