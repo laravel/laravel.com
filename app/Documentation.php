@@ -100,6 +100,22 @@ class Documentation
         );
     }
 
+
+    /**
+     * Determine which versions a section exists in
+     *
+     * @param string $page
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public function sectionExistsInVersions($page)
+    {
+        return collect(self::getDocVersions())
+            ->filter(function ($version) use ($page) {
+                return $this->sectionExists($version, $page);
+            });
+    }
+
     /**
      * Get the publicly available versions of the documentation
      *

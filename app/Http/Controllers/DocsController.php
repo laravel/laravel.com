@@ -56,13 +56,18 @@ class DocsController extends Controller
         $content = $this->docs->get($version, $sectionPage);
 
         if (is_null($content)) {
+            $otherVersions = $this->docs->sectionExistsInVersions($page);
+
             return response()->view('docs', [
                 'title' => 'Page not found',
                 'index' => $this->docs->getIndex($version),
-                'content' => view('docs-missing'),
+                'content' => view('docs-missing', [
+                    'otherVersions' => $otherVersions,
+                    'page' => $page,
+                ]),
                 'currentVersion' => $version,
                 'versions' => Documentation::getDocVersions(),
-                'currentSection' => '',
+                'currentSection' => $otherVersions->isEmpty() ? '' : '/'.$page,
                 'canonical' => null,
             ], 404);
         }
