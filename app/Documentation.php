@@ -100,17 +100,15 @@ class Documentation
         );
     }
 
-
     /**
-     * Determine which versions a section exists in
+     * Determine which versions a page exists in.
      *
      * @param string $page
-     *
      * @return \Illuminate\Support\Collection
      */
-    public function sectionExistsInVersions($page)
+    public function versionsContainingPage($page)
     {
-        return collect(self::getDocVersions())
+        return collect(static::getDocVersions())
             ->filter(function ($version) use ($page) {
                 return $this->sectionExists($version, $page);
             });

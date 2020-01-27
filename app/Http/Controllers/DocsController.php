@@ -56,7 +56,7 @@ class DocsController extends Controller
         $content = $this->docs->get($version, $sectionPage);
 
         if (is_null($content)) {
-            $otherVersions = $this->docs->sectionExistsInVersions($page);
+            $otherVersions = $this->docs->versionsContainingPage($page);
 
             return response()->view('docs', [
                 'title' => 'Page not found',
