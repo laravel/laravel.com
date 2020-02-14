@@ -169,6 +169,13 @@ q, blockquote {
     }
 }
 
+blockquote {
+    @include fl-break-max(40em) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 span.small_text {
     display: block;
     font-size: .625em;
