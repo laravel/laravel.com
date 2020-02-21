@@ -174,7 +174,7 @@ class Indexer
                 continue;
             }
 
-            preg_match('/<a name=\"([^\"]*)\">.*<\/a>/iU', $bloc['element']['text'], $link);
+            preg_match('/<a name=\"([^\"]*)\">.*<\/a>/iU', isset($bloc['element']['text']) ? $bloc['element']['text'] : '', $link);
 
             if (count($link) > 0) {
                 $current_link = $slug . '#' . $link[1];
