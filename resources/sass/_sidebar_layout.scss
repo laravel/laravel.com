@@ -131,10 +131,10 @@
                             text-decoration: none;
                             margin-bottom: 0;
                             cursor: pointer;
-                            transition: all 0.3s ease;
+                            transition: all 0.15s ease-out;
 
                             &:hover {
-                                transform: translate3d(5px, 0, 0); // translate3d uses hardware acceleration
+                                transform: translateX(5px);
                             }
                         }
 
@@ -144,9 +144,10 @@
                             font-weight: 500;
                             color: $black;
                             text-decoration: none;
+                            transition: all 0.15s ease-out;
 
                             &:hover {
-                                transform: translate3d(5px, 0, 0); // translate3d uses hardware acceleration
+                                transform: translateX(5px);
                             }
                         }
                     }
