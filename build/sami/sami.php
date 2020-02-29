@@ -14,17 +14,9 @@ $iterator = Finder::create()
 	->in($dir = __DIR__.'/laravel/src');
 
 $versions = GitVersionCollection::create($dir)
-	->add('4.2', 'Laravel 4.2')
-	->add('5.0', 'Laravel 5.0')
-	->add('5.1', 'Laravel 5.1')
-	->add('5.2', 'Laravel 5.2')
-	->add('5.3', 'Laravel 5.3')
-	->add('5.4', 'Laravel 5.4')
-	->add('5.5', 'Laravel 5.5')
-	->add('5.6', 'Laravel 5.6')
-    ->add('5.7', 'Laravel 5.7')
 	->add('5.8', 'Laravel 5.8')
     ->add('6.x', 'Laravel 6.x')
+    ->add('7.x', 'Laravel 7.x')
 	->add('master', 'Laravel Dev');
 
 return new Sami($iterator, array(
