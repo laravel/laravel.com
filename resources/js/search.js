@@ -28,11 +28,7 @@ datasets.push({
     source: function searchAlgolia(query, cb) {
         index.search(query, {
             hitsPerPage: 5, tagFilters: [window.version]
-        }, function searchCallback(err, content) {
-            if (err) {
-                throw err;
-            }
-            
+        }).then(function (content) {
             cb(content.hits)
         });
     },
