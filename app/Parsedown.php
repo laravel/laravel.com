@@ -8,23 +8,31 @@ use ParsedownExtra;
 class Parsedown extends ParsedownExtra
 {
     /**
-     * Override original `inlineMarkup` so we can add anchors to headers links.
+     * Override original `text` method so we can add anchors to headers.
      *
-     * @param  array $excerpt
-     * @return array
+     * @param  string $text
+     * @return string
      */
-    protected function inlineMarkup($excerpt)
+    public function text($text)
     {
-        $result = parent::inlineMarkup($excerpt);
+        $text = parent::text($text);
 
-        preg_match('/<a name="(.+)">/', $result['markup'], $matches);
+        $lines = explode("\n", $text);
+        $lastName = null;
 
-        if (isset($matches[1])) {
-            $name = $matches[1];
+        foreach ($lines as $number => $line) {
+            preg_match('/<a name="(.+)">/', $line, $matches);
 
-            $result['markup'] = sprintf('<a id="%s" name="%s">', $name, $name);
+            if (isset($matches[1])) {
+                $name = $matches[1];
+
+                if (isset($lines[$number + 1]) && Str::startsWith($lines[$number + 1], '<h')) {
+                    $header = substr_replace($lines[$number + 1],sprintf(' id="%s"', $name), 3, 0);
+                    $lines[$number + 1] = $header;
+                }
+            }
         }
 
-        return $result;
+        return implode($lines, "\n");
     }
 }
