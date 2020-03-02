@@ -4,78 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed8851c92decf3bbc20c161288649980",
+    "content-hash": "5ad93f185142a9066c061c5f132a9f05",
     "packages": [
-        {
-            "name": "algolia/algoliasearch-client-php",
-            "version": "2.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/algolia/algoliasearch-client-php.git",
-                "reference": "9310e190a3990474bd3667e2c0d500442938ffbd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/9310e190a3990474bd3667e2c0d500442938ffbd",
-                "reference": "9310e190a3990474bd3667e2c0d500442938ffbd",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "php": "^5.3 || ^7.0",
-                "psr/http-message": "^1.0",
-                "psr/log": "^1.0",
-                "psr/simple-cache": "^1.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "fzaninotto/faker": "^1.8",
-                "phpunit/phpunit": "^4.8",
-                "symfony/yaml": "^2.0 || ^4.0"
-            },
-            "suggest": {
-                "guzzlehttp/guzzle": "If you prefer to use Guzzle HTTP client instead of the Http Client implementation provided by the package"
-            },
-            "bin": [
-                "bin/algolia-doctor"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.0": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Algolia\\AlgoliaSearch\\": "src/"
-                },
-                "files": [
-                    "src/Http/Psr7/functions.php",
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Algolia Team",
-                    "email": "contact@algolia.com"
-                }
-            ],
-            "description": "Algolia Search API Client for PHP",
-            "keywords": [
-                "algolia",
-                "api",
-                "client",
-                "php",
-                "search"
-            ],
-            "time": "2020-01-27T16:07:45+00:00"
-        },
         {
             "name": "doctrine/inflector",
             "version": "1.3.1",
@@ -365,20 +295,23 @@
         },
         {
             "name": "erusev/parsedown-extra",
-            "version": "0.7.0",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown-extra.git",
-                "reference": "11a44e076d02ffcc4021713398a60cd73f78b6f5"
+                "reference": "91ac3ff98f0cea243bdccc688df43810f044dcef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/11a44e076d02ffcc4021713398a60cd73f78b6f5",
-                "reference": "11a44e076d02ffcc4021713398a60cd73f78b6f5",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/91ac3ff98f0cea243bdccc688df43810f044dcef",
+                "reference": "91ac3ff98f0cea243bdccc688df43810f044dcef",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown": "~1.4"
+                "erusev/parsedown": "^1.7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -405,7 +338,7 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2015-01-25T14:52:34+00:00"
+            "time": "2019-12-30T23:20:37+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -460,66 +393,6 @@
                 "trusted proxy"
             ],
             "time": "2020-02-22T01:51:47+00:00"
-        },
-        {
-            "name": "graham-campbell/manager",
-            "version": "v4.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/GrahamCampbell/Laravel-Manager.git",
-                "reference": "be4ea408fafa43e08fdab4678361ee993effb206"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Manager/zipball/be4ea408fafa43e08fdab4678361ee993effb206",
-                "reference": "be4ea408fafa43e08fdab4678361ee993effb206",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^5.5|^6.0|^7.0",
-                "illuminate/support": "^5.5|^6.0|^7.0",
-                "php": "^7.1.3"
-            },
-            "require-dev": {
-                "graham-campbell/analyzer": "^2.4",
-                "graham-campbell/testbench-core": "^3.1",
-                "mockery/mockery": "^1.3.1",
-                "phpunit/phpunit": "^6.5|^7.0|^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GrahamCampbell\\Manager\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Graham Campbell",
-                    "email": "graham@alt-three.com"
-                }
-            ],
-            "description": "Manager Provides Some Manager Functionality For Laravel",
-            "keywords": [
-                "Graham Campbell",
-                "GrahamCampbell",
-                "Laravel Manager",
-                "Laravel-Manager",
-                "connector",
-                "framework",
-                "interface",
-                "laravel",
-                "manager"
-            ],
-            "time": "2020-02-22T20:03:30+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1110,56 +983,6 @@
                 "psr"
             ],
             "time": "2017-02-14T16:28:37+00:00"
-        },
-        {
-            "name": "psr/http-message",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Message\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP messages",
-            "homepage": "https://github.com/php-fig/http-message",
-            "keywords": [
-                "http",
-                "http-message",
-                "psr",
-                "psr-7",
-                "request",
-                "response"
-            ],
-            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",
@@ -3064,72 +2887,6 @@
             "time": "2019-10-24T08:53:34+00:00"
         },
         {
-            "name": "vinkla/algolia",
-            "version": "4.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vinkla/laravel-algolia.git",
-                "reference": "922f1eb5ff94dbe476fc718321dad5eb57cc5a1e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vinkla/laravel-algolia/zipball/922f1eb5ff94dbe476fc718321dad5eb57cc5a1e",
-                "reference": "922f1eb5ff94dbe476fc718321dad5eb57cc5a1e",
-                "shasum": ""
-            },
-            "require": {
-                "algolia/algoliasearch-client-php": "^2.2",
-                "graham-campbell/manager": "^4.2",
-                "illuminate/contracts": "5.8.*",
-                "illuminate/support": "5.8.*",
-                "php": "^7.2"
-            },
-            "require-dev": {
-                "graham-campbell/analyzer": "^2.1",
-                "graham-campbell/testbench": "^5.2",
-                "mockery/mockery": "^1.2",
-                "phpunit/phpunit": "^7.5 || ^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.1-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Vinkla\\Algolia\\AlgoliaServiceProvider"
-                    ],
-                    "aliases": {
-                        "Algolia": "Vinkla\\Algolia\\Facades\\Algolia"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Vinkla\\Algolia\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Vincent Klaiber",
-                    "email": "hello@vinkla.com",
-                    "homepage": "https://vinkla.com"
-                }
-            ],
-            "description": "An Algolia bridge for Laravel",
-            "keywords": [
-                "algolia",
-                "api",
-                "laravel",
-                "search"
-            ],
-            "time": "2019-02-27T15:32:51+00:00"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v3.6.0",
             "source": {
@@ -3236,9 +2993,9 @@
             "authors": [
                 {
                     "name": "Marcel Pociot",
-                    "role": "Developer",
                     "email": "marcel@beyondco.de",
-                    "homepage": "https://beyondco.de"
+                    "homepage": "https://beyondco.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Symfony Var-Dump Server for Laravel",
@@ -4237,8 +3994,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Utility class for timing",
@@ -4980,8 +4737,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
