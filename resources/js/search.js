@@ -4,7 +4,8 @@ const Hogan = require('./vendor/hogan.js');
 require('./vendor/typeahead.js');
 
 var client = algoliasearch(window.algolia_app_id, window.algolia_search_key);
-var index = client.initIndex('docs');
+var index = client.initIndex('laravel');
+
 
 var templates = {
     suggestion: Hogan.compile($('#search_suggestion_template').html()),
@@ -27,12 +28,15 @@ var datasets = [];
 datasets.push({
     source: function searchAlgolia(query, cb) {
         index.search(query, {
-            hitsPerPage: 5, tagFilters: [window.version]
+            hitsPerPage: 5,
+            facetFilters: ['version:' + window.version],
+            highlightPreTag: '<em>',
+            highlightPostTag: '</em>'
         }, function searchCallback(err, content) {
             if (err) {
                 throw err;
             }
-            
+
             cb(content.hits)
         });
     },
@@ -47,7 +51,9 @@ var typeahead = $searchInput.typeahead({hint: false}, datasets);
 var old_input = '';
 
 typeahead.on('typeahead:selected', function changePage(e, item) {
-    window.location.href = '/docs/' + item._tags[0] + '/' + item.link;
+    // The `item.url.replace` replaces the full url by the the relative one. Here is an
+    // example: https://laravel.com/docs/6.x#installing-laravel -> 6.x#installing-laravel
+    window.location.href = item.url.replace(/^.*\/\/[^\/]+/, '');
 });
 
 typeahead.on('keyup', function (e) {

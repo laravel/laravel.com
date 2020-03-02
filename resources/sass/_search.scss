@@ -80,6 +80,7 @@
 
 .twitter-typeahead .tt-dropdown-menu .footer {
   border-bottom: solid 1px #dee0df !important;
+  text-align: right;
 }
 
 .twitter-typeahead .tt-dropdown-menu .autocomplete-wrapper {
@@ -97,10 +98,6 @@
 .twitter-typeahead .tt-dropdown-menu .footer {
   padding: 10px;
   color: #777777;
-}
-
-.twitter-typeahead .tt-dropdown-menu .footer img {
-  float: right;
 }
 
 .twitter-typeahead .tt-dropdown-menu .tt-suggestion.tt-cursor .autocomplete-wrapper .content {
