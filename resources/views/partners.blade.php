@@ -168,6 +168,15 @@
                                     <a href="/partner/romega-software" class="learn_more">More about Romega. <span>→</span></a>
                                 </div>
                             </li>
+                            <li>
+                                <div class="content">
+                                    <div class="logo_contain">
+                                        <img src="/img/partners/jump24.jpg" alt="Jump24" style="height: 80px;margin-left: -14px;">
+                                    </div>
+                                    <p class="small">Having worked across many different industries and client sizes, we relish in solving complex challenges to ensure that our projects are a success.</p>
+                                    <a href="/partner/jump24" class="learn_more">More about Jump24. <span>→</span></a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
