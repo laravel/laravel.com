@@ -7,21 +7,17 @@
         <div class="remodal-bg">
             <div class="content_contain" style="padding-bottom: 4.5em;">
                 <div class="page_contain">
-                    <div class="banner">
+                    <!-- <div class="banner">
                         <a href="https://laracon.net">
                             <div class="banner_icon icon_nova">
-                                <!-- <img src="/img/ecosystem/vapor.min.svg" alt="Vapor"> -->
-                                <img src="/img/ecosystem/laracon-online.svg" alt="Laracon Online">
+                                <img src="/img/ecosystem/vapor.min.svg" alt="Vapor">
                             </div>
                             <div class="banner_content">
-<!--                                 <p class="small">Laravel Vapor is now available! Sign up today!
-                                    <span class="arrow">→</span></p> -->
-
-                                <p class="small">Laracon Online is February 26th. Get your tickets now!
+                                <p class="small">Laravel Vapor is now available! Sign up today!
                                     <span class="arrow">→</span></p>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                     <div class="contain">
                         <section class="hero">
                             <div class="hero_bg">
