@@ -15,10 +15,10 @@
                             </div>
                             <div class="banner_content">
 <!--                                 <p class="small">Laravel Vapor is now available! Sign up today!
-                                    <span class="arrow">→</span></p> -->
+                                    <span class="arrow">→</span></p> 
 
                                 <p class="small">Laracon Online is February 26th. Get your tickets now!
-                                    <span class="arrow">→</span></p>
+                                    <span class="arrow">→</span></p>-->
                             </div>
                         </a>
                     </div>
