@@ -33,6 +33,6 @@ class Parsedown extends ParsedownExtra
             }
         }
 
-        return implode($lines, "\n");
+        return implode("\n", $lines);
     }
 }
