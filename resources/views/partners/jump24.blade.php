@@ -36,9 +36,7 @@
                         </div>
 
                         <div class="content">
-                            <p>Having worked across many different industries and client sizes, we relish in solving complex challenges to ensure that our projects are a success. Employing agile methodologies, we can build any product from sophisticated API driven platforms to cutting edge web applications. We always ensure that we are on hand from initial concept to the final design to make our clients ideas come to life. </p>
-
-                            <p>Continual learning is a fundamental principle which we stand by, and in our local community we host a local tech event 'BrumPHP' every quarter to help others enhance and develop knowledge in the field of Laravel.</p>
+                            <p>Having worked across many different industries and client sizes, we relish in solving complex challenges to ensure that our projects are a success.</p>
 
                             <div class="list_block">
                                 <h3>Proficiencies</h3>
@@ -54,7 +52,9 @@
                                 </ul>
                             </div>
 
-                            <p>What we've learned from our experience with other technologies is the importance of a strong network. Thus we began hosting regular local Laravel events for developers in the economically strong Rhein-Main region in 2016.</p>
+                            <p>Employing agile methodologies, we can build any product from sophisticated API driven platforms to cutting edge web applications. We always ensure that we are on hand from initial concept to the final design to make our clients ideas come to life. </p>
+
+                            <p>Continual learning is a fundamental principle which we stand by, and in our local community we host a local tech event 'BrumPHP' every quarter to help others enhance and develop knowledge in the field of Laravel.</p>
 
                             <ul class="social_links">
                                 <li><a href="https://twitter.com/jumptwenty4"><img src="/img/social/twitter.min.svg" alt="Twitter"></a></li>
