@@ -13,7 +13,7 @@
                         <div class="hero_heading">
                             <img src="/img/partners/jump24.jpg" alt="Jump24"  style="max-width: 300px">
                             <div class="actions">
-                                <a href="mailto:ollie@jump24.co.uk)" class="btn"><span>Hire Jump24</span></a>
+                                <a href="mailto:ollie@jump24.co.uk" class="btn"><span>Hire Jump24</span></a>
                                 <a href="http://jump24.co.uk" class="btn secondary"><span>Visit Website →</span></a>
                             </div>
                         </div>
