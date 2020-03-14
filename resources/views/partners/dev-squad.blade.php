@@ -21,7 +21,7 @@
                     <div class="content">
                         <div class="contain">
                             <h3>You can think of DevSquad as the Navy SEALs of software development. Our team members have unique and diverse skills, and this cross-functionality lets us successfully complete any mission.</h3>
-                            <div class="hero_img"><img src="/img/partners/img_devscquad_detail.png" alt="Dev Squad">
+                            <div class="hero_img"><img src="/img/partners/img_devsquad_detail.png" alt="Dev Squad">
                             </div>
                         </div>
                     </div>

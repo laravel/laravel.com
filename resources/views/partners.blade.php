@@ -43,6 +43,15 @@
                                     <p>Vehikl is a team of code-crushing Laravel experts. Over the years we have built a variety of web applications for customers using Laravel as our framework of choice and implemented Lean Agile development techniques to build professional applications that are functional and easy to use.</p>
                                     <a href="/partner/vehikl" class="learn_more">More about Vehikl <span>→</span></a>
                                 </div>
+                            @elseif($featured == 'devsquad')
+                                <img class="featured_img" src="/img/partners/img_devsquad_detail.png" alt="DevSquad" style="right: 39%;">
+                                <div class="featured_content">
+                                    <h6>Featured Partner</h6>
+                                    <img class="logo" src="/img/partners/devsquad.png" alt="DevSquad">
+                                    <p>DevSquad team members have unique and diverse skills, and this cross-functionality lets us successfully complete any mission.</p>
+                                    <a href="/partner/dev-squad" class="learn_more">More about DevSquad
+                                        <span>→</span></a>
+                                </div>
                             @endif
                         </div>
                     </div>
@@ -56,23 +65,34 @@
                             </video>
                         </div>
                         <ul class="partners_list">
-                            <li>
-                                <div class="content">
-                                    @if($featured == 'tighten')
-                                        <div class="logo_contain">
-                                            <img src="/img/partners/vehikl.min.svg" alt="Vehikl">
-                                        </div>
-                                        <p class="small">A team of code-crushing Laravel experts. Over the years we have built a variety of web applications for customers using Laravel.</p>
-                                        <a href="/partner/vehikl" class="learn_more">More about Vehikl <span>→</span></a>
-                                    @elseif($featured == 'vehikl')
-                                        <div class="logo_contain">
-                                            <img src="/img/partners/tighten.min.svg" alt="Tighten">
-                                        </div>
-                                        <p class="small">Their team of top-notch Laravel developers will build your product, help you take it to market, and iterate with you as things change.</p>
-                                        <a href="/partner/tighten" class="learn_more">More about Tighten <span>→</span></a>
-                                    @endif
-                                </div>
-                            </li>
+                            @foreach($otherPartners as $i => $otherPartner)
+                                <li>
+                                    <div class="content">
+                                        @if($otherPartner == 'tighten')
+                                            <div class="logo_contain">
+                                                <img src="/img/partners/tighten.min.svg" alt="Tighten">
+                                            </div>
+                                            <p class="small">Their team of top-notch Laravel developers will build your product, help you take it to market, and iterate with you as things change.</p>
+                                            <a href="/partner/tighten" class="learn_more">More about Tighten
+                                                <span>→</span></a>
+                                        @elseif($otherPartner == 'vehikl')
+                                            <div class="logo_contain">
+                                                <img src="/img/partners/vehikl.min.svg" alt="Vehikl">
+                                            </div>
+                                            <p class="small">A team of code-crushing Laravel experts. Over the years we have built a variety of web applications for customers using Laravel.</p>
+                                            <a href="/partner/vehikl" class="learn_more">More about Vehikl
+                                                <span>→</span></a>
+                                        @elseif($otherPartner == 'devsquad')
+                                            <div class="logo_contain">
+                                                <img src="/img/partners/devsquad.png" width="183" alt="DevSquad">
+                                            </div>
+                                            <p class="small">DevSquad team members have unique and diverse skills, and this cross-functionality lets us successfully complete any mission.</p>
+                                            <a href="/partner/dev-squad" class="learn_more">More about DevSquad
+                                                <span>→</span></a>
+                                        @endif
+                                    </div>
+                                </li>
+                            @endforeach
                             <li>
                                 <div class="content">
                                     <div class="logo_contain">
@@ -110,16 +130,6 @@
                                     </div>
                                     <p class="small">Cubet Techno Labs is a 150+ member Digital Engineering company, helping to deliver your digital dreams to perfection.</p>
                                     <a href="/partner/cubet" class="learn_more">More about Cubet <span>→</span></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content">
-                                    <div class="logo_contain">
-                                        <img src="/img/partners/devsquad.png" width="183" alt="DevSquad">
-                                    </div>
-                                    <p class="small">DevSquad team members have unique and diverse skills, and this cross-functionality lets us successfully complete any mission.</p>
-                                    <a href="/partner/dev-squad" class="learn_more">More about DevSquad
-                                        <span>→</span></a>
                                 </div>
                             </li>
                             <li>
@@ -165,7 +175,8 @@
                                         <img src="/img/partners/romega.svg" alt="Romega Software" style="height: 80px;margin-left: -14px;">
                                     </div>
                                     <p class="small">Braden and Ben are infrastructure, development, and business management leaders who offer you their expertise and partnership so you can move from ideation to deployment and beyond with confidence.</p>
-                                    <a href="/partner/romega-software" class="learn_more">More about Romega. <span>→</span></a>
+                                    <a href="/partner/romega-software" class="learn_more">More about Romega.
+                                        <span>→</span></a>
                                 </div>
                             </li>
                             <li>
