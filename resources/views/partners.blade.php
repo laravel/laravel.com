@@ -44,10 +44,10 @@
                                     <a href="/partner/vehikl" class="learn_more">More about Vehikl <span>→</span></a>
                                 </div>
                             @elseif($featured == 'devsquad')
-                                <img class="featured_img" src="/img/partners/img_devsquad_detail.png" alt="DevSquad" style="right: 39%;">
+                                <img class="featured_img" src="/img/partners/img_devsquad_detail.png" alt="DevSquad" style="right: 53%;">
                                 <div class="featured_content">
                                     <h6>Featured Partner</h6>
-                                    <img class="logo" src="/img/partners/devsquad.png" alt="DevSquad">
+                                    <img class="logo" src="/img/partners/devsquad.png" alt="DevSquad" style="max-width: 200px;">
                                     <p>DevSquad team members have unique and diverse skills, and this cross-functionality lets us successfully complete any mission.</p>
                                     <a href="/partner/dev-squad" class="learn_more">More about DevSquad
                                         <span>→</span></a>
