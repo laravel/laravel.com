@@ -11,7 +11,7 @@
                     <div class="contain">
                         <h6>Laravel Partner</h6>
                         <div class="hero_heading">
-                            <img src="/img/partners/devsquad.png" alt="Dev Squad">
+                            <img src="/img/partners/devsquad.png" alt="Dev Squad" style="width: 200px;">
                             <div class="actions">
                                 <a href="mailto:phil@devsquad.com" class="btn"><span>Hire Dev Squad</span></a>
                                 <a href="http://devsquad.com/" class="btn secondary"><span>Visit Website →</span></a>
