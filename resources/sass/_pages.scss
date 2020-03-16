@@ -84,3 +84,11 @@
 		}
 	}
 }
+
+.home {
+    @include fl-break-min-max(48em, 64em) {
+        .page_contain {
+            overflow: hidden;
+        }
+    }
+}
