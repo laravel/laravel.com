@@ -38,8 +38,8 @@ class DocsController extends Controller
     /**
      * Show a documentation page.
      *
-     * @param  string $version
-     * @param  string|null $page
+     * @param  string  $version
+     * @param  string|null  $page
      * @return Response
      */
     public function show($version, $page = null)
