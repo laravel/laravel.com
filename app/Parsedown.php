@@ -10,7 +10,7 @@ class Parsedown extends ParsedownExtra
     /**
      * Override original `text` method so we can add anchors to headers.
      *
-     * @param  string $text
+     * @param  string  $text
      * @return string
      */
     public function text($text)
