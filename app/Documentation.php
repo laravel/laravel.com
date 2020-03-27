@@ -102,7 +102,7 @@ class Documentation
     /**
      * Determine which versions a page exists in.
      *
-     * @param string $page
+     * @param  string  $page
      * @return \Illuminate\Support\Collection
      */
     public function versionsContainingPage($page)
