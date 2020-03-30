@@ -38,7 +38,7 @@ class Documentation
      * Get the documentation index page.
      *
      * @param  string  $version
-     * @return string
+     * @return string|null
      */
     public function getIndex($version)
     {
