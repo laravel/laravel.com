@@ -10,22 +10,22 @@ class Documentation
     /**
      * The filesystem implementation.
      *
-     * @var Filesystem
+     * @var \Illuminate\Filesystem\Filesystem
      */
     protected $files;
 
     /**
      * The cache implementation.
      *
-     * @var Cache
+     * @var \Illuminate\Contracts\Cache\Repository
      */
     protected $cache;
 
     /**
      * Create a new documentation instance.
      *
-     * @param  Filesystem  $files
-     * @param  Cache  $cache
+     * @param  \Illuminate\Filesystem\Filesystem  $files
+     * @param  \Illuminate\Contracts\Cache\Repository  $cache
      * @return void
      */
     public function __construct(Filesystem $files, Cache $cache)
@@ -58,7 +58,7 @@ class Documentation
      *
      * @param  string  $version
      * @param  string  $page
-     * @return string
+     * @return string|null
      */
     public function get($version, $page)
     {

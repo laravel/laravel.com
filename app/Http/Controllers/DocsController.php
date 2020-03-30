@@ -10,14 +10,14 @@ class DocsController extends Controller
     /**
      * The documentation repository.
      *
-     * @var Documentation
+     * @var \App\Documentation
      */
     protected $docs;
 
     /**
      * Create a new controller instance.
      *
-     * @param  Documentation  $docs
+     * @param  \App\Documentation  $docs
      * @return void
      */
     public function __construct(Documentation $docs)
@@ -28,7 +28,7 @@ class DocsController extends Controller
     /**
      * Show the root documentation page (/docs).
      *
-     * @return Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function showRootPage()
     {
@@ -40,7 +40,7 @@ class DocsController extends Controller
      *
      * @param  string  $version
      * @param  string|null  $page
-     * @return Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View
      */
     public function show($version, $page = null)
     {
