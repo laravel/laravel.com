@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 class PartnersController extends Controller
 {
     /**
-     * Show a documentation page.
+     * Show the partners index page.
      *
-     * @return Response
+     * @return \Illuminate\View\View
      */
     public function index()
     {
@@ -24,9 +24,9 @@ class PartnersController extends Controller
     }
 
     /**
-     * Show a documentation page.
+     * Show a parnter page.
      *
-     * @return Response
+     * @return \Illuminate\View\View
      */
     public function show($partner)
     {
