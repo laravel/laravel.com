@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "laravel/laravel.com",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The Laravel Website.",
     "keywords": [
         "framework",
         "laravel"
