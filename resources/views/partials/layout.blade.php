@@ -6,6 +6,10 @@
     <title>{{ isset($title) ? $title . ' - ' : null }}Laravel - The PHP Framework For Web Artisans</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
+    @if (isset($canonical))
+    <link rel="canonical" href="{{ url($canonical) }}">
+    @endif
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
