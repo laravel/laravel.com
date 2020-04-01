@@ -17,8 +17,8 @@
 <!--                                  <p class="small">Laravel Vapor is now available! Sign up today!
                                     <span class="arrow">→</span></p> -->
 
-                                <p class="small">Laracon US is July 28 - 29th. Get your tickets now!
-                                    <span class="arrow">→</span></p>
+<!--                                  <p class="small">Laracon US is July 28 - 29th. Get your tickets now!
+                                    <span class="arrow">→</span></p> -->
                             </div>
                         </a>
                     </div>
