@@ -10,15 +10,12 @@
                     <div class="banner">
                         <a href="https://laracon.us">
                             <div class="banner_icon icon_nova">
-                                <!-- <img src="/img/ecosystem/vapor.min.svg" alt="Vapor"> -->
-                                <img src="/img/ecosystem/laracon-online.svg" alt="Laracon Online">
+                                <img src="/img/ecosystem/vapor.min.svg" alt="Vapor">
                             </div>
                             <div class="banner_content">
-<!--                                  <p class="small">Laravel Vapor is now available! Sign up today!
-                                    <span class="arrow">→</span></p> -->
-
-<!--                                  <p class="small">Laracon US is July 28 - 29th. Get your tickets now!
-                                    <span class="arrow">→</span></p> -->
+                                 <p class="small">
+                                    Laravel Vapor is now available! Sign up today! <span class="arrow">→</span>
+                                </p>
                             </div>
                         </a>
                     </div>
