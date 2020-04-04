@@ -8,7 +8,7 @@
             <div class="content_contain" style="padding-bottom: 4.5em;">
                 <div class="page_contain">
                     <div class="banner">
-                        <a href="https://laracon.us">
+                        <a href="https://vapor.laravel.com/">
                             <div class="banner_icon icon_nova">
                                 <img src="/img/ecosystem/vapor.min.svg" alt="Vapor">
                             </div>
