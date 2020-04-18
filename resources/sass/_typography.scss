@@ -205,3 +205,51 @@ code {
     color: $code_red;
     padding: 0 .25em;
 }
+
+@media (prefers-color-scheme: dark) {
+    body, input, textarea, button {
+        color: $text-color;
+    }
+
+    h5 {
+        color: rgba($white, .7);
+    }
+
+    h6 {
+        color: rgba($white, .5);
+    }
+
+    a {
+        &.learn_more {
+            color: $red;
+        }
+    }
+
+    p {
+        color: $text-color;
+    }
+
+    p, ul, ol {
+        a {
+            color: $red;
+
+            &:hover {
+                color: darken($red, 10%);
+            }
+        }
+    }
+
+    span.small_text {
+        color: rgba($text-color, .8);
+    }
+
+    code {
+        font-family: $codeFont;
+        color: $text-color;
+    }
+
+    :not(pre) > code {
+        background: black;
+        color: $code_red;
+    }
+}

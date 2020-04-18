@@ -40,7 +40,7 @@
 }
 
 @supports ( -webkit-appearance: none ) or ( appearance: none ) or ( ( -moz-appearance: none ) and ( mask-type: alpha ) ) {
-	
+
 	/* Show custom arrow */
 	.custom_select::after {
 		display: block;
@@ -109,7 +109,7 @@
 
 /* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance. Targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
 /* The second rule removes the odd blue bg color behind the text in the select button in IE 10/11 and sets the text color to match the focus style's - fix via http://stackoverflow.com/questions/17553300/change-ie-background-color-on-unopened-focused-select-box */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.custom_select select::-ms-expand {
 		display: none;
 	}
@@ -124,5 +124,33 @@
 	}
 	.custom_select::after {
 		display: block;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	/* Container used for styling the custom select, the buttom class below adds the
+	 * bg gradient, corners, etc. */
+	.custom_select {
+	    border-bottom: 1px solid $background-color-lighter;
+		color: $text-color;
+	}
+
+	/* Custom arrow sits on top of the select - could be an image, SVG, icon font,
+	 * etc. or the arrow could just baked into the bg image on the select. */
+	.custom_select::after {
+		background-image: url(/img/icons/drop_arrow_light.min.svg);
+	}
+
+	/* Firefox focus has odd artifacts around the text, this kills that. See https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring */
+	.custom_select select:-moz-focusring {
+		text-shadow: none;
+	}
+
+	/* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance. Targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
+	/* The second rule removes the odd blue bg color behind the text in the select button in IE 10/11 and sets the text color to match the focus style's - fix via http://stackoverflow.com/questions/17553300/change-ie-background-color-on-unopened-focused-select-box */
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		.custom_select select:focus::-ms-value {
+			color: #222; /* Match-02*/
+		}
 	}
 }

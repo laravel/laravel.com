@@ -498,3 +498,32 @@ ul.partners_list {
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .featured_partner {
+        .featured_contain {
+            background: $background-color;
+            box-shadow: none;
+        }
+
+        @include fl-break(45em) {
+            .featured_contain {
+                .featured_content {
+                    background: $background-color-light;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    ul.partners_list {
+        li {
+            color: $text-color;
+
+            .content {
+                background: $background-color;
+                box-shadow: none;
+            }
+        }
+    }
+}

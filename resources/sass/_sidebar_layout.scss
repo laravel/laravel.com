@@ -291,7 +291,7 @@
             position: sticky;
             top: 0;
             background: none;
-            width: 15em; 
+            width: 15em;
             height: 100vh;
 
             &::before {
@@ -362,5 +362,63 @@
 
     :last-child {
         margin-bottom: 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .trigger_contain {
+        .nav_trigger {
+            .bar {
+                background: $red;
+            }
+
+            .bar::before {
+                background: $red;
+            }
+
+            .bar::after {
+                background: $red;
+            }
+        }
+    }
+
+    .sidebar_layout {
+        position: relative;
+
+        .sidebar {
+            background: darken($background-color, 2%);
+
+            nav {
+                .navigation_contain {
+                    ul {
+                        li {
+                            h2 {
+                                color: $text-color-dark;
+                            }
+
+                            a {
+                                color: white;
+                            }
+                        }
+
+                        ul {
+                            li {
+                                &.active a::before {
+                                    background-image: url(/img/icons/active_marker.min.svg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include fl-break(65em) {
+            .sidebar {
+                &::before {
+                    background: darken($background-color, 2%);
+                }
+            }
+        }
     }
 }

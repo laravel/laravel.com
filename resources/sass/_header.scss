@@ -237,7 +237,7 @@ nav.main {
                 color: $black;
                 text-decoration: none;
                 -webkit-tap-highlight-color: rgba(0,0,0,0);
-                
+
                 &.drop_trigger {
                     display: flex;
                     align-items: center;
@@ -513,6 +513,118 @@ nav.main {
         .nav_contain > ul {
             &> li {
                 margin-right: 10%;
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    header.main {
+        background: $background-color;
+
+        &::before {
+            background: $background-color;
+            box-shadow: none;
+        }
+
+        .nav--on & {
+            &::before {
+                box-shadow: none;
+            }
+        }
+
+        .search_box {
+            .input_group {
+                input[type="search"] {
+                    border-bottom-color: $white;
+
+                    &:focus {
+                        border-bottom-color: $white;
+                    }
+                }
+
+                &:hover {
+                    input[type="search"] {
+                        border-bottom-color: $white;
+                    }
+                }
+            }
+
+            &.search--on {
+                .input_group {
+                    input[type="search"] {
+                        border-bottom-color: $white;
+                    }
+                }
+            }
+        }
+
+        @include fl-break(72em) {
+            .search_box {
+                .input_group {
+                    input[type="search"] {
+                        border-bottom-color: $gray;
+
+                        &:focus {
+                            border-bottom-color: $white;
+                        }
+                    }
+
+                    &:hover {
+                        input[type="search"] {
+                            border-bottom-color: $white;
+                        }
+                    }
+                }
+
+                &.search--on {
+                    .input_group {
+                        input[type="search"] {
+                            border-bottom-color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    nav.main {
+        background: $background-color;
+        box-shadow: none;
+
+        .nav_contain > ul {
+            & > li {
+                border-bottom: 1px solid rgba($gray, .5);
+            }
+
+            li {
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        @include fl-break(72em) {
+            .nav_contain > ul {
+                li {
+                    .drop_contain {
+                        box-shadow: none;
+                    }
+
+                    &.active > a::after {
+                        background: $red;
+                    }
+
+                    ul.ecosystem {
+                        background: $white;
+                    }
+                }
+            }
+
+            .partners & {
+                .nav_contain > ul > li.partners_link > a::after {
+                    background: $red;
+                }
             }
         }
     }

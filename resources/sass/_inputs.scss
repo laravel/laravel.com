@@ -1,7 +1,7 @@
 .btn {
     position: relative;
     display: block;
-    
+
     &> span {
         display: flex;
         align-items: center;
@@ -17,37 +17,37 @@
         border: 1.5px solid $red;
         text-align: center;
         transition: transform .3s ease;
-        
+
         span {
             margin: 0 0 0 .5em;
         }
-        
+
         img {
             display: block;
         }
     }
-    
+
     &.secondary {
         &> span {
             color: $red;
             background: $white;
         }
     }
-    
+
     &.disabled {
         pointer-events: none;
-        
+
         &> span {
             background: $gray;
             border-color: $gray;
         }
-        
+
         &.secondary > span {
             background: $white;
             color: $gray;
         }
     }
-    
+
     &::before {
         content: "";
         position: absolute;
@@ -58,13 +58,13 @@
         border: 1.5px solid $red;
         transition: transform .3s ease;
     }
-    
+
     &:hover {
         &> span {
             transform: translate(-4px, -4px);
         }
     }
-    
+
     @include fl-break(40em) {
         &> span {
             padding: .75em 2.25em;
@@ -74,11 +74,11 @@
 
 .input_group {
     padding-top: 1.5em;
-    
+
     label {
         margin-top: -1.55rem;
     }
-    
+
     input[type="text"], input[type="search"], input[type="email"], input[type="tel"] {
         border: none;
         border-bottom: 1px solid $gray;
@@ -92,15 +92,15 @@
         appearance: none;
         outline: none;
         transition: border-color .3s ease;
-        
+
         &:focus {
             border-color: $black;
         }
     }
-    
+
     &.search {
         position: relative;
-        
+
         input[type="submit"] {
             position: absolute;
             top: 1.8em; left: 0;
@@ -112,19 +112,69 @@
             appearance: none;
         }
     }
-    
+
     &.icon {
         position: relative;
-        
+
         input[type="text"], input[type="search"], input[type="email"], input[type="tel"] {
             padding-left: 2em;
         }
-        
+
         .icon_display {
             transition: transform .3s ease;
-            
+
             &:hover {
                 transform: scale(1.08);
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .btn {
+        & > span {
+            background: $red;
+            color: $white;
+            border: 1.5px solid $red;
+        }
+
+        &.secondary {
+            & > span {
+                color: $red;
+                background: $white;
+            }
+        }
+
+        &.disabled {
+            & > span {
+                background: $gray;
+                border-color: $gray;
+            }
+
+            &.secondary > span {
+                background: $white;
+                color: $gray;
+            }
+        }
+
+        &::before {
+            background: $white;
+            border: 1.5px solid $red;
+        }
+    }
+
+    .input_group {
+        input[type="text"], input[type="search"], input[type="email"], input[type="tel"] {
+            border-bottom: 1px solid $background-color-lighter;
+
+            &:focus {
+                border-color: $background-color-lightest;
+            }
+        }
+
+        &.search {
+            input[type="submit"] {
+                background: url("/img/icons/search_light.min.svg") no-repeat center;
             }
         }
     }

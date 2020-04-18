@@ -172,3 +172,86 @@ pre[class*="language-"].line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
+
+@media (prefers-color-scheme: dark) {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		color: $text-color;
+	}
+
+	pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+	code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+		background: #b3d4fc;
+	}
+
+	pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+	code[class*="language-"]::selection, code[class*="language-"] ::selection {
+		background: #b3d4fc;
+	}
+
+	:not(pre) > code[class*="language-"],
+	pre[class*="language-"] {
+		background: darken($background-color, 5%);
+		box-shadow: none;
+	    color: $code_red;
+	}
+
+	.token.comment,
+	.token.prolog,
+	.token.doctype,
+	.token.cdata {
+		color: #93939e;
+	}
+
+	.token.punctuation {
+		color: $black;
+	}
+
+	.token.property,
+	.token.tag,
+	.token.boolean,
+	.token.number,
+	.token.constant,
+	.token.symbol,
+	.token.deleted {
+		color: $code_dark_red;
+	}
+
+	.token.selector,
+	.token.attr-name,
+	.token.string,
+	.token.char,
+	.token.builtin,
+	.token.inserted {
+		color: #690;
+	}
+
+	.token.operator,
+	.token.entity,
+	.token.url,
+	.language-css .token.string,
+	.style .token.string {
+		color: darken($text-color, 20%);
+	}
+
+	.token.atrule,
+	.token.attr-value,
+	.token.keyword {
+		color: $code_dark_blue;
+	}
+
+	.token.function,
+	.token.class-name {
+		color: $code_red;
+	}
+
+	.token.regex,
+	.token.important,
+	.token.variable {
+		color: $code_blue;
+	}
+
+	.line-numbers-rows > span:before {
+		color: $text-color;
+	}
+}

@@ -335,3 +335,50 @@
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .docs_body {
+        table {
+            th,
+            td {
+                border: 1px solid white;
+            }
+        }
+    }
+
+    .docs_main {
+        h4 a, h3 a, h2 a {
+            color: white;
+        }
+
+        code {
+            color: $text-color;
+        }
+
+        ul:not(:first-of-type), .content-list ul {
+            li {
+                color: white;
+            }
+        }
+    }
+
+    .callout {
+        background: $background-color-light;
+        box-shadow: none;
+
+        .icon {
+            &.blue { background: $blue; }
+            &.red { background: $red; }
+            &.purple { background: $purple; }
+            &.orange { background: $orange; }
+        }
+    }
+
+    .docs_main h1 + ul {
+        li {
+            a {
+                color: white;
+            }
+        }
+    }
+}

@@ -43,7 +43,7 @@ body {
 	padding: 0 1em;
 	max-width: 80em;
 	margin: 0 auto;
-    
+
     @include fl-break(35em) {
         padding: 0 2em;
     }
@@ -60,4 +60,24 @@ body {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: $black;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: $text-color;
+        background-color: $background-color;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $text-color-dark;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $text-color-dark;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $text-color-dark;
+    }
 }

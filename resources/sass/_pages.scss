@@ -92,3 +92,28 @@
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .pages {
+        background: $background-color;
+
+        .main {
+            background: $background-color;
+        }
+    }
+
+    .pages_list {
+        background: $background-color;
+
+        li {
+            a {
+                color: $gray;
+                border-bottom: 1px solid $gray;
+
+                &::after {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
