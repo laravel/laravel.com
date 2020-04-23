@@ -51,6 +51,20 @@
                     </header>
                     <section class="docs_body">
                         <section class="docs_main">
+                            @if (! in_array($currentVersion, [DEFAULT_VERSION, 'master']))
+                                <blockquote>
+                                    <div class="callout">
+                                        <div class="icon orange">
+                                            <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon"/>
+                                        </div>
+
+                                        <p class="content">
+                                            <strong>WARNING</strong> You're browsing an older version of the docs. Consider upgrading your projects to Laravel {{ DEFAULT_VERSION }}.
+                                        </p>
+                                    </div>
+                                </blockquote>
+                            @endif
+
                             {!! $content !!}
                         </section>
                     </section>
