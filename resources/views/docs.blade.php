@@ -51,7 +51,7 @@
                     </header>
                     <section class="docs_body">
                         <section class="docs_main">
-                            @if (! in_array($currentVersion, [DEFAULT_VERSION, 'master']))
+                            @unless (in_array($currentVersion, [DEFAULT_VERSION, 'master']))
                                 <blockquote>
                                     <div class="callout">
                                         <div class="icon orange">
@@ -59,11 +59,12 @@
                                         </div>
 
                                         <p class="content">
-                                            <strong>WARNING</strong> You're browsing an older version of the docs. Consider upgrading your projects to Laravel {{ DEFAULT_VERSION }}.
+                                            <strong>WARNING</strong> You're browsing the docs for an older version.
+                                            Consider upgrading your project to <a href="{{ route('docs.version', DEFAULT_VERSION) }}">Laravel {{ DEFAULT_VERSION }}</a>.
                                         </p>
                                     </div>
                                 </blockquote>
-                            @endif
+                            @endunless
 
                             {!! $content !!}
                         </section>

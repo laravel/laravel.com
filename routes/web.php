@@ -17,7 +17,7 @@ Route::get('docs/6.0/{page?}', function ($page = null) {
     return redirect(trim('/docs/7.x/'.$page, '/'), 301);
 });
 
-Route::get('docs/{version}/{page?}', 'DocsController@show');
+Route::get('docs/{version}/{page?}', 'DocsController@show')->name('docs.version');
 
 Route::get('partners', 'PartnersController@index');
 Route::get('partner/{partner}', 'PartnersController@show');
