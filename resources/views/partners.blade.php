@@ -179,6 +179,15 @@
                                     <a href="/partner/jump24" class="learn_more">More about Jump24. <span>→</span></a>
                                 </div>
                             </li>
+                                <li>
+                                    <div class="content">
+                                        <div class="logo_contain">
+                                            <img src="/img/partners/few.svg" alt="Few" style="height: 75px;margin-left: -14px;">
+                                        </div>
+                                        <p class="small">We design and build rad digital products for teams of all sizes, from startups to enterprise organizations.</p>
+                                        <a href="/partner/few" class="learn_more">More about Few. <span>→</span></a>
+                                    </div>
+                                </li>
                         </ul>
                     </div>
                 </div>
