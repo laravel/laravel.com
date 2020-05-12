@@ -108,7 +108,7 @@
                                     <li><a href="https://tighten.co">Tighten Co.</a></li>
                                     <li><a href="https://kirschbaumdevelopment.com/">Kirschbaum</a></li>
                                     <li><a href="https://www.byte5.net/">Byte 5</a></li>
-                                    <li><a href="https://64robots.com/">64Robots</a></li>
+                                    <li><a href="https://64robots.com/">64 Robots</a></li>
                                     <li><a href="https://cubettech.com/">Cubet</a></li>
                                     <li><a href="https://devsquad.com/">DevSquad</a></li>
                                     <li><a href="https://www.ideil.com/">Ideil</a></li>

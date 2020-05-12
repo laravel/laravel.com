@@ -58,7 +58,7 @@
                                     <h6>Featured Partner</h6>
                                     <img class="logo" src="/img/partners/64Robots.min.svg" alt="DevSquad" style="max-width: 200px;">
                                     <p>64 Robots is a team of Laravel experts brought together by a desire to create cutting edge web products. Whether building something new or refactoring a product in need of help, we'll give you a personal and thoughtful approach to development.</p>
-                                    <a href="/partner/64robots" class="learn_more">More about 64Robots
+                                    <a href="/partner/64robots" class="learn_more">More about 64 Robots
                                         <span>→</span></a>
                                 </div>
                             @endif
