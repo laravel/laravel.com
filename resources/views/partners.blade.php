@@ -52,6 +52,15 @@
                                     <a href="/partner/dev-squad" class="learn_more">More about DevSquad
                                         <span>→</span></a>
                                 </div>
+                            @elseif($featured == '64robots')
+                                <img class="featured_img" src="/img/partners/img_64robots_detail.jpg" alt="64Robots" style="right: 40%;">
+                                <div class="featured_content">
+                                    <h6>Featured Partner</h6>
+                                    <img class="logo" src="/img/partners/64Robots.min.svg" alt="DevSquad" style="max-width: 200px;">
+                                    <p>64 Robots is a team of Laravel experts brought together by a desire to create cutting edge web products. Whether building something new or refactoring a product in need of help, we'll give you a personal and thoughtful approach to development.</p>
+                                    <a href="/partner/64robots" class="learn_more">More about 64Robots
+                                        <span>→</span></a>
+                                </div>
                             @endif
                         </div>
                     </div>
@@ -89,6 +98,13 @@
                                             <p class="small">DevSquad team members have unique and diverse skills, and this cross-functionality lets us successfully complete any mission.</p>
                                             <a href="/partner/dev-squad" class="learn_more">More about DevSquad
                                                 <span>→</span></a>
+                                        @elseif($otherPartner == '64robots')
+                                            <div class="logo_contain">
+                                                <img src="/img/partners/64Robots.min.svg" alt="64 Robots">
+                                            </div>
+                                            <p class="small">64 Robots is a team of Laravel experts with a background in building successful startups and SaaS products.</p>
+                                            <a href="/partner/64robots" class="learn_more">More about 64 Robots
+                                                <span>→</span></a>
                                         @endif
                                     </div>
                                 </li>
@@ -112,17 +128,6 @@
                                     <a href="/partner/byte5" class="learn_more">More about byte5 <span>→</span></a>
                                 </div>
                             </li>
-                            <li>
-                                <div class="content">
-                                    <div class="logo_contain">
-                                        <img src="/img/partners/64Robots.min.svg" alt="64 Robots">
-                                    </div>
-                                    <p class="small">64 Robots is a team of Laravel experts with a background in building successful startups and SaaS products.</p>
-                                    <a href="/partner/64robots" class="learn_more">More about 64 Robots
-                                        <span>→</span></a>
-                                </div>
-                            </li>
-
                             <li>
                                 <div class="content">
                                     <div class="logo_contain">
@@ -179,15 +184,15 @@
                                     <a href="/partner/jump24" class="learn_more">More about Jump24. <span>→</span></a>
                                 </div>
                             </li>
-                                <li>
-                                    <div class="content">
-                                        <div class="logo_contain">
-                                            <img src="/img/partners/few.svg" alt="Few" style="height: 75px;margin-left: -14px;">
-                                        </div>
-                                        <p class="small">We design and build rad digital products for teams of all sizes, from startups to enterprise organizations.</p>
-                                        <a href="/partner/few" class="learn_more">More about Few. <span>→</span></a>
+                            <li>
+                                <div class="content">
+                                    <div class="logo_contain">
+                                        <img src="/img/partners/few.svg" alt="Few" style="height: 75px;margin-left: -14px;">
                                     </div>
-                                </li>
+                                    <p class="small">We design and build rad digital products for teams of all sizes, from startups to enterprise organizations.</p>
+                                    <a href="/partner/few" class="learn_more">More about Few. <span>→</span></a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>

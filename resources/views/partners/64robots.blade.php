@@ -20,7 +20,7 @@
                     </div>
                     <div class="content">
                         <div class="contain">
-                            <h3>We launch your product to the next level. 64 Robots is a team of Laravel experts with a background in building successful startups and SaaS products. </h3>
+                            <h3>64 Robots is a team of Laravel experts brought together by a desire to create cutting edge web products. Whether building something new or refactoring a product in need of help, we'll give you a personal and thoughtful approach to development. We believe in partnering for the long haul to bring your vision to life and support it as it grows.</h3>
                             <div class="hero_img"><img src="/img/partners/img_64robots_detail.png" alt="64Robots">
                             </div>
                         </div>
@@ -36,25 +36,25 @@
                         </div>
 
                         <div class="content">
-                            <p>We specialize in building Laravel APIs, Vue.js single page applications and Quasar framework mobile apps.</p>
+                            <p>We specialize in building Laravel APIs, Nuxt.js SSR applications, Vue.js SPAs and NativeScript-Vue mobile applicationsWe love working with companies of all sizes. We've guided early-stage, funded startups to a successful launch and helped large international companies refactor and rebuild existing products to scale into the future. Whatever your needs, we'll help you make the right technology decisions and build a polished product that will put you on the path to success.</p>
 
                             <div class="list_block">
                                 <h3>Proficiencies</h3>
                                 <ul>
-                                    <li>Laravel Development</li>
-                                    <li>Vue.js / Quasar / React</li>
+                                    <li>Laravel</li>
+                                    <li>Vue.js / Nuxt.js</li>
+                                    <li>NativeScript-Vue</li>
                                     <li>APIs</li>
-                                    <li>SaaS Products</li>
+                                    <li>SaaS/ecommerce Products</li>
                                     <li>UI/UX Product Design</li>
-                                    <li>Project Management</li>
-                                    <li>Technical Leadership</li>
-                                    <li>Startup Guidance</li>
+                                    <li>Staff Augmentation </li>
+                                    <li>Code Audits & Refactoring</li>
                                 </ul>
                             </div>
 
-                            <p>Although we love working with companies of all sizes, our team excels at guiding early-stage, funded startups to make the right technology decisions and build a polished product that will put you on the right path.</p>
+                            <p>We love working with companies of all sizes. We've guided early-stage, funded startups to a successful launch and helped large international companies refactor and rebuild existing products to scale into the future. Whatever your needs, we'll help you make the right technology decisions and build a polished product that will put you on the path to success.</p>
 
-                            <p>We set ourselves apart by our level of involvement in your project. Think of us as an extension of your team. We’ve filled roles all the way from frontend developer, to project manager up to acting CTO. We are selective in the projects we take on and truly believe in doing everything we can to make them successful.</p>
+                            <p>We set ourselves apart by our level of involvement in your product. Think of us as an extension of your team. Whether augmenting an existing team or stepping in as de facto CTO to make the technical decisions, we're there for you. We're selective in the products that we take on, as we truly want to believe in our work and do everything we can to make them successful. </p>
 
                             <ul class="social_links">
                                 <li><a href="https://twitter.com/64robots"><img src="/img/social/twitter.min.svg" alt="Twitter"></a></li>
