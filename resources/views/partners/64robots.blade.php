@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="content">
-                            <p>We specialize in building Laravel APIs, Nuxt.js SSR applications, Vue.js SPAs and NativeScript-Vue mobile applicationsWe love working with companies of all sizes. We've guided early-stage, funded startups to a successful launch and helped large international companies refactor and rebuild existing products to scale into the future. Whatever your needs, we'll help you make the right technology decisions and build a polished product that will put you on the path to success.</p>
+                            <p>We specialize in building Laravel APIs, Nuxt.js SSR applications, Vue.js SPAs and NativeScript-Vue mobile applications.</p>
 
                             <div class="list_block">
                                 <h3>Proficiencies</h3>
