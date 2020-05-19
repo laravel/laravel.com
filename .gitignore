@@ -4,6 +4,7 @@
 /public/storage
 /storage/*.key
 /vendor
+.DS_Store
 .env
 .phpunit.result.cache
 Homestead.json
