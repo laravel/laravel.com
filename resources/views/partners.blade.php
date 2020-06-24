@@ -44,7 +44,7 @@
                                     <a href="/partner/vehikl" class="learn_more">More about Vehikl <span>→</span></a>
                                 </div>
                             @elseif($featured == 'devsquad')
-                                <img class="featured_img" src="/img/partners/img_devsquad_detail.png" alt="DevSquad" style="right: 53%;">
+                                <img class="featured_img" src="/img/partners/img_devsquad_detail.jpg" alt="DevSquad" style="right: 53%;">
                                 <div class="featured_content">
                                     <h6>Featured Partner</h6>
                                     <img class="logo" src="/img/partners/devsquad.png" alt="DevSquad" style="max-width: 200px;">
