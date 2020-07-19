@@ -1,0 +1,5 @@
+{
+    "require": {
+        "code-lts/doctum": "^5.0"
+    }
+}
