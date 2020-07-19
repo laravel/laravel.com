@@ -2,10 +2,10 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use Sami\Sami;
+use Doctum\Doctum;
 use Symfony\Component\Finder\Finder;
-use Sami\Version\GitVersionCollection;
-use Sami\RemoteRepository\GitHubRemoteRepository;
+use Doctum\Version\GitVersionCollection;
+use Doctum\RemoteRepository\GitHubRemoteRepository;
 
 $iterator = Finder::create()
 	->files()
@@ -20,7 +20,7 @@ $versions = GitVersionCollection::create($dir)
 	->add('7.x', 'Laravel 7.x')
 	->add('master', 'Laravel Dev');
 
-return new Sami($iterator, array(
+return new Doctum($iterator, array(
 	'title' => 'Laravel API',
 	'versions' => $versions,
 	'build_dir' => __DIR__.'/build/%version%',
