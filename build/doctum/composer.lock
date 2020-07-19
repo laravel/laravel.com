@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46db996b22c8490b23cba86eda9e2015",
+    "content-hash": "c5c744bfceee0edacd9766138b09ef93",
     "packages": [
         {
             "name": "code-lts/doctum",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/code-lts/doctum.git",
-                "reference": "f952902aace3c48f6f7fe760074dd31b56435089"
+                "reference": "9f21147c72cfbd3ba241b03de8c11f9be0d24d8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/code-lts/doctum/zipball/f952902aace3c48f6f7fe760074dd31b56435089",
-                "reference": "f952902aace3c48f6f7fe760074dd31b56435089",
+                "url": "https://api.github.com/repos/code-lts/doctum/zipball/9f21147c72cfbd3ba241b03de8c11f9be0d24d8a",
+                "reference": "9f21147c72cfbd3ba241b03de8c11f9be0d24d8a",
                 "shasum": ""
             },
             "require": {
@@ -71,9 +71,9 @@
             ],
             "support": {
                 "issues": "https://github.com/code-lts/doctum/issues",
-                "source": "https://github.com/code-lts/doctum/tree/v5.0.0"
+                "source": "https://github.com/code-lts/doctum/tree/main"
             },
-            "time": "2020-07-18T21:28:13+00:00"
+            "time": "2020-07-19T12:47:10+00:00"
         },
         {
             "name": "michelf/php-markdown",
