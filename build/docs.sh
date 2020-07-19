@@ -1,5 +1,5 @@
 #!/bin/bash
-base=/home/forge/laravel.com
+base=${base:-/home/forge/laravel.com}
 docs=${base}/resources/docs
 
 cd ${docs}/5.5 && git pull origin 5.5
