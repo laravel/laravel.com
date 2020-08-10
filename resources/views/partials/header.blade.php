@@ -173,7 +173,7 @@
                         </li>
                         <li class="resources_link"><a href="https://laravel-news.com">News</a></li>
                         <li class="partners_link"><a href="/partners">Partners</a></li>
-                        <li class="gear_link"><a href="https://laravel.bigcartel.com/">Gear</a></li>
+                        <li class="shop_link"><a href="https://laravel.bigcartel.com/">Shop</a></li>
                     </ul>
                 </div>
             </nav>

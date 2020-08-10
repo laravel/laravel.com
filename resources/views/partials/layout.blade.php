@@ -92,6 +92,7 @@
                                     <li><a href="https://larajobs.com">Jobs</a></li>
                                     <li><a href="https://certification.laravel.com/">Certification</a></li>
                                     <li><a href="https://laracasts.com/discuss">Forums</a></li>
+                                    <li><a href="https://laravel.bigcartel.com">Shop</a></li>
                                     <!-- <li><a href="http://www.laravelpodcast.com/">Podcast</a></li> -->
                                     <!-- <li><a href="https://course.testdrivenlaravel.com/">Test-driven Laravel</a></li> -->
                                     <!-- <li><a href="https://statamic.com/">Statamic</a></li> -->
