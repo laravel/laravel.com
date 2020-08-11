@@ -116,6 +116,7 @@
                                     <li><a href="https://corporate.aboutyou.de/app/uploads/2019/08/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&utm_medium=socialgroups&utm_campaign=tech">ABOUT YOU</a></li>
                                     <li><a href="https://www.a2design.biz/">A2 Design</a></li>
                                     <li><a href="https://romegadigital.com/">Romega Software</a></li>
+                                    <li><a href="https://jump24.co.uk/">Jump24</a></li>
                                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform">Become A Partner</a></li>
                                 </ul>
                             </div>
