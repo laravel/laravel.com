@@ -1,0 +1,276 @@
+/* https://www.snight_text_secondary.online/?ref=darkmodelist */
+
+body.dark {
+    color: $dark_text_secondary;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    button,
+    input,
+    optgroup,
+    select,
+    label,
+    textarea {
+        color: $dark_text_secondary;
+    }
+    .docs_main {
+        h4 {
+            a {
+                color: $dark_text_secondary;
+            }
+        }
+        h3 {
+            a {
+                color: $dark_text_secondary;
+            }
+        }
+        h2 {
+            a {
+                color: $dark_text_secondary;
+            }
+        }
+        ul {
+            &:not(:first-of-type) {
+                li {
+                    color: $dark_text_secondary;
+                }
+            }
+        }
+        .content-list {
+            ul {
+                li {
+                    color: $dark_text_secondary;
+                }
+            }
+        }
+        h1 {
+            + {
+                ul {
+                    li {
+                        a {
+                            color: $dark_text_secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    p {
+        color: $dark_text;
+    }
+
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $dark_text;
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $dark_text;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: $dark_text;
+    }
+    .input_group.search input[type="submit"] {
+        -webkit-filter: invert(0.6);
+        filter: invert(0.6);
+    }
+    .custom_select select {
+        background: $dark_primary_background;
+    }
+    .custom_select::after {
+        -webkit-filter: invert(0.6);
+        filter: invert(0.6);
+    }
+    .sidebar_layout {
+        background-color: $dark_secondary_background;
+    }
+
+    .callout {
+        background: $dark_primary_background;
+        box-shadow: 0 20px 30px -16px rgba(9, 9, 16, 0.2);
+    }
+    footer {
+        background: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(85%, $dark_secondary_background),
+            to($dark_primary_background)
+        );
+        background: linear-gradient(
+            to top,
+            $dark_secondary_background 85%,
+            $dark_primary_background
+        );
+    }
+    .sidebar_layout .sidebar {
+        background: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            from($dark_secondary_background),
+            to($dark_primary_background)
+        );
+        background: linear-gradient(
+            to top,
+            $dark_secondary_background,
+            $dark_primary_background
+        );
+    }
+    @media (min-width: 65em) {
+        .sidebar_layout .sidebar::before {
+            background: -webkit-gradient(
+                linear,
+                left bottom,
+                left top,
+                from($dark_secondary_background),
+                to($dark_primary_background)
+            );
+            background: linear-gradient(
+                to top,
+                $dark_secondary_background,
+                $dark_primary_background
+            );
+        }
+    }
+
+    .sidebar_layout {
+        .sidebar {
+            nav {
+                .navigation_contain {
+                    ul {
+                        li {
+                            h2 {
+                                color: $dark_text;
+                            }
+                            a {
+                                color: $dark_text_secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer_bg {
+            background: $dark_primary_background;
+        }
+    }
+    .footer_nav {
+        .footer_nav_contain {
+            ul {
+                li {
+                    a {
+                        color: $dark_text;
+                    }
+                }
+            }
+        }
+    }
+    .partner_block {
+        background: $dark_secondary_background;
+    }
+    .footer_info {
+        .social_links {
+            li {
+                img {
+                    -webkit-filter: invert(0.6);
+                    filter: invert(0.6);
+                }
+            }
+        }
+    }
+
+    /* ================================================================================ */
+
+    /* PrismJS 1.20.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+markup-templating+php&plugins=line-numbers */
+    /**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+    code[class*="language-"],
+    pre[class*="language-"] {
+        color: #f8f8f2;
+    }
+
+    :not(pre) > code[class*="language-"],
+    pre[class*="language-"] {
+        background: #333333;
+    }
+
+    .token.comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata {
+        color: #8292a2;
+    }
+
+    .token.punctuation {
+        color: #f8f8f2;
+    }
+
+    .token.property,
+    .token.tag,
+    .token.constant,
+    .token.symbol,
+    .token.deleted {
+        color: #f92672;
+    }
+
+    .token.boolean,
+    .token.number {
+        color: #ae81ff;
+    }
+
+    .token.selector,
+    .token.attr-name,
+    .token.string,
+    .token.char,
+    .token.builtin,
+    .token.inserted {
+        color: #a6e22e;
+    }
+
+    .token.operator,
+    .token.entity,
+    .token.url,
+    .language-css .token.string,
+    .style .token.string,
+    .token.variable {
+        color: #f8f8f2;
+    }
+
+    .token.atrule,
+    .token.attr-value,
+    .token.function,
+    .token.class-name {
+        color: #e6db74;
+    }
+
+    .token.keyword {
+        color: $blue;
+    }
+
+    .token.regex,
+    .token.important {
+        color: #fd971f;
+    }
+
+    .line-numbers .line-numbers-rows {
+        border-right: 1px solid #999;
+    }
+
+    .line-numbers-rows > span:before {
+        color: #999;
+    }
+}

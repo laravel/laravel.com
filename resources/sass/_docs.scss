@@ -1,11 +1,13 @@
 .docs_actions {
     margin-bottom: 2.5em;
 
-    .version_drop {
+    .version_drop,
+    .theme_mode {
         margin-bottom: 1em;
     }
 
-    .input_group input[type="text"], .input_group input[type="search"] {
+    .input_group input[type="text"],
+    .input_group input[type="search"] {
         margin: 0;
     }
 
@@ -24,7 +26,12 @@
         .version_drop {
             width: 11em;
             margin: 0;
+            margin-right: 2.25em;
             flex: none;
+        }
+
+        .theme_mode {
+            width: inherit;
         }
     }
 }
@@ -68,7 +75,8 @@
             visibility: hidden;
             top: -30px;
         }
-        thead > tr, tbody > tr {
+        thead > tr,
+        tbody > tr {
             display: flex;
             width: 100%;
             flex-direction: column;
@@ -116,11 +124,13 @@
         letter-spacing: 0;
     }
 
-    h4 a, h3 a, h2 a {
-		color: $black;
-	}
+    h4 a,
+    h3 a,
+    h2 a {
+        color: $black;
+    }
 
-	h3 a:before,
+    h3 a:before,
     h2 a:before {
         content: "#";
         font-weight: 400;
@@ -128,7 +138,7 @@
         position: absolute;
         font-size: 28px;
         color: $red;
-        opacity: .6;
+        opacity: 0.6;
     }
 
     code {
@@ -147,17 +157,19 @@
         }
     }
 
-    ul:not(:first-of-type), .content-list ul {
+    ul:not(:first-of-type),
+    .content-list ul {
         list-style-type: none;
-        margin: 0 0 2.5em 0; padding: 0;
+        margin: 0 0 2.5em 0;
+        padding: 0;
 
         li {
             position: relative;
             display: block;
             padding-left: 1.25em;
             margin-bottom: 1rem;
-            font-size: .89em;
-            color: rgba($black, .7);
+            font-size: 0.89em;
+            color: rgba($black, 0.7);
             line-height: 1.714em;
 
             a {
@@ -165,14 +177,16 @@
             }
 
             code {
-                font-size: .875em;
+                font-size: 0.875em;
             }
 
             &::before {
                 content: "";
                 position: absolute;
-                top: .40em; left: 0;
-                width: 9px; height: 10px;
+                top: 0.4em;
+                left: 0;
+                width: 9px;
+                height: 10px;
                 background: url(/img/icons/ul_marker.min.svg) no-repeat center;
                 background-size: contain;
             }
@@ -190,7 +204,8 @@
             font-size: 1rem;
         }
 
-        ul:not(:first-of-type), .content-list ul {
+        ul:not(:first-of-type),
+        .content-list ul {
             margin-left: 1.75em;
         }
     }
@@ -199,35 +214,45 @@
 .callout {
     padding: 1.875em 1em;
     background: $white;
-    box-shadow: 0 20px 30px -16px rgba($black, .2);
+    box-shadow: 0 20px 30px -16px rgba($black, 0.2);
     margin-bottom: 2.5em;
     margin-left: 0;
     margin-right: 0;
     max-width: 43.75em;
 
-    p{
+    p {
         margin-bottom: 0;
     }
 
     .icon {
         position: relative;
         display: block;
-        width: 4.5em; height: 4.5em;
+        width: 4.5em;
+        height: 4.5em;
         margin-bottom: 1.5em;
 
         img {
             display: block;
             position: absolute;
-            top: 50%; left: 50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            opacity: .7;
+            opacity: 0.7;
             user-select: none;
         }
 
-        &.blue { background: $blue; }
-        &.red { background: $red; }
-        &.purple { background: $purple; }
-        &.orange { background: $orange; }
+        &.blue {
+            background: $blue;
+        }
+        &.red {
+            background: $red;
+        }
+        &.purple {
+            background: $purple;
+        }
+        &.orange {
+            background: $orange;
+        }
     }
 
     .content {
@@ -262,13 +287,13 @@
             display: none;
         }
 
-        &> span {
+        & > span {
             padding: 1em 2em;
         }
 
         &.next_link {
             span span {
-                margin: 0 .5em 0 0;
+                margin: 0 0.5em 0 0;
             }
         }
 
@@ -295,15 +320,16 @@
 .docs_main h1 + ul {
     margin-bottom: 4em;
     list-style-type: none;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 
     li {
         display: block;
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
 
         a {
             position: relative;
-            font-size: .89em;
+            font-size: 0.89em;
             font-weight: 500;
             color: $black;
             text-decoration: none;
@@ -316,7 +342,7 @@
     }
 
     ul {
-        margin-top: .5em;
+        margin-top: 0.5em;
         padding: 0;
         margin-bottom: 0;
 
