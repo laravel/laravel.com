@@ -2,6 +2,7 @@
 
 DOCS_VERSIONS=(
   master
+  8.x
   7.x
   6.x
   5.8
