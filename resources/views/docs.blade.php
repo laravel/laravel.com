@@ -51,7 +51,7 @@
                     </header>
                     <section class="docs_body">
                         <section class="docs_main">
-                            @unless (in_array($currentVersion, [DEFAULT_VERSION, 'master']))
+                            @unless ($currentVersion == 'master' || version_compare($currentVersion, DEFAULT_VERSION) >= 0)
                                 <blockquote>
                                     <div class="callout">
                                         <div class="icon orange">
@@ -65,6 +65,21 @@
                                     </div>
                                 </blockquote>
                             @endunless
+
+                            @if ($currentVersion == 'master' || version_compare($currentVersion, DEFAULT_VERSION) > 0)
+                                <blockquote>
+                                    <div class="callout">
+                                        <div class="icon orange">
+                                            <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon"/>
+                                        </div>
+
+                                        <p class="content">
+                                            <strong>WARNING</strong> You're browsing the documentation for an upcoming version of Laravel.
+                                            The documentation and features of this release are subject to change.
+                                        </p>
+                                    </div>
+                                </blockquote>
+                            @endif
 
                             {!! $content !!}
                         </section>
