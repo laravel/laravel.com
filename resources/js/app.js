@@ -13,7 +13,7 @@ $(document).ready(function() {
     $(document).keydown(function(e) {
         var code = e.keyCode || e.which;
 
-        if (code == 27) {
+        if (code == 27 && document.getElementsByClassName('docs_sidebar')[0] !== undefined) {
             navigateMenuOpener(e)
         }
     });
