@@ -60,8 +60,8 @@ $(document).ready(function () {
     $(document).mouseup(function (e) {
         var container = $(".header_content .search_box");
 
-        if (!container.is(e.target) &&
-            container.has(e.target).length === 0) {
+        if (!container.is(e.target)
+            && container.has(e.target).length === 0) {
             container.removeClass("search--on");
         }
     });
