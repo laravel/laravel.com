@@ -18,7 +18,6 @@ $(document).ready(function() {
         }
     });
 
-
     $(document).on('keydown', function(e) {
         var slashKey = e.key === '/' || e.which === 191 || e.keyCode === 191;
         if (!slashKey) {
