@@ -69,6 +69,7 @@ class DocsController extends Controller
                 'versions' => Documentation::getDocVersions(),
                 'currentSection' => $otherVersions->isEmpty() ? '' : '/'.$page,
                 'canonical' => null,
+                'page' => null,
             ], 404);
         }
 
@@ -96,6 +97,7 @@ class DocsController extends Controller
             'versions' => Documentation::getDocVersions(),
             'currentSection' => $section,
             'canonical' => $canonical,
+            'page' => $page,
         ]);
     }
 

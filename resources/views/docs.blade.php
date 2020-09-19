@@ -60,7 +60,7 @@
 
                                         <p class="content">
                                             <strong>WARNING</strong> You're browsing the documentation for an old version of Laravel.
-                                            Consider upgrading your project to <a href="{{ route('docs.version', DEFAULT_VERSION) }}">Laravel {{ DEFAULT_VERSION }}</a>.
+                                            Consider using <a href="{{ route('docs.version', ['version' => DEFAULT_VERSION, 'page' => $page]) }}">Laravel {{ DEFAULT_VERSION }}</a>.
                                         </p>
                                     </div>
                                 </blockquote>
