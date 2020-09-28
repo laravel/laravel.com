@@ -161,11 +161,11 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="sys_tinker">
-                                        <a href="https://github.com/laravel/tinker">
+                                    <li class="sys_jetstream">
+                                        <a href="https://jetstream.laravel.com">
                                             <div class="system_icon">
-                                                <img src="/img/ecosystem/tinker.min.svg" alt="Icon"></div>
-                                            <div class="system_info">Tinker <span>Interactive REPL</span></div>
+                                                <img src="/img/ecosystem/jetstream.min.svg" alt="Icon"></div>
+                                            <div class="system_info">Jetstream <span>App Scaffolding</span></div>
                                         </a>
                                     </li>
                                 </ul>

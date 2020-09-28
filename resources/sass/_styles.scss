@@ -65,6 +65,7 @@ ul.ecosystem {
         &.sys_socialite a .system_icon { background: #E394BA; }
         &.sys_telescope a .system_icon { background: #4040C8; }
         &.sys_tinker a .system_icon { background: #EC7658; }
+        &.sys_jetstream a .system_icon { background: #6875f5; }
     }
 
     @include fl-break(40em) {
