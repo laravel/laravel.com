@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="content">
-                            <p>You can count on us to bring passion, dedication, and stability to our work. We value efficient processes and tools, and we value people and relationships even more. We view ourselves as master craftspeople who respect the importance and significance of what we do. Think "This Old House" on your server.</p>
+                            <p>The companies we work with appreciate our ability to work seamlessly with their technical, and non-technical teams. Our developer-led company is comprised of individuals who are not only exceptional coders, but exceptional problem solvers with business sense. If there's a more efficient path to reach your goals, we'll propose it even if it means fewer development hours for us.</p>
 
                             <div class="list_block">
                                 <h3>Proficiencies</h3>
@@ -54,7 +54,7 @@
                                 </ul>
                             </div>
 
-                            <p>We are proud to have helped some of the largest companies in the world develop products, streamline systems, and better reach their customers using Laravel. We're honored to have this opportunity to be part of the Laravel Partners program.</p>
+                            <p>We are proud to have helped some of the largest companies in the world develop products, streamline systems, and better reach their customers using Laravel.</p>
 
                             <p>We look forward to working with you!</p>
 
