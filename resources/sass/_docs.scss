@@ -120,15 +120,25 @@
 		color: $black;
 	}
 
-	h3 a:before,
+    h4 a:before,
+    h3 a:before,
     h2 a:before {
         content: "#";
         font-weight: 400;
-        margin-left: -25px;
         position: absolute;
-        font-size: 28px;
         color: $red;
         opacity: .6;
+    }
+
+    h3 a:before,
+    h2 a:before {
+        margin-left: -25px;
+        font-size: 28px;
+    }
+
+    h4 a:before {
+        margin-left: -18px;
+        font-size: 17px;
     }
 
     code {
