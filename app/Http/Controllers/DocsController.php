@@ -66,8 +66,8 @@ class DocsController extends Controller
                     'page' => $page,
                 ]),
                 'currentVersion' => $version,
-                'versions' => Documentation::getDocVersions(),
-                'currentSection' => $otherVersions->isEmpty() ? '' : '/'.$page,
+                'versions' => Documentation::DOC_VERSIONS,
+                'currentSection' => $otherVersions->isEmpty() ? '' : '/' . $page,
                 'canonical' => null,
             ], 404);
         }
@@ -93,7 +93,7 @@ class DocsController extends Controller
             'index' => $this->docs->getIndex($version),
             'content' => $content,
             'currentVersion' => $version,
-            'versions' => Documentation::getDocVersions(),
+            'versions' => Documentation::DOC_VERSIONS,
             'currentSection' => $section,
             'canonical' => $canonical,
         ]);

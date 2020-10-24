@@ -21,6 +21,23 @@ class Documentation
      */
     protected $cache;
 
+    public const DOC_VERSIONS = [
+        'master' => 'Master',
+        '8.x' => '8.x',
+        '7.x' => '7.x',
+        '6.x' => '6.x',
+        '5.8' => '5.8',
+        '5.7' => '5.7',
+        '5.6' => '5.6',
+        '5.5' => '5.5',
+        '5.4' => '5.4',
+        '5.3' => '5.3',
+        '5.2' => '5.2',
+        '5.1' => '5.1',
+        '5.0' => '5.0',
+        '4.2' => '4.2',
+    ];
+
     /**
      * Create a new documentation instance.
      *
@@ -107,35 +124,10 @@ class Documentation
      */
     public function versionsContainingPage($page)
     {
-        return collect(static::getDocVersions())
+        return collect(static::DOC_VERSIONS)
             ->filter(function ($version) use ($page) {
                 return $this->sectionExists($version, $page);
             });
     }
 
-    /**
-     * Get the publicly available versions of the documentation
-     *
-     * @return array
-     */
-    public static function getDocVersions()
-    {
-        return [
-            'master' => 'Master',
-            '8.x' => '8.x',
-            '7.x' => '7.x',
-            '6.x' => '6.x',
-            // '6.0' => '6.0',
-            '5.8' => '5.8',
-            '5.7' => '5.7',
-            '5.6' => '5.6',
-            '5.5' => '5.5',
-            '5.4' => '5.4',
-            '5.3' => '5.3',
-            '5.2' => '5.2',
-            '5.1' => '5.1',
-            '5.0' => '5.0',
-            '4.2' => '4.2',
-        ];
-    }
 }
