@@ -26,7 +26,8 @@ class PartnersController extends Controller
     /**
      * Show a parnter page.
      *
-     * @return \Illuminate\View\View
+     * @param string $partner
+     * @return \Illuminate\View\View|void
      */
     public function show($partner)
     {
