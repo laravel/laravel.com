@@ -30,7 +30,7 @@ class PartnersController extends Controller
      */
     public function show($partner)
     {
-        $view = 'partners.'.$partner;
+        $view = "partners.{$partner}";
 
         return view()->exists($view) ? view($view) : abort(404);
     }
