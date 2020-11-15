@@ -3,70 +3,43 @@
 @section('content')
     @include('partials.header')
 
-    <div class="remodal-bg">
+    <x-partners.hero
+        primary-button-text="Hire Kirschbaum"
+        primary-button-url="mailto:hello@kirschbaumdevelopment.com"
+        secondary-button-url="https://kirschbaumdevelopment.com/"
+    >
+        <x-slot name="logo">
+            <img src="/img/partners/kirschbaum.min.svg" alt="Kirschbaum Development">
+        </x-slot>
+        <x-slot name="description">
+            We are a team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems. We bring products and services to market quickly by leveraging iterative processes and lean development techniques.
+        </x-slot>
+        <x-slot name="image">
+            <img src="/img/partners/img_kirschbaum_detail.png" alt="Kirschbaum Development">
+        </x-slot>
+    </x-partners.hero>
 
-        <div class="content_contain">
-            <div class="page_contain">
-                <section class="partners_hero inner">
-                    <div class="contain">
-                        <h6>Laravel Partner</h6>
-                        <div class="hero_heading">
-                            <img src="/img/partners/kirschbaum.min.svg" alt="Kirschbaum Development">
-                            <div class="actions">
-                                <a href="mailto:hello@kirschbaumdevelopment.com" class="btn"><span>Hire Kirschbaum</span></a>
-                                <a href="https://kirschbaumdevelopment.com/" class="btn secondary"><span>Visit Website →</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="contain">
-                            <h3>We are a team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems. We bring products and services to market quickly by leveraging iterative processes and lean development techniques.</h3>
-                            <div class="hero_img"><img src="/img/partners/img_kirschbaum_detail.png" alt="Kirschbaum Development">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="contain">
-                    <div class="partners_detail_main">
-                        <div class="bg">
-                            <video poster="/img/blocks/blocks_2.jpg" playsinline autoplay muted loop>
-                                <source src="/img/blocks/blocks_2.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="content">
-                            <p>The companies we work with appreciate our ability to work seamlessly with their technical, and non-technical teams. Our developer-led company is comprised of individuals who are not only exceptional coders, but exceptional problem solvers with business sense. If there's a more efficient path to reach your goals, we'll propose it even if it means fewer development hours for us.</p>
-
-                            <div class="list_block">
-                                <h3>Proficiencies</h3>
-                                <ul>
-                                    <li>Laravel Development</li>
-                                    <li>Vue.js / Angular / Ionic</li>
-                                    <li>Machine Learning</li>
-                                    <li>APIs / Microservices</li>
-                                    <li>SaaS Products</li>
-                                    <li>Technical Leadership</li>
-                                    <li>Rescue Projects</li>
-                                    <li>Staff Augmentation</li>
-                                    <li>Team Building / Mentoring</li>
-                                    <li>Direction for Start-ups</li>
-                                </ul>
-                            </div>
-
-                            <p>We are proud to have helped some of the largest companies in the world develop products, streamline systems, and better reach their customers using Laravel.</p>
-
-                            <p>We look forward to working with you!</p>
-
-                            <ul class="social_links">
-                                <li><a href="https://twitter.com/n_kirschbaum"><img src="/img/social/twitter.min.svg" alt="Twitter"></a></li>
-                                <li><a href="https://github.com/kirschbaum-development"><img src="/img/social/github.min.svg" alt="GitHub"></a></li>
-                                <li><a href="https://www.linkedin.com/company/kirschbaumdevelopmentgroupllc"><img src="/img/social/linkedin.min.svg" alt="LinkedIn"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <x-partners.body
+        twitter="https://twitter.com/n_kirschbaum"
+        github="https://github.com/kirschbaum-development"
+        linkedin="https://www.linkedin.com/company/kirschbaumdevelopmentgroupllc"
+    >
+        <x-slot name="content">
+            <p>The companies we work with appreciate our ability to work seamlessly with their technical, and non-technical teams. Our developer-led company is comprised of individuals who are not only exceptional coders, but exceptional problem solvers with business sense. If there's a more efficient path to reach your goals, we'll propose it even if it means fewer development hours for us.</p>
+            <p>We are proud to have helped some of the largest companies in the world develop products, streamline systems, and better reach their customers using Laravel.</p>
+            <p>We look forward to working with you!</p>
+        </x-slot>
+        <x-slot name="proficiencies">
+            <li>Laravel Development</li>
+            <li>Vue.js / Angular / Ionic</li>
+            <li>Machine Learning</li>
+            <li>APIs / Microservices</li>
+            <li>SaaS Products</li>
+            <li>Technical Leadership</li>
+            <li>Rescue Projects</li>
+            <li>Staff Augmentation</li>
+            <li>Team Building / Mentoring</li>
+            <li>Direction for Start-ups</li>
+        </x-slot>
+    </x-partners.body>
 @stop

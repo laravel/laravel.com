@@ -6,9 +6,9 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  * @author Lea Verou
  */
 
-code[class*="language-"],
+code,
 pre[class*="language-"] {
-	color: $black;
+	color: theme('colors.gray.900');
 	background: none;
 	text-align: left;
 	white-space: pre;
@@ -27,19 +27,19 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+code::-moz-selection, code ::-moz-selection {
 	text-shadow: none;
-	background: #b3d4fc;
+	background: theme('colors.gray.50');
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
+code::selection, code ::selection {
 	text-shadow: none;
-	background: #b3d4fc;
+	background: theme('colors.gray.50');
 }
 
 @media print {
-	code[class*="language-"],
+	code,
 	pre[class*="language-"] {
 		text-shadow: none;
 	}
@@ -54,22 +54,27 @@ pre[class*="language-"] {
     max-width: 100%;
 }
 
-:not(pre) > code[class*="language-"],
+.docs_main :not(pre) > code,
 pre[class*="language-"] {
-	background: #fbfbfd;
+	background: theme('colors.gray.50');
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-    color: $code_red;
+    color: theme('colors.red.800');
+}
+
+.docs_main :not(pre) > code {
+    padding: 0 .125rem;
+    display: inline-block;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #93939e;
+	color: theme('colors.gray.500');
 }
 
 .token.punctuation {
-	color: $black;
+	color: theme('colors.gray.900');
 }
 
 .namespace {
@@ -83,7 +88,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: $code_dark_red;
+	color: theme('colors.red.900');
 }
 
 .token.selector,
@@ -92,7 +97,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #690;
+	color: theme('colors.green.600');
 }
 
 .token.operator,
@@ -100,24 +105,24 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	color: $black;
+	color: theme('colors.gray.900');
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: $code_dark_blue;
+	color: theme('colors.blue.800');
 }
 
 .token.function,
 .token.class-name {
-	color: $code_red;
+	color: theme('colors.red.800');
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-	color: $code_blue;
+	color: theme('colors.blue.600');
 }
 
 .token.important,
@@ -159,16 +164,16 @@ pre[class*="language-"].line-numbers > code {
 
 }
 
-	.line-numbers-rows > span {
-		pointer-events: none;
-		display: block;
-		counter-increment: linenumber;
-	}
+.line-numbers-rows > span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber;
+}
 
-		.line-numbers-rows > span:before {
-			content: counter(linenumber);
-			color: $black;
-			display: block;
-			padding-right: 0.8em;
-			text-align: right;
-		}
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: theme('colors.gray.900');
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
