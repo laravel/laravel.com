@@ -12,7 +12,7 @@
                     </div>
                     <div class="px-3 self-stretch flex items-center">
                         <p class="text-gray-700 text-xs sm:text-sm">
-                            Laravel Vapor is now available! Sign up today! <span class="arrow">→</span>
+                            Laravel Vapor is now available! <span class="whitespace-nowrap">Sign up today! →</span>
                         </p>
                     </div>
                 </a>

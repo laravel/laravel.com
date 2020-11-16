@@ -1,3 +1,5 @@
+require('alpinejs');
+
 window.searchComponent = require('./components/search').default;
 
 document.addEventListener('DOMContentLoaded', () => {

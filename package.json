@@ -11,6 +11,7 @@
     },
     "devDependencies": {
         "algoliasearch": "^4.6.0",
+        "alpinejs": "^2.7.3",
         "babel-plugin-prismjs": "^2.0.1",
         "cross-env": "^5.1",
         "laravel-mix": "^5.0.9",

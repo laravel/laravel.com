@@ -72,7 +72,7 @@
     ];
 @endphp
 
-<footer>
+<footer style="background: linear-gradient(0deg,#fff 90%,hsla(0,0%,100%,0))" class="relative z-30">
     <div class="relative z-20 overflow-x-hidden">
         <div class="relative max-w-screen-2xl mx-auto sm:px-8">
             <div class="absolute inset-0 flex flex-col px-4 lg:px-12 xl:px-16">

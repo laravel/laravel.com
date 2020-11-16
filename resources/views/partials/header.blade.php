@@ -1,4 +1,5 @@
 <header
+    class="relative z-50"
     @keydown.window.escape="navIsOpen = false"
     @click.away="navIsOpen = false"
 >
@@ -249,7 +250,7 @@
                         @keydown.arrow-down.prevent="focusNextResult()"
                     >
                         <svg class="absolute inset-y-0 left-0 z-10 mt-1 w-5 h-5 text-gray-900 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                        <input x-model.debouce.200ms="search" class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide focus:outline-none" id="search-docs-input" placeholder="Search Docs" aria-label="Search in the documentation">
+                        <input x-model.debouce.200ms="search" class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none" id="search-docs-input" placeholder="Search Docs" aria-label="Search in the documentation">
                     </div>
                     @include('partials.search-results')
                 </div>

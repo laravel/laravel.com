@@ -7,6 +7,7 @@
     h1 {
         font-size: 2em;
         letter-spacing: -1px;
+        line-height: 1.125em;
         margin-bottom: .65em;
 
         @screen md {
@@ -30,6 +31,7 @@
         font-size: 1.75em;
         font-weight: 400;
         letter-spacing: -.5px;
+        line-height: 1.125em;
 
         @screen md {
             font-size: 2.25em;

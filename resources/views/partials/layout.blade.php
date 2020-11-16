@@ -21,14 +21,8 @@
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Load fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
-
-    <!-- Load styles -->
     <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
-
-    <!-- Load JS -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
 </head>
 <body
     x-data="{
@@ -36,7 +30,7 @@
         searchIsOpen: false,
         search: '',
     }"
-    class="language-php font-sans text-gray-900 antialiased"
+    class="language-php h-full w-full font-sans text-gray-900 antialiased"
 >
 
 @yield('content')
