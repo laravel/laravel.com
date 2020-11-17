@@ -13,6 +13,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+        fontSize: {
+          '6.5xl': ['4rem', { lineHeight: '1' }],
+        },
         maxWidth: {
             xxs: '16rem',
         },

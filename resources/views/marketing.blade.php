@@ -7,7 +7,7 @@
         <div class="max-w-screen-xl px-8 mx-auto">
             <div class="py-3 sm:transform sm:-translate-x-8 sm:py-6 2xl:-translate-x-24">
                 <a href="https://vapor.laravel.com/" class="max-w-md flex bg-gray-100 transition hover:bg-gray-200">
-                    <div class="w-10 h-10 flex items-center justify-center bg-vapor">
+                    <div class="w-10 h-10 flex items-center justify-center bg-vapor sm:w-12 sm:h-12">
                         <img src="/img/ecosystem/vapor.min.svg" alt="Vapor" class="w-7 h-7">
                     </div>
                     <div class="px-3 self-stretch flex items-center">
@@ -19,16 +19,16 @@
             </div>
         </div>
 
-        <section class="relative py-12 md:py-20 xl:py-28">
-            <div style="z-index: -9998" class="hidden md:transform md:translate-x-1/4 md:translate-y-1/4 md:absolute md:inset-y-0 md:right-0 md:h-80 md:w-3/4 md:flex md:items-center lg:w-3/4 lg:h-96">
-                <video poster="/img/hero/hero_poster.jpg" playsinline autoplay muted loop>
-                    <source src="/img/hero/hero.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="max-w-screen-xl px-8 mx-auto relative">
-                <h1 class="max-w-xl font-medium text-3xl tracking-tight sm:text-4xl md:max-w-2xl md:text-5xl lg:max-w-3xl lg:pr-8 lg:text-7xl xl:max-w-4xl">The PHP Framework for <span class="whitespace-nowrap">Web Artisans</span></h1>
-                <p class="mt-3 max-w-xl text-gray-600 sm:mt-5 md:max-w-xl md:mt-12 md:text-lg lg:max-w-2xl">Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.</p>
-                <div class="mt-6 space-y-4 flex flex-col sm:flex-row sm:mt-8 sm:space-y-0 sm:space-x-4 md:mt-16">
+        <section class="py-12 md:py-20 xl:py-28">
+            <div class="relative max-w-screen-xl px-8 mx-auto">
+                <div style="z-index: -9998" class="hidden md:w-full md:transform md:translate-x-1/4 md:absolute md:-top-16 md:-right-16 md:h-80 md:flex md:items-center lg:w-3/4 lg:right-16 lg:h-96 xl:-right-16 xl:w-full">
+                    <video poster="/img/hero/hero_poster.jpg" playsinline autoplay muted loop>
+                        <source src="/img/hero/hero.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h1 class="max-w-xl font-medium text-3xl tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight xl:max-w-3xl xl:pr-8 xl:text-6.5xl">The PHP Framework for <span class="whitespace-nowrap">Web Artisans</span></h1>
+                <p class="mt-3 max-w-md text-gray-600 sm:mt-5 lg:mt-8 lg:max-w-xl lg:text-lg xl:max-w-2xl">Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.</p>
+                <div class="mt-6 space-y-4 flex flex-col sm:flex-row sm:mt-8 sm:space-y-0 sm:space-x-4 md:mt-8 lg:mt-12">
                     <x-button.primary href="/docs">
                         Documentation
                     </x-button.primary>
@@ -42,43 +42,41 @@
     </div>
 
     <div class="relative py-16 overflow-hidden md:py-40 lg:py-64 xl:py-72">
-        <div style="z-index: -9999" class="hidden md:transform md:-translate-x-1/2 md:absolute md:inset-y-0 md:left-0 md:h-full md:flex md:items-center lg:w-full" style="width: 130%">
-            <video class="w-full" poster="/img/blocks/blocks_3.jpg" playsinline autoplay muted loop>
-                <source src="/img/blocks/blocks_3.mp4" type="video/mp4">
-            </video>
-        </div>
-        @if (SHOW_VAPOR)
-            <div class="max-w-screen-xl px-8 mx-auto space-y-16 md:space-y-0 md:flex md:items-center">
+        <div class="relative max-w-screen-xl px-8 mx-auto space-y-16 md:space-y-0 md:flex md:items-center">
+            <div style="z-index: -9999; width: 120%" class="hidden md:transform md:-translate-x-1/2 md:absolute md:inset-y-0 md:left-0 md:h-full md:flex md:items-center">
+                <video class="w-full" poster="/img/blocks/blocks_3.jpg" playsinline autoplay muted loop>
+                    <source src="/img/blocks/blocks_3.mp4" type="video/mp4">
+                </video>
+            </div>
+            @if (SHOW_VAPOR)
                 <div class="max-w-lg md:max-w-auto md:w-1/2">
                     <img class="w-full shadow-lg" src="/img/homepage/vapor.jpg" alt="Vapor">
                 </div>
                 <div class="md:w-1/2 md:pl-8 lg:pl-24">
-                    <h1 class="font-medium text-3xl tracking-tight sm:text-4xl md:text-5xl lg:text-7xl">Laravel Vapor</h1>
+                    <h1 class="font-medium text-3xl tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight xl:text-6.5xl">Laravel Vapor</h1>
                     <p class="mt-3 max-w-xl text-gray-600 sm:mt-5 md:max-w-2xl md:mt-8 md:text-lg">Laravel Vapor is a serverless deployment platform for Laravel, powered by AWS. Launch your Laravel infrastructure on Vapor and fall in love with the scalable simplicity of serverless.</p>
                     <x-button.primary class="mt-6 sm:mt-8 md:mt-10" href="https://vapor.laravel.com" target="_blank">
                         Learn More
                     </x-button.primary>
                 </div>
-            </div>
-        @else
-            <div class="max-w-screen-xl px-8 mx-auto space-y-16 md:space-y-0 md:flex md:items-center">
+            @else
                 <div class="max-w-lg md:max-w-auto md:w-1/2">
                     <img class="w-full shadow-lg" src="/img/homepage/forge.jpg" alt="Forge">
                 </div>
                 <div class="md:w-1/2 md:pl-8 lg:pl-24">
-                    <h1 class="font-medium text-3xl tracking-tight sm:text-4xl md:text-5xl lg:text-7xl">Laravel Forge</h1>
+                    <h1 class="font-medium text-3xl tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight xl:text-6.5xl">Laravel Forge</h1>
                     <p class="mt-3 max-w-xl text-gray-600 sm:mt-5 md:max-w-2xl md:mt-8 md:text-lg">Instant PHP Platforms on DigitalOcean, Linode, and more. Featuring push-to-deploy, Redis, queues, and everything else you could need to launch and deploy impressive Laravel applications.</p>
                     <x-button.primary class="mt-6 sm:mt-8 md:mt-10" href="https://forge.laravel.com" target="_blank">
                         Learn More
                     </x-button.primary>
                 </div>
-            </div>
-        @endif
+            @endif
+        </div>
     </div>
 
     <div class="max-w-screen-xl px-8 mx-auto">
         <h6 class="mx-auto text-center text-gray-600 font-medium text-sm">Revolutionize how you build the web.</h6>
-        <h1 class="mx-auto mt-2 font-medium text-3xl tracking-tight text-center sm:text-4xl md:text-5xl lg:text-7xl">The Laravel Ecosystem</h1>
+        <h1 class="mx-auto mt-2 font-medium text-3xl tracking-tight text-center sm:text-4xl lg:text-5xl lg:leading-tight xl:text-6.5xl">The Laravel Ecosystem</h1>
         <ul class="mt-16 grid gap-6 relative sm:grid-cols-2 md:mt-24 md:grid-cols-3">
             <li>
                 <a href="https://vapor.laravel.com" class="flex items-center p-4 shadow-lg">
@@ -281,13 +279,13 @@
         </ul>
     </div>
 
-    <div class="relative py-16 overflow-hidden md:py-40 lg:py-64 xl:py-72">
-        <div style="z-index: -9998" class="hidden md:transform md:translate-x-1/4 md:absolute md:inset-y-0 md:right-0 md:w-full md:flex md:items-center">
-            <video poster="/img/blocks/blocks_4.jpg" playsinline autoplay muted loop>
-                <source src="/img/blocks/blocks_4.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="max-w-screen-xl mx-auto px-8 space-y-12 md:space-y-0 md:flex md:items-center">
+    <div class="py-16 overflow-hidden md:py-40 lg:py-64 xl:py-80">
+        <div class="relative max-w-screen-xl mx-auto px-8 space-y-12 md:space-y-0 md:flex md:items-center">
+            <div style="z-index: -9998; width: 120%" class="hidden md:transform md:translate-x-1/3 md:absolute md:inset-y-0 md:right-0 md:flex md:items-center">
+                <video poster="/img/blocks/blocks_4.jpg" playsinline autoplay muted loop>
+                    <source src="/img/blocks/blocks_4.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="md:w-1/2">
                 <h6 class="text-gray-600 font-medium text-sm">Resources</h6>
                 <h1 class="mt-2 max-w-md font-medium text-3xl tracking-tight sm:text-4xl md:mt-4 md:max-w-4xl md:text-5xl md:leading-tight xl:text-6xl">A community built<br class="md:hidden lg:inline"> for people like you</h1>
@@ -307,7 +305,7 @@
             </div>
 
             <div class="pr-12 md:w-1/2 md:px-12">
-                <div class="relative p-6 bg-white shadow-lg lg:p-16">
+                <div class="relative max-w-lg p-6 bg-white shadow-lg lg:p-16">
                     <div class="absolute right-0 transform translate-x-8 flex items-center justify-center w-16 h-16 bg-black sm:w-24 sm:h-24 md:w-16 md:h-16 lg:w-24 lg:h-24">
                         <img class="w-9 h-9 sm:w-14 sm:h-14 md:w-9 md:h-9 lg:w-14 lg:h-14" src="/img/icons/laracasts.min.svg" alt="Laracasts">
                     </div>
