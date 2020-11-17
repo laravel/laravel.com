@@ -17,12 +17,12 @@
                         });
                     }
                 }"
-                class="fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:max-w-lg lg:w-full lg:flex lg:justify-end lg:items-end lg:px-8 xl:px-16"
+                class="fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:pl-16 lg:w-auto lg:flex-shrink-0 lg:flex lg:justify-end lg:items-end xl:max-w-lg xl:w-full"
                 :class="{ 'w-64': navIsOpen }"
                 @click.away="navIsOpen = false"
                 @keydown.window.escape="navIsOpen = false"
             >
-                <div class="relative min-h-0 flex-1 flex flex-col xl:w-64">
+                <div class="relative min-h-0 flex-1 flex flex-col xl:w-80">
                     <a href="/" class="flex items-center py-8 px-4 lg:px-8 xl:px-16">
                         <img
                             class="w-8 h-8 flex-shrink-0 transition-all duration-300 lg:w-12 lg:h-12"
@@ -100,14 +100,15 @@
                             <div
                                 class="relative w-full border-b border-gray-600 border-opacity-50 overflow-hidden transition-all duration-500 focus-within:border-gray-600"
                                 @click="searchIsOpen = true"
-                                @click.away="clear()"
-                                @keydown.window.escape="clear()"
+                                @click.away="clear"
+                                @keydown.window.escape="clear"
+                                @keydown.window="handleSlashKey"
                             >
                                 <svg class="absolute inset-y-0 left-0 z-10 mt-1 w-5 h-5 text-gray-900 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                                 <input
                                     x-model.debouce.200ms="search"
+                                    x-ref="searchInput"
                                     class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none"
-                                    id="search-docs-input"
                                     placeholder="Search Docs"
                                     aria-label="Search in the documentation"
                                     @keydown.arrow-up.prevent="focusPreviousResult()"

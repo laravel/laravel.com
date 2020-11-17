@@ -50,5 +50,12 @@ export default function () {
                 return next.focus();
             }
         },
+        handleSlashKey(event) {
+            if (event.key === '/') {
+                event.preventDefault();
+                this.searchIsOpen = true;
+                this.$refs.searchInput.focus()
+            }
+        }
     }
 }

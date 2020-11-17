@@ -15,20 +15,26 @@ function highlightCode() {
 function wrapHeadingsInAnchors() {
     [...document.querySelector('.docs_main').querySelectorAll('a[name]')].forEach(anchor => {
         const heading = anchor.parentNode.nextElementSibling;
-        anchor.textContent = heading.textContent;
-        anchor.href = '#' + heading.id;
+        if (heading.id == 'the-at-error-directive') {
+            console.log(heading, heading.childNodes);
+        }
+        anchor.href = `#${heading.id}`;
         anchor.removeAttribute('name');
-        heading.replaceChild(anchor, heading.childNodes[0]);
+        [...heading.childNodes].forEach(node => anchor.appendChild(node));
+        heading.appendChild(anchor);
     });
 }
 
 function setupNavCurrentLinkHandling() {
-    const current = document.querySelector('.docs_sidebar ul').querySelector('li a[href="' + window.location.pathname + '"]');
+    // Can return two, one for mobile nav and one for desktop nav
+    [...document.querySelectorAll('.docs_sidebar ul')].forEach(nav => {
+        const current = nav.querySelector('li a[href="' + window.location.pathname + '"]');
 
-    if (current) {
-        current.parentNode.parentNode.parentNode.classList.add('sub--on');
-        current.parentNode.classList.add('active');
-    }
+        if (current) {
+            current.parentNode.parentNode.parentNode.classList.add('sub--on');
+            current.parentNode.classList.add('active');
+        }
+    });
 
     [...document.querySelectorAll('.docs_sidebar h2')].forEach(el => {
         el.addEventListener('click', (e) => {
