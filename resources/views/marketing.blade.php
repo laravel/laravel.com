@@ -21,12 +21,12 @@
 
         <section class="py-12 md:py-20 xl:py-28">
             <div class="relative max-w-screen-xl px-8 mx-auto">
-                <div style="z-index: -9998" class="hidden md:w-full md:transform md:translate-x-1/4 md:absolute md:-top-16 md:-right-16 md:h-80 md:flex md:items-center lg:w-3/4 lg:right-16 lg:h-96 xl:-right-16 xl:w-full">
+                <div style="z-index: -9998" class="hidden md:w-full md:transform md:translate-x-1/4 md:absolute md:-top-16 md:-right-16 md:h-80 md:flex md:items-center lg:w-3/4 lg:right-16 lg:h-96">
                     <video poster="/img/hero/hero_poster.jpg" playsinline autoplay muted loop>
                         <source src="/img/hero/hero.mp4" type="video/mp4">
                     </video>
                 </div>
-                <h1 class="max-w-xl font-medium text-3xl tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight xl:max-w-3xl xl:pr-8 xl:text-6.5xl">The PHP Framework for <span class="whitespace-nowrap">Web Artisans</span></h1>
+                <h1 class="max-w-xl font-medium text-3xl tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight xl:max-w-3xl xl:pr-8 xl:text-5xl">The PHP Framework for <span class="whitespace-nowrap">Web Artisans</span></h1>
                 <p class="mt-3 max-w-md text-gray-600 sm:mt-5 lg:mt-8 lg:max-w-xl lg:text-lg xl:max-w-2xl">Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.</p>
                 <div class="mt-6 space-y-4 flex flex-col sm:flex-row sm:mt-8 sm:space-y-0 sm:space-x-4 md:mt-8 lg:mt-12">
                     <x-button.primary href="/docs">
@@ -53,7 +53,7 @@
                     <img class="w-full shadow-lg" src="/img/homepage/vapor.jpg" alt="Vapor">
                 </div>
                 <div class="md:w-1/2 md:pl-8 lg:pl-24">
-                    <h1 class="font-medium text-3xl tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight xl:text-6.5xl">Laravel Vapor</h1>
+                    <h1 class="font-medium text-3xl tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight xl:text-5xl">Laravel Vapor</h1>
                     <p class="mt-3 max-w-xl text-gray-600 sm:mt-5 md:max-w-2xl md:mt-8 md:text-lg">Laravel Vapor is a serverless deployment platform for Laravel, powered by AWS. Launch your Laravel infrastructure on Vapor and fall in love with the scalable simplicity of serverless.</p>
                     <x-button.primary class="mt-6 sm:mt-8 md:mt-10" href="https://vapor.laravel.com" target="_blank">
                         Learn More
@@ -64,7 +64,7 @@
                     <img class="w-full shadow-lg" src="/img/homepage/forge.jpg" alt="Forge">
                 </div>
                 <div class="md:w-1/2 md:pl-8 lg:pl-24">
-                    <h1 class="font-medium text-3xl tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight xl:text-6.5xl">Laravel Forge</h1>
+                    <h1 class="font-medium text-3xl tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight xl:text-5xl">Laravel Forge</h1>
                     <p class="mt-3 max-w-xl text-gray-600 sm:mt-5 md:max-w-2xl md:mt-8 md:text-lg">Instant PHP Platforms on DigitalOcean, Linode, and more. Featuring push-to-deploy, Redis, queues, and everything else you could need to launch and deploy impressive Laravel applications.</p>
                     <x-button.primary class="mt-6 sm:mt-8 md:mt-10" href="https://forge.laravel.com" target="_blank">
                         Learn More
@@ -75,8 +75,8 @@
     </div>
 
     <div class="max-w-screen-xl px-8 mx-auto">
-        <h6 class="mx-auto text-center text-gray-600 font-medium text-sm">Revolutionize how you build the web.</h6>
-        <h1 class="mx-auto mt-2 font-medium text-3xl tracking-tight text-center sm:text-4xl lg:text-5xl lg:leading-tight xl:text-6.5xl">The Laravel Ecosystem</h1>
+        <h6 class="mx-auto text-center text-gray-600 font-medium text-lg">Revolutionize how you build the web.</h6>
+        <h1 class="mx-auto mt-4 font-medium text-3xl tracking-tight text-center sm:text-4xl lg:text-5xl lg:leading-tight xl:text-5xl">The Laravel Ecosystem</h1>
         <ul class="mt-16 grid gap-6 relative sm:grid-cols-2 md:mt-24 md:grid-cols-3">
             <li>
                 <a href="https://vapor.laravel.com" class="flex items-center p-4 shadow-lg">
@@ -287,8 +287,8 @@
                 </video>
             </div>
             <div class="md:w-1/2">
-                <h6 class="text-gray-600 font-medium text-sm">Resources</h6>
-                <h1 class="mt-2 max-w-md font-medium text-3xl tracking-tight sm:text-4xl md:mt-4 md:max-w-4xl md:text-5xl md:leading-tight xl:text-6xl">A community built<br class="md:hidden lg:inline"> for people like you</h1>
+                <h6 class="text-gray-600 font-medium text-lg">Resources</h6>
+                <h1 class="mt-2 max-w-md font-medium text-3xl tracking-tight sm:text-4xl md:mt-4 md:max-w-4xl md:text-5xl md:leading-tight xl:text-5xl">A community built<br class="md:hidden lg:inline"> for people like you</h1>
                 <p class="mt-3 max-w-xl text-gray-600 sm:mt-5 md:max-w-2xl md:mt-8 md:text-lg">Whether you’re a solo developer or a 20-person team, getting started is simple thanks to our great community.</p>
                 <ul class="mt-6 max-w-md grid grid-cols-2 gap-4 text-gray-600 font-medium text-sm leading-4 list-custom sm:mt-8">
                     <li><a href="https://blog.laravel.com">Blog</a></li>

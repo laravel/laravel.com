@@ -17,7 +17,7 @@
                         });
                     }
                 }"
-                class="fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:pl-16 lg:w-auto lg:flex-shrink-0 lg:flex lg:justify-end lg:items-end xl:max-w-lg xl:w-full"
+                class="fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:pl-16 lg:w-auto lg:flex-shrink-0 lg:flex lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full"
                 :class="{ 'w-64': navIsOpen }"
                 @click.away="navIsOpen = false"
                 @keydown.window.escape="navIsOpen = false"
