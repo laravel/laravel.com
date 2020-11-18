@@ -3,10 +3,6 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   important: true,
-  experimental: {
-      extendedFontSizeScale: true,
-      extendedSpacingScale: true,
-  },
   purge: [
       'resources/views/**/*.blade.php',
       'resources/js/**/*.js',
