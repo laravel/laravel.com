@@ -1,7 +1,8 @@
 .docs_sidebar {
     ul {
         list-style-type: none;
-        margin: 0; padding: 0;
+        margin: 0;
+        padding: 0;
 
         li {
             display: block;
@@ -12,7 +13,7 @@
                 display: block;
                 font-size: 0.875em;
                 font-weight: 500;
-                color: #090910;
+                color: theme('colors.gray.900');
                 text-decoration: none;
                 margin-bottom: 0;
                 cursor: pointer;
@@ -27,9 +28,9 @@
                 display: block;
                 font-size: .875em;
                 font-weight: 500;
-                color: $black;
+                color: theme('colors.gray.900');
                 text-decoration: none;
-                transition: all 0.3s ease;
+                transition: transform 0.3s ease;
 
                 &:hover {
                     transform: translate3d(5px, 0, 0);
@@ -60,7 +61,7 @@
             }
         }
 
-        li.sub--on {
+        .sub--on {
             &> h2 {
                 margin-bottom: 1em;
             }
@@ -69,84 +70,5 @@
                 max-height: none;
             }
         }
-    }
-
-    .body_content {
-        padding: 1.25em 0 0;
-        min-height: 100vh;
-
-        .doc_section {
-            padding: 1.5em 0 1.5em;
-
-            &:first-of-type {
-                padding-top: 1em;
-            }
-        }
-
-        .section_heading {
-            position: relative;
-
-            &::before {
-                content: "#";
-                font-size: .5em;
-                position: absolute;
-                top: 55%; right: calc(100% + .5em);
-                transform: translateY(-50%);
-            }
-        }
-    }
-
-    @include fl-break-height(25em) {
-        .body_content {
-            padding-top: 1.75em;
-        }
-    }
-
-    @include fl-break-height(40em) {
-        .body_content {
-            padding-top: 2.25em;
-        }
-    }
-
-    @include fl-break(40em) {
-        .page_contain {
-            padding-left: 8.25em;
-        }
-    }
-
-    @include fl-break(65em) {
-        .page_contain {
-            overflow: visible;
-            padding: 0 5.5%;
-
-            &> .contain {
-                display: flex;
-                padding: 0 2em;
-            }
-        }
-
-        .body_content {
-            flex: 1;
-            min-width: 0;
-            padding-left: 4.25em;
-
-            .doc_section {
-                padding: 4em 0 1.5em;
-            }
-        }
-    }
-}
-
-.doc_section {
-    h5 {
-        margin-bottom: 1.222em;
-    }
-}
-
-.doc_sub_section {
-    padding-top: 3.125em;
-
-    :last-child {
-        margin-bottom: 0;
     }
 }

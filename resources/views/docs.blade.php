@@ -17,7 +17,7 @@
                         });
                     }
                 }"
-                class="fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:pl-16 lg:w-auto lg:flex-shrink-0 lg:flex lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full"
+                class="fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:flex-shrink-0 lg:flex lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full"
                 :class="{ 'w-64': navIsOpen }"
                 @click.away="navIsOpen = false"
                 @keydown.window.escape="navIsOpen = false"
@@ -49,18 +49,18 @@
                             class="hidden ml-4 lg:block"
                         >
                     </a>
-                    <div class="overflow-y-auto overflow-x-hidden px-4 lg:px-8 xl:px-16">
+                    <div class="overflow-y-auto overflow-x-hidden px-4 lg:overflow-hidden lg:px-8 xl:px-16">
                         <nav x-show="navIsOpen" x-cloak class="mt-4 lg:hidden">
                             <div class="docs_sidebar">
                                 {!! $index !!}
                             </div>
                         </nav>
-                        <nav class="hidden lg:block lg:mt-4">
+                        <nav x-cloak class="hidden lg:block lg:mt-4">
                             <div class="docs_sidebar">
                                 {!! $index !!}
                             </div>
                         </nav>
-                        <div :class="{ 'hidden': !navIsOpen }" class="lg:block">
+                        <div :class="{ 'hidden': !navIsOpen }" x-cloak class="lg:block">
                             <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                         </div>
                     </div>
