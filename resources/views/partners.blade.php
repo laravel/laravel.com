@@ -112,7 +112,7 @@
                             <li>
                                 <div class="content">
                                     <div class="logo_contain">
-                                        <img src="/img/partners/kirschbaum.min.svg" alt="Kirschbaum">
+                                        <img src="/img/partners/kirschbaum.min.svg" width="240" alt="Kirschbaum">
                                     </div>
                                     <p class="small">A team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems.</p>
                                     <a href="/partner/kirschbaum-development-group" class="learn_more">More about Kirschbaum

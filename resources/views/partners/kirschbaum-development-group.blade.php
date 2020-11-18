@@ -20,8 +20,8 @@
                     </div>
                     <div class="content">
                         <div class="contain">
-                            <h3>We are a team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems. We bring products and services to market quickly by leveraging iterative processes and lean development techniques.</h3>
-                            <div class="hero_img"><img src="/img/partners/img_kirschbaum_detail.png" alt="Kirschbaum Development">
+                            <h3>The Kirschbaum team of Laravel experts are exceptional coders, and exceptional problem solvers – if there's a more efficient path to reach your goals, we'll find it. We've helped companies save millions, and we've enabled organizations without millions to compete with those who do.</h3>
+                            <div class="hero_img"><img src="/img/partners/img_kirschbaum_detail-2.jpg" alt="Kirschbaum Development">
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="content">
-                            <p>The companies we work with appreciate our ability to work seamlessly with their technical, and non-technical teams. Our developer-led company is comprised of individuals who are not only exceptional coders, but exceptional problem solvers with business sense. If there's a more efficient path to reach your goals, we'll propose it even if it means fewer development hours for us.</p>
+                            <p>The companies we work with appreciate our ability to work seamlessly with both their technical and non-technical teams. We cut out the middlemen—our developers are great communicators with business sense, so you speak directly with the people working on your project and nothing is lost in translation.</p>
 
                             <div class="list_block">
                                 <h3>Proficiencies</h3>
@@ -54,9 +54,9 @@
                                 </ul>
                             </div>
 
-                            <p>We are proud to have helped some of the largest companies in the world develop products, streamline systems, and better reach their customers using Laravel.</p>
+                            <p>With a history of delivering practical solutions to complex problems, our focus is on your long-term success. We leverage innovative approaches and bleeding edge technologies to get your products and services to market quickly, while anticipating the need to scale and adapt as your business requirements evolve.</p>
 
-                            <p>We look forward to working with you!</p>
+                            <p>We'd love to chat with you about your project!</p>
 
                             <ul class="social_links">
                                 <li><a href="https://twitter.com/n_kirschbaum"><img src="/img/social/twitter.min.svg" alt="Twitter"></a></li>
