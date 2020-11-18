@@ -90,8 +90,8 @@ module.exports = {
   },
   variants: {
       borderColor: [...defaultConfig.variants.borderColor, 'focus-within'],
-      transform: [...defaultConfig.variants.transform, 'group-hover'],
-      translate: [...defaultConfig.variants.translate, 'group-hover'],
+      transform: [...defaultConfig.variants.transform, 'group-hover', 'group-focus'],
+      translate: [...defaultConfig.variants.translate, 'group-hover', 'group-focus'],
       width: [...defaultConfig.variants.width, 'hover'],
   },
   plugins: [],
