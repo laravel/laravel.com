@@ -1,4 +1,4 @@
-/*! algoliasearch-lite.umd.js | 4.6.0 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
+/*! algoliasearch-lite.umd.js | 4.7.0 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
 
 /**
  * Prism: Lightweight, robust, elegant syntax highlighting
