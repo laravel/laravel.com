@@ -55,7 +55,7 @@
                                 {!! $index !!}
                             </div>
                         </nav>
-                        <nav x-cloak class="hidden lg:block lg:mt-4">
+                        <nav id="indexed-nav" class="hidden lg:block lg:mt-4">
                             <div class="docs_sidebar">
                                 {!! $index !!}
                             </div>
