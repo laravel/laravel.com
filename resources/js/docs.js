@@ -14,14 +14,18 @@ function highlightCode() {
 
 function wrapHeadingsInAnchors() {
     [...document.querySelector('.docs_main').querySelectorAll('a[name]')].forEach(anchor => {
+        const anchorWrapper = anchor.parentNode;
         const heading = anchor.parentNode.nextElementSibling;
-        if (heading.id == 'the-at-error-directive') {
-            console.log(heading, heading.childNodes);
-        }
         anchor.href = `#${heading.id}`;
         anchor.removeAttribute('name');
-        [...heading.childNodes].forEach(node => anchor.appendChild(node));
         heading.appendChild(anchor);
+        const childNodesCount = heading.childNodes.length;
+        [...heading.childNodes].forEach((node, i) => {
+            if (i < childNodesCount - 1) {
+                anchor.appendChild(node);
+            }
+        });
+        anchorWrapper.remove();
     });
 }
 
