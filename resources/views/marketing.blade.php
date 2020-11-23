@@ -6,13 +6,14 @@
     <div class="overflow-hidden">
         <div class="max-w-screen-xl px-8 mx-auto">
             <div class="py-3 sm:transform sm:-translate-x-8 sm:py-6 2xl:-translate-x-24">
-                <a href="https://vapor.laravel.com/" class="max-w-md flex bg-gray-100 transition hover:bg-gray-200">
+                <a href="https://laracon.eu/" class="max-w-md flex bg-gray-100 transition hover:bg-gray-200">
                     <div class="w-10 h-10 flex items-center justify-center bg-vapor sm:w-12 sm:h-12">
-                        <img src="/img/ecosystem/vapor.min.svg" alt="Vapor" class="w-7 h-7">
+                        <!-- <img src="/img/ecosystem/vapor.min.svg" alt="Vapor" class="w-7 h-7"> -->
+                        <img src="/img/ecosystem/laracon-online.svg" alt="Laracon Online" class="w-7 h-7">
                     </div>
                     <div class="px-3 self-stretch flex items-center">
                         <p class="text-gray-700 text-xs sm:text-sm">
-                            Laravel Vapor is now available! <span class="whitespace-nowrap">Sign up today! →</span>
+                            Laracon EU Online is happening soon! <span class="whitespace-nowrap">Sign up today! →</span>
                         </p>
                     </div>
                 </a>
