@@ -1,15 +1,15 @@
 <header
-    class="relative z-50"
+    class="relative z-50 dark:bg-gray-800"
     @keydown.window.escape="navIsOpen = false"
     @click.away="navIsOpen = false"
 >
-    <div class="relative max-w-screen-2xl mx-auto w-full py-10 bg-white transition duration-200">
+    <div class="relative max-w-screen-2xl mx-auto w-full py-10 bg-white transition duration-200 dark:text-white dark:bg-gray-800">
         <div class="max-w-screen-xl mx-auto px-8 flex items-center justify-between">
-            <a href="/" class="flex items-center">
+            <a href="/" class="flex items-center dark:bg-gray-800">
                 <img class="" src="/img/logomark.min.svg" alt="Laravel">
                 <img class="hidden ml-5 sm:block" src="/img/logotype.min.svg" alt="Laravel">
             </a>
-            <ul class="relative hidden lg:ml-6 lg:pt-3 lg:flex lg:items-end lg:space-x-6 xl:ml-14 xl:space-x-10">
+            <ul class="relative hidden lg:ml-6 lg:pt-3 lg:flex lg:items-end lg:space-x-6 xl:ml-14 xl:space-x-10 dark:bg-gray-800">
                 <li><a href="/docs">Documentation</a></li>
                 @if (SHOW_VAPOR)
                     <li><a href="https://vapor.laravel.com">Vapor</a></li>
@@ -18,12 +18,12 @@
                 @endif
                 <li x-data="{ expanded: false }" class="relative" @keydown.window.escape="expanded = false">
                     <button class="flex items-center justify-center focus:outline-none" @click="expanded = !expanded">
-                        Ecosystem<span class="ml-3 flex-shrink-0"><img :class="{ 'rotate-180': expanded }" class="w-2.5 h-2.5 transform transition-transform" src="/img/icons/nav_arrow.min.svg" alt="Expand"></span>
+                        Ecosystem<span class="ml-3 flex-shrink-0"><img :class="{ 'rotate-180': expanded }" class="w-2.5 h-2.5 transform transition-transform dark:bg-gray-800" src="/img/icons/nav_arrow.min.svg" alt="Expand"></span>
                     </button>
                     <div
                         x-show="expanded"
                         x-cloak
-                        class="absolute left-0 z-20 transition transform"
+                        class="absolute left-0 z-20 transition transform dark:bg-gray-800"
                         x-transition:enter="duration-250 ease-out"
                         x-transition:enter-start="opacity-0 -translate-y-8"
                         x-transition:enter-end="opacity-100"
@@ -31,11 +31,11 @@
                         x-transition:leave-start="opacity-100"
                         x-transition:leave-end="opacity-0 -translate-y-8"
                     >
-                        <div class="mt-4 ml-8 w-224 -translate-x-1/2 p-8 bg-white shadow-lg transform transition-transform origin-top" @click.away="expanded = false">
-                            <ul class="grid gap-3 relative sm:grid-cols-2 md:grid-cols-3">
+                        <div class="mt-4 ml-8 w-224 -translate-x-1/2 p-8 bg-white dark:bg-gray-800 shadow-lg transform transition-transform origin-top" @click.away="expanded = false">
+                            <ul class="grid gap-3 relative sm:grid-cols-2 md:grid-cols-3 dark:bg-gray-800">
                                 <li>
                                     <a href="https://vapor.laravel.com" class="flex items-center p-4 shadow-lg">
-                                        <div class="w-14 h-14 bg-vapor flex items-center justify-center">
+                                        <div class="w-14 h-14 bg-vapor flex items-center justify-center ">
                                             <img src="/img/ecosystem/vapor.min.svg" alt="Icon" class="w-10 h-10">
                                         </div>
                                         <div class="ml-4 leading-5">
@@ -250,11 +250,11 @@
                         @keydown.arrow-down.prevent="focusNextResult()"
                                 @keydown.window="handleSlashKey"
                     >
-                        <svg class="absolute inset-y-0 left-0 z-10 mt-1 w-5 h-5 text-gray-900 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        <svg class="absolute inset-y-0 left-0 z-10 mt-1 w-5 h-5 text-gray-900 pointer-events-none  dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                         <input
                             x-model.debouce.200ms="search"
                             x-ref="searchInput"
-                            class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none"
+                            class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:bg-gray-800 dark:text-gray-200 dark:placeholder-gray-200"
                             placeholder="Search Docs"
                             aria-label="Search in the documentation"
                         >

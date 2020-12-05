@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="relative overflow-auto" id="docsScreen">
-        <div class="relative lg:flex lg:items-start">
+        <div class="relative lg:flex lg:items-start  ">
             <aside
                 x-init="init()"
                 x-data="{
@@ -17,12 +17,12 @@
                         });
                     }
                 }"
-                class="fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:flex-shrink-0 lg:flex lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full"
+                class="fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:flex-shrink-0 lg:flex lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full dark:bg-gray-800 dark:text-white"
                 :class="{ 'w-64': navIsOpen }"
                 @click.away="navIsOpen = false"
                 @keydown.window.escape="navIsOpen = false"
             >
-                <div class="relative min-h-0 flex-1 flex flex-col xl:w-80">
+                <div class="relative min-h-0 flex-1 flex flex-col xl:w-80 dark:bg-gray-800 dark:text-white">
                     <a href="/" class="flex items-center py-8 px-4 lg:px-8 xl:px-16">
                         <img
                             class="w-8 h-8 flex-shrink-0 transition-all duration-300 lg:w-12 lg:h-12"
@@ -49,7 +49,7 @@
                             class="hidden ml-4 lg:block"
                         >
                     </a>
-                    <div class="overflow-y-auto overflow-x-hidden px-4 lg:overflow-hidden lg:px-8 xl:px-16">
+                    <div class="overflow-y-auto overflow-x-hidden px-4 lg:overflow-hidden lg:px-8 xl:px-16  dark:bg-gray-800 dark:text-white">
                         <nav x-show="navIsOpen" x-cloak class="mt-4 lg:hidden">
                             <div class="docs_sidebar">
                                 {!! $index !!}
@@ -80,12 +80,12 @@
                     <header class="flex flex-col items-end lg:mt-8 lg:flex-row-reverse">
                         <div class="mt-8 w-full lg:mt-0 lg:w-64 lg:pl-12">
                             <div>
-                                <label class="text-gray-600 text-xs tracking-widest uppercase" for="version-switch">Version</label>
-                                <div x-data class="relative w-full bg-white border-b border-gray-600 border-opacity-50 transition-all duration-500 focus-within:border-gray-600">
+                                <label class="text-gray-600 text-xs tracking-widest uppercase dark:text-gray-300 dark:bg-gray-800" for="version-switch">Version</label>
+                                <div x-data class="relative w-full bg-white border-b border-gray-600 border-opacity-50 transition-all duration-500 focus-within:border-gray-600 dark:text-white dark:bg-gray-800">
                                     <select
                                         id="version-switcher"
                                         aria-label="Laravel version"
-                                        class="appearance-none flex-1 w-full px-0 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none"
+                                        class="appearance-none flex-1 w-full px-0 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:text-white dark:bg-gray-800"
                                         @change="window.location = $event.target.value"
                                     >
                                         @foreach ($versions as $key => $display)
@@ -104,11 +104,11 @@
                                 @keydown.window.escape="clear"
                                 @keydown.window="handleSlashKey"
                             >
-                                <svg class="absolute inset-y-0 left-0 z-10 mt-1 w-5 h-5 text-gray-900 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                                <svg class="absolute inset-y-0 left-0 z-10 mt-1 w-5 h-5 text-gray-900 pointer-events-none dark:text-white dark:bg-gray-800 dark:placeholder-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                                 <input
                                     x-model.debouce.200ms="search"
                                     x-ref="searchInput"
-                                    class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none"
+                                    class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:text-white dark:bg-gray-800 dark:placeholder-gray-200"
                                     placeholder="Search Docs"
                                     aria-label="Search in the documentation"
                                     @keydown.arrow-up.prevent="focusPreviousResult()"
@@ -123,12 +123,12 @@
                         <section class="docs_main max-w-prose">
                             @unless ($currentVersion == 'master' || version_compare($currentVersion, DEFAULT_VERSION) >= 0)
                                 <blockquote>
-                                    <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center">
-                                        <div class="w-20 h-20 mb-6 flex items-center justify-center flex-shrink-0 bg-orange-600 lg:mb-0">
+                                    <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center dark:text-white dark:bg-gray-700">
+                                        <div class="w-20 h-20 mb-6 flex items-center justify-center flex-shrink-0 bg-orange-600 lg:mb-0 ">
                                             <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
                                         </div>
 
-                                        <p class="mb-0 lg:ml-4">
+                                        <p class="mb-0 lg:ml-4 dark:text-white">
                                             <strong>WARNING</strong> You're browsing the documentation for an old version of Laravel.
                                             Consider upgrading your project to <a href="{{ route('docs.version', DEFAULT_VERSION) }}">Laravel {{ DEFAULT_VERSION }}</a>.
                                         </p>
@@ -139,7 +139,7 @@
                             @if ($currentVersion == 'master' || version_compare($currentVersion, DEFAULT_VERSION) > 0)
                                 <blockquote>
                                     <div class="callout">
-                                        <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center">
+                                        <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center dark:bg-gray-700">
                                         <div class="w-20 h-20 mb-6 flex items-center justify-center flex-shrink-0 bg-orange-600 lg:mb-0">
                                             <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
                                         </div>

@@ -30,7 +30,7 @@
         searchIsOpen: false,
         search: '',
     }"
-    class="language-php h-full w-full font-sans text-gray-900 antialiased"
+    class="language-php h-full w-full font-sans text-gray-900 antialiased dark:bg-gray-800 dart:text-white"
 >
 
 @yield('content')

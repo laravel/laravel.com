@@ -4,8 +4,8 @@
 
 @import "./_typography.css";
 @import "./_prism.css";
-@import "./_sidebar_layout.css";
-@import "./_docs.css";
+@import "_sidebar_layout.scss";
+@import "_docs.scss";
 @import "./_carbon_ads.css";
 
 @import 'tailwindcss/utilities';
