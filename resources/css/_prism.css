@@ -29,13 +29,13 @@ pre[class*="language-"] {
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code::-moz-selection, code ::-moz-selection {
 	text-shadow: none;
-	background: theme('colors.gray.50');
+	background: theme('colors.gray.200');
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code::selection, code ::selection {
 	text-shadow: none;
-	background: theme('colors.gray.50');
+	background: theme('colors.gray.200');
 }
 
 @media print {
@@ -59,6 +59,7 @@ pre[class*="language-"] {
 	background: theme('colors.gray.50');
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
     color: theme('colors.red.800');
+    user-select: auto;
 }
 
 .docs_main :not(pre) > code {

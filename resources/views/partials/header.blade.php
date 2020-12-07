@@ -17,7 +17,7 @@
                     <li><a href="https://forge.laravel.com">Forge</a></li>
                 @endif
                 <li x-data="{ expanded: false }" class="relative" @keydown.window.escape="expanded = false">
-                    <button class="flex items-center justify-center" @click="expanded = !expanded">
+                    <button class="flex items-center justify-center focus:outline-none" @click="expanded = !expanded">
                         Ecosystem<span class="ml-3 flex-shrink-0"><img :class="{ 'rotate-180': expanded }" class="w-2.5 h-2.5 transform transition-transform" src="/img/icons/nav_arrow.min.svg" alt="Expand"></span>
                     </button>
                     <div
