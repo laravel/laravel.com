@@ -20,7 +20,7 @@
     </x-partners.hero>
 
     <x-partners.body
-        twitter="https://twitter.com/n_kirschbaum"
+        twitter="https://twitter.com/kirschbaum_dev"
         github="https://github.com/kirschbaum-development"
         linkedin="https://www.linkedin.com/company/kirschbaumdevelopmentgroupllc"
     >
