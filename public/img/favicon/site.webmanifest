@@ -1,14 +1,14 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Laravel - The PHP Framework for Web Artisans",
+    "short_name": "Laravel",
     "icons": [
         {
-            "src": "/resources/img/favicon/android-chrome-192x192.png",
+            "src": "/img/favicon/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/resources/img/favicon/android-chrome-512x512.png",
+            "src": "/img/favicon/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
