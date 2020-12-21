@@ -6,7 +6,7 @@
     <x-partners.hero
         primary-button-text="Hire Curotec"
         primary-button-url="mailto:info@curotec.com"
-        secondary-button-url="https://www.curotec.com"
+        secondary-button-url="https://www.curotec.com/laravel"
     >
         <x-slot name="logo">
             <img src="/img/partners/curotec.png" alt="Curotec" style="width: 200px;">
