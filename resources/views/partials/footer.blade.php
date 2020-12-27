@@ -101,7 +101,7 @@
         <div class="max-w-screen-2xl mx-auto px-4 lg:px-12 xl:px-16">
             <div class="px-8 pb-12 bg-gray-100 xl:px-20">
                 <div>
-                    <img class="-mt-2 max-w-4xl w-full transform -translate-x-12 lg:-translate-x-24 xl:-translate-x-40" src="/img/logotype.min.svg" alt="Laravel">
+                    <img class="-mt-2 max-w-4xl w-full" src="/img/logotype.min.svg" alt="Laravel">
                 </div>
                 <div class="mt-6 sm:mt-12 md:flex">
                     <div class="divide-y divide-gray-600 divide-opacity-25 sm:hidden">
