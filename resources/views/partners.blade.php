@@ -136,7 +136,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li>
+<!--                         <li>
                             <div class="flex flex-col h-full p-12 bg-white shadow-lg">
                                 <div class="h-10">
                                     <img src="/img/partners/byte5.png" alt="byte5" class="h-full">
@@ -147,7 +147,7 @@
                                     <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
                                 </a>
                             </div>
-                        </li>
+                        </li> -->
                         <li>
                             <div class="flex flex-col h-full p-12 bg-white shadow-lg">
                                 <div class="h-10">

@@ -34,7 +34,7 @@
                 'Vehikl' => 'https://vehikl.com',
                 'Tighten' => 'https://tighten.co',
                 'Kirschbaum' => 'https://kirschbaumdevelopment.com/',
-                'Byte 5' => 'https://www.byte5.net/',
+                // 'Byte 5' => 'https://www.byte5.net/',
                 '64 Robots' => 'https://64robots.com/',
                 'Cubet' => 'https://cubettech.com/',
                 'DevSquad' => 'https://devsquad.com/',
