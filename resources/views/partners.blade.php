@@ -74,6 +74,17 @@
                                         <span class="ml-3 transform transition group-hover:translate-x-1">→</span>
                                     </a>
                                 </div>
+                            @elseif($featured == 'kirschbaum')
+                                <img class="w-full md:absolute md:right-1/2 md:top-0 md:w-224" src="/img/partners/img_kirschbaum_detail.jpg" alt="Kirschbaum" style="right: 20%;">
+                                <div class="p-12 bg-white shadow-lg md:relative md:w-3/4 md:ml-auto lg:px-24 lg:py-20">
+                                    <h6 class="text-gray-600 font-medium text-sm">Featured Partner</h6>
+                                    <img class="mt-6" src="/img/partners/kirschbaum-2.min.svg" alt="Kirschbaum" style="max-width: 300px;">
+                                    <p class="mt-6 text-gray-600 lg:text-lg">A team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems.</p>
+                                    <a href="/partner/kirschbaum-development-group" class="group mt-8 inline-flex items-center text-red-600 font-medium">
+                                        <span>More about Kirschbaum</span>
+                                        <span class="ml-3 transform transition group-hover:translate-x-1">→</span>
+                                    </a>
+                                </div>
                             @endif
                         </div>
                     </div>
@@ -120,22 +131,19 @@
                                             <span>More about 64 Robots</span>
                                             <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
                                         </a>
+                                    @elseif($otherPartner == 'kirschbaum')
+                                        <div class="h-10">
+                                            <img src="/img/partners/kirschbaum-2.min.svg" alt="Kirschbaum" class="h-full">
+                                        </div>
+                                        <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">A team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems.</p>
+                                        <a href="/partner/kirschbaum-development-group" class="group mt-6 inline-flex items-center text-red-600 font-medium">
+                                            <span>More about Kirschbaum</span>
+                                            <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
+                                        </a>
                                     @endif
                                 </div>
                             </li>
                         @endforeach
-                        <li>
-                            <div class="flex flex-col h-full p-12 bg-white shadow-lg">
-                                <div class="h-10">
-                                    <img src="/img/partners/kirschbaum-2.min.svg" alt="Kirschbaum" class="h-full">
-                                </div>
-                                <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">A team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems.</p>
-                                <a href="/partner/kirschbaum-development-group" class="group mt-6 inline-flex items-center text-red-600 font-medium">
-                                    <span>More about Kirschbaum</span>
-                                    <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-                                </a>
-                            </div>
-                        </li>
 <!--                         <li>
                             <div class="flex flex-col h-full p-12 bg-white shadow-lg">
                                 <div class="h-10">
