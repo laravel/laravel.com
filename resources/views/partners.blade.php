@@ -75,10 +75,10 @@
                                     </a>
                                 </div>
                             @elseif($featured == 'kirschbaum')
-                                <img class="w-full md:absolute md:right-1/2 md:top-0 md:w-224" src="/img/partners/img_64robots_detail.jpg" alt="Kirschbaum" style="right: 40%;">
+                                <img class="w-full md:absolute md:right-1/2 md:top-0 md:w-224" src="/img/partners/img_kirschbaum_detail.jpg" alt="Kirschbaum" style="right: 20%;">
                                 <div class="p-12 bg-white shadow-lg md:relative md:w-3/4 md:ml-auto lg:px-24 lg:py-20">
                                     <h6 class="text-gray-600 font-medium text-sm">Featured Partner</h6>
-                                    <img class="mt-6" src="/img/partners/kirschbaum-2.min.svg" alt="Kirschbaum" style="max-width: 200px;">
+                                    <img class="mt-6" src="/img/partners/kirschbaum-2.min.svg" alt="Kirschbaum" style="max-width: 300px;">
                                     <p class="mt-6 text-gray-600 lg:text-lg">A team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems.</p>
                                     <a href="/partner/kirschbaum-development-group" class="group mt-8 inline-flex items-center text-red-600 font-medium">
                                         <span>More about Kirschbaum</span>
