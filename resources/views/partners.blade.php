@@ -144,18 +144,6 @@
                                 </div>
                             </li>
                         @endforeach
-                        <li>
-                            <div class="flex flex-col h-full p-12 bg-white shadow-lg">
-                                <div class="h-10">
-                                    <img src="/img/partners/kirschbaum-2.min.svg" alt="Kirschbaum" class="h-full">
-                                </div>
-                                <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">A team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems.</p>
-                                <a href="/partner/kirschbaum-development-group" class="group mt-6 inline-flex items-center text-red-600 font-medium">
-                                    <span>More about Kirschbaum</span>
-                                    <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-                                </a>
-                            </div>
-                        </li>
 <!--                         <li>
                             <div class="flex flex-col h-full p-12 bg-white shadow-lg">
                                 <div class="h-10">
