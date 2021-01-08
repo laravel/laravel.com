@@ -63,8 +63,10 @@ pre[class*="language-"] {
 }
 
 .docs_main :not(pre) > code {
+		display: inline-flex;
     padding: 0 .125rem;
-    display: inline-block;
+		max-width: 100%;
+		overflow-x: scroll;
 }
 
 .token.comment,
