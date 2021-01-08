@@ -140,10 +140,6 @@
             &:hover {
                 color: darken(theme('colors.red.600'), 10%);
             }
-            
-            @screen lg {
-                word-break: normal;
-            }
         }
     }
 
