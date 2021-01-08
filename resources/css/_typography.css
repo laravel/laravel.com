@@ -135,6 +135,7 @@
         a {
             color: theme('colors.red.600');
             text-decoration: underline;
+            word-break: break-word;
 
             &:hover {
                 color: darken(theme('colors.red.600'), 10%);
