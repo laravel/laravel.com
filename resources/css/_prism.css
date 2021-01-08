@@ -66,11 +66,7 @@ pre[class*="language-"] {
     display: inline-flex;
     padding: 0 .125rem;
     max-width: 100%;
-    overflow-x: scroll;
-    
-    @screen sm {
-        overflow-x: hidden;
-    }
+    overflow-x: auto;
 }
 
 .token.comment,
