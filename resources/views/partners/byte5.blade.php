@@ -4,7 +4,7 @@
     @include('partials.header')
 
     <x-partners.hero
-        primary-button-text="Hire Byte5"
+        primary-button-text="Hire byte5"
         primary-button-url="mailto:cwendler@byte5.de"
         secondary-button-url="http://www.byte5.net/"
     >

@@ -67,10 +67,21 @@
                                 <img class="w-full md:absolute md:right-1/2 md:top-0 md:w-224" src="/img/partners/img_64robots_detail.jpg" alt="64Robots" style="right: 40%;">
                                 <div class="p-12 bg-white shadow-lg md:relative md:w-3/4 md:ml-auto lg:px-24 lg:py-20">
                                     <h6 class="text-gray-600 font-medium text-sm">Featured Partner</h6>
-                                    <img class="mt-6" src="/img/partners/64Robots.min.svg" alt="DevSquad" style="max-width: 200px;">
+                                    <img class="mt-6" src="/img/partners/64Robots.min.svg" alt="64Robots" style="max-width: 200px;">
                                     <p class="mt-6 text-gray-600 lg:text-lg">64 Robots is a team of Laravel experts brought together by a desire to create cutting edge web products. Whether building something new or refactoring a product in need of help, we'll give you a personal and thoughtful approach to development.</p>
                                     <a href="/partner/64robots" class="group mt-8 inline-flex items-center text-red-600 font-medium">
                                         <span>More about 64 Robots</span>
+                                        <span class="ml-3 transform transition group-hover:translate-x-1">→</span>
+                                    </a>
+                                </div>
+                            @elseif($featured == 'byte5')
+                                <img class="w-full md:absolute md:right-1/2 md:top-0 md:w-224" src="/img/partners/img_byte5_detail.jpg" alt="byte5" style="right: 40%;">
+                                <div class="p-12 bg-white shadow-lg md:relative md:w-3/4 md:ml-auto lg:px-24 lg:py-20">
+                                    <h6 class="text-gray-600 font-medium text-sm">Featured Partner</h6>
+                                    <img class="mt-6" src="/img/partners/byte5.png" alt="byte5" style="max-width: 200px;">
+                                    <p class="mt-6 text-gray-600 lg:text-lg">byte5 is a web technology company based in Frankfurt, Germany. For over 10 years we have been specializing on innovative open source technologies that give our expert team all the opportunities to create great web applications, sites and shops for our international clients.</p>
+                                    <a href="/partner/byte5" class="group mt-8 inline-flex items-center text-red-600 font-medium">
+                                        <span>More about byte5</span>
                                         <span class="ml-3 transform transition group-hover:translate-x-1">→</span>
                                     </a>
                                 </div>
@@ -136,7 +147,7 @@
                                 </a>
                             </div>
                         </li>
-<!--                         <li>
+                        <li>
                             <div class="flex flex-col h-full p-12 bg-white shadow-lg">
                                 <div class="h-10">
                                     <img src="/img/partners/byte5.png" alt="byte5" class="h-full">
@@ -147,7 +158,7 @@
                                     <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
                                 </a>
                             </div>
-                        </li> -->
+                        </li>
                         <li>
                             <div class="flex flex-col h-full p-12 bg-white shadow-lg">
                                 <div class="h-10">
@@ -228,18 +239,6 @@
                                 <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">Having worked across many different industries and client sizes, we relish in solving complex challenges to ensure that our projects are a success.</p>
                                 <a href="/partner/jump24" class="group mt-6 inline-flex items-center text-red-600 font-medium">
                                     <span>More about Jump24</span>
-                                    <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex flex-col h-full p-12 bg-white shadow-lg">
-                                <div class="h-14">
-                                    <img src="/img/partners/few.svg" alt="Few" class="h-full">
-                                </div>
-                                <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">We design and build rad digital products for teams of all sizes, from startups to enterprise organizations.</p>
-                                <a href="/partner/few" class="group mt-6 inline-flex items-center text-red-600 font-medium">
-                                    <span>More about Few</span>
                                     <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
                                 </a>
                             </div>
