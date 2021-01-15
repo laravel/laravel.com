@@ -75,11 +75,11 @@
                                     </a>
                                 </div>
                             @elseif($featured == 'byte5')
-                                <img class="w-full md:absolute md:right-1/2 md:top-0 md:w-224" src="/img/partners/img_byte5_detail.jpg" alt="byte5" style="right: 40%;">
+                                <img class="w-full md:absolute md:right-1/2 md:top-0 md:w-224" width="1200" height="800" src="/img/partners/byte5_banner.jpg" alt="byte5" style="right: 53%;">
                                 <div class="p-12 bg-white shadow-lg md:relative md:w-3/4 md:ml-auto lg:px-24 lg:py-20">
                                     <h6 class="text-gray-600 font-medium text-sm">Featured Partner</h6>
-                                    <img class="mt-6" src="/img/partners/byte5.png" alt="byte5" style="max-width: 200px;">
-                                    <p class="mt-6 text-gray-600 lg:text-lg">byte5 is a web technology company based in Frankfurt, Germany. For over 10 years we have been specializing on innovative open source technologies that give our expert team all the opportunities to create great web applications, sites and shops for our international clients.</p>
+                                    <img class="mt-6" src="/img/partners/byte5_logo.svg" alt="byte5" style="max-width: 200px;">
+                                    <p class="mt-6 text-gray-600 lg:text-lg">byte5 is a web technology company based in Frankfurt, Germany. For over 10 years we have been specializing in innovative open source technologies.</p>
                                     <a href="/partner/byte5" class="group mt-8 inline-flex items-center text-red-600 font-medium">
                                         <span>More about byte5</span>
                                         <span class="ml-3 transform transition group-hover:translate-x-1">→</span>

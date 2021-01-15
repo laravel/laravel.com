@@ -9,7 +9,7 @@
         secondary-button-url="http://www.byte5.net/"
     >
         <x-slot name="logo">
-            <img src="/img/partners/byte5.png" alt="Byte5">
+            <img src="/img/partners/byte5_logo.svg" alt="Byte5">
         </x-slot>
         <x-slot name="description">
             byte5 is a web technology company based in Frankfurt, Germany. For over 10 years we have been specializing on innovative open source technologies that give our expert team all the opportunities to create great web applications, sites and shops for our international clients.

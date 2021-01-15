@@ -14,6 +14,7 @@ class PartnersController extends Controller
     public function index()
     {
         $featured = ['tighten', 'vehikl', 'devsquad', '64robots', 'byte5'];
+        $featured = ['byte5'];
 
         shuffle($featured);
 
