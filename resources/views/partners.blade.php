@@ -67,7 +67,7 @@
                                 <img class="w-full md:absolute md:right-1/2 md:top-0 md:w-224" src="/img/partners/img_64robots_detail.jpg" alt="64Robots" style="right: 40%;">
                                 <div class="p-12 bg-white shadow-lg md:relative md:w-3/4 md:ml-auto lg:px-24 lg:py-20">
                                     <h6 class="text-gray-600 font-medium text-sm">Featured Partner</h6>
-                                    <img class="mt-6" src="/img/partners/64Robots.min.svg" alt="DevSquad" style="max-width: 200px;">
+                                    <img class="mt-6" src="/img/partners/64Robots.min.svg" alt="64Robots" style="max-width: 200px;">
                                     <p class="mt-6 text-gray-600 lg:text-lg">64 Robots is a team of Laravel experts brought together by a desire to create cutting edge web products. Whether building something new or refactoring a product in need of help, we'll give you a personal and thoughtful approach to development.</p>
                                     <a href="/partner/64robots" class="group mt-8 inline-flex items-center text-red-600 font-medium">
                                         <span>More about 64 Robots</span>
@@ -82,6 +82,17 @@
                                     <p class="mt-6 text-gray-600 lg:text-lg">A team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems.</p>
                                     <a href="/partner/kirschbaum-development-group" class="group mt-8 inline-flex items-center text-red-600 font-medium">
                                         <span>More about Kirschbaum</span>
+                                        <span class="ml-3 transform transition group-hover:translate-x-1">→</span>
+                                    </a>
+                                </div>
+                            @elseif($featured == 'byte5')
+                                <img class="w-full md:absolute md:right-1/2 md:top-0 md:w-224" width="1200" height="800" src="/img/partners/byte5_banner.jpg" alt="byte5" style="right: 53%;">
+                                <div class="p-12 bg-white shadow-lg md:relative md:w-3/4 md:ml-auto lg:px-24 lg:py-20">
+                                    <h6 class="text-gray-600 font-medium text-sm">Featured Partner</h6>
+                                    <img class="mt-6" src="/img/partners/byte5_logo.svg" alt="byte5" style="max-width: 200px;">
+                                    <p class="mt-6 text-gray-600 lg:text-lg">byte5 is a web technology company based in Frankfurt, Germany. For over 10 years we have been specializing in innovative open source technologies.</p>
+                                    <a href="/partner/byte5" class="group mt-8 inline-flex items-center text-red-600 font-medium">
+                                        <span>More about byte5</span>
                                         <span class="ml-3 transform transition group-hover:translate-x-1">→</span>
                                     </a>
                                 </div>
@@ -140,22 +151,20 @@
                                             <span>More about Kirschbaum</span>
                                             <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
                                         </a>
+                                    @elseif($otherPartner == 'byte5')
+                                        <div class="h-10">
+                                            <img src="/img/partners/byte5.png" alt="byte5" class="h-full">
+                                        </div>
+                                        <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">Specializing in innovative open source technologies to create great web applications, sites and shops for their international clients.</p>
+                                        <a href="/partner/byte5" class="group mt-6 inline-flex items-center text-red-600 font-medium">
+                                            <span>More about byte5</span>
+                                            <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
+                                        </a>
                                     @endif
                                 </div>
                             </li>
                         @endforeach
-<!--                         <li>
-                            <div class="flex flex-col h-full p-12 bg-white shadow-lg">
-                                <div class="h-10">
-                                    <img src="/img/partners/byte5.png" alt="byte5" class="h-full">
-                                </div>
-                                <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">Specializing in innovative open source technologies to create great web applications, sites and shops for their international clients.</p>
-                                <a href="/partner/byte5" class="group mt-6 inline-flex items-center text-red-600 font-medium">
-                                    <span>More about byte5</span>
-                                    <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-                                </a>
-                            </div>
-                        </li> -->
+
                         <li>
                             <div class="flex flex-col h-full p-12 bg-white shadow-lg">
                                 <div class="h-10">
@@ -236,18 +245,6 @@
                                 <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">Having worked across many different industries and client sizes, we relish in solving complex challenges to ensure that our projects are a success.</p>
                                 <a href="/partner/jump24" class="group mt-6 inline-flex items-center text-red-600 font-medium">
                                     <span>More about Jump24</span>
-                                    <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex flex-col h-full p-12 bg-white shadow-lg">
-                                <div class="h-14">
-                                    <img src="/img/partners/few.svg" alt="Few" class="h-full">
-                                </div>
-                                <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">We design and build rad digital products for teams of all sizes, from startups to enterprise organizations.</p>
-                                <a href="/partner/few" class="group mt-6 inline-flex items-center text-red-600 font-medium">
-                                    <span>More about Few</span>
                                     <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
                                 </a>
                             </div>

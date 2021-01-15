@@ -13,7 +13,7 @@ class PartnersController extends Controller
      */
     public function index()
     {
-        $featured = ['tighten', 'vehikl', 'devsquad', '64robots', 'kirschbaum'];
+        $featured = ['tighten', 'vehikl', 'devsquad', '64robots', 'kirschbaum', 'byte5'];
 
         shuffle($featured);
 
