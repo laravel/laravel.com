@@ -28,7 +28,8 @@ function wrapHeadingsInAnchors() {
 function setupNavCurrentLinkHandling() {
     // Can return two, one for mobile nav and one for desktop nav
     [...document.querySelectorAll('.docs_sidebar ul')].forEach(nav => {
-        const current = nav.querySelector('li a[href="' + window.location.pathname + '"]');
+        const pathLength = window.location.pathname.split('/').length;
+        const current = nav.querySelector('li a[href="' + (pathLength === 3 ? window.location.pathname+"/installation" : window.location.pathname) + '"]');
 
         if (current) {
             current.parentNode.parentNode.parentNode.classList.add('sub--on');
