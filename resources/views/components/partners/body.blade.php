@@ -11,7 +11,7 @@
             </div>
             <div class="mt-12 lg:mt-0 lg:col-span-2 xl:col-span-5">
                 <div class="p-12 bg-white shadow-lg xl:p-16">
-                    <h3 class="text-xl font-medium md:text-3xl">Proficiencies</h3>
+                    <h3 class="text-xl font-medium md:text-3xl">{{ $proficienciesWording ?? 'Proficiencies' }}</h3>
                     <ul class="mt-3 grid grid-cols-1 gap-4 list-custom font-medium text-sm text-gray-600 leading-4 md:grid-cols-2 lg:grid-cols-1">
                         {{ $proficiencies }}
                     </ul>
