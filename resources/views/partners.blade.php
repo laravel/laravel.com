@@ -249,6 +249,18 @@
                                 </a>
                             </div>
                         </li>
+                            <li>
+                                <div class="flex flex-col h-full p-12 bg-white shadow-lg">
+                                    <div class="h-14">
+                                        <img src="/img/partners/worksome.svg" alt="Worksome" class="h-full">
+                                    </div>
+                                    <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">Worksome is a fast growing Copenhagen based freelance platform, where the heart of the company is our technology and the people who build and support it.</p>
+                                    <a href="/partner/worksome" class="group mt-6 inline-flex items-center text-red-600 font-medium">
+                                        <span>More about Worksome</span>
+                                        <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
+                                    </a>
+                                </div>
+                            </li>
                     </ul>
                 </div>
             </div>
