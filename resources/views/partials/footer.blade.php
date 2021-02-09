@@ -44,6 +44,7 @@
                 'Ideil' => 'https://www.ideil.com/',
                 'Jump24' => 'https://jump24.co.uk/',
                 'Romega Software' => 'https://romegadigital.com/',
+                'Worksome' => 'https://www.worksome.com/',
                 'Become A Partner' => 'https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform',
             ]
         ],
