@@ -173,13 +173,13 @@
                 </a>
             </li>
             <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/homestead" class="flex items-center p-4 shadow-lg">
+                <a href="/docs/{{DEFAULT_VERSION}}/sail" class="flex items-center p-4 shadow-lg">
                     <div class="bg-sail flex items-center justify-center w-16 h-16">
                         <img src="/img/ecosystem/sail.min.svg" alt="Icon" class="w-10 h-10">
                     </div>
                     <div class="ml-4 leading-5">
                         <div class="text-2xl">Sail</div>
-                    <span class="text-xs text-gray-600">Sail Docker locally</span>
+                    <span class="text-xs text-gray-600">Local Docker environment</span>
                 </div>
                 </a>
             </li>
@@ -239,13 +239,13 @@
                 </a>
             </li>
             <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/passport" class="flex items-center p-4 shadow-lg">
+                <a href="/docs/{{DEFAULT_VERSION}}/sanctum" class="flex items-center p-4 shadow-lg">
                     <div class="bg-sanctum flex items-center justify-center w-16 h-16">
                         <img src="/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum logomark" class="w-10 h-10">
                     </div>
                     <div class="ml-4 leading-5">
                         <div class="text-2xl">Sanctum</div>
-                        <span class="text-xs text-gray-600">Featherweight Authentication</span>
+                        <span class="text-xs text-gray-600">API / Mobile Authentication</span>
                     </div>
                 </a>
             </li>
