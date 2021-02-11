@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+    <title>Laravel Sail logomark</title>
+    <path fill="#fff" opacity=".5" d="M7.8,39.8c3.6,4.1,8.4,6.8,14.2,7.4V19C22,19,7.8,39.8,7.8,39.8z" />
+    <path fill="#fff" d="M24,0C10.7,0,0,10.7,0,24s10.7,24,24,24s24-10.7,24-24S37.3,0,24,0z M4,24C4,13,13,4,24,4s20,9,20,20 c0,4.3-1.4,8.3-3.8,11.6L24,11v33C13,44,4,35,4,24z" />
+</svg>

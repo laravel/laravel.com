@@ -67,7 +67,7 @@ module.exports = {
         echo: '#4AB2B0',
         lumen: '#F6AE7A',
         homestead: '#E7801C',
-        spark: '#F0C376',
+        spark: '#9B8BFB',
         valet: '#5E47CD',
         mix: '#294BA5',
         cashier: '#91D630',
@@ -78,6 +78,8 @@ module.exports = {
         telescope: '#4040C8',
         tinker: '#EC7658',
         jetstream: '#6875f5',
+        sail: '#38BDF7',
+        sanctum: '#1D5873',
     },
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
