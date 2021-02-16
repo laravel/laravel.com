@@ -116,7 +116,7 @@
                                             <img src="/img/ecosystem/sail.min.svg" alt="Icon" class="w-10 h-10">
                                         </div>
                                         <div class="ml-4 leading-5">
-                                            <div class="text-2xl">Sail</div>
+                                            <div>Sail</div>
                                         <span class="text-xs text-gray-600">Local Docker environment</span>
                                     </div>
                                     </a>
@@ -182,7 +182,7 @@
                                             <img src="/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum logomark" class="w-10 h-10">
                                         </div>
                                         <div class="ml-4 leading-5">
-                                            <div class="text-2xl">Sanctum</div>
+                                            <div>Sanctum</div>
                                             <span class="text-xs text-gray-600">API / Mobile Authentication</span>
                                         </div>
                                     </a>
