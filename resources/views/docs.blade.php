@@ -60,6 +60,9 @@
                                 {!! $index !!}
                             </div>
                         </nav>
+                        <div :class="{ 'hidden': !navIsOpen }" x-cloak class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block">
+                            <span class="font-medium">Laravel Spark:</span> The next generation of Spark is <a class="underline text-red-600" href="https://spark.laravel.com">now available</a>.
+                        </div>
                         <div :class="{ 'hidden': !navIsOpen }" x-cloak class="lg:block">
                             <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                         </div>
