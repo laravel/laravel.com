@@ -172,6 +172,11 @@
                                     <img class="w-6 h-6" src="/img/social/discord.min.svg" alt="Discord">
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://www.youtube.com/laravelphp">
+                                    <img class="w-6 h-6" src="/img/social/youtube.min.svg" alt="YouTube">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
