@@ -60,9 +60,43 @@
                                 {!! $index !!}
                             </div>
                         </nav>
-                        <div :class="{ 'hidden': !navIsOpen }" x-cloak class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block">
-                            <span class="font-medium">Laravel Spark:</span> The next generation of Spark is <a class="underline text-red-600" href="https://spark.laravel.com">now available</a>.
-                        </div>
+
+                        @php
+                            $promote = null;
+
+                            switch(random_int(1, 3)) {
+                                case 1:
+                                    $promote = 'forge';
+                                    break;
+
+                                case 2:
+                                    $promote = 'vapor';
+                                    break;
+
+                                case 3:
+                                    $promote = 'spark';
+                                    break;
+                            }
+                        @endphp
+
+                        @if ($promote == 'forge')
+                            <div :class="{ 'hidden': !navIsOpen }" x-cloak class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block">
+                                <span class="font-medium">Laravel Forge:</span> create and manage PHP 8 servers. Deploy your Laravel applications in seconds. <a class="underline text-red-600" href="https://forge.laravel.com">Sign up now!</a>.
+                            </div>
+                        @endif
+
+                        @if ($promote == 'vapor')
+                            <div :class="{ 'hidden': !navIsOpen }" x-cloak class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block">
+                                <span class="font-medium">Laravel Vapor:</span> experience extreme scale on a dedicated serverless platform for Laravel. <a class="underline text-red-600" href="https://vapor.laravel.com">Sign up now!</a>.
+                            </div>
+                        @endif
+
+                        @if ($promote == 'spark')
+                            <div :class="{ 'hidden': !navIsOpen }" x-cloak class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block">
+                                <span class="font-medium">Laravel Spark:</span> The next generation of Spark is <a class="underline text-red-600" href="https://spark.laravel.com">now available</a>.
+                            </div>
+                        @endif
+
                         <div :class="{ 'hidden': !navIsOpen }" x-cloak class="lg:block">
                             <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                         </div>
