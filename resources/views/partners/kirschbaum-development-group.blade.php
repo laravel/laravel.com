@@ -9,7 +9,7 @@
         secondary-button-url="https://kirschbaumdevelopment.com/"
     >
         <x-slot name="logo">
-            <img src="/img/partners/kirschbaum-2.min.svg"  width="500" alt="Kirschbaum Development">
+            <img src="/img/partners/kirschbaum-2.min.svg"  width="250" alt="Kirschbaum Development">
         </x-slot>
         <x-slot name="description">
             We are a team of carefully curated Laravel experts with a history of delivering practical and efficient solutions to complex problems. We bring products and services to market quickly by leveraging iterative processes and lean development techniques.
