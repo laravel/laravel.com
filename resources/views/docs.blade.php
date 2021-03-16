@@ -1,6 +1,7 @@
 @extends('partials.layout')
 
 @section('content')
+    <x-accessibility.skip-to-content-link />
     <div class="relative overflow-auto" id="docsScreen">
         <div class="relative lg:flex lg:items-start">
             <aside
@@ -188,8 +189,9 @@
                                     </div>
                                 </blockquote>
                             @endif
-
-                            {!! $content !!}
+                            <x-accessibility.main-content-wrapper>
+                                {!! $content !!}
+                            </x-accessibility.main-content-wrapper>
                         </section>
                     </section>
                 </div>
