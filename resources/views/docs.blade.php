@@ -147,7 +147,7 @@
                                     x-model.debouce.200ms="search"
                                     x-ref="searchInput"
                                     class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none"
-                                    placeholder="Search Docs"
+                                    placeholder="Search Docs (Press '/')"
                                     aria-label="Search in the documentation"
                                     @keydown.arrow-up.prevent="focusPreviousResult()"
                                     @keydown.arrow-down.prevent="focusNextResult()"
