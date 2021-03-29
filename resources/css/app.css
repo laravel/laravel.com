@@ -14,3 +14,9 @@
 [x-cloak] {
     display: none !important;
 }
+
+
+.parnters_body a {
+    color: theme('colors.red.600');
+    text-decoration: underline;
+}
