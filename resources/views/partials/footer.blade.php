@@ -73,6 +73,8 @@
     ];
 @endphp
 
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
+
 <footer style="background: linear-gradient(0deg,#fff 90%,hsla(0,0%,100%,0))" class="relative z-30">
     <div class="relative z-20 overflow-x-hidden">
         <div class="relative max-w-screen-2xl mx-auto sm:px-8">

@@ -96,10 +96,6 @@
                                 <span class="font-medium">Laravel Spark:</span> The next generation of Spark is <a class="underline text-red-600" href="https://spark.laravel.com">now available</a>.
                             </div>
                         @endif
-
-                        <div :class="{ 'hidden': !navIsOpen }" x-cloak class="lg:block">
-                            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
-                        </div>
                     </div>
                     <div class="sticky bottom-0 flex-1 flex flex-col justify-end lg:hidden">
                         <div class="py-4 px-4 bg-white">
