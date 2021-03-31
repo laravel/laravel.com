@@ -43,7 +43,7 @@ class Documentation
     public function getIndex($version)
     {
         return $this->cache->remember('docs.'.$version.'.index', 5, function () use ($version) {
-            $path = base_path('resources/docs/'.$version.'/documentation.md');
+            $path = $this->markdownPath($version, 'documentation');
 
             if ($this->files->exists($path)) {
                 return $this->replaceLinks($version, (new Parsedown())->text($this->files->get($path)));
@@ -63,7 +63,7 @@ class Documentation
     public function get($version, $page)
     {
         return $this->cache->remember('docs.'.$version.'.'.$page, 5, function () use ($version, $page) {
-            $path = base_path('resources/docs/'.$version.'/'.$page.'.md');
+            $path = $this->markdownPath($version, $page);
 
             if ($this->files->exists($path)) {
                 return $this->replaceLinks($version, (new Parsedown)->text($this->files->get($path)));
@@ -86,6 +86,18 @@ class Documentation
     }
 
     /**
+     * Return markdown path
+     *
+     * @param  string  $version
+     * @param  string  $page
+     * @return string
+     */
+    public static function markdownPath($version, $page)
+    {
+        return resource_path('docs/'.$version.'/'.$page.'.md');
+    }
+
+    /**
      * Check if the given section exists.
      *
      * @param  string  $version
@@ -94,9 +106,7 @@ class Documentation
      */
     public function sectionExists($version, $page)
     {
-        return $this->files->exists(
-            base_path('resources/docs/'.$version.'/'.$page.'.md')
-        );
+        return $this->files->exists($this->markdownPath($version, $page));
     }
 
     /**
