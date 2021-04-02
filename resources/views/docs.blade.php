@@ -186,6 +186,7 @@
                             @endif
 
                             {!! $content !!}
+                            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                         </section>
                     </section>
                 </div>

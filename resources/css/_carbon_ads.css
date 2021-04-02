@@ -34,13 +34,14 @@
     }
 }
 
+
 @media only screen and (min-width: 320px) and (max-width: 1027px) {
   #carbonads {
     position: relative;
     float: none;
     bottom: initial;
     right: initial;
-    margin: 20px auto;
+    margin: 20px 0;
     max-width: 330px;
     padding: 1em;
 
@@ -64,4 +65,27 @@
         bottom: 15px;
     }
   }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 429px) {
+    #carbonads {
+        .carbon-wrap {
+            flex-direction: column;
+        }
+
+        img {
+            margin: initial;
+            margin: 0 0 .5em 0;
+        }
+
+        .carbon-text {
+            margin-bottom: initial;
+        }
+
+        .carbon-poweredby {
+            position: initial;
+            left: initial;
+            right: initial;
+        }
+    }
 }
