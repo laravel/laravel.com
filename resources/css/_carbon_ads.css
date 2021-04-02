@@ -1,8 +1,17 @@
 #carbonads {
-    margin-top: 2.375em;
-    background: theme('colors.white');
-    padding: 1em;
-    max-width: 10.125em;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F7F8FB;
+    z-index: 100;
+    box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.25);
+    padding: .625em;
+    max-width: 130px;
+    box-sizing: content-box;
+
+    span {
+        display: block;
+    }
 
     img {
         display: block;
@@ -11,16 +20,72 @@
 
     .carbon-text {
         display: block;
-        font-size: .625em;
+        font-size: .75em;
         line-height: 1.4em;
-        margin-bottom: 1rem;
         color: theme('colors.gray.700');
     }
 
     .carbon-poweredby {
-        font-size: .625em;
+        font-size: .5em;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
+        line-height: 1;
         color: theme('colors.gray.600');
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1027px) {
+  #carbonads {
+    position: relative;
+    float: none;
+    bottom: initial;
+    right: initial;
+    margin: 20px 0;
+    max-width: 330px;
+    padding: 1em;
+
+    .carbon-wrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        margin: 0 1em 0 0;
+    }
+
+    .carbon-text {
+        font-size: .825em;
+        margin-bottom: 1em;
+    }
+
+    .carbon-poweredby {
+        position: absolute;
+        left: 162px;
+        bottom: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 429px) {
+    #carbonads {
+        .carbon-wrap {
+            flex-direction: column;
+        }
+
+        img {
+            margin: initial;
+            margin: 0 0 .5em 0;
+        }
+
+        .carbon-text {
+            margin-bottom: initial;
+        }
+
+        .carbon-poweredby {
+            position: initial;
+            left: initial;
+            right: initial;
+        }
     }
 }
