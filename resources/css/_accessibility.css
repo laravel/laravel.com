@@ -1,0 +1,18 @@
+#skip-to-content-link:not(:focus) {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0) !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+}
+
+#skip-to-content-link {
+    z-index: 2147483647;
+}
+
+#main-content {
+    outline: none;
+}
+

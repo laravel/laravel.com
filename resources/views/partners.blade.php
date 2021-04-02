@@ -194,7 +194,7 @@
                                 <div>
                                     <img src="/img/partners/cyberduck.png" alt="Cyber-Duck" class="h-full w-64">
                                 </div>
-                                <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">The Cyber-Duck team is comprised of 45+ user experience experts, software developers and marketing strategists based in the UK and USA.</p>
+                                <p class="mt-6 flex-1 text-xs text-gray-600 md:text-sm">The Cyber-Duck team is comprised of 75+ user experience experts, software developers and marketing strategists based in the UK and USA.</p>
                                 <a href="/partner/cyber-duck" class="group mt-6 inline-flex items-center text-red-600 font-medium">
                                     <span>More about Cyber-Duck</span>
                                     <span class="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
