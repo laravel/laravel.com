@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -e
+
 base=${base:-/home/forge/laravel.com}
 doctum=${base}/build/doctum
 
@@ -13,7 +16,7 @@ rm -rf ${doctum}/laravel
 # Run API Docs
 git clone https://github.com/laravel/framework.git ${doctum}/laravel
 
-${doctum}/vendor/bin/doctum.php update ${doctum}/doctum.php
+${doctum}/vendor/bin/doctum.php update ${doctum}/doctum.php -v --ignore-parse-errors
 
 # Delete old directory before copying new one
 rm -rf ${base}/public/api
