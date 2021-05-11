@@ -65,7 +65,7 @@
                     <source src="/img/blocks/blocks_3.mp4" type="video/mp4">
                 </video>
             </div>
-            @if (SHOW_VAPOR)
+            @if (SHOW_PROMO === 'VAPOR')
                 <div class="md:max-w-auto md:w-1/2 max-w-lg">
                     <img class="w-full shadow-lg" src="/img/homepage/vapor.jpg" alt="Vapor">
                 </div>
@@ -76,7 +76,7 @@
                         Learn More
                     </x-button.primary>
                 </div>
-            @else
+            @elseif (SHOW_PROMO === 'FORGE')
                 <div class="md:max-w-auto md:w-1/2 max-w-lg">
                     <img class="w-full shadow-lg" src="/img/homepage/forge.jpg" alt="Forge">
                 </div>
@@ -84,6 +84,17 @@
                     <h1 class="sm:text-4xl lg:text-5xl lg:leading-tight xl:text-5xl text-3xl font-medium tracking-tight">Laravel Forge</h1>
                     <p class="sm:mt-5 md:max-w-2xl md:mt-8 md:text-lg max-w-xl mt-3 text-gray-600">Instant PHP Platforms on DigitalOcean, Linode, and more. Featuring push-to-deploy, Redis, queues, and everything else you could need to launch and deploy impressive Laravel applications.</p>
                     <x-button.primary class="sm:mt-8 md:mt-10 mt-6" href="https://forge.laravel.com" target="_blank">
+                        Learn More
+                    </x-button.primary>
+                </div>
+            @elseif (SHOW_PROMO === 'PARTNERS')
+                <div class="md:max-w-auto md:w-1/2 max-w-lg">
+                    <img class="w-full shadow-lg" src="/img/homepage/partners.png" alt="Laravel Partners">
+                </div>
+                <div class="md:w-1/2 md:pl-8 lg:pl-24">
+                    <h1 class="sm:text-4xl lg:text-5xl lg:leading-tight xl:text-5xl text-3xl font-medium tracking-tight">Laravel Partners</h1>
+                    <p class="sm:mt-5 md:max-w-2xl md:mt-8 md:text-lg max-w-xl mt-3 text-gray-600">Find a Laravel-endorsed development partner to help with your next project. Find an expert based on your needs and reach out to start a conversation.</p>
+                    <x-button.primary class="sm:mt-8 md:mt-10 mt-6" href="https://partners.laravel.com" target="_blank">
                         Learn More
                     </x-button.primary>
                 </div>
