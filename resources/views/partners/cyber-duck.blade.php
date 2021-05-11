@@ -12,7 +12,7 @@
             <img src="/img/partners/cyberduck.png" alt="Hire Cyber-duck" style="max-width: 300px">
         </x-slot>
         <x-slot name="description">
-            Our Laravel development services have been trusted by global brands for over 14+ years such as
+            Our Laravel development services have been trusted by global brands for over 10+ years such as
             <a href="https://www.cyber-duck.co.uk/client-stories/cancer-research-technology">Cancer Research</a>,
             <a href="https://www.cyber-duck.co.uk/client-stories/eurofighter">Eurofighter Typhoon</a> and
             <a href="https://www.cyber-duck.co.uk/client-stories/cabot-financial">Cabot Financial</a>. We have produced game changing applications through service design underpinned by a user centred approach and an astute knowledge of Laravel and Vue.js.
