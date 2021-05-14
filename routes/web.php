@@ -43,7 +43,9 @@ Route::get('/partner/curotec', function () {
     return redirect('https://partners.laravel.com/partners/curotec', 301);
 });
 
-// Route::get('partner/{partner}', 'PartnersController@show');
+Route::get('partner/{partner}', function ($partner) {
+    return redirect('https://partners.laravel.com/partners/'.$partner, 301);
+});
 
 Route::get('/', function () {
     return view('marketing');
