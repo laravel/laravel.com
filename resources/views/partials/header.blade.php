@@ -236,7 +236,7 @@
                     </div>
                 </li>
                 <li><a href="https://laravel-news.com">News</a></li>
-                <li><a href="/partners">Partners</a></li>
+                <li><a href="https://partners.laravel.com">Partners</a></li>
             </ul>
             <div class="flex-1 flex items-center justify-end">
                 <div x-data="searchComponent()" x-init="init()" class="ml-4 relative flex-1 flex justify-end max-w-xs w-full lg:absolute lg:right-0 lg:max-w-xxs lg:ml-10 xl:max-w-xs">
@@ -516,7 +516,7 @@
                         </div>
                     </li>
                     <li><a class="block w-full py-2 text-center" href="https://laravel-news.com">News</a></li>
-                    <li><a class="block w-full py-2 text-center" href="/partners">Partners</a></li>
+                    <li><a class="block w-full py-2 text-center" href="https://partners.laravel.com">Partners</a></li>
                 </ul>
             </div>
         </nav>
