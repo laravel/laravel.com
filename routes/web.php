@@ -50,3 +50,46 @@ Route::get('partner/{partner}', function ($partner) {
 Route::get('/', function () {
     return view('marketing');
 });
+
+Route::get('team', function () {
+    return view('team', [
+        'team' => [
+            [
+                'name' => 'Taylor Otwell',
+                'github_username' => 'taylorotwell',
+                'twitter_username' => 'taylorotwell',
+                'location' => 'Arkansas, United States',
+            ], [
+                'name' => 'Mohamed Said',
+                'github_username' => 'themsaid',
+                'twitter_username' => 'themsaid',
+                'location' => 'Cairo, Egypt',
+            ], [
+                'name' => 'Dries Vints',
+                'github_username' => 'driesvints',
+                'twitter_username' => 'driesvints',
+                'location' => 'Antwerp, Belgium',
+            ], [
+                'name' => 'James Brooks',
+                'github_username' => 'jbrooksuk',
+                'twitter_username' => 'jbrooksuk',
+                'location' => 'Staffordshire, United Kingdom',
+            ], [
+                'name' => 'Nuno Maduro',
+                'github_username' => 'nunomaduro',
+                'twitter_username' => 'enunomaduro',
+                'location' => 'Leiria, Portugal',
+            ], [
+                'name' => 'Mior Muhammed Zaki Mior Khairuddin',
+                'github_username' => 'crynobone',
+                'twitter_username' => 'crynobone',
+                'location' => 'Selangor, Malaysia',
+            ], [
+                'name' => 'Claudio Dekker',
+                'github_username' => 'claudiodekker',
+                'twitter_username' => 'claudiodekker',
+                'location' => 'Amsterdam, The Netherlands',
+            ],
+        ]
+    ]);
+});
