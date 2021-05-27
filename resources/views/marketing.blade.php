@@ -78,7 +78,7 @@
                 </div>
             @elseif (SHOW_PROMO === 'FORGE')
                 <div class="md:max-w-auto md:w-1/2 max-w-lg">
-                    <img class="w-full shadow-lg" src="/img/homepage/forge.jpg" alt="Forge">
+                    <img class="w-full shadow-lg" src="/img/homepage/forge.png" alt="Forge">
                 </div>
                 <div class="md:w-1/2 md:pl-8 lg:pl-24">
                     <h1 class="sm:text-4xl lg:text-5xl lg:leading-tight xl:text-5xl text-3xl font-medium tracking-tight">Laravel Forge</h1>
