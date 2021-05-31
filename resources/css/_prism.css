@@ -67,6 +67,7 @@ pre[class*="language-"] {
     padding: 0 .125rem;
     max-width: 100%;
     overflow-x: auto;
+    vertical-align: middle;
 }
 
 .token.comment,
