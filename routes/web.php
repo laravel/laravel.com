@@ -80,7 +80,7 @@ Route::get('team', function () {
                 'twitter_username' => 'enunomaduro',
                 'location' => 'Leiria, Portugal',
             ], [
-                'name' => 'Mior Muhammed Zaki Mior Khairuddin',
+                'name' => 'Mior Muhammad Zaki Mior Khairuddin',
                 'github_username' => 'crynobone',
                 'twitter_username' => 'crynobone',
                 'location' => 'Selangor, Malaysia',
