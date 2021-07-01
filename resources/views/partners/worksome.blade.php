@@ -5,7 +5,7 @@
 
     <x-partners.hero
         primary-button-text="Join Worksome"
-        primary-button-url="https://www.worksome.com/job/"
+        primary-button-url="https://worksome.jobs.personio.de/"
         secondary-button-url="https://www.worksome.com/"
     >
         <x-slot name="logo">
@@ -25,7 +25,7 @@
         <x-slot name="content">
             <p>Worksome is a fast growing Copenhagen based freelance platform, where the heart of the company is our technology and the people who build and support it.</p>
 
-            <p>The company was founded in 2016 and today counts over 35 employees spread across 3 office locations in Copenhagen, London and New York. We are proud to be connecting over 30.000 freelancers with over 20.000 companies - leading the revolution of flexible work.</p>
+            <p>The company was founded in 2017 and today counts over 60 employees spread across 3 office locations in Copenhagen, London and New York. We are proud to be connecting over 30.000 freelancers with over 20.000 companies - leading the revolution of flexible work.</p>
 
             <p>Our product and engineering team is primarily located in our central downtown office in the amazing city of Copenhagen, where we strive to build the best freelance technology platform in the world. We do this heavily relying on Laravel as a core technology framework for the vast majority of our systems, even building complex freelancer to job matching algorithms only using PHP and Laravel. Our frontend systems are mainly built using a mix of Vue.js and Blade.</p>
 
@@ -35,7 +35,7 @@
             </p>
 
             <p>If all this sounds like something that you can get excited about, then please head over to our to our
-                <a style="text-decoration: underline" href="https://www.worksome.com/job/">jobs page here</a> - or explore Worksome as the platform where you can find new talent for your team or find your next gig as an independent freelancer.</p>
+                <a style="text-decoration: underline" href="https://worksome.jobs.personio.de/">jobs page here</a> - or explore Worksome as the platform where you can find new talent for your team or find your next gig as an independent freelancer.</p>
         </x-slot>
         <x-slot name="proficiencies">
             <li>Laravel focused development team</li>
