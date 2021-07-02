@@ -2,19 +2,18 @@
     "private": true,
     "scripts": {
         "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "npm run development -- --watch",
-        "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "production": "mix --production"
     },
     "devDependencies": {
         "algoliasearch": "^4.6.0",
         "alpinejs": "^2.7.3",
         "babel-plugin-prismjs": "^2.0.1",
-        "cross-env": "^5.1",
-        "laravel-mix": "^6.0.0-beta.14",
+        "laravel-mix": "^6.0.25",
         "postcss-import": "^13.0.0",
         "postcss-nested": "^5.0.1",
         "prismjs": "^1.22.0",
