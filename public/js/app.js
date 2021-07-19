@@ -2066,6 +2066,29 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/theme.js":
+/*!******************************************!*\
+  !*** ./resources/js/components/theme.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "toDarkMode": () => (/* binding */ toDarkMode),
+/* harmony export */   "toLightMode": () => (/* binding */ toLightMode)
+/* harmony export */ });
+var toDarkMode = function toDarkMode() {
+  localStorage.theme = 'dark';
+  document.documentElement.classList.add('dark');
+};
+var toLightMode = function toLightMode() {
+  localStorage.theme = 'light';
+  document.documentElement.classList.remove('dark');
+};
+
+/***/ }),
+
 /***/ "./resources/js/docs.js":
 /*!******************************!*\
   !*** ./resources/js/docs.js ***!
@@ -2096,6 +2119,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prismjs_components_prism_bash__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_bash__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var prismjs_components_prism_sql__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prismjs/components/prism-sql */ "./node_modules/prismjs/components/prism-sql.js");
 /* harmony import */ var prismjs_components_prism_sql__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_sql__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_theme__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/theme */ "./resources/js/components/theme.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -2224,6 +2248,10 @@ function replaceBlockquotesWithCalloutsInDocs() {
     }
   });
 }
+
+
+window.toDarkMode = _components_theme__WEBPACK_IMPORTED_MODULE_11__.toDarkMode;
+window.toLightMode = _components_theme__WEBPACK_IMPORTED_MODULE_11__.toLightMode;
 
 /***/ }),
 

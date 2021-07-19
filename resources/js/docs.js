@@ -99,3 +99,7 @@ function replaceBlockquotesWithCalloutsInDocs() {
         }
     });
 }
+
+import { toDarkMode, toLightMode } from './components/theme';
+window.toDarkMode = toDarkMode;
+window.toLightMode = toLightMode;
