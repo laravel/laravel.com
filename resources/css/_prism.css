@@ -57,8 +57,10 @@ pre[class*="language-"] {
 .docs_main :not(pre) > code,
 pre[class*="language-"] {
 	background: theme('colors.gray.50');
+    @apply dark:bg-dark-600;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
     color: theme('colors.red.800');
+    @apply dark:text-red-500;
     user-select: auto;
 }
 
@@ -79,6 +81,7 @@ pre[class*="language-"] {
 
 .token.punctuation {
 	color: theme('colors.gray.900');
+    @apply dark:text-gray-200;
 }
 
 .namespace {
@@ -93,6 +96,7 @@ pre[class*="language-"] {
 .token.symbol,
 .token.deleted {
 	color: theme('colors.red.900');
+    @apply dark:text-red-500;
 }
 
 .token.selector,
@@ -102,6 +106,7 @@ pre[class*="language-"] {
 .token.builtin,
 .token.inserted {
 	color: theme('colors.green.600');
+    @apply dark:text-green-500;
 }
 
 .token.operator,
@@ -110,23 +115,27 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string {
 	color: theme('colors.gray.900');
+    @apply dark:text-gray-200;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
 	color: theme('colors.blue.800');
+    @apply dark:text-blue-500;
 }
 
 .token.function,
 .token.class-name {
 	color: theme('colors.red.800');
+    @apply dark:text-red-500;
 }
 
 .token.regex,
 .token.important,
 .token.variable {
 	color: theme('colors.blue.600');
+    @apply dark:text-blue-500;
 }
 
 .token.important,

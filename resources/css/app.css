@@ -11,6 +11,8 @@
 
 @import 'tailwindcss/utilities';
 
+@import "./_dark_mode.css";
+
 [x-cloak] {
     display: none !important;
 }

@@ -38,6 +38,12 @@
 @include('partials.footer')
 
 <script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+    }
+</script>
+
+<script>
     var algolia_app_id = '{{ config('algolia.connections.main.id', false) }}';
     var algolia_search_key = '{{ config('algolia.connections.main.search_key', false) }}';
     var version = '{{ isset($currentVersion) ? $currentVersion : DEFAULT_VERSION }}';

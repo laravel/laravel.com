@@ -1,0 +1,98 @@
+.docs_main {
+    /* Headers */
+    & h1, & h2, & h3, & h4, & h5, & h6, & h4 a, & h3 a, & h2 a {
+        @apply dark:text-gray-200;
+    }
+
+    /* Body text */
+    & p, & ul:not(:first-of-type) li, & .content-list ul li {
+        @apply dark:text-gray-400;
+    }
+
+    /* Table of contents */
+    & h1 + ul li a {
+        @apply dark:text-gray-300;
+    }
+
+    /* Links */
+    & p a, & ul a, & ol a {
+        @apply dark:text-red-500;
+    }
+
+    /* Pound sign before headings */
+    @media (prefers-color-scheme: dark) {
+        & h4 a:before, & h3 a:before, & h2 a:before {
+            opacity: 1;
+        }
+    }
+
+    /* Tables */
+    & table th {
+        @apply dark:text-gray-200;
+    }
+
+    & table td {
+        @apply dark:text-gray-400;
+    }
+
+    /* Code snippets */
+    & code {
+        @apply dark:text-gray-200;
+    }
+}
+
+.docs_sidebar {
+    /* Sidebar links */
+    & ul li h2, & ul li a {
+        @apply dark:text-gray-400;
+    }
+}
+
+/* Carbon ads */
+#carbonads {
+    @apply dark:bg-dark-600;
+
+    & .carbon-text {
+        @apply dark:text-gray-400;
+    }
+
+    & .carbon-poweredby {
+        @apply dark:text-gray-500;
+    }
+}
+
+/* Light mode icons */
+html {
+    #header__sun,
+    #docs_search__algolia_dark,
+    #docs_search__version_arrow_dark,
+    #footer__twitter_dark,
+    #footer__github_dark,
+    #footer__discord_dark,
+    #footer__youtube_dark {
+        display: none;
+    }
+}
+
+/* Dark mode icons */
+html.dark {
+    #header__moon,
+    #docs_search__algolia,
+    #docs_search__version_arrow,
+    #footer__twitter,
+    #footer__github,
+    #footer__discord,
+    #footer__youtube {
+        display: none;
+    }
+
+    #header__sun,
+    #docs_search__algolia_dark,
+    #docs_search__version_arrow_dark,
+    #footer__twitter_dark,
+    #footer__github_dark,
+    #footer__discord_dark,
+    #footer__youtube_dark {
+        display: block;
+    }
+}

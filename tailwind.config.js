@@ -7,6 +7,7 @@ module.exports = {
       'resources/views/**/*.blade.php',
       'resources/js/**/*.js',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
         fontSize: {
@@ -35,16 +36,25 @@ module.exports = {
             700: '#2b2e38',
             600: '#777777',
             500: '#93939e',
+            400: '#B5B5BD',
             300: '#d7d7dc',
             200: '#e7e8f2',
             100: '#f5f5fa',
             50: '#fbfbfd',
+        },
+        dark: {
+            900: '#12141C',
+            800: '#171923',
+            700: '#0C0D12',
+            600: '#252A37',
+            500: '#636363',
         },
         red: {
             900: '#981d15',
             800: '#ca473f',
             700: '#ec0e00',
             600: '#ff2d20',
+            500: '#FF7C75',
         },
         orange: {
             600: '#f49d37',
@@ -52,9 +62,11 @@ module.exports = {
         blue: {
             800: '#055472',
             600: '#0782b1',
+            500: '#0AB2F5',
         },
         green: {
             600: '#669900',
+            500: '#8FD600',
         },
         purple: {
             600: '#8338ec',
