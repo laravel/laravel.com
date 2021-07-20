@@ -100,6 +100,7 @@ function replaceBlockquotesWithCalloutsInDocs() {
     });
 }
 
-import { toDarkMode, toLightMode } from './components/theme';
+import { toDarkMode, toLightMode, toSystemMode } from './components/theme';
 window.toDarkMode = toDarkMode;
 window.toLightMode = toLightMode;
+window.toSystemMode = toSystemMode;

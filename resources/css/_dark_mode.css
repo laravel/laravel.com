@@ -19,13 +19,6 @@
         @apply dark:text-red-500;
     }
 
-    /* Pound sign before headings */
-    @media (prefers-color-scheme: dark) {
-        & h4 a:before, & h3 a:before, & h2 a:before {
-            opacity: 1;
-        }
-    }
-
     /* Tables */
     & table th {
         @apply dark:text-gray-200;
@@ -48,6 +41,13 @@
     }
 }
 
+/* Pound sign before headings */
+.dark .docs_main {
+    & h4 a:before, & h3 a:before, & h2 a:before {
+        opacity: 1;
+    }
+}
+
 /* Carbon ads */
 #carbonads {
     @apply dark:bg-dark-600;
@@ -63,7 +63,6 @@
 
 /* Light mode icons */
 html {
-    #header__sun,
     #docs_search__algolia_dark,
     #docs_search__version_arrow_dark,
     #footer__twitter_dark,
@@ -76,7 +75,6 @@ html {
 
 /* Dark mode icons */
 html.dark {
-    #header__moon,
     #docs_search__algolia,
     #docs_search__version_arrow,
     #footer__twitter,
@@ -86,7 +84,6 @@ html.dark {
         display: none;
     }
 
-    #header__sun,
     #docs_search__algolia_dark,
     #docs_search__version_arrow_dark,
     #footer__twitter_dark,
@@ -96,3 +93,9 @@ html.dark {
         display: block;
     }
 }
+
+/* Color mode buttons */
+#header__sun, #header__moon, #header__indeterminate { display: none; }
+html[color-theme="dark"] #header__moon { display: block; }
+html[color-theme="light"] #header__sun { display: block; }
+html[color-theme="system"] #header__indeterminate { display: block; }
