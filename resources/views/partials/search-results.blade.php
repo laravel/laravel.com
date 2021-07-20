@@ -3,7 +3,7 @@
         <a
             :id="'search-result-' + index"
             :href="hit.url"
-            class="search-result block px-4 py-3 bg-gray-100 transition-colors duration-200 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-dark-600 dark:text-gray-400 dark:hover:bg-dark-500"
+            class="search-result block px-4 py-3 bg-gray-100 transition-colors duration-200 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-dark-600 dark:text-gray-400 dark:focus:bg-dark-500 dark:hover:bg-dark-500"
             @keydown.arrow-up.prevent="focusPreviousResult(index)"
             @keydown.arrow-down.prevent="focusNextResult(index)"
         >
