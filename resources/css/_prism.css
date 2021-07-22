@@ -36,6 +36,8 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code::selection, code ::selection {
 	text-shadow: none;
 	background: theme('colors.gray.200');
+
+    @apply dark:bg-dark-500;
 }
 
 @media print {
