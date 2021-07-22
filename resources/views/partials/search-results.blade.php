@@ -33,7 +33,7 @@
     </template>
 	<div class="bg-gray-100 flex justify-end dark:bg-dark-600 dark:text-gray-400">
 		<a class="px-4 py-2 inline-block" target="_blank" href="https://www.algolia.com/?utm_source=laravel&utm_medium=link&utm_campaign=laravel_documentation_search">
-            <img width="105" src="/img/icons/algolia.min.svg" alt="Algolia">
+            <img width="105" src="/img/icons/algolia.min.svg" id="docs_search__algolia" alt="Algolia">
             <img width="105" src="/img/icons/algolia.dark.min.svg" id="docs_search__algolia_dark" alt="Algolia">
 		</a>
 	</div>
