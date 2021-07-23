@@ -5,7 +5,7 @@
     }
 
     /* Body text */
-    & p, & ul:not(:first-of-type) li, & .content-list ul li {
+    & p, & ul:not(:first-of-type) li, & .content-list ul li, & #software-list {
         @apply dark:text-gray-400;
     }
 
