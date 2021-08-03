@@ -76,15 +76,15 @@
     $is_dark = request()->is('docs/*');
 @endphp
 
-<footer class="relative z-30 {{ $is_dark ? 'dark:bg-dark-800' : '' }}">
+<footer class="relative z-30 {{ $is_dark ? 'dark:bg-dark-700' : '' }}">
     <div class="relative z-20 overflow-x-hidden">
         <div class="relative max-w-screen-2xl mx-auto sm:px-8">
             <div class="absolute inset-0 flex flex-col px-4 lg:px-12 xl:px-16">
                 <div class="flex-1"></div>
-                <div class="flex-1 bg-gray-100 {{ $is_dark ? 'dark:bg-dark-700' : '' }}"></div>
+                <div class="flex-1 bg-gray-100 {{ $is_dark ? 'dark:bg-dark-900' : '' }}"></div>
             </div>
             <div class="relative max-w-screen-xl mx-auto px-8">
-                <section class="relative z-10 p-6 bg-white shadow-lg md:flex md:items-center md:p-12 lg:p-16 {{ $is_dark ? 'dark:bg-dark-800' : '' }}">
+                <section class="relative z-10 p-6 bg-white shadow-lg md:flex md:items-center md:p-12 lg:p-16 {{ $is_dark ? 'dark:bg-dark-600' : '' }}">
                     <div class="content md:pr-12">
                         <h2 class="text-3xl tracking-tight sm:text-4xl md:mt-4 xl:text-5xl {{ $is_dark ? 'dark:text-gray-200' : '' }}">Become a Laravel Partner</h2>
                         <p class="mt-3 max-w-xl text-gray-600 sm:mt-5 md:max-w-2xl md:mt-8 md:text-lg {{ $is_dark ? 'dark:text-gray-400' : '' }}">Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
@@ -103,7 +103,7 @@
         </div>
 
         <div class="max-w-screen-2xl mx-auto px-4 lg:px-12 xl:px-16">
-            <div class="px-8 pb-12 bg-gray-100 xl:px-20 {{ $is_dark ? 'dark:bg-dark-700' : '' }}">
+            <div class="px-8 pb-12 bg-gray-100 xl:px-20 {{ $is_dark ? 'dark:bg-dark-900' : '' }}">
                 <div>
                     <img class="-mt-2 max-w-4xl w-full transform -translate-x-12 lg:-translate-x-24 xl:-translate-x-40" src="/img/logotype.min.svg" alt="Laravel">
                 </div>
