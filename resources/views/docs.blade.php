@@ -2,7 +2,7 @@
 
 @section('content')
     <x-accessibility.skip-to-content-link />
-    <div class="relative overflow-auto dark:bg-dark-800" id="docsScreen">
+    <div class="relative overflow-auto dark:bg-dark-700" id="docsScreen">
         <div class="relative lg:flex lg:items-start">
             <aside
                 x-init="init()"
@@ -18,7 +18,7 @@
                         });
                     }
                 }"
-                class="hidden fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:flex-shrink-0 lg:flex lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full dark:from-dark-900 dark:to-dark-800"
+                class="hidden fixed top-0 bottom-0 left-0 z-20 h-full w-16 flex flex-col bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:flex-shrink-0 lg:flex lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full dark:from-dark-800 dark:to-dark-700"
                 :class="{ 'w-64': navIsOpen }"
                 @click.away="navIsOpen = false"
                 @keydown.window.escape="navIsOpen = false"
@@ -114,7 +114,7 @@
                 @keydown.window.escape="navIsOpen = false"
                 @click.away="navIsOpen = false"
             >
-                <div class="relative mx-auto w-full py-10 bg-white transition duration-200 dark:bg-dark-800">
+                <div class="relative mx-auto w-full py-10 bg-white transition duration-200 dark:bg-dark-700">
                     <div class="mx-auto px-8 sm:px-16 flex items-center justify-between">
                         <a href="/" class="flex items-center">
                             <img class="" src="/img/logomark.min.svg" alt="Laravel">
@@ -170,7 +170,7 @@
                 </div>
             </header>
 
-            <section class="flex-1 dark:bg-dark-800">
+            <section class="flex-1 dark:bg-dark-700">
                 <div class="max-w-screen-lg px-8 sm:px-16 lg:px-24">
                     <div class="flex flex-col items-end lg:mt-8 lg:flex-row-reverse">
                         <div class="hidden lg:flex items-center justify-center ml-8">
@@ -199,7 +199,7 @@
                                     <select
                                         id="version-switcher"
                                         aria-label="Laravel version"
-                                        class="appearance-none flex-1 w-full px-0 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:bg-dark-800 dark:text-gray-400 dark:placeholder-gray-500"
+                                        class="appearance-none flex-1 w-full px-0 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:bg-dark-700 dark:text-gray-400 dark:placeholder-gray-500"
                                         @change="window.location = $event.target.value"
                                     >
                                         @foreach ($versions as $key => $display)
@@ -223,7 +223,7 @@
                                 <input
                                     x-model.debouce.200ms="search"
                                     x-ref="searchInput"
-                                    class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:bg-dark-800 dark:text-gray-400 dark:placeholder-gray-500"
+                                    class="flex-1 w-full pl-8 pr-4 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:bg-dark-700 dark:text-gray-400 dark:placeholder-gray-500"
                                     placeholder="Search Docs (Press '/')"
                                     aria-label="Search in the documentation"
                                     @keydown.arrow-up.prevent="focusPreviousResult()"
@@ -238,7 +238,7 @@
                         <section class="docs_main max-w-prose">
                             @unless ($currentVersion == 'master' || version_compare($currentVersion, DEFAULT_VERSION) >= 0)
                                 <blockquote>
-                                    <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center">
+                                    <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg dark:bg-dark-600 lg:flex lg:items-center">
                                         <div class="w-20 h-20 mb-6 flex items-center justify-center flex-shrink-0 bg-orange-600 lg:mb-0">
                                             <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
                                         </div>
