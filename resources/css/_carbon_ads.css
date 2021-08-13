@@ -89,3 +89,9 @@
         }
     }
 }
+
+@media only print {
+    #carbonads {
+        display: none;
+    }
+}
