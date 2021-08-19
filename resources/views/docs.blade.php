@@ -30,6 +30,8 @@
                             :class="{ 'w-12 h-12': navIsOpen }"
                             src="/img/logomark.min.svg"
                             alt="Laravel"
+                            width="50"
+                            height="52"
                         >
                         <img
                             x-show="navIsOpen"
@@ -43,11 +45,15 @@
                             x-transition:leave-end="opacity-0"
                             src="/img/logotype.min.svg"
                             alt="Laravel"
+                            width="114"
+                            height="29"
                         >
                         <img
                             src="/img/logotype.min.svg"
                             alt="Laravel"
                             class="hidden ml-4 lg:block"
+                            width="114"
+                            height="29"
                         >
                     </a>
                     <div class="overflow-y-auto overflow-x-hidden px-4 lg:overflow-hidden lg:px-8 xl:px-16">

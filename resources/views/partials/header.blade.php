@@ -6,8 +6,8 @@
     <div class="relative max-w-screen-2xl mx-auto w-full py-10 bg-white transition duration-200">
         <div class="max-w-screen-xl mx-auto px-8 flex items-center justify-between">
             <a href="/" class="flex items-center">
-                <img class="" src="/img/logomark.min.svg" alt="Laravel">
-                <img class="hidden ml-5 sm:block" src="/img/logotype.min.svg" alt="Laravel">
+                <img class="" src="/img/logomark.min.svg" alt="Laravel" width="50" height="52">
+                <img class="hidden ml-5 sm:block" src="/img/logotype.min.svg" alt="Laravel" width="114" height="29">
             </a>
             <ul class="relative hidden lg:ml-6 lg:pt-3 lg:flex lg:items-end lg:space-x-6 xl:ml-14 xl:space-x-10">
                 <li><a href="/docs">Documentation</a></li>
@@ -18,7 +18,7 @@
                 @endif
                 <li x-data="{ expanded: false }" class="relative" @keydown.window.escape="expanded = false">
                     <button class="flex items-center justify-center focus:outline-none" @click="expanded = !expanded">
-                        Ecosystem<span class="ml-3 flex-shrink-0"><img :class="{ 'rotate-180': expanded }" class="w-2.5 h-2.5 transform transition-transform" src="/img/icons/nav_arrow.min.svg" alt="Expand"></span>
+                        Ecosystem<span class="ml-3 flex-shrink-0"><img :class="{ 'rotate-180': expanded }" class="w-2.5 h-2.5 transform transition-transform" src="/img/icons/nav_arrow.min.svg" alt="Expand" width="10" height="5"></span>
                     </button>
                     <div
                         x-show="expanded"
@@ -36,7 +36,7 @@
                                 <li>
                                     <a href="https://vapor.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-vapor flex items-center justify-center">
-                                            <img src="/img/ecosystem/vapor.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/vapor.min.svg" alt="Icon" class="w-10 h-10" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Vapor</div>
@@ -47,7 +47,7 @@
                                 <li>
                                     <a href="https://forge.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-forge flex items-center justify-center">
-                                            <img src="/img/ecosystem/forge.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/forge.min.svg" alt="Icon" class="w-10 h-10" width="41" height="32">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Forge</div>
@@ -58,7 +58,7 @@
                                 <li>
                                     <a href="https://envoyer.io" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-envoyer flex items-center justify-center">
-                                            <img src="/img/ecosystem/envoyer.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/envoyer.min.svg" alt="Icon" class="w-10 h-10" width="41" height="50">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Envoyer</div>
@@ -69,7 +69,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/horizon" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-horizon flex items-center justify-center">
-                                            <img src="/img/ecosystem/horizon.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/horizon.min.svg" alt="Icon" class="w-10 h-10" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Horizon</div>
@@ -80,7 +80,7 @@
                                 <li>
                                     <a href="https://nova.laravel.com/" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-nova flex items-center justify-center">
-                                            <img src="/img/ecosystem/nova.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/nova.min.svg" alt="Icon" class="w-10 h-10" width="39" height="40">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Nova</div>
@@ -91,7 +91,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/broadcasting" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-echo flex items-center justify-center">
-                                            <img src="/img/ecosystem/echo.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/echo.min.svg" alt="Icon" class="w-10 h-10" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Echo</div>
@@ -102,7 +102,7 @@
                                 <li>
                                     <a href="https://lumen.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-lumen flex items-center justify-center">
-                                            <img src="/img/ecosystem/lumen.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/lumen.min.svg" alt="Icon" class="w-10 h-10" width="27" height="54">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Lumen</div>
@@ -113,7 +113,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/sail" class="flex items-center p-4 shadow-lg">
                                         <div class="bg-sail flex items-center justify-center w-14 h-14">
-                                            <img src="/img/ecosystem/sail.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/sail.min.svg" alt="Icon" class="w-10 h-10" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Sail</div>
@@ -124,7 +124,7 @@
                                 <li>
                                     <a href="https://spark.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-spark flex items-center justify-center">
-                                            <img src="/img/ecosystem/spark.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/spark.min.svg" alt="Icon" class="w-10 h-10" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Spark</div>
@@ -135,7 +135,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/valet" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-valet flex items-center justify-center">
-                                            <img src="/img/ecosystem/valet.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/valet.min.svg" alt="Icon" class="w-10 h-10" width="40" height="26">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Valet</div>
@@ -146,7 +146,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/mix" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-mix flex items-center justify-center">
-                                            <img src="/img/ecosystem/mix.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/mix.min.svg" alt="Icon" class="w-10 h-10" width="48" height="44">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Mix</div>
@@ -157,7 +157,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/billing" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-cashier flex items-center justify-center">
-                                            <img src="/img/ecosystem/cashier.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/cashier.min.svg" alt="Icon" class="w-10 h-10" width="47" height="32">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Cashier</div>
@@ -168,7 +168,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/dusk" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-dusk flex items-center justify-center">
-                                            <img src="/img/ecosystem/dusk.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/dusk.min.svg" alt="Icon" class="w-10 h-10" width="45" height="44">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Dusk</div>
@@ -179,7 +179,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/sanctum" class="flex items-center p-4 shadow-lg">
                                         <div class="bg-sanctum flex items-center justify-center w-14 h-14">
-                                            <img src="/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum logomark" class="w-10 h-10">
+                                            <img src="/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum logomark" class="w-10 h-10" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Sanctum</div>
@@ -190,7 +190,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/scout" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-scout flex items-center justify-center">
-                                            <img src="/img/ecosystem/scout.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/scout.min.svg" alt="Icon" class="w-10 h-10" width="36" height="36">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Scout</div>
@@ -201,7 +201,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/socialite" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-socialite flex items-center justify-center">
-                                            <img src="/img/ecosystem/socialite.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/socialite.min.svg" alt="Icon" class="w-10 h-10" width="32" height="33">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Socialite</div>
@@ -212,7 +212,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/telescope" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-telescope flex items-center justify-center">
-                                            <img src="/img/ecosystem/telescope.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/telescope.min.svg" alt="Icon" class="w-10 h-10" width="42" height="43">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Telescope</div>
@@ -223,7 +223,7 @@
                                 <li>
                                     <a href="https://jetstream.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-jetstream flex items-center justify-center">
-                                            <img src="/img/ecosystem/jetstream.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/jetstream.min.svg" alt="Icon" class="w-10 h-10" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Jetstream</div>
@@ -299,7 +299,7 @@
                         <button class="flex items-center justify-center w-full py-2 text-center" @click="expanded = !expanded">
                             Ecosystem
                             <span class="ml-3 flex-shrink-0">
-                                <img :class="{ 'rotate-180': expanded }" class="w-2.5 h-2.5 transform transition-transform" src="/img/icons/nav_arrow.min.svg" alt="Expand">
+                                <img :class="{ 'rotate-180': expanded }" class="w-2.5 h-2.5 transform transition-transform" src="/img/icons/nav_arrow.min.svg" alt="Expand" width="10" height="5">
                             </span>
                         </button>
                         <div
@@ -317,7 +317,7 @@
                                 <li>
                                     <a href="https://vapor.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-vapor flex items-center justify-center">
-                                            <img src="/img/ecosystem/vapor.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/vapor.min.svg" alt="Icon" class="w-10 h-10" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Vapor</div>
@@ -328,7 +328,7 @@
                                 <li>
                                     <a href="https://forge.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-forge flex items-center justify-center">
-                                            <img src="/img/ecosystem/forge.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/forge.min.svg" alt="Icon" class="w-10 h-10" width="41" height="32">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Forge</div>
@@ -339,7 +339,7 @@
                                 <li>
                                     <a href="https://envoyer.io" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-envoyer flex items-center justify-center">
-                                            <img src="/img/ecosystem/envoyer.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/envoyer.min.svg" alt="Icon" class="w-10 h-10" width="41" height="50">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Envoyer</div>
@@ -350,7 +350,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/horizon" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-horizon flex items-center justify-center">
-                                            <img src="/img/ecosystem/horizon.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/horizon.min.svg" alt="Icon" class="w-10 h-10" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Horizon</div>
@@ -361,7 +361,7 @@
                                 <li>
                                     <a href="https://nova.laravel.com/" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-nova flex items-center justify-center">
-                                            <img src="/img/ecosystem/nova.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/nova.min.svg" alt="Icon" class="w-10 h-10" width="39" height="40">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Nova</div>
@@ -372,7 +372,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/broadcasting" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-echo flex items-center justify-center">
-                                            <img src="/img/ecosystem/echo.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/echo.min.svg" alt="Icon" class="w-10 h-10" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Echo</div>
@@ -383,7 +383,7 @@
                                 <li>
                                     <a href="https://lumen.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-lumen flex items-center justify-center">
-                                            <img src="/img/ecosystem/lumen.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/lumen.min.svg" alt="Icon" class="w-10 h-10" width="27" height="54">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Lumen</div>
@@ -394,7 +394,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/homestead" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-homestead flex items-center justify-center">
-                                            <img src="/img/ecosystem/homestead.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/homestead.min.svg" alt="Icon" class="w-10 h-10" width="41" height="42">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Homestead</div>
@@ -405,7 +405,7 @@
                                 <li>
                                     <a href="https://spark.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-spark flex items-center justify-center">
-                                            <img src="/img/ecosystem/spark.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/spark.min.svg" alt="Icon" class="w-10 h-10" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Spark</div>
@@ -416,7 +416,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/valet" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-valet flex items-center justify-center">
-                                            <img src="/img/ecosystem/valet.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/valet.min.svg" alt="Icon" class="w-10 h-10" width="40" height="26">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Valet</div>
@@ -427,7 +427,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/mix" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-mix flex items-center justify-center">
-                                            <img src="/img/ecosystem/mix.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/mix.min.svg" alt="Icon" class="w-10 h-10" width="48" height="44">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Mix</div>
@@ -438,7 +438,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/billing" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-cashier flex items-center justify-center">
-                                            <img src="/img/ecosystem/cashier.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/cashier.min.svg" alt="Icon" class="w-10 h-10" width="47" height="32">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Cashier</div>
@@ -449,7 +449,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/dusk" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-dusk flex items-center justify-center">
-                                            <img src="/img/ecosystem/dusk.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/dusk.min.svg" alt="Icon" class="w-10 h-10" width="45" height="44">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Dusk</div>
@@ -460,7 +460,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/passport" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-passport flex items-center justify-center">
-                                            <img src="/img/ecosystem/passport.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/passport.min.svg" alt="Icon" class="w-10 h-10" width="29" height="40">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Passport</div>
@@ -471,7 +471,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/scout" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-scout flex items-center justify-center">
-                                            <img src="/img/ecosystem/scout.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/scout.min.svg" alt="Icon" class="w-10 h-10" width="36" height="36">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Scout</div>
@@ -482,7 +482,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/socialite" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-socialite flex items-center justify-center">
-                                            <img src="/img/ecosystem/socialite.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/socialite.min.svg" alt="Icon" class="w-10 h-10" width="32" height="33">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Socialite</div>
@@ -493,7 +493,7 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/telescope" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-telescope flex items-center justify-center">
-                                            <img src="/img/ecosystem/telescope.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/telescope.min.svg" alt="Icon" class="w-10 h-10" width="42" height="43">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Telescope</div>
@@ -504,7 +504,7 @@
                                 <li>
                                     <a href="https://jetstream.laravel.com" class="flex items-center p-4 shadow-lg">
                                         <div class="w-14 h-14 bg-jetstream flex items-center justify-center">
-                                            <img src="/img/ecosystem/jetstream.min.svg" alt="Icon" class="w-10 h-10">
+                                            <img src="/img/ecosystem/jetstream.min.svg" alt="Icon" class="w-10 h-10" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div>Jetstream</div>
