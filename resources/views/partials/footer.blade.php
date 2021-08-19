@@ -47,6 +47,7 @@
                  'Ideil' => 'https://www.ideil.com/',
                  'Romega Software' => 'https://romegadigital.com/',
                  'Worksome' => 'https://www.worksome.com/',
+                 'WebReinvent' => 'https://webreinvent.com/?utm_source=laravel&utm_medium=laravel.com&utm_campaign=patreon-sponsors',
              ]
          ],
         [
