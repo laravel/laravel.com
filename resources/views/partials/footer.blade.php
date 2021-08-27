@@ -106,7 +106,7 @@
         <div class="max-w-screen-2xl mx-auto px-4 lg:px-12 xl:px-16">
             <div class="px-8 pb-12 bg-gray-100 xl:px-20 {{ $is_dark ? 'dark:bg-dark-900' : '' }}">
                 <div>
-                    <img class="-mt-2 max-w-4xl w-full transform -translate-x-12 lg:-translate-x-24 xl:-translate-x-40" src="/img/logotype.min.svg" alt="Laravel">
+                    <img class="-mt-2 max-w-4xl w-full transform -translate-x-12 lg:-translate-x-24 xl:-translate-x-40" src="/img/logotype.min.svg" alt="Laravel" width="114" height="29" loading="lazy">
                 </div>
                 <div class="mt-6 sm:mt-12 md:flex">
                     <div class="divide-y divide-gray-600 divide-opacity-25 sm:hidden">
@@ -163,26 +163,26 @@
                         <ul class="mt-6 flex items-center space-x-3">
                             <li>
                                 <a href="https://twitter.com/laravelphp">
-                                    <img id="footer__twitter" class="w-6 h-6" src="/img/social/twitter.min.svg" alt="Twitter">
-                                    <img id="footer__twitter_dark" class="w-6 h-6" src="/img/social/twitter.dark.min.svg" alt="Twitter">
+                                    <img id="footer__twitter" class="w-6 h-6" src="/img/social/twitter.min.svg" alt="Twitter" width="24" height="20" loading="lazy">
+                                    <img id="footer__twitter_dark" class="w-6 h-6" src="/img/social/twitter.dark.min.svg" alt="Twitter" width="24" height="20" loading="lazy">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/laravel">
-                                    <img id="footer__github" class="w-6 h-6" src="/img/social/github.min.svg" alt="GitHub">
-                                    <img id="footer__github_dark" class="w-6 h-6" src="/img/social/github.dark.min.svg" alt="GitHub">
+                                    <img id="footer__github" class="w-6 h-6" src="/img/social/github.min.svg" alt="GitHub" width="24" height="24" loading="lazy">
+                                    <img id="footer__github_dark" class="w-6 h-6" src="/img/social/github.dark.min.svg" alt="GitHub" width="24" height="24" loading="lazy">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://discord.gg/mPZNm7A">
-                                    <img id="footer__discord" class="w-6 h-6" src="/img/social/discord.min.svg" alt="Discord">
-                                    <img id="footer__discord_dark" class="w-6 h-6" src="/img/social/discord.dark.min.svg" alt="Discord">
+                                    <img id="footer__discord" class="w-6 h-6" src="/img/social/discord.min.svg" alt="Discord" width="21" height="24" loading="lazy">
+                                    <img id="footer__discord_dark" class="w-6 h-6" src="/img/social/discord.dark.min.svg" alt="Discord" width="21" height="24" loading="lazy">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/laravelphp">
-                                    <img id="footer__youtube" class="w-6 h-6" src="/img/social/youtube.min.svg" alt="YouTube">
-                                    <img id="footer__youtube_dark" class="w-6 h-6" src="/img/social/youtube.dark.min.svg" alt="YouTube">
+                                    <img id="footer__youtube" class="w-6 h-6" src="/img/social/youtube.min.svg" alt="YouTube" width="169" height="150" loading="lazy">
+                                    <img id="footer__youtube_dark" class="w-6 h-6" src="/img/social/youtube.dark.min.svg" alt="YouTube" width="169" height="150" loading="lazy">
                                 </a>
                             </li>
                         </ul>
@@ -192,7 +192,7 @@
         </div>
         <div class="flex justify-center py-6">
             <a href="/" class="logomark">
-                <img class="w-9 h-9" src="/img/logomark.min.svg" alt="Laravel">
+                <img class="w-9 h-9" src="/img/logomark.min.svg" alt="Laravel" width="50" height="52" loading="lazy">
             </a>
         </div>
     </div>
