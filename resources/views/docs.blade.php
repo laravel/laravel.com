@@ -28,7 +28,7 @@
                         <img
                             class="w-8 h-8 flex-shrink-0 transition-all duration-300 lg:w-12 lg:h-12"
                             :class="{ 'w-12 h-12': navIsOpen }"
-                            src="/img/logomark.min.svg"
+                            src="{{ asset('img/logomark.min.svg') }}"
                             alt="Laravel"
                             width="50"
                             height="52"
@@ -43,13 +43,13 @@
                             x-transition:leave="duration-250 ease-in"
                             x-transition:leave-start="opacity-100"
                             x-transition:leave-end="opacity-0"
-                            src="/img/logotype.min.svg"
+                            src="{{ asset('img/logotype.min.svg') }}"
                             alt="Laravel"
                             width="114"
                             height="29"
                         >
                         <img
-                            src="/img/logotype.min.svg"
+                            src="{{ asset('img/logotype.min.svg') }}"
                             alt="Laravel"
                             class="hidden ml-4 lg:block"
                             width="114"
@@ -123,8 +123,8 @@
                 <div class="relative mx-auto w-full py-10 bg-white transition duration-200 dark:bg-dark-700">
                     <div class="mx-auto px-8 sm:px-16 flex items-center justify-between">
                         <a href="/" class="flex items-center">
-                            <img class="" src="/img/logomark.min.svg" alt="Laravel">
-                            <img class="hidden ml-5 sm:block" src="/img/logotype.min.svg" alt="Laravel">
+                            <img class="" src="{{ asset('img/logomark.min.svg') }}" alt="Laravel">
+                            <img class="hidden ml-5 sm:block" src="{{ asset('img/logotype.min.svg') }}" alt="Laravel">
                         </a>
                         <div class="flex-1 flex items-center justify-end">
                             <button id="header__sun" onclick="toSystemMode()" title="Switch to system theme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
@@ -212,8 +212,8 @@
                                             <option {{ $currentVersion == $key ? 'selected' : '' }} value="{{ url('docs/'.$key.$currentSection) }}">{{ $display }}</option>
                                         @endforeach
                                     </select>
-                                    <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none" id="docs_search__version_arrow" src="/img/icons/drop_arrow.min.svg" alt="">
-                                    <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none" id="docs_search__version_arrow_dark" src="/img/icons/drop_arrow.dark.min.svg" alt="">
+                                    <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none" id="docs_search__version_arrow" src="{{ asset('img/icons/drop_arrow.min.svg') }}" alt="">
+                                    <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none" id="docs_search__version_arrow_dark" src="{{ asset('img/icons/drop_arrow.dark.min.svg') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -246,7 +246,7 @@
                                 <blockquote>
                                     <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg dark:bg-dark-600 lg:flex lg:items-center">
                                         <div class="w-20 h-20 mb-6 flex items-center justify-center flex-shrink-0 bg-orange-600 lg:mb-0">
-                                            <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
+                                            <img src="{{ asset('img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
                                         </div>
 
                                         <p class="mb-0 lg:ml-4">
@@ -262,7 +262,7 @@
                                     <div class="callout">
                                         <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center">
                                         <div class="w-20 h-20 mb-6 flex items-center justify-center flex-shrink-0 bg-orange-600 lg:mb-0">
-                                            <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
+                                            <img src="{{ asset('img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
                                         </div>
 
                                         <p class="mb-0 lg:ml-4">

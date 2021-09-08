@@ -9,8 +9,8 @@
                 <div class="contain">
                     <section class="pt-12 md:pt-20 xl:pt-20">
                         <div style="width: 120%;z-index: -9998" class="hidden md:transform md:translate-x-1/4 md:absolute md:-top-24 md:-right-48 md:flex md:items-center lg:-top-32 xl:-top-48">
-                            <video poster="/img/blocks/blocks_1.jpg" playsinline autoplay muted loop>
-                                <source src="/img/blocks/blocks_1.mp4" type="video/mp4">
+                            <video poster="{{ asset('img/blocks/blocks_1.jpg') }}" playsinline autoplay muted loop>
+                                <source src="{{ asset('img/blocks/blocks_1.mp4') }}" type="video/mp4">
                             </video>
                         </div>
                         <div class="max-w-screen-xl mx-auto px-8 space-y-8 md:space-y-0 md:flex md:items-end">
