@@ -94,6 +94,12 @@ html.dark {
     }
 }
 
+/* Changes Color Scheme */
+html.dark{
+    color-scheme: dark;
+    background-color: white;
+}
+
 /* Color mode buttons */
 #header__sun, #header__moon, #header__indeterminate { display: none; }
 html[color-theme="dark"] #header__moon { display: block; }
