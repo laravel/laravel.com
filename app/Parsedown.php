@@ -18,7 +18,6 @@ class Parsedown extends ParsedownExtra
         $text = parent::text($text);
 
         $lines = explode("\n", $text);
-        $lastName = null;
 
         foreach ($lines as $number => $line) {
             preg_match('/<a name="(.+)">/', $line, $matches);
