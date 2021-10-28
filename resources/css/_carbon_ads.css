@@ -8,6 +8,9 @@
     padding: .625em;
     max-width: 130px;
     box-sizing: content-box;
+    &.move-top {
+         bottom: 100px;
+    }
 
     span {
         display: block;

@@ -177,3 +177,28 @@
         }
     }
 }
+
+#docsScreen #toTheTop {
+    background-color: #ff2d20;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 15px;
+    z-index: 99;
+
+    &:hover, &:active, &:focus {
+        opacity: 1;
+        outline: none;
+    }
+
+    .topChevron::before {
+        border-style: solid;
+        border-width: 0.2em 0.2em 0 0;
+        content: '';
+        display: inline-block;
+        height: 1.4rem;
+        position: relative;
+        transform: rotate(-45deg);
+        vertical-align: middle;
+        width: 1.4rem;
+    }
+}

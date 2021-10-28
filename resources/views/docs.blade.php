@@ -276,10 +276,37 @@
                                 {!! $content !!}
                                 <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                             </x-accessibility.main-content-wrapper>
+                            <button onclick="topFunction()" id="toTheTop" title="Go to top" class="fixed bottom-5 right-5 h-15 w-15 rounded-lg hidden">
+                                <span class="topChevron"></span>
+                            </button>
                         </section>
                     </section>
                 </div>
             </section>
         </div>
     </div>
+    <script>
+        mybutton = document.getElementById('toTheTop');
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            carbonAds = document.getElementById('carbonads');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.setProperty('display', 'block', 'important');
+                if (carbonAds) {
+                    carbonAds.classList.add('move-top');
+                }
+            } else {
+                mybutton.style.display = 'none';
+                if (carbonAds) {
+                    carbonAds.classList.remove('move-top');
+                }
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 @stop
