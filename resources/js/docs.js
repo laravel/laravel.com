@@ -5,6 +5,8 @@ highlightCode();
 wrapHeadingsInAnchors();
 setupNavCurrentLinkHandling();
 replaceBlockquotesWithCalloutsInDocs();
+highlightSupportPolicyTable();
+addSupportPolicyTableKey();
 
 function highlightCode() {
     [...document.querySelectorAll('pre code')].forEach(el => {
@@ -98,6 +100,61 @@ function replaceBlockquotesWithCalloutsInDocs() {
             wrapper.appendChild(el);
         }
     });
+}
+
+function highlightSupportPolicyTable() {
+  const table = document.querySelector('.docs_main #support-policy ~ table:first-of-type');
+
+  if (table) {
+    Array.from(table.rows).forEach((row, rowIndex) => {
+        Array.from(row.cells).forEach((cell, cellIndex, cells) => {
+            if (rowIndex > 0) {
+              // Target the last two columns so the highlighting applies in all versions of the docs.
+              if (cellIndex >= cells.length-2 ) {
+                const cellDate = Date.parse(cell.innerHTML.replace(/(\d+)(st|nd|rd|th)/, '$1'));
+                const currentDate = new Date().valueOf();
+
+                if (currentDate > cellDate) {
+                  // Date has passed.
+                  cell.classList.add('bg-red-500', 'support-policy-highlight');
+                } else if (currentDate > (cellDate - 7776000000)) {
+                  // Date is within 90 days.
+                  cell.classList.add('bg-orange-600', 'support-policy-highlight');
+                }
+              }
+            }
+        });
+    });
+  }
+}
+
+function addSupportPolicyTableKey() {
+  const table = document.querySelector('.docs_main #support-policy ~ table:first-of-type');
+
+  if (table) {
+    const keyWrapper = document.createElement('div');
+    keyWrapper.classList = 'sm:flex dark:text-gray-400';
+    const endOfLifeWrapper = document.createElement('div');
+    endOfLifeWrapper.classList = 'flex items-center mr-4';
+    const endOfLifeKey = document.createElement('div');
+    endOfLifeKey.classList = `w-3 h-3 mr-2 bg-red-500`;
+    const endOfLifeText = document.createElement('div');
+    endOfLifeText.innerHTML = 'End of life';
+    const upcomingEndOfLifeWrapper = document.createElement('div');
+    upcomingEndOfLifeWrapper.classList = 'flex items-center';
+    const upcomingEndOfLifeKey = document.createElement('div');
+    upcomingEndOfLifeKey.classList = `w-3 h-3 mr-2 bg-orange-600`;
+    const upcomingEndOfLifeText = document.createElement('div');
+    upcomingEndOfLifeText.innerHTML = '< 90 days until end of life';
+
+    endOfLifeWrapper.append(endOfLifeKey);
+    endOfLifeWrapper.append(endOfLifeText);
+    upcomingEndOfLifeWrapper.append(upcomingEndOfLifeKey);
+    upcomingEndOfLifeWrapper.append(upcomingEndOfLifeText);
+    keyWrapper.append(endOfLifeWrapper);
+    keyWrapper.append(upcomingEndOfLifeWrapper);
+    table.after(keyWrapper);
+  }
 }
 
 import { toDarkMode, toLightMode, toSystemMode } from './components/theme';
