@@ -5,6 +5,7 @@ highlightCode();
 wrapHeadingsInAnchors();
 setupNavCurrentLinkHandling();
 replaceBlockquotesWithCalloutsInDocs();
+highlightSupportPolicyTable();
 
 function highlightCode() {
     [...document.querySelectorAll('pre code')].forEach(el => {
@@ -98,6 +99,35 @@ function replaceBlockquotesWithCalloutsInDocs() {
             wrapper.appendChild(el);
         }
     });
+}
+
+function highlightSupportPolicyTable() {
+    const table = document.querySelector('.docs_main #support-policy ~ table:first-of-type');
+
+    if (table) {
+        const currentDate = new Date().valueOf();
+
+        Array.from(table.rows).forEach((row, rowIndex) => {
+            if (rowIndex > 0) {
+                const cells = row.cells;
+                const versionCell = cells[0];
+                const bugDateCell = getCellDate(cells[cells.length - 2]);
+                const securityDateCell = getCellDate(cells[cells.length - 1]);
+
+                if (currentDate > securityDateCell) {
+                    // End of life.
+                    versionCell.classList.add('bg-red-500', 'support-policy-highlight');
+                } else if ((currentDate <= securityDateCell) && (currentDate > bugDateCell)) {
+                    // Security fixes only.
+                    versionCell.classList.add('bg-orange-600', 'support-policy-highlight');
+                }
+            }
+        });
+    }
+}
+
+function getCellDate(cell) {
+    return Date.parse(cell.innerHTML.replace(/(\d+)(st|nd|rd|th)/, '$1'));
 }
 
 import { toDarkMode, toLightMode, toSystemMode } from './components/theme';
