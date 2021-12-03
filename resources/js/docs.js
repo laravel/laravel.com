@@ -126,8 +126,7 @@ function highlightSupportPolicyTable() {
     }
 }
 
-function getCellDate(cell)
-{
+function getCellDate(cell) {
     return Date.parse(cell.innerHTML.replace(/(\d+)(st|nd|rd|th)/, '$1'));
 }
 
