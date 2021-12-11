@@ -35,9 +35,9 @@
                                     <p class="text-gray-600">{{ $staff['location'] }}</p>
                                 </div>
 
-                                {{-- <div class="text-lg">
-                                    <p class="text-gray-500">Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.</p>
-                                </div> --}}
+                                <div class="text-lg">
+                                    <p class="text-gray-500">{{ get_github_bio($staff['github_username']) }}</p>
+                                </div>
 
                                 <ul class="flex space-x-5">
                                     @if ($staff['twitter_username'] ?? false)
