@@ -22,6 +22,29 @@ if (! defined('SHOW_PROMO')) {
     }
 }
 
+if (! function_exists('get_github_bio')) {
+    /**
+     * Gets the bio of passed github username.
+     * 
+     * @param  string  $username
+     * @return string
+     */
+    function get_github_bio($username): string
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_URL, 'https://api.github.com/users/' . $username);
+        curl_setopt($ch, CURLOPT_USERAGENT, request()->header('User-Agent'));
+        $result=curl_exec($ch);
+        curl_close($ch);
+
+        $data = json_decode($result, true);
+
+        return $data['bio'];
+    }
+}
+
+
 Route::get('docs', 'DocsController@showRootPage');
 
 Route::get('docs/6.0/{page?}', function ($page = null) {
