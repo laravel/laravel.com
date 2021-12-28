@@ -50,7 +50,7 @@
                         Documentation
                     </x-button.primary>
                     <x-button.secondary href="https://laracasts.com" target="_blank">
-                        <img class="flex-shrink-0 w-6 h-6" src="/img/icons/play.min.svg" alt="Play Video">
+                        <img class="shrink-0 w-6 h-6" src="/img/icons/play.min.svg" alt="Play Video">
                         <span class="ml-3">Watch Laracasts</span>
                     </x-button.secondary>
                 </div>

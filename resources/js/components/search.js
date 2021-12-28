@@ -11,7 +11,7 @@ export default function () {
             const index = searchClient.initIndex('laravel');
 
             this.$watch('search', (query) => {
-                if (! query) {
+                if (!query) {
                     return this.hits = [];
                 }
 

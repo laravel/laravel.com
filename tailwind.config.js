@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   important: true,
-  purge: [
+  content: [
       'resources/views/**/*.blade.php',
       'resources/js/**/*.js',
   ],
@@ -31,9 +31,9 @@ module.exports = {
         black: '#000',
         white: '#fff',
         gray: {
-            900: '#090910',
+            900: '#232323',
             800: '#222222',
-            700: '#2b2e38',
+            700: '#565454',
             600: '#777777',
             500: '#93939e',
             400: '#B5B5BD',
@@ -53,7 +53,7 @@ module.exports = {
             900: '#981d15',
             800: '#ca473f',
             700: '#ec0e00',
-            600: '#ff2d20',
+            600: '#EB4432',
             500: '#FF7C75',
         },
         orange: {
@@ -97,12 +97,6 @@ module.exports = {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
         mono: ['source-code-pro', ...defaultTheme.fontFamily.mono],
     }
-  },
-  variants: {
-      borderColor: [...defaultConfig.variants.borderColor, 'focus-within'],
-      transform: [...defaultConfig.variants.transform, 'group-hover', 'group-focus'],
-      translate: [...defaultConfig.variants.translate, 'group-hover', 'group-focus'],
-      width: [...defaultConfig.variants.width, 'hover'],
   },
   plugins: [],
 }
