@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Contracts\Cache\Repository as Cache;
 
@@ -46,7 +47,7 @@ class Documentation
             $path = base_path('resources/docs/'.$version.'/documentation.md');
 
             if ($this->files->exists($path)) {
-                return $this->replaceLinks($version, (new Parsedown())->text($this->files->get($path)));
+                return $this->replaceLinks($version, (new GithubFlavoredMarkdownConverter())->convertToHtml($this->files->get($path)));
             }
 
             return null;
@@ -62,11 +63,11 @@ class Documentation
      */
     public function get($version, $page)
     {
-        return $this->cache->remember('docs.'.$version.'.'.$page, 5, function () use ($version, $page) {
+        return $this->cache->remember('docs.'.$version.'.'.$page, 0, function () use ($version, $page) {
             $path = base_path('resources/docs/'.$version.'/'.$page.'.md');
 
             if ($this->files->exists($path)) {
-                return $this->replaceLinks($version, (new Parsedown)->text($this->files->get($path)));
+                return $this->replaceLinks($version, (new GithubFlavoredMarkdownConverter)->convertToHtml($this->files->get($path)));
             }
 
             return null;
@@ -82,7 +83,7 @@ class Documentation
      */
     public static function replaceLinks($version, $content)
     {
-        return str_replace('{{version}}', $version, $content);
+        return str_replace('%7B%7Bversion%7D%7D', $version, $content);
     }
 
     /**

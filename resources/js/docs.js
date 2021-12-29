@@ -1,7 +1,7 @@
 import Prism from 'prismjs';
 Prism.manual = true;
 
-highlightCode();
+// highlightCode();
 wrapHeadingsInAnchors();
 setupNavCurrentLinkHandling();
 replaceBlockquotesWithCalloutsInDocs();
@@ -16,10 +16,7 @@ function highlightCode() {
 function wrapHeadingsInAnchors() {
     [...document.querySelector('.docs_main').querySelectorAll('a[name]')].forEach(anchor => {
         const heading = anchor.parentNode.nextElementSibling;
-        if (heading.id == 'the-at-error-directive') {
-            console.log(heading, heading.childNodes);
-        }
-        anchor.href = `#${heading.id}`;
+        anchor.href = `#${anchor.name}`;
         anchor.removeAttribute('name');
         [...heading.childNodes].forEach(node => anchor.appendChild(node));
         heading.appendChild(anchor);

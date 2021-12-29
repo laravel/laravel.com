@@ -3,7 +3,7 @@
 @import 'tailwindcss/components';
 
 @import "./_typography.css";
-@import "./_prism.css";
+@import "./_code.css";
 @import "./_sidebar_layout.css";
 @import "./_docs.css";
 @import "./_carbon_ads.css";

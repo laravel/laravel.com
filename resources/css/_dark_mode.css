@@ -31,11 +31,6 @@
     & table td.support-policy-highlight {
       @apply dark:text-black;
     }
-
-    /* Code snippets */
-    & code {
-        @apply dark:text-gray-200;
-    }
 }
 
 .docs_sidebar {
