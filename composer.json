@@ -8,18 +8,18 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.2.5|^8.0",
+        "php": "^7.3|^8.0",
         "erusev/parsedown-extra": "^0.8.1",
         "fideloper/proxy": "^4.2",
-        "laravel/framework": "^7.3",
+        "laravel/framework": "^8.0",
         "laravel/tinker": "^2.2",
         "symfony/browser-kit": "^5.0"
     },
     "require-dev": {
-        "facade/ignition": "^2.0",
+        "facade/ignition": "^2.3.6",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
-        "nunomaduro/collision": "^4.1",
+        "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.0"
     },
     "config": {
