@@ -200,7 +200,7 @@
                         </div>
                         <div class="w-full lg:w-64 lg:pl-12">
                             <div>
-                                <label class="text-gray-600 text-xs tracking-widest uppercase dark:text-gray-500" for="version-switch">Version</label>
+                                <label class="text-gray-600 text-xs tracking-widest uppercase dark:text-gray-500" for="version-switcher">Version</label>
                                 <div x-data class="relative w-full bg-white border-b border-gray-600 border-opacity-50 transition-all duration-500 focus-within:border-gray-600 dark:bg-gray-800">
                                     <select
                                         id="version-switcher"
