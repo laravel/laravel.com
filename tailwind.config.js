@@ -19,6 +19,14 @@ module.exports = {
         spacing: {
             224: '56rem',
         },
+        keyframes: {
+            cube: {
+                '50%': { transform: 'translateY(1rem)' },
+            },
+        },
+        animation: {
+            cube: 'cube 6s ease-in-out infinite',
+        }
     },
     boxShadow: {
         none: '0 0 0 0 rgba(0, 0, 0, 0)',
@@ -54,7 +62,7 @@ module.exports = {
             800: '#ca473f',
             700: '#ec0e00',
             600: '#EB4432',
-            500: '#FF7C75',
+            500: '#F9322C',
         },
         orange: {
             600: '#f49d37',
@@ -96,7 +104,7 @@ module.exports = {
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
         mono: ['source-code-pro', ...defaultTheme.fontFamily.mono],
-    }
+    },
   },
   plugins: [],
 }

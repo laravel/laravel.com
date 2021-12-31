@@ -3,7 +3,7 @@ import algoliasearch from 'algoliasearch/lite';
 export default function () {
     return {
         search: '',
-        searchIsOpen: false,
+        open: false,
         hits: [],
         init() {
             const searchClient = algoliasearch(algolia_app_id, algolia_search_key);
@@ -24,9 +24,15 @@ export default function () {
                     this.hits = hits;
                 });
             });
+
+            this.$watch('open', (value) => {
+                if (value) {
+                    setTimeout(() => this.$refs.searchInput.focus());
+                }
+            });
         },
-        clear() {
-            this.searchIsOpen = false;
+        close() {
+            this.open = false;
             this.search = '';
             this.hits = [];
         },
@@ -50,11 +56,10 @@ export default function () {
                 return next.focus();
             }
         },
-        handleSlashKey(event) {
-            if (event.key === '/') {
+        handleKeydown(event) {
+            if (event.key === '/' || (event.key === 'p' && event.metaKey) || (event.key === 'k' && event.metaKey)) {
                 event.preventDefault();
-                this.searchIsOpen = true;
-                this.$refs.searchInput.focus()
+                this.open = true;
             }
         }
     }

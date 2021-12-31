@@ -50,7 +50,42 @@ Route::get('partner/{partner}', function ($partner) {
 });
 
 Route::get('/', function () {
-    return view('marketing');
+    return view('marketing', [
+        'companies' => collect([
+            [
+                'name' => 'Bankrate',
+                'logo-height' => 24,
+            ],
+            [
+                'name' => 'WWE',
+                'logo-height' => 42,
+            ],
+            [
+                'name' => 'twitch',
+                'logo-height' => 32,
+            ],
+            [
+                'name' => 'The New York Times',
+                'logo-height' => 31,
+            ],
+            [
+                'name' => 'Disney',
+                'logo-height' => 39,
+            ],
+            [
+                'name' => 'Warner Bros',
+                'logo-height' => 37,
+            ],
+            [
+                'name' => 'About You',
+                'logo-height' => 28,
+            ],
+            [
+                'name' => 'St. Jude',
+                'logo-height' => 61,
+            ],
+        ])->shuffle(),
+    ]);
 });
 
 Route::get('team', function () {

@@ -39,6 +39,8 @@
 
 @include('partials.footer')
 
+<x-search-modal />
+
 <script>
     var algolia_app_id = '{{ config('algolia.connections.main.id', false) }}';
     var algolia_search_key = '{{ config('algolia.connections.main.search_key', false) }}';

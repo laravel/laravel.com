@@ -17,6 +17,9 @@
     display: none !important;
 }
 
+.bg-radial-gradient {
+    background-image: radial-gradient(50% 50% at 50% 50%, #EB4432 0%, rgba(255, 255, 255, 0) 100%);
+}
 
 .parnters_body a {
     color: theme('colors.red.600');
