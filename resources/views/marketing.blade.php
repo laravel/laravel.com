@@ -20,10 +20,10 @@
                 </div>
                 <div class="relative">
                     <h1 class="max-w-3xl mx-auto text-5xl font-bold text-center md:text-6xl lg:text-7xl">The PHP Framework <br class="hidden lg:inline"><span class="text-red-500">for Web Artisans</span></h1>
-                    <p class="mt-6 max-w-xl mx-auto text-center text-gray-700 md:mt-8 lg:mt-10">Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.</p>
+                    <p class="mt-6 max-w-xl mx-auto text-center text-gray-700 text-md leading-relaxed md:mt-8 md:text-lg lg:mt-10">Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.</p>
                     <div class="mt-6 max-w-sm mx-auto flex flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
                         <x-button.primary class="w-full sm:w-auto" href="/docs">
-                            Documentation
+                            Get Started
                         </x-button.primary>
                         <x-button.secondary class="w-full sm:w-auto" href="https://laracasts.com" target="_blank">
                             Watch Laracasts
@@ -34,7 +34,7 @@
         </section>
     </div>
 
-    <div class="mt-16 overflow-hidden md:mt-24 lg:mt-32">
+    <div class="mt-16 overflow-hidden md:mt-24 lg:mt-24">
         <div class="flex items-center justify-center gap-x-10">
             @foreach($companies as $company)
                 <img src="/images/companies/{{ \Str::slug($company['name']) }}.png" alt="{{ $company['name'] }}" style="height: {{ $company['logo-height'] }}px">
@@ -63,9 +63,9 @@
                 <div class="w-full flex justify-center items-center px-5 xl:px-0">
                     <div class="sm:max-w-[480px]">
                         <h2 class="text-4xl font-bold md:text-5xl">Write code for the joy of it.</h2>
-                        <p class="mt-6 text-gray-700">Laravel is a web application framework with expressive, elegant syntax. We've already laid the foundation — freeing you to create without sweating the small things.</p>
+                        <p class="mt-6 text-gray-700 leading-relaxed">Laravel values beauty. We love clean code just as much as you do. Simple, elegant syntax puts amazing functionality at your fingertips. Every feature has been thoughtfully considered to provide a wonderful developer experience.</p>
                         <x-button.secondary class="mt-6" href="/docs">
-                            Documentation
+                            Start Learning
                         </x-button.secondary>
                     </div>
                 </div>
@@ -73,47 +73,48 @@
         </div>
     </div>
 
-    <div class="relative overflow-hidden py-24 lg:pt-64">
+    <div class="relative overflow-hidden py-24 lg:pt-48">
         <div class="max-w-screen-xl w-full mx-auto px-5 grid gap-12 lg:grid-cols-2">
-            <div class="flex justify-center">
+            <div class="flex justify-center items-center">
                 <svg class="text-red-500 w-[302px] lg:w-[454px]" width="454" height="219" viewBox="0 0 454 219" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="2" d="M215 124h100v86H215zM1 124h100v86H1zM345 124h100v86H345zM131 124h54v86h-54z"/><path fill="#fff" stroke="#565454" stroke-width="2" d="M223 132h100v86H223zM9 132h100v86H9zM353 132h100v86H353zM139 132h54v86h-54z"/><path d="M278.571 177.947c-4.461 7.651-10.385 12.535-13.232 10.907-2.846-1.627-1.538-9.15 2.924-16.801 4.46-7.651 10.385-12.535 13.231-10.907 2.847 1.627 1.539 9.15-2.923 16.801Z" stroke="#232323" stroke-width="1.667"/><path d="M257.167 175c0 3.222 7.089 5.833 15.833 5.833 8.745 0 15.833-2.611 15.833-5.833s-7.088-5.833-15.833-5.833c-8.744 0-15.833 2.611-15.833 5.833Z" stroke="#232323" stroke-width="1.667"/><path d="M267.429 177.947c4.461 7.651 10.385 12.535 13.232 10.907 2.847-1.627 1.538-9.15-2.923-16.801-4.461-7.651-10.385-12.535-13.232-10.907-2.847 1.627-1.538 9.15 2.923 16.801Z" stroke="#232323" stroke-width="1.667"/><path d="M273 177.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" stroke="#232323" stroke-width="1.667"/><path d="m403 165.678-2.938-4.845H395.5l7.5 12.5 7.5-12.5h-4.563l-2.938 4.845H403Z" stroke="#232323" stroke-width="1.667" stroke-linejoin="round"/><path d="M414.173 160.833 403 179.152l-11.173-18.319H385.5l17.5 28.334 17.5-28.334h-6.327Z" stroke="#232323" stroke-width="1.667" stroke-linejoin="round"/><path stroke="#565454" stroke-width="2" d="M229 138h5"/><path d="M219.625 39.375v7.875m-15.75-34.875 7.875-4.5 7.875 4.5-7.875 4.5-7.875-4.5Zm15.75 0v18-18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M203.875 12.375V38.25l15.75 9 15.75-9V21.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M211.75 16.875v18l7.875 4.5 23.625-13.5v-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="m227.5 16.875 7.875-4.5 7.875 4.5-7.875 4.5-7.875-4.5Zm0 0v9m0 0 7.875 4.5m-7.875-4.5-15.75 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path stroke="#565454" stroke-width="2" d="M237 138h5M163 139h6M245 138h5M15 138h5M359 138h5M23 138h5M367 138h5M31 138h5M375 138h5"/><path stroke="currentColor" stroke-width="2" d="M394 124V94M264 124V94M50 124V94M222 94V64M157 124V94M49 94h346"/><path d="M71.69 185.017c-.086.134-.177.281-.259.415l-.134.217a4.263 4.263 0 0 1-.372.523c-.221.254-.41.357-.683.357-.473 0-.755-.311-1.33-1.153l-.059-.086c-.466-.686-1.22-1.794-2.652-1.794-1.458 0-2.156 1.144-2.574 1.83l-.052.085c-.518.844-.755 1.118-1.202 1.118-.473 0-.755-.311-1.33-1.153l-.059-.086c-.466-.686-1.22-1.794-2.651-1.794-1.46 0-2.157 1.144-2.575 1.83l-.052.085c-.518.844-.755 1.118-1.202 1.118-.473 0-.755-.311-1.33-1.153l-.059-.086c-.466-.686-1.22-1.794-2.651-1.794-1.46 0-2.156 1.144-2.575 1.83l-.052.085c-.518.844-.755 1.118-1.202 1.118-.273 0-.488-.106-.74-.371a15.965 15.965 0 0 1-2.06-7.892c0-8.561 6.603-15.431 14.665-15.431s14.665 6.87 14.665 15.431c0 2.423-.53 4.714-1.474 6.751Z" stroke="#232323" stroke-width="1.67"/><path d="M64.494 174.755c0 2.088-.534 3.748-1.586 4.881-1.041 1.122-2.707 1.852-5.24 1.852-2.531 0-4.197-.73-5.238-1.852-1.052-1.133-1.586-2.793-1.586-4.881 0-4.084 3.154-7.693 6.825-7.693 3.671 0 6.825 3.609 6.825 7.693Z" stroke="#232323" stroke-width="1.67"/><path d="M55.609 175.006c1.586 0 2.872-1.419 2.872-3.17s-1.286-3.171-2.872-3.171c-1.587 0-2.873 1.42-2.873 3.171s1.287 3.17 2.873 3.17Z" fill="#232323"/><path d="M55.13 172.567c.793 0 1.436-.655 1.436-1.463s-.643-1.463-1.436-1.463c-.793 0-1.436.655-1.436 1.463s.643 1.463 1.436 1.463Z" fill="#fff"/></svg>
             </div>
             <div class="w-full flex justify-center items-center">
                 <div class="sm:max-w-[480px]">
-                    <h2 class="text-4xl font-bold md:text-5xl">Monolith or API - the choice is yours.</h2>
-                    <p class="mt-6 text-gray-700">Laravel is a web application framework with expressive, elegant syntax. We've already laid the foundation — freeing you to create without sweating the small things.</p>
-                    <x-button.secondary class="mt-6" href="/docs">
-                        Documentation
+                    <h2 class="text-4xl font-bold md:text-5xl">Monolith or API — the choice is yours.</h2>
+                    <p class="mt-6 text-gray-700 leading-relaxed">Build robust, full-stack applications in PHP using Laravel and <a class="underline" href="https://laravel-livewire.com">Livewire</a>. Love JavaScript? Build a monolithic JavaScript driven frontend by pairing Laravel with <a class="underline" href="https://inertiajs.com">Inertia</a>.</p>
+                    <p class="mt-6 text-gray-700 leading-relaxed">Or, let Laravel serve as a robust backend API for your Next.js application, mobile application, or other frontend. Either way, our starter kits will have you productive in minutes.</p>
+                    <x-button.secondary class="mt-6" href="/docs/starter-kits">
+                        Starter Kits
                     </x-button.secondary>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="relative overflow-hidden py-24 lg:pt-64">
+    <div class="relative overflow-hidden py-24 lg:pt-48">
         <x-radial-blur class="right-[-20%] top-0 w-[640px] h-[640px]" />
         <div class="max-w-screen-xl w-full mx-auto px-5">
             <h2 class="text-4xl font-bold max-w-lg md:text-5xl">Everything you need to be amazing.</h2>
-            <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <svg class="w-8 h-8 text-red-500" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#F9322C" d="M.5.5h31v31H.5z"/><path d="M8 11v10c0 2.21 3.582 4 8 4s8-1.79 8-4V11M8 11c0 2.21 3.582 4 8 4s8-1.79 8-4M8 11c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" stroke="#F9322C" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <h3 class="mt-5 text-xl font-bold">Database</h3>
+                    <p class="mt-4 text-gray-700 text-sm leading-relaxed">Laravel's <a class="underline" href="/docs/eloquent">"Eloquent" ORM</a> provides best-in-class database abstraction without the headaches. Query and update your data without breaking a sweat. Eloquent pairs perfectly with MySQL, Postgres, SQLite, and SQL Server.</p>
+                </div>
                 <div>
                     <svg class="w-8 h-8 text-red-500" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" d="M.5.5h31v31H.5z"/><path d="M23 15H9m14 0a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2m14 0v-2a2 2 0 0 0-2-2M9 15v-2a2 2 0 0 1 2-2m10 0V9a2 2 0 0 0-2-2h-6a2 2 0 0 0-2 2v2m10 0H11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     <h3 class="mt-5 text-xl font-bold">Queues</h3>
-                    <p class="mt-4 text-gray-700 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, culpa, magnam possimus officia aliquam quas dignissimos mollitia omnis totam tempore quos accusantium dolorem et! Eligendi reiciendis illo aliquam sunt officiis!</p>
+                    <p class="mt-4 text-gray-700 text-sm leading-relaxed">Dispatch background jobs to perform slow tasks like sending emails and generating reports while maintaining blazing fast response times. Laravel's <a class="underline" href="/docs/queues">robust queue system</a> can process jobs using Redis, Amazon SQS, or even MySQL and Postgres.</p>
                 </div>
                 <div>
                     <svg class="w-8 h-8 text-red-500" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#F9322C" d="M.5.5h31v31H.5z"/><path d="m10.171 15.828-2.12 2.122M19 19l-2 5-4-11 11 4-5 2Zm0 0 5 5-5-5ZM11.188 6.239l.777 2.897-.777-2.897Zm-2.052 5.726-2.898-.777 2.898.777ZM17.95 8.05l-2.122 2.122L17.95 8.05Z" stroke="#F9322C" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <h3 class="mt-5 text-xl font-bold">Realtime</h3>
-                    <p class="mt-4 text-gray-700 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, culpa, magnam possimus officia aliquam quas dignissimos mollitia omnis totam tempore quos accusantium dolorem et! Eligendi reiciendis illo aliquam sunt officiis!</p>
+                    <h3 class="mt-5 text-xl font-bold">WebSockets</h3>
+                    <p class="mt-4 text-gray-700 text-sm leading-relaxed"><a class="underline" href="/docs/broadcasting">Laravel Echo</a> and event broadcasting make it a cinch to build modern, realtime user experiences. Create amazing realtime applications while powering your WebSockets with pure PHP, Node.js, or serverless solutions like <a class="underline" href="https://pusher.com">Pusher</a> and <a class="underline" href="https://ably.com">Ably</a>.</p>
                 </div>
                 <div>
                     <svg class="w-8 h-8 text-red-500" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#F9322C" d="M.5.5h31v31H.5z"/><path d="M19 11a2 2 0 0 1 2 2l-2-2Zm6 2a6 6 0 0 1-7.743 5.743L15 21h-2v2h-2v2H8a1 1 0 0 1-1-1v-2.586a1 1 0 0 1 .293-.707l5.964-5.964A6 6 0 1 1 25 13v0Z" stroke="#F9322C" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     <h3 class="mt-5 text-xl font-bold">Authentication</h3>
-                    <p class="mt-4 text-gray-700 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, culpa, magnam possimus officia aliquam quas dignissimos mollitia omnis totam tempore quos accusantium dolorem et! Eligendi reiciendis illo aliquam sunt officiis!</p>
-                </div>
-                <div>
-                    <svg class="w-8 h-8 text-red-500" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#F9322C" d="M.5.5h31v31H.5z"/><path d="M8 11v10c0 2.21 3.582 4 8 4s8-1.79 8-4V11M8 11c0 2.21 3.582 4 8 4s8-1.79 8-4M8 11c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" stroke="#F9322C" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <h3 class="mt-5 text-xl font-bold">Database</h3>
-                    <p class="mt-4 text-gray-700 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, culpa, magnam possimus officia aliquam quas dignissimos mollitia omnis totam tempore quos accusantium dolorem et! Eligendi reiciendis illo aliquam sunt officiis!</p>
+                    <p class="mt-4 text-gray-700 text-sm leading-relaxed">Stop sweating authentication. Laravel provides scaffolding for secure, session based authentication, while <a class="underline" href="/docs/sanctum">Laravel Sanctum</a> provides painless authentication for APIs and mobile applications.</p>
                 </div>
             </div>
         </div>
