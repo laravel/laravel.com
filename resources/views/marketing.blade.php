@@ -34,7 +34,7 @@
         </section>
     </div>
 
-    <div class="mt-16 overflow-hidden md:mt-24 lg:mt-24">
+    <div class="hidden md:block md:mt-16 md:overflow-hidden md:mt-24">
         <div class="flex items-center justify-center gap-x-10">
             @foreach($companies as $company)
                 <img src="/images/companies/{{ \Str::slug($company['name']) }}.png" alt="{{ $company['name'] }}" style="height: {{ $company['logo-height'] }}px">
@@ -42,16 +42,16 @@
         </div>
     </div>
 
-    <div class="relative overflow-hidden pt-56 pb-24 lg:pt-64">
+    <div class="relative overflow-hidden py-16 md:pt-24 lg:pt-64">
         <x-radial-blur class="right-[-20%] top-0 w-[640px] h-[640px]" />
-        <div class="absolute -right-2 bottom-40 pointer-events-none">
+        <div class="hidden lg:block absolute -right-2 bottom-40 pointer-events-none">
             <x-cube :delay="2000" />
         </div>
-        <div class="absolute left-2 top-48 pointer-events-none lg:top-auto lg:bottom-64 lg:left-1/2">
-            <x-cube />
+        <div class="hidden lg:block absolute left-2 top-48 pointer-events-none lg:top-auto lg:bottom-64 lg:left-1/2">
+            <x-cube :delay="3000" />
         </div>
-        <div class="absolute top-20 right-1/4 pointer-events-none md:top-6 md:right-1/4">
-            <x-cube :delay="1000" />
+        <div class="hidden lg:block absolute top-20 right-1/4 pointer-events-none md:top-48 md:right-1/4">
+            <x-cube :delay="500" />
         </div>
         <div class="relative max-w-screen-xl w-full mx-auto xl:px-5">
             <div class="relative w-full grid gap-12 lg:grid-cols-2">
@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <div class="relative overflow-hidden py-24 lg:pt-48">
+    <div class="relative overflow-hidden pt-12 pb-16 md:pt-24 lg:pt-48">
         <div class="max-w-screen-xl w-full mx-auto px-5 grid gap-12 lg:grid-cols-2">
             <div class="flex justify-center items-center">
                 <svg class="text-red-500 w-[302px] lg:w-[454px]" width="454" height="219" viewBox="0 0 454 219" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="2" d="M215 124h100v86H215zM1 124h100v86H1zM345 124h100v86H345zM131 124h54v86h-54z"/><path fill="#fff" stroke="#565454" stroke-width="2" d="M223 132h100v86H223zM9 132h100v86H9zM353 132h100v86H353zM139 132h54v86h-54z"/><path d="M278.571 177.947c-4.461 7.651-10.385 12.535-13.232 10.907-2.846-1.627-1.538-9.15 2.924-16.801 4.46-7.651 10.385-12.535 13.231-10.907 2.847 1.627 1.539 9.15-2.923 16.801Z" stroke="#232323" stroke-width="1.667"/><path d="M257.167 175c0 3.222 7.089 5.833 15.833 5.833 8.745 0 15.833-2.611 15.833-5.833s-7.088-5.833-15.833-5.833c-8.744 0-15.833 2.611-15.833 5.833Z" stroke="#232323" stroke-width="1.667"/><path d="M267.429 177.947c4.461 7.651 10.385 12.535 13.232 10.907 2.847-1.627 1.538-9.15-2.923-16.801-4.461-7.651-10.385-12.535-13.232-10.907-2.847 1.627-1.538 9.15 2.923 16.801Z" stroke="#232323" stroke-width="1.667"/><path d="M273 177.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" stroke="#232323" stroke-width="1.667"/><path d="m403 165.678-2.938-4.845H395.5l7.5 12.5 7.5-12.5h-4.563l-2.938 4.845H403Z" stroke="#232323" stroke-width="1.667" stroke-linejoin="round"/><path d="M414.173 160.833 403 179.152l-11.173-18.319H385.5l17.5 28.334 17.5-28.334h-6.327Z" stroke="#232323" stroke-width="1.667" stroke-linejoin="round"/><path stroke="#565454" stroke-width="2" d="M229 138h5"/><path d="M219.625 39.375v7.875m-15.75-34.875 7.875-4.5 7.875 4.5-7.875 4.5-7.875-4.5Zm15.75 0v18-18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M203.875 12.375V38.25l15.75 9 15.75-9V21.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M211.75 16.875v18l7.875 4.5 23.625-13.5v-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="m227.5 16.875 7.875-4.5 7.875 4.5-7.875 4.5-7.875-4.5Zm0 0v9m0 0 7.875 4.5m-7.875-4.5-15.75 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path stroke="#565454" stroke-width="2" d="M237 138h5M163 139h6M245 138h5M15 138h5M359 138h5M23 138h5M367 138h5M31 138h5M375 138h5"/><path stroke="currentColor" stroke-width="2" d="M394 124V94M264 124V94M50 124V94M222 94V64M157 124V94M49 94h346"/><path d="M71.69 185.017c-.086.134-.177.281-.259.415l-.134.217a4.263 4.263 0 0 1-.372.523c-.221.254-.41.357-.683.357-.473 0-.755-.311-1.33-1.153l-.059-.086c-.466-.686-1.22-1.794-2.652-1.794-1.458 0-2.156 1.144-2.574 1.83l-.052.085c-.518.844-.755 1.118-1.202 1.118-.473 0-.755-.311-1.33-1.153l-.059-.086c-.466-.686-1.22-1.794-2.651-1.794-1.46 0-2.157 1.144-2.575 1.83l-.052.085c-.518.844-.755 1.118-1.202 1.118-.473 0-.755-.311-1.33-1.153l-.059-.086c-.466-.686-1.22-1.794-2.651-1.794-1.46 0-2.156 1.144-2.575 1.83l-.052.085c-.518.844-.755 1.118-1.202 1.118-.273 0-.488-.106-.74-.371a15.965 15.965 0 0 1-2.06-7.892c0-8.561 6.603-15.431 14.665-15.431s14.665 6.87 14.665 15.431c0 2.423-.53 4.714-1.474 6.751Z" stroke="#232323" stroke-width="1.67"/><path d="M64.494 174.755c0 2.088-.534 3.748-1.586 4.881-1.041 1.122-2.707 1.852-5.24 1.852-2.531 0-4.197-.73-5.238-1.852-1.052-1.133-1.586-2.793-1.586-4.881 0-4.084 3.154-7.693 6.825-7.693 3.671 0 6.825 3.609 6.825 7.693Z" stroke="#232323" stroke-width="1.67"/><path d="M55.609 175.006c1.586 0 2.872-1.419 2.872-3.17s-1.286-3.171-2.872-3.171c-1.587 0-2.873 1.42-2.873 3.171s1.287 3.17 2.873 3.17Z" fill="#232323"/><path d="M55.13 172.567c.793 0 1.436-.655 1.436-1.463s-.643-1.463-1.436-1.463c-.793 0-1.436.655-1.436 1.463s.643 1.463 1.436 1.463Z" fill="#fff"/></svg>
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div class="relative overflow-hidden py-24 lg:pt-48">
+    <div class="relative overflow-hidden py-16 md:pt-48">
         <x-radial-blur class="right-[-20%] top-0 w-[640px] h-[640px]" />
         <div class="max-w-screen-xl w-full mx-auto px-5">
             <h2 class="text-4xl font-bold max-w-lg md:text-5xl">Everything you need to be amazing.</h2>
@@ -121,15 +121,15 @@
     </div>
 
 
-    <div class="relative overflow-hidden pt-56 pb-24 lg:pt-64">
+    <div class="relative overflow-hidden pt-16 pb-24 lg:pt-48">
         <x-radial-blur class="left-[-20%] top-0 w-[640px] h-[640px]" />
-        <div class="absolute right-16 top-40 pointer-events-none md:right-auto md:left-1/2">
+        <div class="hidden lg:block absolute right-16 top-40 pointer-events-none md:right-auto md:left-1/2">
             <x-cube :delay="2000" />
         </div>
-        <div class="absolute -left-2 top-64 pointer-events-none md:top-auto md:bottom-64 md:left-2">
+        <div class="hidden lg:block absolute -left-2 top-64 pointer-events-none md:top-auto md:bottom-64 md:left-2">
             <x-cube />
         </div>
-        <div class="absolute top-[480px] right-1/3 pointer-events-none lg:top-auto lg:bottom-12 lg:right-auto lg:left-1/3">
+        <div class="hidden lg:block absolute top-[480px] right-1/3 pointer-events-none lg:top-auto lg:bottom-12 lg:right-auto lg:left-1/3">
             <x-cube :delay="1000" />
         </div>
         <div class="relative max-w-screen-xl w-full mx-auto xl:px-5">
@@ -141,10 +141,10 @@
                 </div>
                 <div class="w-full flex justify-center items-center px-5 xl:px-0">
                     <div class="sm:max-w-[480px]">
-                        <h2 class="text-4xl font-bold md:text-5xl">Code with confidence.</h2>
-                        <p class="mt-6 text-gray-700">Laravel is a web application framework with expressive, elegant syntax. We've already laid the foundation — freeing you to create without sweating the small things.</p>
-                        <x-button.secondary class="mt-6" href="/docs">
-                            Documentation
+                        <h2 class="text-4xl font-bold md:text-5xl">Move fast...<br />with confidence.</h2>
+                        <p class="mt-6 text-gray-700 leading-relaxed">Laravel is committed to delivering the best testing experience you can imagine. No more brittle tests that are a nightmare to maintain. Beautiful testing APIs, database seeding, and painless browser testing let you ship with confidence.</p>
+                        <x-button.secondary class="mt-6" href="/docs/http-tests">
+                            Learn More
                         </x-button.secondary>
                     </div>
                 </div>
@@ -152,24 +152,12 @@
         </div>
     </div>
 
-    <div class="max-w-screen-xl mx-auto px-5 pt-56 pb-24 lg:pt-64">
+    <div class="max-w-screen-xl mx-auto px-5 pt-16 pb-24 md:pt-24 lg:pt-48">
         <div class="sm:max-w-xl">
             <h2 class="text-4xl font-bold md:text-5xl">Enterprise scale without the enterprise complexity.</h2>
-            <p class="mt-6 text-gray-700">Laravel is a web application framework with expressive, elegant syntax. We've already laid the foundation — freeing you to create without sweating the small things.</p>
+            <p class="mt-6 text-gray-700 leading-relaxed">Our vast library of meticulously maintained packages means you're ready for anything. Let <a class="underline" href="/docs/octane">Laravel Octane</a> supercharge your application's performance, and experience infinite scale on <a class="underline" href="https://vapor.laravel.com">Laravel Vapor</a>, our serverless deployment platform powered by AWS Lambda.</p>
         </div>
         <ul class="mt-10 relative grid gap-6 md:grid-cols-2">
-            <li>
-                <a href="https://vapor.laravel.com" class="flex items-start pt-4 pb-6 px-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-vapor flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/vapor.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Vapor</div>
-                        <span class="text-sm text-gray-700">Server management doesn't have to be a nightmare. Provision and deploy unlimited PHP applications on DigitalOcean, Linode, Vultr, Amazon, Hetzner and more.</span>
-                    </div>
-                </a>
-            </li>
             <li>
                 <a href="https://forge.laravel.com" class="flex items-start pt-4 pb-6 px-4 border border-gray-200 border-opacity-60">
                     <div class="relative shrink-0 bg-forge flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
@@ -178,208 +166,209 @@
                     </div>
                     <div class="ml-4 leading-5">
                         <div>Forge</div>
-                        <span class="text-sm text-gray-700">Server management doesn't have to be a nightmare. Provision and deploy unlimited PHP applications on DigitalOcean, Linode, Vultr, Amazon, Hetzner and more.</span>
+                        <div class="mt-1 text-sm text-gray-700">Server management doesn't have to be a nightmare. Provision and deploy unlimited PHP applications on DigitalOcean, Linode, Vultr, Amazon, Hetzner and more.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://vapor.laravel.com" class="flex items-start pt-4 pb-6 px-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-vapor flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/vapor.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Vapor</div>
+                        <div class="mt-1 text-sm text-gray-700">Laravel Vapor is a serverless deployment platform for Laravel, powered by AWS. Launch your Laravel infrastructure on Vapor and fall in love with the scalable simplicity of serverless.</div>
                     </div>
                 </a>
             </li>
         </ul>
-        <ul class="mt-6 relative grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <ul class="mt-10 relative grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <li>
-                <a href="https://envoyer.io" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative  bg-envoyer flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/envoyer.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Envoyer</div>
-                        <span class="text-sm text-gray-700">Zero Downtime Deployment</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/horizon" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-horizon flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/horizon.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Horizon</div>
-                        <span class="text-sm text-gray-700">Queue Monitoring</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://nova.laravel.com/" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-nova flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/nova.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Nova</div>
-                        <span class="text-sm text-gray-700">Administration Panel</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/broadcasting" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-echo flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/echo.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Echo</div>
-                        <span class="text-sm text-gray-700">Realtime Events</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://lumen.laravel.com" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-lumen flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/lumen.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Lumen</div>
-                        <span class="text-sm text-gray-700">Micro-Framework</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/sail" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-sail flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/sail.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Sail</div>
-                    <span class="text-xs text-gray-600">Local Docker environment</span>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://spark.laravel.com" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-spark flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/spark.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Spark</div>
-                        <span class="text-sm text-gray-700">SaaS App Scaffolding</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/valet" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-valet flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/valet.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Valet</div>
-                        <span class="text-sm text-gray-700">Dev Environment for Macs</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/mix" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-mix flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/mix.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Mix</div>
-                    <span class="text-xs text-gray-600">Webpack Asset Compilation</span>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/billing" class="flex items-center p-4 border border-gray-200 border-opacity-60">
+                <a href="/docs/{{DEFAULT_VERSION}}/billing" class="flex p-4 border border-gray-200 border-opacity-60">
                     <div class="relative shrink-0 bg-cashier flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                         <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
                         <img src="/img/ecosystem/cashier.min.svg" alt="Icon" class="relative w-7 h-7">
                     </div>
                     <div class="ml-4 leading-5">
                         <div>Cashier</div>
-                        <span class="text-sm text-gray-700">Subscription Billing Integration</span>
+                        <div class="mt-1 text-sm text-gray-700">Take the pain out of managing subscriptions on Stripe or Paddle.</div>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/dusk" class="flex items-center p-4 border border-gray-200 border-opacity-60">
+                <a href="/docs/{{DEFAULT_VERSION}}/dusk" class="flex p-4 border border-gray-200 border-opacity-60">
                     <div class="relative shrink-0 bg-dusk flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                         <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
                         <img src="/img/ecosystem/dusk.min.svg" alt="Icon" class="relative w-7 h-7">
                     </div>
                     <div class="ml-4 leading-5">
                         <div>Dusk</div>
-                        <span class="text-sm text-gray-700">Browser Testing and Automation</span>
+                        <div class="mt-1 text-sm text-gray-700">Automated browser testing to ship your application with confidence.</div>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/sanctum" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-sanctum flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                <a href="/docs/{{DEFAULT_VERSION}}/broadcasting" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-echo flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                         <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum logomark" class="relative w-7 h-7">
+                        <img src="/img/ecosystem/echo.min.svg" alt="Icon" class="relative w-7 h-7">
                     </div>
                     <div class="ml-4 leading-5">
-                        <div>Sanctum</div>
-                        <span class="text-sm text-gray-700">API / Mobile Authentication</span>
+                        <div>Echo</div>
+                        <div class="mt-1 text-sm text-gray-700">Listen for WebSocket events broadcast by your Laravel application.</div>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/scout" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-scout flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                <a href="https://envoyer.io" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative  bg-envoyer flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                         <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/scout.min.svg" alt="Laravel Scout logomark" class="relative w-7 h-7">
+                        <img src="/img/ecosystem/envoyer.min.svg" alt="Icon" class="relative w-7 h-7">
                     </div>
                     <div class="ml-4 leading-5">
-                        <div>Scout</div>
-                        <span class="text-sm text-gray-700">Full-Text Search</span>
+                        <div>Envoyer</div>
+                        <div class="mt-1 text-sm text-gray-700">Deploy your Laravel applications to customers with zero downtime.</div>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/socialite" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-socialite flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                <a href="/docs/{{DEFAULT_VERSION}}/horizon" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-horizon flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                         <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/socialite.min.svg" alt="Icon" class="relative w-7 h-7">
+                        <img src="/img/ecosystem/horizon.min.svg" alt="Icon" class="relative w-7 h-7">
                     </div>
                     <div class="ml-4 leading-5">
-                        <div>Socialite</div>
-                        <span class="text-sm text-gray-700">OAuth Authentication</span>
+                        <div>Horizon</div>
+                        <div class="mt-1 text-sm text-gray-700">Beautiful UI for monitoring for your Redis driven Laravel queues.</div>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="/docs/{{DEFAULT_VERSION}}/telescope" class="flex items-center p-4 border border-gray-200 border-opacity-60">
-                    <div class="relative shrink-0 bg-telescope flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/telescope.min.svg" alt="Icon" class="relative w-7 h-7">
-                    </div>
-                    <div class="ml-4 leading-5">
-                        <div>Telescope</div>
-                        <span class="text-sm text-gray-700">Debug Assistant</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://jetstream.laravel.com" class="flex items-center p-4 border border-gray-200 border-opacity-60">
+                <a href="https://jetstream.laravel.com" class="flex p-4 border border-gray-200 border-opacity-60">
                     <div class="relative shrink-0 bg-jetstream flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                         <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
                         <img src="/img/ecosystem/jetstream.min.svg" alt="Icon" class="relative w-7 h-7">
                     </div>
                     <div class="ml-4 leading-5">
                         <div>Jetstream</div>
-                        <span class="text-sm text-gray-700">App Scaffolding</span>
+                        <div class="mt-1 text-sm text-gray-700">Robust starter kit including authentication and team management.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/docs/{{DEFAULT_VERSION}}/mix" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-mix flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/mix.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Mix</div>
+                        <div class="mt-1 text-sm text-gray-700">Compile your JavaScript and CSS using Webpack with zero configuration.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://nova.laravel.com/" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-nova flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/nova.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Nova</div>
+                        <div class="mt-1 text-sm text-gray-700">Thoughtfully designed administration panel for your Laravel applications.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/docs/{{DEFAULT_VERSION}}/sail" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-sail flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/sail.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Sail</div>
+                        <div class="mt-1 text-sm text-gray-700">Hand-crafted Laravel local development experience using Docker.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/docs/{{DEFAULT_VERSION}}/sanctum" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-sanctum flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum logomark" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Sanctum</div>
+                        <div class="mt-1 text-sm text-gray-700">API and mobile application authentication without wanting to pull your hair out.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/docs/{{DEFAULT_VERSION}}/scout" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-scout flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/scout.min.svg" alt="Laravel Scout logomark" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Scout</div>
+                        <div class="mt-1 text-sm text-gray-700">Lightning fast full-text search for your application's Eloquent models.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/docs/{{DEFAULT_VERSION}}/socialite" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-socialite flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/socialite.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Socialite</div>
+                        <div class="mt-1 text-sm text-gray-700">Social authentication via Facebook, Twitter, GitHub, LinkedIn, and more.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://spark.laravel.com" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-spark flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/spark.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Spark</div>
+                        <div class="mt-1 text-sm text-gray-700">Launch your next business with our fully-featured, drop-in billing portal.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/docs/{{DEFAULT_VERSION}}/telescope" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-telescope flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/telescope.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Telescope</div>
+                        <div class="mt-1 text-sm text-gray-700">Debug your application using our debugging and insight UI.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/docs/{{DEFAULT_VERSION}}/valet" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-valet flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/valet.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Valet</div>
+                        <div class="mt-1 text-sm text-gray-700">The fastest Laravel local development experience - exclusively for macOS.</div>
                     </div>
                 </a>
             </li>
         </ul>
     </div>
 
-    <div class="relative max-w-3xl mx-auto px-5 pt-48 pb-24">
+    <div class="relative max-w-3xl mx-auto px-5 pt-16 md:pt-24 lg:pt-36 pb-24">
         <div class="absolute left-0 top-1/2 pointer-events-none md:left-[12%]">
             <x-cube delay="1500" />
         </div>
@@ -390,17 +379,17 @@
             <h2 class="text-4xl font-bold md:text-5xl">“Laravel is my secret weapon for building projects quickly.“</h2>
             <img src="/images/alex-scott.png" class="mt-10 w-[70px] h-[70px]" alt="Alex Scott">
             <cite class="mt-10 text-xl font-bold not-italic">Alex Scott</cite>
-            <p class="text-gray-700">Staff Engineer at Stripe</p>
+            <p class="text-gray-700">Staff Engineer at NFT Mania</p>
         </div>
     </div>
 
     <div class="relative">
         <x-radial-blur class="left-[-20%] -top-24 w-[640px] h-[640px]" />
-        <div class="relative max-w-screen-xl mx-auto grid gap-12 px-5 pt-56 pb-24 lg:grid-cols-2 lg:pt-64">
+        <div class="relative max-w-screen-xl mx-auto grid gap-12 px-5 pt-16 md:pt-24 pb-24 lg:grid-cols-2 lg:pt-16">
             <div class="flex items-center justify-center lg:justify-start">
                 <div class="sm:max-w-xl">
                     <h2 class="text-4xl font-bold md:text-5xl">A community built for people like you.</h2>
-                    <p class="mt-6 text-gray-700">Whether you're a solo developer or a 20-person team, getting started is simple thanks to our great community.</p>
+                    <p class="mt-6 text-gray-700">Laravel is for everyone — whether you have been programming for 20 years or 20 minutes. It's for architecture astronauts and weekend hackers. For those with degrees and for those who dropped out to chase their dreams. Together, we create amazing things.</p>
                     <div class="mt-10 grid grid-cols-2 gap-10 md:grid-cols-3">
                         <a href="https://blog.laravel.com" target="_blank" class="inline-flex items-center">
                             <svg class="text-red-600 w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" d="M.5.5h31v31H.5z"/><path d="M10 9c7.18 0 13 5.82 13 13m-13-7a7 7 0 0 1 7 7m-6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -417,10 +406,6 @@
                         <a href="https://laravel-news.com" target="_blank" class="inline-flex items-center">
                             <svg class="text-red-600 w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" d="M.5.5h31v31H.5z"/><path d="M23 24H9a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V11m2 13a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-2m-4-3h-4m-2 12h6m-6-8h6v4h-6v-4Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             <span class="ml-3 text-sm">Laravel News</span>
-                        </a>
-                        <a href="https://certification.laravel.com" target="_blank" class="inline-flex items-center">
-                            <svg class="text-red-600 w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" d="M.5.5h31v31H.5z"/><path d="m16 18 9-5-9-5-9 5 9 5Z" stroke="currentColor"/><path d="m16 18 6.16-3.422c.81 2.058 1.04 4.3.665 6.479A11.952 11.952 0 0 0 16 24.055a11.952 11.952 0 0 0-6.824-2.998 12.078 12.078 0 0 1 .665-6.479L16 18Z" stroke="currentColor"/><path d="M12 24v-7.5l4-2.222M16 18l9-5-9-5-9 5 9 5Zm0 0 6.16-3.422c.81 2.058 1.04 4.3.665 6.479A11.952 11.952 0 0 0 16 24.055a11.952 11.952 0 0 0-6.824-2.998 12.078 12.078 0 0 1 .665-6.479L16 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            <span class="ml-3 text-sm">Certification</span>
                         </a>
                         <a href="https://laracasts.com" target="_blank" class="inline-flex items-center">
                             <svg class="text-red-600 w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" d="M.5.5h31v31H.5z"/><path d="m18.752 15.168-3.197-2.132A1 1 0 0 0 14 13.87v4.263a1 1 0 0 0 1.555.832l3.197-2.132a.998.998 0 0 0 0-1.664v-.001Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 16a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -445,7 +430,7 @@
         <div class="absolute top-[45%] -left-2 pointer-events-none sm:left-[12%] lg:top-2/3 lg:left-[12%] xl:top-3/4">
             <x-cube delay="1500" />
         </div>
-        <div class="max-w-screen-xl mx-auto grid gap-6 px-5 py-56 lg:grid-cols-2 lg:py-64">
+        <div class="max-w-screen-xl mx-auto grid gap-6 px-5 pt-16 md:pt-24 pb-24 lg:grid-cols-2 lg:pt-48 lg:pb-64">
             <div class="relative flex items-center justify-center">
                 <div class="absolute right-8 top-0 -translate-y-12 pointer-events-none">
                     <x-cube />
