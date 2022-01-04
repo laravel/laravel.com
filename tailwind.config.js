@@ -100,6 +100,7 @@ module.exports = {
         jetstream: '#6875f5',
         sail: '#38BDF7',
         sanctum: '#1D5873',
+        octane: '#CA3A31',
     },
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
