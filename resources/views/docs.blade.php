@@ -177,7 +177,7 @@
 
             <section class="flex-1 dark:bg-dark-700">
                 <div class="max-w-screen-lg px-8 sm:px-16 lg:px-24">
-                    <div class="flex flex-col items-end border-b border-gray-200 py-1 lg:mt-8 lg:flex-row-reverse">
+                    <div class="flex flex-col items-end border-b border-gray-200 py-1 transition-colors dark:border-gray-700 lg:mt-8 lg:flex-row-reverse">
                         <div class="hidden lg:flex items-center justify-center ml-8">
                             <button id="header__sun" onclick="toSystemMode()" title="Switch to system theme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -219,10 +219,10 @@
                         <div class="relative mt-8 flex items-center justify-end w-full h-10 lg:mt-0">
                             <div class="flex-1 flex items-center">
                                 <button
-                                    class="relative inline-flex items-center"
+                                    class="relative inline-flex items-center text-gray-800 transition-colors dark:text-gray-400"
                                     @click.prevent="$dispatch('toggle-search-modal')"
                                 >
-                                    <svg class="w-5 h-5 text-gray-700 pointer-events-none dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                                    <svg class="w-5 h-5 text-gray-700 pointer-events-none transition-colors dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                                     <span class="ml-3">Search</span>
                                 </button>
                             </div>

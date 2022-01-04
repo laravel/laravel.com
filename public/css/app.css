@@ -2539,6 +2539,11 @@ pre[class*="language-"].line-numbers > code {
   color: rgb(35 35 35 / var(--tw-text-opacity)) !important;
 }
 
+.text-gray-800 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(34 34 34 / var(--tw-text-opacity)) !important;
+}
+
 .text-red-500 {
   --tw-text-opacity: 1 !important;
   color: rgb(249 50 44 / var(--tw-text-opacity)) !important;
@@ -2915,6 +2920,11 @@ html[color-theme="system"] #header__indeterminate { display: block; }
 .dark .dark\:border-gray-400 {
   --tw-border-opacity: 1 !important;
   border-color: rgb(181 181 189 / var(--tw-border-opacity)) !important;
+}
+
+.dark .dark\:border-gray-700 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(86 84 84 / var(--tw-border-opacity)) !important;
 }
 
 .dark .dark\:border-dark-500 {
