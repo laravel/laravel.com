@@ -101,6 +101,7 @@ module.exports = {
         sail: '#38BDF7',
         sanctum: '#1D5873',
         octane: '#CA3A31',
+        breeze: '#F3C14B',
     },
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],

@@ -39,6 +39,18 @@
                         >
                             <ul class="grid gap-6 relative sm:grid-cols-2 md:grid-cols-3">
                                 <li>
+                                    <a href="/docs/{{DEFAULT_VERSION}}/starter-kits#laravel-breeze" class="flex">
+                                        <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden">
+                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                                            <img src="/img/ecosystem/breeze.min.svg" alt="Icon" class="w-7 h-7" width="47" height="32">
+                                        </div>
+                                        <div class="ml-4 leading-5">
+                                            <div class="text-gray-900">Breeze</div>
+                                            <span class="text-gray-700 text-xs">Breeze description here Breeze description here Breeze description here</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/billing" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-cashier flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
