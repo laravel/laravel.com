@@ -193,7 +193,7 @@
                     </div>
                     <div class="ml-4 leading-5">
                         <div>Breeze</div>
-                        <div class="mt-1 text-sm text-gray-700">Breeze description here Breeze description here Breeze description here</div>
+                        <div class="mt-1 text-sm text-gray-700">Lightweight starter kit scaffolding for new applications with Blade or Inertia.</div>
                     </div>
                 </a>
             </li>
