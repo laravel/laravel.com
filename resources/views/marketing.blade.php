@@ -389,7 +389,7 @@
             <div class="flex items-center justify-center lg:justify-start">
                 <div class="sm:max-w-xl">
                     <h2 class="text-4xl font-bold md:text-5xl">A community built for people like you.</h2>
-                    <p class="mt-6 text-gray-700">Laravel is for everyone — whether you have been programming for 20 years or 20 minutes. It's for architecture astronauts and weekend hackers. For those with degrees and for those who dropped out to chase their dreams. Together, we create amazing things.</p>
+                    <p class="mt-6 text-gray-700 leading-relaxed">Laravel is for everyone — whether you have been programming for 20 years or 20 minutes. It's for architecture astronauts and weekend hackers. For those with degrees and for those who dropped out to chase their dreams. Together, we create amazing things.</p>
                     <div class="mt-10 grid grid-cols-2 gap-10 md:grid-cols-3">
                         <a href="https://blog.laravel.com" target="_blank" class="inline-flex items-center">
                             <svg class="text-red-600 w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" d="M.5.5h31v31H.5z"/><path d="M10 9c7.18 0 13 5.82 13 13m-13-7a7 7 0 0 1 7 7m-6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -417,10 +417,10 @@
             <div class="flex justify-center lg:justify-end">
                 <div class="max-w-sm w-full pt-8 pb-12 px-6 border border-gray-200 -rotate-1 lg:px-12 lg:border-red-600">
                     <img src="/images/laracon.png" class="max-w-[218px] w-full mx-auto" />
-                    <h3 class="mt-8 font-bold text-red-700 uppercase text-xs">Laracon</h3>
-                    <h2 class="mt-3 font-bold text-4xl">Laracon 2022</h2>
-                    <p class="mt-4 text-gray-700 text-sm">Laravel's annual No-Code Conf is back! Join us November 17-18, 2021 as we come together online with no-coders from companies like Adobe, Apple, Airtable, Google, and more across 110+ countries to discover the future of what's possible.</p>
-                    <x-button.secondary class="mt-8" href="https://laracon.net">Register</x-button.secondary>
+                    <h3 class="mt-8 font-bold text-red-700 uppercase text-xs">Watch us on YouTube</h3>
+                    <h2 class="mt-3 font-bold text-4xl">Tune In</h2>
+                    <p class="mt-4 text-gray-700 text-sm leading-relaxed">The official Laravel YouTube channel includes free videos and tutorials covering the entire Laravel ecosystem. Stay up to date by watching our latest videos.</p>
+                    <x-button.secondary class="mt-8" href="https://youtube.com/laravelphp">Start Watching</x-button.secondary>
                 </div>
             </div>
         </div>
@@ -439,9 +439,8 @@
             </div>
             <div class="relative flex justify-center lg:justify-end">
                 <div class="sm:max-w-md">
-                    <h3 class="mt-8 font-bold text-red-700 uppercase text-xs">Laravel Partners</h3>
-                    <h2 class="mt-3 font-bold text-4xl">Hire a partner for your next project</h2>
-                    <p class="mt-4 text-gray-700 text-sm">Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
+                    <h2 class="mt-8 font-bold text-4xl">Hire a partner for your next project</h2>
+                    <p class="mt-4 text-gray-700 text-sm leading-relaxed">Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
                     <x-button.secondary class="mt-8" href="https://partners.laravel.com">Browse Partners</x-button.secondary>
                 </div>
             </div>
