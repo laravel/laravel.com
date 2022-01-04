@@ -13,11 +13,8 @@
                 </a>
             </div>
             <ul class="relative hidden lg:flex lg:items-center lg:justify-center lg:gap-6 xl:gap-10">
-                @if (SHOW_VAPOR)
-                    <li><a href="https://vapor.laravel.com">Vapor</a></li>
-                @else
-                    <li><a href="https://forge.laravel.com">Forge</a></li>
-                @endif
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="https://vapor.laravel.com">Vapor</a></li>
                 <li x-data="{ expanded: false }" class="relative" @keydown.window.escape="expanded = false">
                     <button class="flex items-center justify-center" @click="expanded = !expanded">
                         Ecosystem
@@ -295,11 +292,8 @@
         >
             <div class="relative h-full w-full py-8 px-5 bg-white pointer-events-auto overflow-y-auto">
                 <ul>
-                    @if (SHOW_VAPOR)
-                        <li><a class="block w-full py-2" href="https://vapor.laravel.com">Vapor</a></li>
-                    @else
-                        <li><a class="block w-full py-2" href="https://forge.laravel.com">Forge</a></li>
-                    @endif
+                    <li><a class="block w-full py-2" href="https://forge.laravel.com">Forge</a></li>
+                    <li><a class="block w-full py-2" href="https://vapor.laravel.com">Vapor</a></li>
                     <li><a class="block w-full py-3" href="https://laravel-news.com">News</a></li>
                     <li><a class="block w-full py-3" href="https://partners.laravel.com">Partners</a></li>
                     <li class="flex sm:justify-center"><x-button.secondary class="mt-3 w-full max-w-md" href="/docs">Documentation</x-button.secondary></li>
