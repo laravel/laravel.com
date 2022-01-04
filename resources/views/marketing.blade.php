@@ -289,7 +289,7 @@
                     </div>
                     <div class="ml-4 leading-5">
                         <div>Octane</div>
-                        <div class="mt-1 text-sm text-gray-700">Octane description here Octane description here Octane description here</div>
+                        <div class="mt-1 text-sm text-gray-700">Supercharge your application's performance by keeping it in memory.</div>
                     </div>
                 </a>
             </li>
