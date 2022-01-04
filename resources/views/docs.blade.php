@@ -177,7 +177,7 @@
 
             <section class="flex-1 dark:bg-dark-700">
                 <div class="max-w-screen-lg px-8 sm:px-16 lg:px-24">
-                    <div class="flex flex-col items-end lg:mt-8 lg:flex-row-reverse">
+                    <div class="flex flex-col items-end border-b border-gray-200 py-1 lg:mt-8 lg:flex-row-reverse">
                         <div class="hidden lg:flex items-center justify-center ml-8">
                             <button id="header__sun" onclick="toSystemMode()" title="Switch to system theme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -197,10 +197,10 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="w-full lg:w-64 lg:pl-12">
+                        <div class="w-full lg:w-40 lg:pl-12">
                             <div>
                                 <label class="text-gray-600 text-xs tracking-widest uppercase dark:text-gray-500" for="version-switch">Version</label>
-                                <div x-data class="relative w-full bg-white border-b border-gray-600 border-opacity-50 transition-all duration-500 focus-within:border-gray-600 dark:bg-gray-800">
+                                <div x-data class="relative w-full bg-white transition-all duration-500 focus-within:border-gray-600 dark:bg-gray-800">
                                     <select
                                         id="version-switcher"
                                         aria-label="Laravel version"
@@ -216,18 +216,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div x-data="searchComponent()" class="relative mt-8 flex justify-end w-full lg:mt-0">
-                            <div
-                                class="relative w-full border-b border-gray-600 border-opacity-50 overflow-hidden transition-all duration-500 focus-within:border-gray-600"
-                                @click.prevent="$dispatch('toggle-search-modal')"
-                            >
-                                <svg class="absolute inset-y-0 left-0 mt-1 w-5 h-5 text-gray-900 pointer-events-none dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        <div class="relative mt-8 flex items-center justify-end w-full h-10 lg:mt-0">
+                            <div class="flex-1 flex items-center">
                                 <button
-                                    class="flex-1 w-full pl-8 pr-4 py-1 text-gray-900 tracking-wide text-left bg-white focus:outline-none dark:bg-dark-700 dark:text-gray-500"
-                                    @keydown.arrow-up.prevent="focusPreviousResult()"
-                                    @keydown.arrow-down.prevent="focusNextResult()"
+                                    class="relative inline-flex items-center"
+                                    @click.prevent="$dispatch('toggle-search-modal')"
                                 >
-                                    Search Docs (Press '/')
+                                    <svg class="w-5 h-5 text-gray-700 pointer-events-none dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                                    <span class="ml-3">Search</span>
                                 </button>
                             </div>
                         </div>

@@ -27,7 +27,7 @@ export default function () {
 
             this.$watch('open', (value) => {
                 if (value) {
-                    setTimeout(() => this.$refs.searchInput.focus());
+                    setTimeout(() => this.$refs.searchInput.focus(), 50);
                 }
             });
         },
@@ -60,6 +60,7 @@ export default function () {
             if (event.key === '/' || (event.key === 'p' && event.metaKey) || (event.key === 'k' && event.metaKey)) {
                 event.preventDefault();
                 this.open = true;
+                this.$refs.searchInput.focus();
             }
         }
     }

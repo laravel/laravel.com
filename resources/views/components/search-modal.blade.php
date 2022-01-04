@@ -1,10 +1,10 @@
 
 <div
     x-data="searchComponent()"
-    @toggle-search-modal.window="open = ! open"
-    @keydown.window.escape="clear"
+    @toggle-search-modal.window="open = !open"
+    @keydown.window.escape="close"
     @keydown.window="handleKeydown"
-    @keydown.escape.prevent.stop="open = false"
+    @keydown.escape.prevent.stop="close"
     x-show="open"
     x-cloak
     x-trap.noscroll.inert="open"
@@ -19,7 +19,7 @@
     <div
         x-show="open"
         x-transition
-        @click="open = false"
+        @click="close()"
         class="relative min-h-screen flex items-start justify-center p-4 lg:py-20"
     >
         <div
@@ -29,7 +29,7 @@
             <div
                 class="relative w-full border-b border-gray-600 border-opacity-50 overflow-hidden transition-all duration-500 focus-within:border-gray-600"
             >
-                <svg class="absolute inset-y-0 left-0 mt-1 w-5 h-5 text-gray-900 pointer-events-none dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                <svg class="absolute inset-y-0 left-0 mt-1 w-5 h-5 text-gray-500 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 <input
                     x-model.debouce.200ms="search"
                     x-ref="searchInput"
@@ -42,38 +42,40 @@
             </div>
 
             <div x-show="search">
-                <div x-show="hits.length" x-cloak class="mt-5 divide-y divide-gray-700 shadow-sm z-30">
+                <div x-show="hits.length" x-cloak class="mt-5 divide-y divide-gray-700 z-30">
                     <template x-for="(hit, index) in hits" :key="index" hidden>
-                        <a
-                            :id="'search-result-' + index"
-                            :href="hit.url"
-                            class="search-result block py-3 text-gray-400 transition-colors duration-200 focus:outline-none focus:text-gray-200 hover:text-gray-200"
-                            @keydown.arrow-up.prevent="focusPreviousResult(index)"
-                            @keydown.arrow-down.prevent="focusNextResult(index)"
-                        >
-                            <div x-show="hit._highlightResult.hierarchy.lvl0" class="text-sm font-medium" x-html="hit._highlightResult.hierarchy.lvl0 ? hit._highlightResult.hierarchy.lvl0.value : ''"></div>
-                            <div class="mt-2">
-                                <div x-show="hit._highlightResult.hierarchy.lvl1" class="text-sm">
-                                    <span class="text-red-600 opacity-75">#</span> <span x-html="hit._highlightResult.hierarchy.lvl1 ? hit._highlightResult.hierarchy.lvl1.value : ''"></span>
-                                </div>
+                        <div>
+                            <a
+                                :id="'search-result-' + index"
+                                :href="hit.url"
+                                class="search-result -mx-2 block p-3 text-gray-400 transition-colors duration-200 focus:outline-none focus:bg-dark-800 focus:text-gray-200 hover:text-gray-200"
+                                @keydown.arrow-up.prevent="focusPreviousResult(index)"
+                                @keydown.arrow-down.prevent="focusNextResult(index)"
+                            >
+                                <div x-show="hit._highlightResult.hierarchy.lvl0" class="text-sm font-medium" x-html="hit._highlightResult.hierarchy.lvl0 ? hit._highlightResult.hierarchy.lvl0.value : ''"></div>
+                                <div class="mt-2">
+                                    <div x-show="hit._highlightResult.hierarchy.lvl1" class="text-sm">
+                                        <span class="text-red-600 opacity-75">#</span> <span x-html="hit._highlightResult.hierarchy.lvl1 ? hit._highlightResult.hierarchy.lvl1.value : ''"></span>
+                                    </div>
 
-                                <div x-show="hit._highlightResult.hierarchy.lvl2" class="text-sm">
-                                    > <span x-html="hit._highlightResult.hierarchy.lvl2 ? hit._highlightResult.hierarchy.lvl2.value : ''"></span>
-                                </div>
+                                    <div x-show="hit._highlightResult.hierarchy.lvl2" class="text-sm">
+                                        > <span x-html="hit._highlightResult.hierarchy.lvl2 ? hit._highlightResult.hierarchy.lvl2.value : ''"></span>
+                                    </div>
 
-                                <div x-show="hit._highlightResult.hierarchy.lvl3" class="text-sm">
-                                    > <span x-html="hit._highlightResult.hierarchy.lvl3 ? hit._highlightResult.hierarchy.lvl3.value : ''"></span>
-                                </div>
+                                    <div x-show="hit._highlightResult.hierarchy.lvl3" class="text-sm">
+                                        > <span x-html="hit._highlightResult.hierarchy.lvl3 ? hit._highlightResult.hierarchy.lvl3.value : ''"></span>
+                                    </div>
 
-                                <div x-show="hit._highlightResult.hierarchy.lvl4" class="text-sm">
-                                    > <span x-html="hit._highlightResult.hierarchy.lvl4 ? hit._highlightResult.hierarchy.lvl4.value : ''"></span>
-                                </div>
+                                    <div x-show="hit._highlightResult.hierarchy.lvl4" class="text-sm">
+                                        > <span x-html="hit._highlightResult.hierarchy.lvl4 ? hit._highlightResult.hierarchy.lvl4.value : ''"></span>
+                                    </div>
 
-                                <div x-show="hit._highlightResult.hierarchy.lvl5" class="text-sm">
-                                    > <span x-html="hit._highlightResult.hierarchy.lvl5 ? hit._highlightResult.hierarchy.lvl5.value : ''"></span>
+                                    <div x-show="hit._highlightResult.hierarchy.lvl5" class="text-sm">
+                                        > <span x-html="hit._highlightResult.hierarchy.lvl5 ? hit._highlightResult.hierarchy.lvl5.value : ''"></span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </template>
                 </div>
 
@@ -88,7 +90,6 @@
 
             <div class="absolute bottom-0 inset-x-0 border-t border-dark-800 text-gray-400 flex justify-end">
                 <a class="px-4 py-2 inline-block" target="_blank" href="https://www.algolia.com/?utm_source=laravel&utm_medium=link&utm_campaign=laravel_documentation_search">
-                    <img width="105" src="/img/icons/algolia.min.svg" id="docs_search__algolia" alt="Algolia">
                     <img width="105" src="/img/icons/algolia.dark.min.svg" id="docs_search__algolia_dark" alt="Algolia">
                 </a>
             </div>
