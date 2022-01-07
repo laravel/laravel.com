@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DocsController;
 
 if (! defined('DEFAULT_VERSION')) {
     define('DEFAULT_VERSION', '8.x');
@@ -22,7 +23,7 @@ if (! defined('SHOW_PROMO')) {
     }
 }
 
-Route::get('docs', 'DocsController@showRootPage');
+Route::get('docs', [DocsController::class, 'showRootPage']);
 
 Route::get('docs/6.0/{page?}', function ($page = null) {
     $page = $page ?: 'installation';
@@ -31,7 +32,7 @@ Route::get('docs/6.0/{page?}', function ($page = null) {
     return redirect(trim('/docs/8.x/'.$page, '/'), 301);
 });
 
-Route::get('docs/{version}/{page?}', 'DocsController@show')->name('docs.version');
+Route::get('docs/{version}/{page?}', [DocsController::class, 'show'])->name('docs.version');
 
 Route::get('partners', function () {
     return redirect('https://partners.laravel.com');
