@@ -403,10 +403,17 @@
             <x-cube delay="1500" />
         </div>
         <h2 class="text-4xl font-bold max-w-4xl mx-auto text-center md:text-5xl">
-            Loved by thousands of developers.
-            <span class="text-gray-700">This is what people are saying about Laravel.</span>
+            Loved by thousands of developers around the world.
         </h2>
         <div class="mt-14 relative columns-1 gap-5 space-y-5 sm:columns-2 lg:columns-3">
+            <x-testimonial
+                name="Adam Wathan"
+                content="I’ve been using Laravel for nearly a decade and never been tempted to switch to anything else."
+            >
+                <x-slot name="title">
+                    Creator of <a href="https://tailwindcss.com/" target="_blank" class="text-red-500">Tailwind CSS</a>
+                </x-slot>
+            </x-testimonial>
             <x-testimonial
                 name="Aaron Francis"
                 content="Laravel takes the pain out of building modern, scalable web apps."
@@ -420,7 +427,15 @@
                 content="Laravel grew out to be an amazing innovative and active community. Laravel is so much more than just a PHP framework."
             >
                 <x-slot name="title">
-                    Developer at <a href="https://enrise.com/" target="_blank" class="text-red-500">Enrise</a>
+                    Elite Developer at <a href="https://enrise.com/" target="_blank" class="text-red-500">Enrise</a>
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Erika Heidi"
+                content="As an old school PHP developer, I have tried many frameworks; none has given me the development speed and enjoyment of use that I found with Laravel. It is a breath of fresh air in the PHP ecosystem, with a brilliant community around it."
+            >
+                <x-slot name="title">
+                    Developer + Educator
                 </x-slot>
             </x-testimonial>
             <x-testimonial
@@ -429,6 +444,22 @@
             >
                 <x-slot name="title">
                     Creator of <a href="https://laravel-livewire.com" target="_blank" class="text-red-500">Livewire</a> and <a href="https://alpinejs.dev" target="_blank" class="text-red-500">Alpine.js</a>
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Jess Archer"
+                content="I've been using Laravel for over 10 years and I can't imagine using PHP without it."
+            >
+                <x-slot name="title">
+                    Full-Stack Developer
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Michael Dyrynda"
+                content="Laravel’s best-in-class testing tools give me the peace of mind to ship robust apps quickly."
+            >
+                <x-slot name="title">
+                    Laravel Artisan + Laracon AU Organizer
                 </x-slot>
             </x-testimonial>
             <x-testimonial
@@ -447,14 +478,6 @@
                     Founder of <a href="https://laravel-news.com/" target="_blank" class="text-red-500">Laravel News</a>
                 </x-slot>
             </x-testimonial>
-            {{-- <x-testimonial
-                name="Erika Heidi"
-                content="As an old school PHP developer, I have tried many different frameworks; none has given me the development speed and enjoyment of use that I found with Laravel. It is a breath of fresh air in the PHP ecosystem, with a brilliant community around it."
-            >
-                <x-slot name="title">
-                    Developer at <a href="https://enrise.com/" target="_blank" class="text-red-500">Enrise</a>
-                </x-slot>
-            </x-testimonial> --}}
             <x-testimonial
                 name="Freek Van der Herten"
                 content="I've been enjoying Laravel's focus on pushing developer experience to the next level for many years. All pieces of the ecosystem are powerful, well designed, fun to work with, and have stellar documentation. The surrounding friendly and helpful community is a joy to be a part of."
@@ -485,6 +508,30 @@
             >
                 <x-slot name="title">
                     Creator of <a href="https://github.com/JustSteveKing/laravel-transporter" target="_blank" class="text-red-500">Laravel Transporter</a>
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Philo Hermans"
+                content="I've been using Laravel for every project over the past ten years in a time where a new framework launches every day. To this date, there's just nothing like it."
+            >
+                <x-slot name="title">
+                    Laravel Developer
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Luke Downing"
+                content="Laravel is for developers who write code because they can rather than because they have to."
+            >
+                <x-slot name="title">
+                    Maker + Developer
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Tony Lea"
+                content="Laravel makes building web apps exciting! It has also helped me to become a better developer 🤙"
+            >
+                <x-slot name="title">
+                    Founder of <a href="https://devdojo.com" class="text-red-500" target="_blank">DevDojo</a>
                 </x-slot>
             </x-testimonial>
         </div>
