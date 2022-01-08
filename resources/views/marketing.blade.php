@@ -34,10 +34,10 @@
         </section>
     </div>
 
-    <div class="hidden md:block md:mt-16 md:overflow-hidden md:mt-24">
+    <div class="hidden md:block md:overflow-hidden md:mt-24">
         <div class="flex items-center justify-center gap-x-10">
-            @foreach($companies as $company)
-                <img src="/images/companies/{{ \Str::slug($company['name']) }}.png" alt="{{ $company['name'] }}" style="height: {{ $company['logo-height'] }}px">
+            @foreach($logos as $logo)
+                <img src="/images/companies/{{ \Str::slug($logo['company']) }}.png" alt="{{ $logo['company'] }}" style="height: {{ $logo['logo-height'] }}px">
             @endforeach
         </div>
     </div>
@@ -392,18 +392,101 @@
         </ul>
     </div>
 
-    <div class="relative max-w-3xl mx-auto px-5 pt-16 md:pt-24 lg:pt-36 pb-24">
-        <div class="absolute left-0 top-1/2 pointer-events-none md:left-[12%]">
-            <x-cube delay="1500" />
-        </div>
-        <div class="absolute right-0 -translate-y-12 pointer-events-none">
+    <div class="relative max-w-screen-xl mx-auto px-5 pt-16 md:pt-24 lg:pt-36 pb-24">
+        <div class="absolute right-[12%] -translate-y-20 pointer-events-none">
             <x-cube />
         </div>
-        <blockquote class="text-center flex flex-col items-center">
-            <h2 class="text-4xl font-bold md:text-5xl">“Laravel is my secret weapon for building projects quickly.“</h2>
-            <img src="/images/alex-scott.png" class="mt-10 w-[70px] h-[70px]" alt="Alex Scott">
-            <cite class="mt-10 text-xl font-bold not-italic">Alex Scott</cite>
-            <p class="text-gray-700">Staff Engineer at NFT Mania</p>
+        <div class="absolute right-0 bottom-12 pointer-events-none">
+            <x-cube />
+        </div>
+        <div class="absolute -left-6 top-24 pointer-events-none">
+            <x-cube delay="1500" />
+        </div>
+        <h2 class="text-4xl font-bold max-w-4xl mx-auto text-center md:text-5xl">
+            Loved by thousands of developers.
+            <span class="text-gray-700">This is what people are saying about Laravel.</span>
+        </h2>
+        <div class="mt-14 relative columns-1 gap-5 space-y-5 sm:columns-2 lg:columns-3">
+            <x-testimonial
+                name="Aaron Francis"
+                content="Laravel takes the pain out of building modern, scalable web apps."
+            >
+                <x-slot name="title">
+                    Creator of <a href="https://torchlight.dev" target="_blank" class="text-red-500">Torchlight</a> and <a href="https://github.com/hammerstonedev/sidecar" target="_blank" class="text-red-500">Sidecar</a>
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Bobby Bouwmann"
+                content="Laravel grew out to be an amazing innovative and active community. Laravel is so much more than just a PHP framework."
+            >
+                <x-slot name="title">
+                    Developer at <a href="https://enrise.com/" target="_blank" class="text-red-500">Enrise</a>
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Caleb Porzio"
+                content="Laravel is nothing short of a delight. It allows me to build any web-y thing I want in record speed with joy."
+            >
+                <x-slot name="title">
+                    Creator of <a href="https://laravel-livewire.com" target="_blank" class="text-red-500">Livewire</a> and <a href="https://alpinejs.dev" target="_blank" class="text-red-500">Alpine.js</a>
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Chris Arter"
+                content="Laravel has been like rocket fuel for my career and business."
+            >
+                <x-slot name="title">
+                    Developer at <a href="https://www.bankrate.com" target="_blank" class="text-red-500">Bankrate</a>
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Eric L. Barnes"
+                content="I've been using Laravel for over 10 years and I can't imagine using PHP without it."
+            >
+                <x-slot name="title">
+                    Founder of <a href="https://laravel-news.com/" target="_blank" class="text-red-500">Laravel News</a>
+                </x-slot>
+            </x-testimonial>
+            {{-- <x-testimonial
+                name="Erika Heidi"
+                content="As an old school PHP developer, I have tried many different frameworks; none has given me the development speed and enjoyment of use that I found with Laravel. It is a breath of fresh air in the PHP ecosystem, with a brilliant community around it."
+            >
+                <x-slot name="title">
+                    Developer at <a href="https://enrise.com/" target="_blank" class="text-red-500">Enrise</a>
+                </x-slot>
+            </x-testimonial> --}}
+            <x-testimonial
+                name="Freek Van der Herten"
+                content="I've been enjoying Laravel's focus on pushing developer experience to the next level for many years. All pieces of the ecosystem are powerful, well designed, fun to work with, and have stellar documentation. The surrounding friendly and helpful community is a joy to be a part of."
+            >
+                <x-slot name="title">
+                    Owner of <a href="https://spatie.be" target="_blank" class="text-red-500">Spatie</a>
+                </x-slot>
+            </x-testimonial>
+            <x-testimonial
+                name="Jason Beggs"
+                content="Laravel and its ecosystem of tools help me build client projects faster, more secure, and higher quality than any other tools out there."
+            >
+                <x-slot name="title">
+                    Owner of <a href="https://roasted.dev" target="_blank" class="text-red-500">roasted.dev</a>
+                </x-slot>
+            </x-testimonial>
+            {{-- <x-testimonial
+                name="Joseph Silber"
+                content="I didn't fully appreciate Laravel's one-stop-shop, all-encompassing solution, until I tried (many) different ecosystems. Laravel is in a class of its own!"
+            >
+                <x-slot name="title">
+                    Developer at <a href="https://enrise.com/" target="_blank" class="text-red-500">Enrise</a>
+                </x-slot>
+            </x-testimonial> --}}
+            <x-testimonial
+                name="Steve McDougall"
+                content="Laravel has helped me launch products quicker than any other solution, allowing me to get to market faster and faster as the community has evolved."
+            >
+                <x-slot name="title">
+                    Creator of <a href="https://github.com/JustSteveKing/laravel-transporter" target="_blank" class="text-red-500">Laravel Transporter</a>
+                </x-slot>
+            </x-testimonial>
         </div>
     </div>
 

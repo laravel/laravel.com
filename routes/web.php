@@ -52,37 +52,37 @@ Route::get('partner/{partner}', function ($partner) {
 
 Route::get('/', function () {
     return view('marketing', [
-        'companies' => collect([
+        'logos' => collect([
             [
-                'name' => 'Bankrate',
+                'company' => 'Bankrate',
                 'logo-height' => 24,
             ],
             [
-                'name' => 'WWE',
+                'company' => 'WWE',
                 'logo-height' => 42,
             ],
             [
-                'name' => 'twitch',
+                'company' => 'twitch',
                 'logo-height' => 32,
             ],
             [
-                'name' => 'The New York Times',
+                'company' => 'The New York Times',
                 'logo-height' => 31,
             ],
             [
-                'name' => 'Disney',
+                'company' => 'Disney',
                 'logo-height' => 39,
             ],
             [
-                'name' => 'Warner Bros',
+                'company' => 'Warner Bros',
                 'logo-height' => 37,
             ],
             [
-                'name' => 'About You',
+                'company' => 'About You',
                 'logo-height' => 28,
             ],
             [
-                'name' => 'St. Jude',
+                'company' => 'St. Jude',
                 'logo-height' => 61,
             ],
         ])->shuffle(),
