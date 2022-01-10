@@ -435,7 +435,7 @@
                 content="As an old school PHP developer, I have tried many frameworks; none has given me the development speed and enjoyment of use that I found with Laravel. It is a breath of fresh air in the PHP ecosystem, with a brilliant community around it."
             >
                 <x-slot name="title">
-                    Developer + Educator
+                    Creator of <a href="https://github.com/minicli/minicli" target="_blank" class="text-red-500">Minicli</a>
                 </x-slot>
             </x-testimonial>
             <x-testimonial
@@ -494,14 +494,14 @@
                     Owner of <a href="https://roasted.dev" target="_blank" class="text-red-500">roasted.dev</a>
                 </x-slot>
             </x-testimonial>
-            {{-- <x-testimonial
+            <x-testimonial
                 name="Joseph Silber"
                 content="I didn't fully appreciate Laravel's one-stop-shop, all-encompassing solution, until I tried (many) different ecosystems. Laravel is in a class of its own!"
             >
                 <x-slot name="title">
-                    Developer at <a href="https://enrise.com/" target="_blank" class="text-red-500">Enrise</a>
+                    Creator of <a href="https://github.com/JosephSilber/bouncer" target="_blank" class="text-red-500">Bouncer</a>
                 </x-slot>
-            </x-testimonial> --}}
+            </x-testimonial>
             <x-testimonial
                 name="Steve McDougall"
                 content="Laravel has helped me launch products quicker than any other solution, allowing me to get to market faster and faster as the community has evolved."
