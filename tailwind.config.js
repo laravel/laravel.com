@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   important: true,
-  purge: [
+  content: [
       'resources/views/**/*.blade.php',
       'resources/js/**/*.js',
   ],
@@ -19,6 +19,14 @@ module.exports = {
         spacing: {
             224: '56rem',
         },
+        keyframes: {
+            cube: {
+                '50%': { transform: 'translateY(1rem)' },
+            },
+        },
+        animation: {
+            cube: 'cube 6s ease-in-out infinite',
+        }
     },
     boxShadow: {
         none: '0 0 0 0 rgba(0, 0, 0, 0)',
@@ -31,9 +39,9 @@ module.exports = {
         black: '#000',
         white: '#fff',
         gray: {
-            900: '#090910',
+            900: '#232323',
             800: '#222222',
-            700: '#2b2e38',
+            700: '#565454',
             600: '#777777',
             500: '#93939e',
             400: '#B5B5BD',
@@ -53,8 +61,8 @@ module.exports = {
             900: '#981d15',
             800: '#ca473f',
             700: '#ec0e00',
-            600: '#ff2d20',
-            500: '#FF7C75',
+            600: '#EB4432',
+            500: '#F9322C',
         },
         orange: {
             600: '#f49d37',
@@ -92,17 +100,13 @@ module.exports = {
         jetstream: '#6875f5',
         sail: '#38BDF7',
         sanctum: '#1D5873',
+        octane: '#CA3A31',
+        breeze: '#F3C14B',
     },
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
         mono: ['source-code-pro', ...defaultTheme.fontFamily.mono],
-    }
-  },
-  variants: {
-      borderColor: [...defaultConfig.variants.borderColor, 'focus-within'],
-      transform: [...defaultConfig.variants.transform, 'group-hover', 'group-focus'],
-      translate: [...defaultConfig.variants.translate, 'group-hover', 'group-focus'],
-      width: [...defaultConfig.variants.width, 'hover'],
+    },
   },
   plugins: [],
 }
