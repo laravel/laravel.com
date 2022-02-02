@@ -43,3 +43,11 @@ pre code.torchlight .line {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+pre code.torchlight[data-theme="light"] {
+    @apply dark:hidden !important;
+}
+
+pre code.torchlight[data-theme="dark"] {
+    @apply hidden dark:block !important;
+}
