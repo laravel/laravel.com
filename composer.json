@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.4",
         "erusev/parsedown-extra": "^0.8.1",
         "fideloper/proxy": "^4.2",
         "laravel/framework": "^8.0",
@@ -25,10 +25,7 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true,
-        "platform": {
-            "php": "7.4"
-        }
+        "sort-packages": true
     },
     "extra": {
         "laravel": {
