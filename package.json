@@ -10,13 +10,13 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "algoliasearch": "^4.6.0",
+        "algoliasearch": "^4.6",
         "alpinejs": "^2.7.3",
         "babel-plugin-prismjs": "^2.0.1",
         "laravel-mix": "^6.0.25",
-        "postcss-import": "^13.0.0",
+        "postcss-import": "^14.0",
         "postcss-nested": "^5.0.1",
-        "prismjs": "^1.22.0",
+        "prismjs": "^1.22",
         "tailwindcss": "^2.0.1"
     }
 }
