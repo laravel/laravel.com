@@ -17,8 +17,26 @@
     display: none !important;
 }
 
-
-.parnters_body a {
+.partners_body a {
     color: theme('colors.red.600');
     text-decoration: underline;
+}
+
+.version-colors {
+    @apply sm:flex dark:text-gray-400 mb-1;
+}
+.version-colors .color-box {
+    @apply w-3 h-3 mr-2 ;
+}
+.version-colors div.end-of-life {
+    @apply flex items-center mr-4;
+}
+.version-colors div.end-of-life div:first-child {
+    @apply bg-red-500;
+}
+.version-colors div.security-fixes {
+    @apply flex items-center;
+}
+.version-colors div.security-fixes div:first-child {
+    @apply bg-orange-600;
 }
