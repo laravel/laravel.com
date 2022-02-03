@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
+use App\Markdown\GithubFlavoredMarkdownConverter;
 use Illuminate\Contracts\Cache\Repository as Cache;
 
 class Documentation
@@ -47,7 +48,7 @@ class Documentation
             $path = base_path('resources/docs/'.$version.'/documentation.md');
 
             if ($this->files->exists($path)) {
-                return $this->replaceLinks($version, (new GithubFlavoredMarkdownConverter())->convertToHtml($this->files->get($path)));
+                return $this->replaceLinks($version, (new GithubFlavoredMarkdownConverter())->convert($this->files->get($path)));
             }
 
             return null;
@@ -67,11 +68,26 @@ class Documentation
             $path = base_path('resources/docs/'.$version.'/'.$page.'.md');
 
             if ($this->files->exists($path)) {
-                return $this->replaceLinks($version, (new GithubFlavoredMarkdownConverter)->convertToHtml($this->files->get($path)));
+                $content = $this->insertNewLineBeforeContentLists($this->files->get($path));
+
+                $content = (new GithubFlavoredMarkdownConverter())->convert($content);
+
+                return $this->replaceLinks($version, $content);
             }
 
             return null;
         });
+    }
+
+    /**
+     * Insert a new line after each occurence of '<div class="content-list" markdown="1">' in the docs.
+     *
+     * @param  string  $content
+     * @return string
+     */
+    public function insertNewLineBeforeContentLists($content)
+    {
+        return Str::replace('<div class="content-list" markdown="1">', "<div class=\"content-list\" markdown=\"1\">\n", $content);
     }
 
     /**
