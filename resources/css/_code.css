@@ -29,8 +29,30 @@ pre {
 	word-break: normal;
 	word-wrap: normal;
     box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+    @apply rounded-lg;
 }
 
+pre code.torchlight {
+    display: block;
+    min-width: max-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @apply bg-dark-600 !important;
+}
+
+pre code.torchlight .line {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+pre code.torchlight[data-theme="light"] {
+    @apply hidden !important;
+}
+
+/* pre code.torchlight[data-theme="dark"] {
+    @apply hidden dark:block !important;
+} */
+/*
 pre code.torchlight {
     display: block;
     min-width: max-content;
@@ -51,3 +73,4 @@ pre code.torchlight[data-theme="light"] {
 pre code.torchlight[data-theme="dark"] {
     @apply hidden dark:block !important;
 }
+*/
