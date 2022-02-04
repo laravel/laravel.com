@@ -122,11 +122,6 @@ Route::get('team', function () {
                 'github_username' => 'crynobone',
                 'twitter_username' => 'crynobone',
                 'location' => 'Selangor, Malaysia',
-            ], [
-                'name' => 'Claudio Dekker',
-                'github_username' => 'claudiodekker',
-                'twitter_username' => 'claudiodekker',
-                'location' => 'Amsterdam, The Netherlands',
             ],
         ]
     ]);
