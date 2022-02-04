@@ -4412,6 +4412,7 @@ function highlightCode() {
 function wrapHeadingsInAnchors() {
   _toConsumableArray(document.querySelector('.docs_main').querySelectorAll('a[name]')).forEach(function (anchor) {
     var heading = anchor.parentNode.nextElementSibling;
+    heading.id = anchor.name;
     anchor.href = "#".concat(anchor.name);
     anchor.removeAttribute('name');
 

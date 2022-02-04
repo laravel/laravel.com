@@ -16,6 +16,7 @@ function highlightCode() {
 function wrapHeadingsInAnchors() {
     [...document.querySelector('.docs_main').querySelectorAll('a[name]')].forEach(anchor => {
         const heading = anchor.parentNode.nextElementSibling;
+        heading.id = anchor.name;
         anchor.href = `#${anchor.name}`;
         anchor.removeAttribute('name');
         [...heading.childNodes].forEach(node => anchor.appendChild(node));

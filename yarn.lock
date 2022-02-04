@@ -4151,10 +4151,10 @@ postcss-discard-overridden@^5.0.1:
   resolved "https://registry.npmjs.org/postcss-discard-overridden/-/postcss-discard-overridden-5.0.1.tgz"
   integrity sha512-Y28H7y93L2BpJhrdUR2SR2fnSsT+3TVx1NmVQLbcnZWwIUpJ7mfcTC6Za9M2PG6w8j7UQRfzxqn8jU2VwFxo3Q==
 
-postcss-import@^13.0.0:
-  version "13.0.0"
-  resolved "https://registry.npmjs.org/postcss-import/-/postcss-import-13.0.0.tgz"
-  integrity sha512-LPUbm3ytpYopwQQjqgUH4S3EM/Gb9QsaSPP/5vnoi+oKVy3/mIk2sc0Paqw7RL57GpScm9MdIMUypw2znWiBpg==
+postcss-import@^14.0.0:
+  version "14.0.2"
+  resolved "https://registry.npmjs.org/postcss-import/-/postcss-import-14.0.2.tgz"
+  integrity sha512-BJ2pVK4KhUyMcqjuKs9RijV5tatNzNa73e/32aBVE/ejYPe37iH+6vAu9WvqUkB5OAYgLHzbSvzHnorybJCm9g==
   dependencies:
     postcss-value-parser "^4.0.0"
     read-cache "^1.0.0"
