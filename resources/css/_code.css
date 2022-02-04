@@ -36,18 +36,10 @@ pre code.torchlight {
     min-width: max-content;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    @apply bg-gray-50 dark:bg-dark-600 !important;
+    @apply bg-dark-600 !important;
 }
 
 pre code.torchlight .line {
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-pre code.torchlight[data-theme="light"] {
-    @apply dark:hidden !important;
-}
-
-pre code.torchlight[data-theme="dark"] {
-    @apply hidden dark:block !important;
 }

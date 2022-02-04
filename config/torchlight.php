@@ -8,10 +8,7 @@ return [
 
     // Which theme you want to use. You can find all of the themes at
     // https://torchlight.dev/docs/themes.
-    'theme' => [
-        'light' => env('TORCHLIGHT_LIGHT_THEME', 'github-light'),
-        'dark' => env('TORCHLIGHT_DARK_THEME', 'github-dark'),
-    ],
+    'theme' => env('TORCHLIGHT_THEME', 'olaolu-palenight'),
 
     // Your API token from torchlight.dev.
     'token' => env('TORCHLIGHT_TOKEN'),
