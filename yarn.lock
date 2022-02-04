@@ -4188,10 +4188,10 @@
   "resolved" "https://registry.npmjs.org/postcss-discard-overridden/-/postcss-discard-overridden-5.0.1.tgz"
   "version" "5.0.1"
 
-"postcss-import@^13.0.0":
-  "integrity" "sha512-LPUbm3ytpYopwQQjqgUH4S3EM/Gb9QsaSPP/5vnoi+oKVy3/mIk2sc0Paqw7RL57GpScm9MdIMUypw2znWiBpg=="
-  "resolved" "https://registry.npmjs.org/postcss-import/-/postcss-import-13.0.0.tgz"
-  "version" "13.0.0"
+"postcss-import@^14.0.0":
+  "integrity" "sha512-BJ2pVK4KhUyMcqjuKs9RijV5tatNzNa73e/32aBVE/ejYPe37iH+6vAu9WvqUkB5OAYgLHzbSvzHnorybJCm9g=="
+  "resolved" "https://registry.npmjs.org/postcss-import/-/postcss-import-14.0.2.tgz"
+  "version" "14.0.2"
   dependencies:
     "postcss-value-parser" "^4.0.0"
     "read-cache" "^1.0.0"
