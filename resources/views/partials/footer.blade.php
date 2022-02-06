@@ -27,6 +27,7 @@
                 'Jobs' => 'https://larajobs.com',
                 'Certification' => 'https://certification.laravel.com/',
                 'Forums' => 'https://laracasts.com/discuss',
+                'Discord' => 'https://discord.gg/laravel',
             ],
         ],
         [
@@ -174,7 +175,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://discord.gg/mPZNm7A">
+                                <a href="https://discord.gg/laravel">
                                     <img id="footer__discord" class="w-6 h-6" src="/img/social/discord.min.svg" alt="Discord" width="21" height="24" loading="lazy">
                                     <img id="footer__discord_dark" class="w-6 h-6" src="/img/social/discord.dark.min.svg" alt="Discord" width="21" height="24" loading="lazy">
                                 </a>

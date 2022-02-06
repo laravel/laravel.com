@@ -321,6 +321,7 @@
                 <ul class="list-custom sm:mt-8 grid max-w-md grid-cols-2 gap-4 mt-6 text-sm font-medium leading-4 text-gray-600">
                     <li><a href="https://blog.laravel.com">Blog</a></li>
                     <li><a href="https://laracasts.com">Laracasts</a></li>
+                    <li><a href="https://discord.gg/laravel">Discord</a></li>
                     <!-- <li><a href="http://laravelpodcast.com/">Podcast</a></li> -->
                     <li><a href="https://laravel-news.com">Laravel News</a></li>
                     <li><a href="https://laracon.us/">Laracon</a></li>
