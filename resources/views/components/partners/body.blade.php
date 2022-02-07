@@ -6,7 +6,7 @@
             </video>
         </div>
         <div class="md:w-3/4 md:ml-auto lg:grid lg:gap-6 lg:grid-cols-5 xl:gap-16 xl:grid-cols-12">
-            <div class="space-y-12 text-gray-600 md:text-lg lg:col-span-3 xl:col-span-7 parnters_body">
+            <div class="space-y-12 text-gray-600 md:text-lg lg:col-span-3 xl:col-span-7 partners_body">
                 {{ $content }}
             </div>
             <div class="mt-12 lg:mt-0 lg:col-span-2 xl:col-span-5">
