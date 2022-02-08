@@ -118,7 +118,7 @@
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Horizon</div>
-                                            <span class="text-gray-700 text-xs">Beautiful UI for monitoring for your Redis driven Laravel queues.</span>
+                                            <span class="text-gray-700 text-xs">Beautiful UI for monitoring your Redis driven Laravel queues.</span>
                                         </div>
                                     </a>
                                 </li>

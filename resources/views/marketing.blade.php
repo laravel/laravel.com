@@ -253,7 +253,7 @@
                     </div>
                     <div class="ml-4 leading-5">
                         <div>Horizon</div>
-                        <div class="mt-1 text-sm text-gray-700">Beautiful UI for monitoring for your Redis driven Laravel queues.</div>
+                        <div class="mt-1 text-sm text-gray-700">Beautiful UI for monitoring your Redis driven Laravel queues.</div>
                     </div>
                 </a>
             </li>
