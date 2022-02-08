@@ -64,11 +64,11 @@ class Documentation
      */
     public function get($version, $page)
     {
-        return $this->cache->remember('docs.'.$version.'.'.$page, 0, function () use ($version, $page) {
+        return $this->cache->remember('docs.'.$version.'.'.$page, 5, function () use ($version, $page) {
             $path = base_path('resources/docs/'.$version.'/'.$page.'.md');
 
             if ($this->files->exists($path)) {
-                $content = $this->insertNewLineBeforeContentLists($this->files->get($path));
+                $content = $this->files->get($path);
 
                 $content = (new GithubFlavoredMarkdownConverter())->convert($content);
 
@@ -77,17 +77,6 @@ class Documentation
 
             return null;
         });
-    }
-
-    /**
-     * Insert a new line after each occurence of '<div class="content-list" markdown="1">' in the docs.
-     *
-     * @param  string  $content
-     * @return string
-     */
-    public function insertNewLineBeforeContentLists($content)
-    {
-        return Str::replace('<div class="content-list" markdown="1">', "<div class=\"content-list\" markdown=\"1\">\n", $content);
     }
 
     /**
