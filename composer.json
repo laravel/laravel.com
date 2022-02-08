@@ -13,7 +13,9 @@
         "fideloper/proxy": "^4.2",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.2",
-        "symfony/browser-kit": "^5.0"
+        "symfony/browser-kit": "^5.0",
+        "torchlight/torchlight-commonmark": "^0.5.2",
+        "torchlight/torchlight-laravel": "^0.5.7"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",

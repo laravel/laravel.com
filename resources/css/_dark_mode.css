@@ -31,11 +31,6 @@
     & table td.support-policy-highlight {
       @apply dark:text-black;
     }
-
-    /* Code snippets */
-    & code {
-        @apply dark:text-gray-200;
-    }
 }
 
 .docs_sidebar {
@@ -65,30 +60,16 @@
     }
 }
 
-/* Light mode icons */
-html {
-    #docs_search__algolia_dark,
-    #docs_search__version_arrow_dark,
-    #footer__twitter_dark,
-    #footer__github_dark,
-    #footer__discord_dark,
-    #footer__youtube_dark {
-        display: none;
-    }
+html #docs_search__version_arrow_dark {
+    display: none;
 }
 
 /* Dark mode icons */
 html.dark {
-    #docs_search__algolia,
-    #docs_search__version_arrow,
-    #footer__twitter,
-    #footer__github,
-    #footer__discord,
-    #footer__youtube {
+    #docs_search__version_arrow {
         display: none;
     }
 
-    #docs_search__algolia_dark,
     #docs_search__version_arrow_dark,
     #footer__twitter_dark,
     #footer__github_dark,

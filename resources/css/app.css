@@ -3,7 +3,7 @@
 @import 'tailwindcss/components';
 
 @import "./_typography.css";
-@import "./_prism.css";
+@import "./_code.css";
 @import "./_sidebar_layout.css";
 @import "./_docs.css";
 @import "./_carbon_ads.css";
@@ -15,6 +15,10 @@
 
 [x-cloak] {
     display: none !important;
+}
+
+.bg-radial-gradient {
+    background-image: radial-gradient(50% 50% at 50% 50%, #EB4432 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .partners_body a {

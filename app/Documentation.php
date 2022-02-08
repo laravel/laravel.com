@@ -2,7 +2,9 @@
 
 namespace App;
 
+use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
+use App\Markdown\GithubFlavoredMarkdownConverter;
 use Illuminate\Contracts\Cache\Repository as Cache;
 
 class Documentation
@@ -46,7 +48,7 @@ class Documentation
             $path = base_path('resources/docs/'.$version.'/documentation.md');
 
             if ($this->files->exists($path)) {
-                return $this->replaceLinks($version, (new Parsedown())->text($this->files->get($path)));
+                return $this->replaceLinks($version, (new GithubFlavoredMarkdownConverter())->convert($this->files->get($path)));
             }
 
             return null;
@@ -66,7 +68,11 @@ class Documentation
             $path = base_path('resources/docs/'.$version.'/'.$page.'.md');
 
             if ($this->files->exists($path)) {
-                return $this->replaceLinks($version, (new Parsedown)->text($this->files->get($path)));
+                $content = $this->files->get($path);
+
+                $content = (new GithubFlavoredMarkdownConverter())->convert($content);
+
+                return $this->replaceLinks($version, $content);
             }
 
             return null;
@@ -82,7 +88,7 @@ class Documentation
      */
     public static function replaceLinks($version, $content)
     {
-        return str_replace('{{version}}', $version, $content);
+        return str_replace('%7B%7Bversion%7D%7D', $version, $content);
     }
 
     /**

@@ -1,7 +1,7 @@
 import Prism from 'prismjs';
 Prism.manual = true;
 
-highlightCode();
+// highlightCode();
 wrapHeadingsInAnchors();
 setupNavCurrentLinkHandling();
 replaceBlockquotesWithCalloutsInDocs();
@@ -16,10 +16,8 @@ function highlightCode() {
 function wrapHeadingsInAnchors() {
     [...document.querySelector('.docs_main').querySelectorAll('a[name]')].forEach(anchor => {
         const heading = anchor.parentNode.nextElementSibling;
-        if (heading.id == 'the-at-error-directive') {
-            console.log(heading, heading.childNodes);
-        }
-        anchor.href = `#${heading.id}`;
+        heading.id = anchor.name;
+        anchor.href = `#${anchor.name}`;
         anchor.removeAttribute('name');
         [...heading.childNodes].forEach(node => anchor.appendChild(node));
         heading.appendChild(anchor);
@@ -84,7 +82,7 @@ function replaceBlockquotesWithCalloutsInDocs() {
             wrapper.classList = 'mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center';
 
             const imageWrapper = document.createElement('div');
-            imageWrapper.classList = `w-20 h-20 mb-6 flex items-center justify-center flex-shrink-0 ${color} lg:mb-0`;
+            imageWrapper.classList = `w-20 h-20 mb-6 flex items-center justify-center shrink-0 ${color} lg:mb-0`;
             const image = document.createElement('img');
             image.src = img;
             image.classList = `opacity-75`;
