@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocsController;
 
 if (! defined('DEFAULT_VERSION')) {
-    define('DEFAULT_VERSION', '8.x');
+    define('DEFAULT_VERSION', '9.x');
 }
 
 if (! defined('SHOW_VAPOR')) {
@@ -27,9 +27,9 @@ Route::get('docs', [DocsController::class, 'showRootPage']);
 
 Route::get('docs/6.0/{page?}', function ($page = null) {
     $page = $page ?: 'installation';
-    $page = $page == '8.x' ? 'installation' : $page;
+    $page = $page == '9.x' ? 'installation' : $page;
 
-    return redirect(trim('/docs/8.x/'.$page, '/'), 301);
+    return redirect(trim('/docs/9.x/'.$page, '/'), 301);
 });
 
 Route::get('docs/{version}/{page?}', [DocsController::class, 'show'])->name('docs.version');
