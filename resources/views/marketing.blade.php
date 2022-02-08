@@ -448,7 +448,7 @@
             </x-testimonial>
             <x-testimonial
                 name="Jess Archer"
-                content="I've been using Laravel for over 10 years and I can't imagine using PHP without it."
+                content="Laravel and its community inspire me to be a better developer and allow me to focus on the unique parts of my apps."
             >
                 <x-slot name="title">
                     Full-Stack Developer
