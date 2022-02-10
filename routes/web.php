@@ -38,14 +38,6 @@ Route::get('partners', function () {
     return redirect('https://partners.laravel.com');
 });
 
-Route::get('/partner/ideil', function () {
-    return redirect('https://partners.laravel.com/partners/ideil', 301);
-});
-
-Route::get('/partner/curotec', function () {
-    return redirect('https://partners.laravel.com/partners/curotec', 301);
-});
-
 Route::get('partner/{partner}', function ($partner) {
     return redirect('https://partners.laravel.com/partners/'.$partner, 301);
 });
