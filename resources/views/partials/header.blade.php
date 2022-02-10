@@ -25,7 +25,7 @@
                     <div
                         x-show="expanded"
                         x-cloak
-                        class="absolute left-28 z-20 transition transform"
+                        class="absolute left-28 z-20 transition transform w-full"
                         x-transition:enter="duration-250 ease-out"
                         x-transition:enter-start="opacity-0 -translate-y-8"
                         x-transition:enter-end="opacity-100"
