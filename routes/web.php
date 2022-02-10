@@ -34,17 +34,7 @@ Route::get('docs/6.0/{page?}', function ($page = null) {
 
 Route::get('docs/{version}/{page?}', [DocsController::class, 'show'])->name('docs.version');
 
-Route::get('partners', function () {
-    return redirect('https://partners.laravel.com');
-});
-
-Route::get('/partner/ideil', function () {
-    return redirect('https://partners.laravel.com/partners/ideil', 301);
-});
-
-Route::get('/partner/curotec', function () {
-    return redirect('https://partners.laravel.com/partners/curotec', 301);
-});
+Route::redirect('partners', 'https://partners.laravel.com');
 
 Route::get('partner/{partner}', function ($partner) {
     return redirect('https://partners.laravel.com/partners/'.$partner, 301);
