@@ -534,6 +534,14 @@
                     Founder of <a href="https://devdojo.com" class="text-red-500" target="_blank">DevDojo</a>
                 </x-slot>
             </x-testimonial>
+            <x-testimonial
+                name="Jack Ellis"
+                content="The Laravel ecosystem has been integral to the success of our business. The framework allows us to move fast and ship regularly, and Laravel Vapor has allowed us to operate at an incredible scale with ease."
+            >
+                <x-slot name="title">
+                    Co-founder of <a href="https://usefathom.com" class="text-red-500" target="_blank">Fathom Analytics</a>
+                </x-slot>
+            </x-testimonial>
         </div>
     </div>
 
