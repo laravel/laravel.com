@@ -20,6 +20,12 @@ If you want to work on this project on your local machine, you may follow the in
     ```bash
     ./bin/setup.sh
     ```
+   
+### Torchlight Integration
+This project relies on Torchlight for syntax highlighting. You will need to register at [torchlight.dev](https://torchlight.dev/) and generate a free personal token for use in this project. Once generated, add your token to your .env file.
+```yaml
+TORCHLIGHT_TOKEN=
+```
 
 ### Syncing Upstream Changes Into Your Fork 
 
