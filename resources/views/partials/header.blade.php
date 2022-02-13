@@ -25,7 +25,7 @@
                     <div
                         x-show="expanded"
                         x-cloak
-                        class="absolute left-28 z-20 transition transform"
+                        class="absolute left-28 z-20 transition transform -translate-x-1/2"
                         x-transition:enter="duration-250 ease-out"
                         x-transition:enter-start="opacity-0 -translate-y-8"
                         x-transition:enter-end="opacity-100"
@@ -34,7 +34,7 @@
                         x-transition:leave-end="opacity-0 -translate-y-8"
                     >
                         <div
-                            class="mt-4 w-224 -translate-x-1/2 p-8 bg-white shadow-lg transform transition-transform origin-top"
+                            class="mt-4 w-224 p-8 bg-white shadow-lg transform transition-transform origin-top"
                             @click.away="expanded = false"
                         >
                             <ul class="grid gap-6 relative sm:grid-cols-2 md:grid-cols-3">
