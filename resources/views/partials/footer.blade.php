@@ -60,7 +60,6 @@
                 'Forge' => 'https://forge.laravel.com',
                 'Homestead' => '/docs/' . DEFAULT_VERSION . '/homestead',
                 'Horizon' => '/docs/' . DEFAULT_VERSION . '/horizon',
-                'Lumen' => 'https://lumen.laravel.com',
                 'Mix' => '/docs/' . DEFAULT_VERSION . '/mix',
                 'Nova' => 'https://nova.laravel.com',
                 'Passport' => '/docs/' . DEFAULT_VERSION . '/passport',
