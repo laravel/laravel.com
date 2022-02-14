@@ -16,7 +16,7 @@
 
     /* Links */
     & p a, & ul a, & ol a {
-        @apply dark:text-red-500;
+        @apply dark:text-red-600;
     }
 
     /* Tables */
