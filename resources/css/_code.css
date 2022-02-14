@@ -13,10 +13,11 @@
 .docs_main :not(pre) > code {
     display: inline-flex;
     padding: 0 .125rem;
+    border-radius: .125rem;
     max-width: 100%;
     overflow-x: auto;
     vertical-align: middle;
-	@apply dark:bg-dark-600 dark:text-red-500;
+	@apply dark:bg-dark-600 dark:text-red-600;
 }
 
 pre {
