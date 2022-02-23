@@ -34,6 +34,10 @@ Route::get('docs/6.0/{page?}', function ($page = null) {
 
 Route::get('docs/{version}/{page?}', [DocsController::class, 'show'])->name('docs.version');
 
+Route::redirect('chat', 'https://discord.gg/mPZNm7A');
+
+Route::redirect('forum', 'https://laravel.io/forum');
+
 Route::redirect('partners', 'https://partners.laravel.com');
 
 Route::get('partner/{partner}', function ($partner) {
