@@ -578,7 +578,7 @@
             </div>
             <div class="flex justify-center lg:justify-end">
                 <div class="max-w-sm w-full pt-8 pb-12 px-6 border border-gray-200 -rotate-1 lg:px-12 lg:border-red-600">
-                    <img src="/images/laracon.png" class="max-w-[218px] w-full mx-auto" />
+                    <img src="/images/laracon.png" class="max-w-[218px] w-full mx-auto" alt="laracon" />
                     <h3 class="mt-8 font-bold text-red-700 uppercase text-xs">Watch us on YouTube</h3>
                     <h2 class="mt-3 font-bold text-4xl">Tune In</h2>
                     <p class="mt-4 text-gray-700 text-sm leading-relaxed">The official Laravel YouTube channel includes free videos and tutorials covering the entire Laravel ecosystem. Stay up to date by watching our latest videos.</p>
@@ -597,7 +597,7 @@
                 <div class="absolute right-8 top-0 -translate-y-12 pointer-events-none">
                     <x-cube />
                 </div>
-                <img class="relative max-w-[480px] w-full lg:rotate-1" src="/images/partners.png" />
+                <img class="relative max-w-[480px] w-full lg:rotate-1" src="/images/partners.png" alt="partners" />
             </div>
             <div class="relative flex justify-center lg:justify-end">
                 <div class="sm:max-w-md">
