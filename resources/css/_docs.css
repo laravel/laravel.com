@@ -9,6 +9,9 @@
         visibility: hidden;
         top: -45px;
     }
+    a:hover {
+        color: theme('colors.gray.500');
+    }
 
     table {
         border-collapse: collapse;
