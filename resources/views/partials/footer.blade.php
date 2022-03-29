@@ -25,7 +25,7 @@
                 'Laracon EU' => 'https://laracon.eu/',
                 // 'Laracon AU' => 'https://laracon.com.au/',
                 'Jobs' => 'https://larajobs.com',
-                'Certification' => 'https://certification.laravel.com/',
+                // 'Certification' => 'https://certification.laravel.com/',
                 'Forums' => 'https://laracasts.com/discuss',
             ],
         ],
