@@ -1,7 +1,15 @@
 .docs_main {
     h1, h2, h3, h4, h5, h6 {
         font-weight: 500;
-        margin-bottom: 1em;
+        margin-bottom: 0.75em;
+    }
+
+    h2, h3 {
+        margin-top:  2em;
+    }
+
+    h4 {
+        margin-top:  1.5em;
     }
 
     h1 {
@@ -129,8 +137,12 @@
         }
     }
 
-    p, ul, ol {
-        margin-bottom: 2em;
+    p + pre {
+        margin-top:  0;
+    }
+
+    p, ul, ol, pre {
+        margin-bottom: 1.5em;
 
         a {
             color: theme('colors.red.600');
