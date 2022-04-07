@@ -4,6 +4,19 @@
     @keydown.window.escape="navIsOpen = false"
     @click.away="navIsOpen = false"
 >
+    <div class="relative bg-red-600" x-show="!navIsOpen">
+        <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+            <div class="pr-16 text-center sm:px-16">
+                <p class="font-medium text-white">
+                    Laravel stands united with the people of Ukraine 🇺🇦
+                    <a href="https://supportukrainenow.org" class="font-bold underline cursor-pointer"
+                       rel="nofollow">
+                        Support Ukraine <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="relative max-w-screen-2xl mx-auto w-full py-4 bg-white transition duration-200 lg:bg-transparent lg:py-6">
         <div class="max-w-screen-xl mx-auto px-5 flex items-center justify-between">
             <div class="flex-1">
