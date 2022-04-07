@@ -9,8 +9,7 @@
             <div class="pr-16 text-center sm:px-16">
                 <p class="font-medium text-white">
                     Laravel stands united with the people of Ukraine 🇺🇦
-                    <a href="https://supportukrainenow.org" class="font-bold underline cursor-pointer"
-                       rel="nofollow">
+                    <a href="https://helpua.nazk.gov.ua" class="font-bold underline cursor-pointer" rel="nofollow">
                         Support Ukraine <span aria-hidden="true">&rarr;</span>
                     </a>
                 </p>
