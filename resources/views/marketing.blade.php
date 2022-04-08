@@ -81,7 +81,7 @@
             <div class="w-full flex justify-center items-center">
                 <div class="sm:max-w-[480px]">
                     <h2 class="text-4xl font-bold md:text-5xl">Monolith or API — the choice is yours.</h2>
-                    <p class="mt-6 text-gray-700 leading-relaxed">Build robust, full-stack applications in PHP using Laravel and <a class="underline" href="https://laravel-livewire.com">Livewire</a>. Love JavaScript? Build a monolithic JavaScript driven frontend by pairing Laravel with <a class="underline" href="https://inertiajs.com">Inertia</a>.</p>
+                    <p class="mt-6 text-gray-700 leading-relaxed">Build robust, full-stack applications in PHP using Laravel and <a class="underline" href="https://laravel-livewire.com">Livewire</a>. Love JavaScript? Build a monolithic React or Vue driven frontend by pairing Laravel with <a class="underline" href="https://inertiajs.com">Inertia</a>.</p>
                     <p class="mt-6 text-gray-700 leading-relaxed">Or, let Laravel serve as a robust backend API for your Next.js application, mobile application, or other frontend. Either way, our starter kits will have you productive in minutes.</p>
                     <x-button.secondary class="mt-6" href="/docs/starter-kits">
                         Starter Kits
