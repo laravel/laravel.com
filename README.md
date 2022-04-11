@@ -16,9 +16,11 @@ If you want to work on this project on your local machine, you may follow the in
     ```bash
     cd laravel
     ```
-5. Run the `setup.sh` bin script, which will take all the steps necessary to prepare your local install:
+5. Run the scripts below, which will take all the steps necessary to prepare your local install:
     ```bash
-    ./bin/setup.sh
+    composer install
+    npm install
+    npm run dev
     ```
    
 ### Torchlight Integration

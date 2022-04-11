@@ -10,7 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "@alpinejs/trap": "^3.7.1",
+        "@alpinejs/focus": "^3.9.6",
         "algoliasearch": "^4.6.0",
         "alpinejs": "^3.7.1",
         "autoprefixer": "^10.4.0",
