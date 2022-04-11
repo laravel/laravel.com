@@ -34,7 +34,7 @@
                         </div>
                         <div class="text-lg leading-6 font-medium space-y-1">
                             <h3 class="text-red-600">{{ $staff['name'] }}</h3>
-                            <p class="text-gray-600">{{ $staff['location'] }}</p>
+                            <p class="text-gray-600 text-sm">{{ $staff['location'] }}</p>
                         </div>
 
                         <ul class="flex space-x-5">

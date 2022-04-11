@@ -86,27 +86,27 @@ Route::get('team', function () {
                 'name' => 'Taylor Otwell',
                 'github_username' => 'taylorotwell',
                 'twitter_username' => 'taylorotwell',
-                'location' => 'Arkansas, United States',
+                'location' => 'United States',
             ], [
                 'name' => 'Dries Vints',
                 'github_username' => 'driesvints',
                 'twitter_username' => 'driesvints',
-                'location' => 'Antwerp, Belgium',
+                'location' => 'Belgium',
             ], [
                 'name' => 'James Brooks',
                 'github_username' => 'jbrooksuk',
                 'twitter_username' => 'jbrooksuk',
-                'location' => 'Staffordshire, United Kingdom',
+                'location' => 'United Kingdom',
             ], [
                 'name' => 'Nuno Maduro',
                 'github_username' => 'nunomaduro',
                 'twitter_username' => 'enunomaduro',
-                'location' => 'Leiria, Portugal',
+                'location' => 'Portugal',
             ], [
                 'name' => 'Mior Muhammad Zaki Mior Khairuddin',
                 'github_username' => 'crynobone',
                 'twitter_username' => 'crynobone',
-                'location' => 'Selangor, Malaysia',
+                'location' => 'Malaysia',
             ],
         ]
     ]);
