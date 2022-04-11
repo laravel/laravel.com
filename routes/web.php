@@ -88,11 +88,6 @@ Route::get('team', function () {
                 'twitter_username' => 'taylorotwell',
                 'location' => 'Arkansas, United States',
             ], [
-                'name' => 'Mohamed Said',
-                'github_username' => 'themsaid',
-                'twitter_username' => 'themsaid',
-                'location' => 'Cairo, Egypt',
-            ], [
                 'name' => 'Dries Vints',
                 'github_username' => 'driesvints',
                 'twitter_username' => 'driesvints',
