@@ -17,7 +17,7 @@
             <x-cube :delay="3000" />
         </div>
 
-        <div class="relative max-w-screen-xl mx-auto px-5 pt-32 space-y-8 md:space-y-0 md:flex md:items-end">
+        <div class="relative max-w-screen-xl mx-auto px-5 pt-16 md:pt-32 space-y-8 md:space-y-0 md:flex md:items-end">
             <div class="md:flex-1">
                 <h1 class="max-w-md font-medium text-3xl tracking-tight sm:text-4xl md:max-w-4xl md:text-5xl md:leading-tight xl:text-6xl">The Laravel Team</h1>
                 <p class="mt-3 max-w-xl text-gray-600 sm:mt-5 md:max-w-2xl md:mt-8 md:text-lg">Laravel is a team of passionate developers from all around the world. We love building tools that make your life as a developer enjoyable, fun, and fulfilling. Follow us on Twitter and GitHub to keep up with what we're working on!</p>
