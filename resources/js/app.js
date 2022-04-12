@@ -1,11 +1,11 @@
 import Alpine from 'alpinejs';
-import Trap from '@alpinejs/trap';
+import Focus from '@alpinejs/focus';
 
 window.Alpine = Alpine;
 
 window.searchComponent = require('./components/search').default;
 
-Alpine.plugin(Trap);
+Alpine.plugin(Focus);
 Alpine.start();
 
 document.addEventListener('DOMContentLoaded', () => {

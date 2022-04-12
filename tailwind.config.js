@@ -1,4 +1,3 @@
-const defaultConfig = require('tailwindcss/defaultConfig');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
