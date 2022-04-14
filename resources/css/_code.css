@@ -30,7 +30,17 @@ pre {
 	word-break: normal;
 	word-wrap: normal;
     box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
-    @apply rounded-lg;
+    @apply relative rounded-lg;
+}
+
+pre .copyBtn {
+    @apply absolute right-2 top-2 bg-dark-600 p-1 outline-none text-gray-600;
+}
+
+pre .copyBtn:hover,
+pre .copyBtn:focus,
+pre .copyBtn:active {
+    @apply text-white outline-none;
 }
 
 pre code.torchlight {
