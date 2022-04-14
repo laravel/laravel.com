@@ -8,6 +8,17 @@ const clipboardCopiedIcon = `<svg fill="currentColor" class="fill-current text-w
 let codeBlocks = document.querySelectorAll('#main-content pre');
 
 codeBlocks.forEach((element, key) => {
+    // Add wrapper to code block.
+    var wrapper = document.createElement('div');
+
+    ['relative', 'code-block-wrapper'].forEach((value) => {
+        wrapper.classList.add(value);
+    });
+
+    element.parentNode.insertBefore(wrapper, element);
+
+    wrapper.appendChild(element);
+
     // Copy to clipboard button.
     let copyToClipboardBtn = document.createElement('button');
 
@@ -22,7 +33,7 @@ codeBlocks.forEach((element, key) => {
     copyToClipboardBtn.setAttribute('title', 'Copy to Clipboard');
     copyToClipboardBtn.classList.add('copyBtn');
 
-    element.appendChild(copyToClipboardBtn);
+    wrapper.appendChild(copyToClipboardBtn);
 
     let copyToClipboard = new ClipboardJS(`#${copyToClipboardBtn.id}`);
 
