@@ -2,6 +2,7 @@
 
 @section('content')
     <x-accessibility.skip-to-content-link />
+
     <div class="relative overflow-auto dark:bg-dark-700" id="docsScreen">
         <div class="relative lg:flex lg:items-start">
             <aside
@@ -254,17 +255,19 @@
                                 <blockquote>
                                     <div class="callout">
                                         <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center">
-                                        <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 bg-orange-600 lg:mb-0">
-                                            <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
-                                        </div>
+                                            <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 bg-orange-600 lg:mb-0">
+                                                <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
+                                            </div>
 
-                                        <p class="mb-0 lg:ml-4">
-                                            <strong>WARNING</strong> You're browsing the documentation for an upcoming version of Laravel.
-                                            The documentation and features of this release are subject to change.
-                                        </p>
+                                            <p class="mb-0 lg:ml-4">
+                                                <strong>WARNING</strong> You're browsing the documentation for an upcoming version of Laravel.
+                                                The documentation and features of this release are subject to change.
+                                            </p>
+                                        </div>
                                     </div>
                                 </blockquote>
                             @endif
+
                             <x-accessibility.main-content-wrapper>
                                 {!! $content !!}
                                 <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
