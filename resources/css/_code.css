@@ -17,7 +17,7 @@
     max-width: 100%;
     overflow-x: auto;
     vertical-align: middle;
-	@apply dark:text-red-600;
+	@apply dark:bg-dark-600 dark:text-red-600;
 }
 
 pre {
