@@ -30,7 +30,7 @@
                 <li>
                     <div class="space-y-4">
                         <div class="aspect-w-3 aspect-h-2">
-                            <img class="transition object-cover shadow-lg rounded-lg filter grayscale hover:grayscale-0" loading="lazy" width="200" height="200" src="https://unavatar.vercel.app/github/{{ $staff['github_username'] }}" alt="{{ $staff['name'] }}">
+                            <img class="transition object-cover shadow-lg rounded-lg filter grayscale hover:grayscale-0" loading="lazy" width="200" height="200" src="https://unavatar.io/github/{{ $staff['github_username'] }}" alt="{{ $staff['name'] }}">
                         </div>
                         <div class="text-lg leading-6 font-medium space-y-1">
                             <h3 class="text-red-600">{{ $staff['name'] }}</h3>
@@ -63,5 +63,5 @@
                 @endforeach
             </ul>
         </div>
-        </div>
+    </div>
 @stop

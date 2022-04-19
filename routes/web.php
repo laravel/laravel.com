@@ -107,6 +107,16 @@ Route::get('team', function () {
                 'github_username' => 'crynobone',
                 'twitter_username' => 'crynobone',
                 'location' => 'Malaysia',
+            ], [
+                'name' => 'Jess Archer',
+                'github_username' => 'jessarcher',
+                'twitter_username' => 'jessarchercodes',
+                'location' => 'Australia',
+            ], [
+                'name' => 'Guus Leeuw',
+                'github_username' => 'phpguus',
+                'twitter_username' => 'phpguus',
+                'location' => 'Ireland',
             ],
         ]
     ]);
