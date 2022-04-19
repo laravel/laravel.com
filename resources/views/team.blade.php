@@ -63,5 +63,5 @@
                 @endforeach
             </ul>
         </div>
-        </div>
+    </div>
 @stop
