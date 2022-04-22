@@ -81,7 +81,7 @@
                                     break;
 
                                 case 3:
-                                    $promote = 'spark';
+                                    $promote = 'nova';
                                     break;
                             }
                         @endphp
@@ -102,9 +102,9 @@
                             </div>
                         @endif
 
-                        @if ($promote == 'spark')
+                        @if ($promote == 'nova')
                             <div :class="{ 'hidden': !navIsOpen }" x-cloak class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
-                                <span class="font-medium">Laravel Spark:</span> The next generation of Spark is <a class="underline text-red-600" href="https://spark.laravel.com">now available</a>.
+                                <span class="font-medium">Laravel Nova:</span> The next generation of Nova is <a class="underline text-red-600" href="https://nova.laravel.com">now available</a>.
                             </div>
                         @endif
                     </div>
