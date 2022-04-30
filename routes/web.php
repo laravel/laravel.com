@@ -27,9 +27,9 @@ Route::get('docs', [DocsController::class, 'showRootPage']);
 
 Route::get('docs/6.0/{page?}', function ($page = null) {
     $page = $page ?: 'installation';
-    $page = $page == '9.x' ? 'installation' : $page;
+    $page = $page == DEFAULT_VERSION ? 'installation' : $page;
 
-    return redirect(trim('/docs/9.x/'.$page, '/'), 301);
+    return redirect(trim('/docs/'.DEFAULT_VERSION.'/'.$page, '/'), 301);
 });
 
 Route::get('docs/{version}/{page?}', [DocsController::class, 'show'])->name('docs.version');
