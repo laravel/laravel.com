@@ -117,6 +117,11 @@ Route::get('team', function () {
                 'github_username' => 'phpguus',
                 'twitter_username' => 'phpguus',
                 'location' => 'Ireland',
+            ], [
+                'name' => 'Tim MacDonald',
+                'github_username' => 'timacdonald',
+                'twitter_username' => 'timacdonald87',
+                'location' => 'Australia',
             ],
         ]
     ]);
