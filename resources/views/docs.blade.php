@@ -86,10 +86,6 @@
                             }
                         @endphp
 
-                        <div :class="{ 'hidden': !navIsOpen }" x-cloak class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
-                            Laravel stands united with the people of Ukraine 🇺🇦 <a class="underline text-red-600" href="https://supportukrainenow.org/" target="_blank">Assistance</a>
-                        </div>
-
                         @if ($promote == 'forge')
                             <div :class="{ 'hidden': !navIsOpen }" x-cloak class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
                                 <span class="font-medium">Laravel Forge:</span> create and manage PHP 8 servers. Deploy your Laravel applications in seconds. <a class="underline text-red-600" href="https://forge.laravel.com">Sign up now!</a>.

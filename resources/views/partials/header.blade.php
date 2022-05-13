@@ -4,18 +4,6 @@
     @keydown.window.escape="navIsOpen = false"
     @click.away="navIsOpen = false"
 >
-    <div class="hidden sm:block relative p-2 border-b border-gray-100">
-        <div class="flex items-center justify-center text-center text-sm text-red-600 font-medium">
-            <div>Laravel stands united with the people of Ukraine</div>
-            <div class="ml-2">🇺🇦</div>
-            <div class="ml-2">
-                <a href="https://supportukrainenow.org/" target="_blank" class="font-bold underline cursor-pointer" rel="nofollow">
-                    Assistance
-                </a>
-            </div>
-        </div>
-    </div>
-
     <div class="relative max-w-screen-2xl mx-auto w-full py-4 bg-white transition duration-200 lg:bg-transparent lg:py-6">
         <div class="max-w-screen-xl mx-auto px-5 flex items-center justify-between">
             <div class="flex-1">
