@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
     <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
 
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="DVMEKBYF" defer></script>
+    <!-- / Fathom -->
+
     @include('partials.theme')
 </head>
 <body
