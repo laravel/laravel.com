@@ -122,6 +122,11 @@ Route::get('team', function () {
                 'github_username' => 'timacdonald',
                 'twitter_username' => 'timacdonald87',
                 'location' => 'Australia',
+            ], [
+                'name' => 'Joe Dixon',
+                'github_username' => 'joedixon',
+                'twitter_username' => '_joedixon',
+                'location' => 'United Kingdom',
             ],
         ]
     ]);
