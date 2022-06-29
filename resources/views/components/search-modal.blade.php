@@ -38,6 +38,7 @@
                     aria-label="Search in the documentation"
                     @keydown.arrow-up.prevent="focusPreviousResult()"
                     @keydown.arrow-down.prevent="focusNextResult()"
+                    @click="close()"
                 >
             </div>
 
