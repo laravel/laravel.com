@@ -5,6 +5,18 @@
     @keydown.window.escape="close"
     @keydown.window="handleKeydown"
     @keydown.escape.prevent.stop="close"
+    x-init="$nextTick(() => {
+        if (! window.URLSearchParams) {
+            return
+        }
+
+        const searchQuery = new URLSearchParams(document.location.search).get('q')
+
+        if (searchQuery) {
+            search = searchQuery
+            open = true
+        }
+    })"
     x-show="open"
     x-cloak
     x-trap.noscroll.inert="open"
