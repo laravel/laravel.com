@@ -59,7 +59,7 @@ class DocsController extends Controller
             return [];
         }
 
-        return response()->json($docs->index($version));
+        return response()->json($docs->indexArray($version));
     }
 
     /**
