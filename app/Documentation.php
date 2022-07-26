@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
 use App\Markdown\GithubFlavoredMarkdownConverter;
+use Carbon\CarbonInterval;
 use Illuminate\Contracts\Cache\Repository as Cache;
 
 class Documentation
@@ -76,6 +77,45 @@ class Documentation
             }
 
             return null;
+        });
+    }
+
+    /**
+     * Get the array based index representation of the documentation.
+     *
+     * @param  string  $version
+     * @return array
+     */
+    public function indexArray($version)
+    {
+        return $this->cache->remember('docs.{'.$version.'}.index', CarbonInterval::hour(1), function () use ($version) {
+            $path = base_path('resources/docs/'.$version.'/documentation.md');
+
+            if (! $this->files->exists($path)) {
+                return [];
+            }
+
+            return [
+                'pages' => collect(explode(PHP_EOL, $this->replaceLinks($version, $this->files->get($path))))
+                    ->filter(fn ($line) => Str::contains($line, '/docs/{{version}}/'))
+                    ->map(fn ($line) => resource_path(Str::of($line)->afterLast('(/')->before(')')->replace('{{version}}', $version)->append('.md')))
+                    ->filter(fn ($path) => $this->files->exists($path))
+                    ->mapWithKeys(function ($path) {
+                        $contents = $this->files->get($path);
+
+                        preg_match('/\# (?<title>[^\\n]+)/', $contents, $page);
+                        preg_match_all('/<a name="(?<fragments>[^"]+)"><\\/a>\n#+ (?<titles>[^\\n]+)/', $contents, $section);
+
+                        return [
+                            (string) Str::of($path)->afterLast('/')->before('.md') => [
+                                'title' => $page['title'],
+                                'sections' => collect($section['fragments'])
+                                    ->combine($section['titles'])
+                                    ->map(fn ($title) => ['title' => $title])
+                            ],
+                        ];
+                    }),
+            ];
         });
     }
 

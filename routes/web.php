@@ -1,5 +1,6 @@
 <?php
 
+use App\Documentation;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocsController;
 
@@ -32,6 +33,7 @@ Route::get('docs/6.0/{page?}', function ($page = null) {
     return redirect(trim('/docs/'.DEFAULT_VERSION.'/'.$page, '/'), 301);
 });
 
+Route::get('docs/{version}/index.json', [DocsController::class, 'index']);
 Route::get('docs/{version}/{page?}', [DocsController::class, 'show'])->name('docs.version');
 
 Route::redirect('partners', 'https://partners.laravel.com');

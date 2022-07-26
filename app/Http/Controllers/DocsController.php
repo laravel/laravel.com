@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Documentation;
+use Illuminate\Support\Str;
 use Symfony\Component\DomCrawler\Crawler;
 
 class DocsController extends Controller
@@ -33,6 +34,32 @@ class DocsController extends Controller
     public function showRootPage()
     {
         return redirect('docs/'.DEFAULT_VERSION);
+    }
+
+    /**
+     * Show the documentation index JSON representation.
+     *
+     * @param  string  $version
+     * @param  \App\Documentation  $docs
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
+     */
+    public function index($version, Documentation $docs)
+    {
+        $major = Str::before($version, '.');
+
+        if (Str::before(array_values(Documentation::getDocVersions())[1], '.') + 1 === (int) $major) {
+            $version = $major = 'master';
+        }
+
+        if (! $this->isVersion($version)) {
+            return redirect('docs/'.DEFAULT_VERSION.'/index.json', 301);
+        }
+
+        if ($major !== 'master' && $major < 9) {
+            return [];
+        }
+
+        return response()->json($docs->indexArray($version));
     }
 
     /**
