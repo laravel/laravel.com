@@ -54,7 +54,14 @@ function setupNavCurrentLinkHandling() {
 function replaceBlockquotesWithCalloutsInDocs() {
     [...document.querySelectorAll('.docs_main blockquote p')].forEach(el => {
         var str = el.outerHTML;
-        var match = str.match(/\{(.*?)\}/);
+        var legacyVersions = ['8.x', '7.x', '6.x', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2', '5.1', '5.0', '4.2'];
+
+        if (legacyVersions.includes(window.version)) {
+            var match = str.match(/\{(.*?)\}/);
+        } else {
+            var match = str.match(/<strong>(.*?)<\/strong><br>/);
+        }
+
         var img, color;
 
         if (match) {
@@ -62,20 +69,33 @@ function replaceBlockquotesWithCalloutsInDocs() {
         }
 
         if (type) {
-            switch (type) {
-                case "note":
-                    img = '/img/callouts/exclamation.min.svg';
-                    color = 'bg-red-600';
-                    break;
-                case "tip":
-                    img = '/img/callouts/lightbulb.min.svg';
-                    color = 'bg-purple-600';
-                    break;
-                case "laracasts":
-                case "video":
-                    img = '/img/callouts/laracast.min.svg';
-                    color = 'bg-blue-600';
-                    break;
+            if (legacyVersions.includes(window.version)) {
+                switch (type) {
+                    case "note":
+                        img = '/img/callouts/exclamation.min.svg';
+                        color = 'bg-red-600';
+                        break;
+                    case "tip":
+                        img = '/img/callouts/lightbulb.min.svg';
+                        color = 'bg-purple-600';
+                        break;
+                    case "laracasts":
+                    case "video":
+                        img = '/img/callouts/laracast.min.svg';
+                        color = 'bg-blue-600';
+                        break;
+                }
+            } else {
+                switch (type) {
+                    case "Warning":
+                        img = '/img/callouts/exclamation.min.svg';
+                        color = 'bg-red-600';
+                        break;
+                    case "Note":
+                        img = '/img/callouts/lightbulb.min.svg';
+                        color = 'bg-purple-600';
+                        break;
+                }
             }
 
             const wrapper = document.createElement('div');
@@ -91,7 +111,12 @@ function replaceBlockquotesWithCalloutsInDocs() {
 
             el.parentNode.insertBefore(wrapper, el);
 
-            el.innerHTML = str.replace(/\{(.*?)\}/, '');
+            if (legacyVersions.includes(window.version)) {
+                el.innerHTML = str.replace(/\{(.*?)\}/, '');
+            } else {
+                el.innerHTML = str.replace(/<strong>(.*?)<\/strong><br>/, '');
+            }
+
             el.classList = 'mb-0 lg:ml-6';
             wrapper.classList.add('callout');
             wrapper.appendChild(el);
