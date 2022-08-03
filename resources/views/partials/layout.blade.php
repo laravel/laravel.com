@@ -49,6 +49,10 @@
         <!-- / Fathom -->
     @endproduction
 
+    <script>
+        const isLandingPage = {{ request()->is('/') ? 'true' : 'false' }};
+    </script>
+
     @include('partials.theme')
 </head>
 <body
