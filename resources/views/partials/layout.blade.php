@@ -38,6 +38,7 @@
     <meta name="msapplication-TileColor" content="#ff2d20">
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light">
 
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
     <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
