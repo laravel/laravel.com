@@ -53,75 +53,66 @@ function setupNavCurrentLinkHandling() {
 
 function replaceBlockquotesWithCalloutsInDocs() {
     [...document.querySelectorAll('.docs_main blockquote p')].forEach(el => {
-        var str = el.outerHTML;
-        var legacyVersions = ['8.x', '7.x', '6.x', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2', '5.1', '5.0', '4.2'];
-
-        if (legacyVersions.includes(window.version)) {
-            var match = str.match(/\{(.*?)\}/);
-        } else {
-            var match = str.match(/<strong>(.*?)<\/strong><br>/);
-        }
-
-        var img, color;
-
-        if (match) {
-            var type = match[1] || false;
-        }
-
-        if (type) {
-            if (legacyVersions.includes(window.version)) {
-                switch (type) {
-                    case "note":
-                        img = '/img/callouts/exclamation.min.svg';
-                        color = 'bg-red-600';
-                        break;
-                    case "tip":
-                        img = '/img/callouts/lightbulb.min.svg';
-                        color = 'bg-purple-600';
-                        break;
-                    case "laracasts":
-                    case "video":
-                        img = '/img/callouts/laracast.min.svg';
-                        color = 'bg-blue-600';
-                        break;
-                }
-            } else {
-                switch (type) {
-                    case "Warning":
-                        img = '/img/callouts/exclamation.min.svg';
-                        color = 'bg-red-600';
-                        break;
-                    case "Note":
-                        img = '/img/callouts/lightbulb.min.svg';
-                        color = 'bg-purple-600';
-                        break;
-                }
+        // Legacy Laravel styled notes...
+        replaceBlockquote(el, /\{(.*?)\}/, (type) => {
+            switch (type) {
+                case "note":
+                    return ['/img/callouts/exclamation.min.svg', 'bg-red-600'];
+                case "tip":
+                    return ['/img/callouts/lightbulb.min.svg', 'bg-purple-600'];
+                case "laracasts":
+                case "video":
+                    return ['/img/callouts/laracast.min.svg', 'bg-blue-600'];
             }
+        });
 
-            const wrapper = document.createElement('div');
-            wrapper.classList = 'mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center';
-
-            const imageWrapper = document.createElement('div');
-            imageWrapper.classList = `w-20 h-20 mb-6 flex items-center justify-center shrink-0 ${color} lg:mb-0`;
-            const image = document.createElement('img');
-            image.src = img;
-            image.classList = `opacity-75`;
-            imageWrapper.appendChild(image);
-            wrapper.appendChild(imageWrapper);
-
-            el.parentNode.insertBefore(wrapper, el);
-
-            if (legacyVersions.includes(window.version)) {
-                el.innerHTML = str.replace(/\{(.*?)\}/, '');
-            } else {
-                el.innerHTML = str.replace(/<strong>(.*?)<\/strong><br>/, '');
+        // GitHub styled notes...
+        replaceBlockquote(el, /<strong>(.*?)<\/strong><br>/, (type) => {
+            switch (type) {
+                case "Warning":
+                    return ['/img/callouts/exclamation.min.svg', 'bg-red-600'];
+                case "Note":
+                    return ['/img/callouts/lightbulb.min.svg', 'bg-purple-600'];
             }
-
-            el.classList = 'mb-0 lg:ml-6';
-            wrapper.classList.add('callout');
-            wrapper.appendChild(el);
-        }
+        });
     });
+}
+
+function replaceBlockquote(el, regex, getImageAndColorByType) {
+    var str = el.outerHTML;
+    var match = str.match(regex);
+    var img, color;
+
+    if (match) {
+        var type = match[1] || false;
+    }
+
+    if (type) {
+        [img, color] = getImageAndColorByType(type);
+
+        if (img === null && color === null) {
+            return;
+        }
+
+        const wrapper = document.createElement('div');
+        wrapper.classList = 'mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center';
+
+        const imageWrapper = document.createElement('div');
+        imageWrapper.classList = `w-20 h-20 mb-6 flex items-center justify-center shrink-0 ${color} lg:mb-0`;
+        const image = document.createElement('img');
+        image.src = img;
+        image.classList = `opacity-75`;
+        imageWrapper.appendChild(image);
+        wrapper.appendChild(imageWrapper);
+
+        el.parentNode.insertBefore(wrapper, el);
+
+        el.innerHTML = str.replace(regex, '');
+
+        el.classList = 'mb-0 lg:ml-6';
+        wrapper.classList.add('callout');
+        wrapper.appendChild(el);
+    }
 }
 
 function highlightSupportPolicyTable() {
