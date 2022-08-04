@@ -50,14 +50,14 @@
     @endproduction
 
     @php
-        $forcedLightModeRoutes = collect([
+        $routesThatAreAlwaysLightMode = collect([
             'marketing',
             'team',
         ])
     @endphp
 
     <script>
-        const forcedLightMode = {{ ($forcedLightModeRoutes->contains(request()->route()->getName())) ? 'true' : 'false' }};
+        const alwaysLightMode = {{ ($routesThatAreAlwaysLightMode->contains(request()->route()->getName())) ? 'true' : 'false' }};
     </script>
 
     @include('partials.theme')
