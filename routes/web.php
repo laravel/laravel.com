@@ -79,7 +79,7 @@ Route::get('/', function () {
             ],
         ])->shuffle(),
     ]);
-});
+})->name('marketing');
 
 Route::get('team', function () {
     return view('team', [
@@ -132,4 +132,4 @@ Route::get('team', function () {
             ],
         ]
     ]);
-});
+})->name('team');
