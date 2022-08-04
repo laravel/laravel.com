@@ -53,50 +53,66 @@ function setupNavCurrentLinkHandling() {
 
 function replaceBlockquotesWithCalloutsInDocs() {
     [...document.querySelectorAll('.docs_main blockquote p')].forEach(el => {
-        var str = el.outerHTML;
-        var match = str.match(/\{(.*?)\}/);
-        var img, color;
-
-        if (match) {
-            var type = match[1] || false;
-        }
-
-        if (type) {
+        // Legacy Laravel styled notes...
+        replaceBlockquote(el, /\{(.*?)\}/, (type) => {
             switch (type) {
                 case "note":
-                    img = '/img/callouts/exclamation.min.svg';
-                    color = 'bg-red-600';
-                    break;
+                    return ['/img/callouts/exclamation.min.svg', 'bg-red-600'];
                 case "tip":
-                    img = '/img/callouts/lightbulb.min.svg';
-                    color = 'bg-purple-600';
-                    break;
+                    return ['/img/callouts/lightbulb.min.svg', 'bg-purple-600'];
                 case "laracasts":
                 case "video":
-                    img = '/img/callouts/laracast.min.svg';
-                    color = 'bg-blue-600';
-                    break;
+                    return ['/img/callouts/laracast.min.svg', 'bg-blue-600'];
             }
+        });
 
-            const wrapper = document.createElement('div');
-            wrapper.classList = 'mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center';
-
-            const imageWrapper = document.createElement('div');
-            imageWrapper.classList = `w-20 h-20 mb-6 flex items-center justify-center shrink-0 ${color} lg:mb-0`;
-            const image = document.createElement('img');
-            image.src = img;
-            image.classList = `opacity-75`;
-            imageWrapper.appendChild(image);
-            wrapper.appendChild(imageWrapper);
-
-            el.parentNode.insertBefore(wrapper, el);
-
-            el.innerHTML = str.replace(/\{(.*?)\}/, '');
-            el.classList = 'mb-0 lg:ml-6';
-            wrapper.classList.add('callout');
-            wrapper.appendChild(el);
-        }
+        // GitHub styled notes...
+        replaceBlockquote(el, /<strong>(.*?)<\/strong><br>/, (type) => {
+            switch (type) {
+                case "Warning":
+                    return ['/img/callouts/exclamation.min.svg', 'bg-red-600'];
+                case "Note":
+                    return ['/img/callouts/lightbulb.min.svg', 'bg-purple-600'];
+            }
+        });
     });
+}
+
+function replaceBlockquote(el, regex, getImageAndColorByType) {
+    var str = el.outerHTML;
+    var match = str.match(regex);
+    var img, color;
+
+    if (match) {
+        var type = match[1] || false;
+    }
+
+    if (type) {
+        [img, color] = getImageAndColorByType(type);
+
+        if (img === null && color === null) {
+            return;
+        }
+
+        const wrapper = document.createElement('div');
+        wrapper.classList = 'mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center';
+
+        const imageWrapper = document.createElement('div');
+        imageWrapper.classList = `w-20 h-20 mb-6 flex items-center justify-center shrink-0 ${color} lg:mb-0`;
+        const image = document.createElement('img');
+        image.src = img;
+        image.classList = `opacity-75`;
+        imageWrapper.appendChild(image);
+        wrapper.appendChild(imageWrapper);
+
+        el.parentNode.insertBefore(wrapper, el);
+
+        el.innerHTML = str.replace(regex, '');
+
+        el.classList = 'mb-0 lg:ml-6';
+        wrapper.classList.add('callout');
+        wrapper.appendChild(el);
+    }
 }
 
 function highlightSupportPolicyTable() {
