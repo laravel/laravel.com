@@ -49,8 +49,15 @@
         <!-- / Fathom -->
     @endproduction
 
+    @php
+        $forcedLightModeRoutes = collect([
+            'marketing',
+            'team',
+        ])
+    @endphp
+
     <script>
-        const isLandingPage = {{ request()->is('/') ? 'true' : 'false' }};
+        const forcedLightMode = {{ ($forcedLightModeRoutes->contains(request()->route()->getName())) ? 'true' : 'false' }};
     </script>
 
     @include('partials.theme')
