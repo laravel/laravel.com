@@ -7,6 +7,8 @@
                 document.documentElement.classList.remove('dark');
             }
         }
+
+        updateThemeAndSchemeColor();
     });
 
     function updateTheme() {
@@ -35,6 +37,10 @@
                 break;
         }
 
+        updateThemeAndSchemeColor();
+    }
+
+    function updateThemeAndSchemeColor() {
         if(! alwaysLightMode) {
             if (document.documentElement.classList.contains('dark')) {
                 document.querySelector('meta[name="color-scheme"]').setAttribute('content', 'dark');
