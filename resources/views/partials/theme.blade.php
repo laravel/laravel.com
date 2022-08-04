@@ -41,7 +41,7 @@
     }
 
     function updateThemeAndSchemeColor() {
-        if(! alwaysLightMode) {
+        if (! alwaysLightMode) {
             if (document.documentElement.classList.contains('dark')) {
                 document.querySelector('meta[name="color-scheme"]').setAttribute('content', 'dark');
                 document.querySelector('meta[name="theme-color"]').setAttribute('content', '#171923');
