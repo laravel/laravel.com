@@ -57,7 +57,12 @@ export default function () {
             }
         },
         handleKeydown(event) {
-            if (event.key === '/' || (event.key === 'p' && event.metaKey) || (event.key === 'k' && event.metaKey)) {
+            if (
+                event.key === "/" ||
+                (event.key === "p" && event.metaKey) ||
+                (event.key === "k" && event.metaKey) ||
+                (event.key === "k" && event.ctrlKey)
+            ) {
                 event.preventDefault();
                 this.open = true;
                 this.$refs.searchInput.focus();
