@@ -63,6 +63,8 @@ function replaceBlockquotesWithCalloutsInDocs() {
                 case "laracasts":
                 case "video":
                     return ['/img/callouts/laracast.min.svg', 'bg-blue-600'];
+                default:
+                    return [null, null];
             }
         });
 
@@ -73,6 +75,8 @@ function replaceBlockquotesWithCalloutsInDocs() {
                     return ['/img/callouts/exclamation.min.svg', 'bg-red-600'];
                 case "Note":
                     return ['/img/callouts/lightbulb.min.svg', 'bg-purple-600'];
+                default:
+                    return [null, null];
             }
         });
     });
