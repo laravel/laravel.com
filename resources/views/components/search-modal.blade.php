@@ -64,6 +64,7 @@
                                 class="search-result -mx-2 block p-3 text-gray-400 transition-colors duration-200 focus:outline-none focus:bg-dark-800 focus:text-gray-200 hover:text-gray-200"
                                 @keydown.arrow-up.prevent="focusPreviousResult(index)"
                                 @keydown.arrow-down.prevent="focusNextResult(index)"
+                                @click="close()"
                             >
                                 <div x-show="hit._highlightResult.hierarchy.lvl0" class="text-sm font-medium" x-html="hit._highlightResult.hierarchy.lvl0 ? hit._highlightResult.hierarchy.lvl0.value : ''"></div>
                                 <div class="mt-2">
