@@ -2,8 +2,6 @@
 
 namespace App\Console\Commands;
 
-use App\Documentation;
-use GuzzleHttp\Psr7\Uri;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Psr\Http\Message\UriInterface;
