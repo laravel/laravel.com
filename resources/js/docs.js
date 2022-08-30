@@ -69,7 +69,7 @@ function replaceBlockquotesWithCalloutsInDocs() {
         });
 
         // GitHub styled notes...
-        replaceBlockquote(el, /<strong>(.*?)<\/strong><br>/, (type) => {
+        replaceBlockquote(el, /^<strong>(.*?)<\/strong>(?:<br>\n?)?/, (type) => {
             switch (type) {
                 case "Warning":
                     return ['/img/callouts/exclamation.min.svg', 'bg-red-600'];
@@ -83,7 +83,7 @@ function replaceBlockquotesWithCalloutsInDocs() {
 }
 
 function replaceBlockquote(el, regex, getImageAndColorByType) {
-    var str = el.outerHTML;
+    var str = el.innerHTML;
     var match = str.match(regex);
     var img, color;
 
