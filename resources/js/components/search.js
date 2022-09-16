@@ -5,6 +5,7 @@ export default function () {
         search: '',
         open: false,
         hits: [],
+        searching: false,
         init() {
             const searchClient = algoliasearch(algolia_app_id, algolia_search_key);
 
@@ -12,8 +13,12 @@ export default function () {
 
             this.$watch('search', (query) => {
                 if (!query) {
-                    return this.hits = [];
+                    this.searching = false
+                    this.hits = [];
+                    return
                 }
+
+                this.searching = true
 
                 index.search(query, {
                     hitsPerPage: 5,
@@ -21,6 +26,7 @@ export default function () {
                     highlightPreTag: '<em class="not-italic bg-red-600 bg-opacity-25">',
                     highlightPostTag: '</em>'
                 }).then(({ hits }) => {
+                    this.searching = false
                     this.hits = hits;
                 });
             });
