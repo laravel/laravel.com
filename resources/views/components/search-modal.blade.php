@@ -92,7 +92,11 @@
                     </template>
                 </div>
 
-                <div x-show="! hits.length" x-cloak class="mt-8 pb-32">
+                <div x-show="! hits.length && searching" x-cloak class="mt-8 pb-32">
+                    Searching...
+                </div>
+
+                <div x-show="! hits.length && ! searching" x-cloak class="mt-8 pb-32">
                     <div x-text="`We didn't find any result for '${search}'. Sorry!`"></div>
                 </div>
             </div>
