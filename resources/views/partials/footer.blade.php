@@ -19,6 +19,7 @@
         [
             'title' => 'Resources',
             'links' => [
+                'Laravel Bootcamp' => 'https://bootcamp.laravel.com',
                 'Laracasts' => 'https://laracasts.com',
                 'Laravel News' => 'https://laravel-news.com',
                 'Laracon' => 'https://laracon.us',
