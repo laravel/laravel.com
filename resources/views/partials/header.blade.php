@@ -171,6 +171,18 @@
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="/docs/{{DEFAULT_VERSION}}/pint" class="flex">
+                                        <div class="relative shrink-0 w-12 h-12 bg-pint flex items-center justify-center rounded-lg overflow-hidden">
+                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                                            <img src="/img/ecosystem/pint.min.svg" alt="Icon" class="w-7 h-7" width="32" height="33">
+                                        </div>
+                                        <div class="ml-4 leading-5">
+                                            <div class="text-gray-900">Pint</div>
+                                            <span class="text-gray-700 text-xs">Opinionated PHP code style fixer for minimalists.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/sail" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-sail flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>

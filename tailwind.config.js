@@ -101,6 +101,7 @@ module.exports = {
         sanctum: '#1D5873',
         octane: '#CA3A31',
         breeze: '#F3C14B',
+        pint: '#ffd000',
     },
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
