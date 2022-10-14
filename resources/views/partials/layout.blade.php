@@ -10,6 +10,7 @@
     <link rel="canonical" href="{{ url($canonical) }}">
     @endif
 
+    @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="Laravel - The PHP Framework For Web Artisans">
     <meta name="description" content="Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.">
@@ -27,6 +28,7 @@
     <meta property="twitter:title" content="Laravel - The PHP Framework For Web Artisans">
     <meta property="twitter:description" content="Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.">
     <meta property="twitter:image" content="https://laravel.com/img/og-image.jpg">
+    @show
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">

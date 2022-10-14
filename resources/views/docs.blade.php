@@ -1,5 +1,25 @@
 @extends('partials.layout')
 
+@section('meta')
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{ $content->title() }} - Laravel - The PHP Framework For Web Artisans">
+    <meta name="description" content="{{ $content->metadata('description', 'Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.') }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://laravel.com/">
+    <meta property="og:title" content="{{ $content->title() }} - Laravel - The PHP Framework For Web Artisans">
+    <meta name="og:description" content="{{ $content->metadata('description', 'Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.') }}">
+    <meta property="og:image" content="{{ asset($content->openGraph('image', 'og-image.jpg')) }}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://laravel.com/">
+    <meta property="twitter:title" content="{{ $content->title() }} - Laravel - The PHP Framework For Web Artisans">
+    <meta property="twitter:description" content="{{ $content->metadata('description', 'Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.') }}">
+    <meta property="twitter:image" content="{{ asset($content->twitter('image', 'og-image.jpg')) }}">
+@endsection
+
 @section('content')
     <x-accessibility.skip-to-content-link />
 
@@ -219,7 +239,7 @@
                             @endif
 
                             <x-accessibility.main-content-wrapper>
-                                {!! $content !!}
+                                {{ $content }}
                                 <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                             </x-accessibility.main-content-wrapper>
                         </section>

@@ -98,9 +98,7 @@ class DocsController extends Controller
                 'canonical' => null,
             ], 404);
         }
-
-        $title = (new Crawler($content))->filterXPath('//h1');
-
+		
         $section = '';
 
         if ($this->docs->sectionExists($version, $page)) {
@@ -116,7 +114,7 @@ class DocsController extends Controller
         }
 
         return view('docs', [
-            'title' => count($title) ? $title->text() : null,
+            'title' => $content->title(),
             'index' => $this->docs->getIndex($version),
             'content' => $content,
             'currentVersion' => $version,
