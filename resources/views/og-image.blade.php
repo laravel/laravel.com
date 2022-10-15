@@ -13,14 +13,14 @@
 <body class="language-php h-full w-full font-sans text-gray-900 antialiased">
 
 <div class="w-[1200px] h-[627px] bg-[#151314] mx-auto my-24 flex flex-col">
-	<div class="p-3 pb-6">
-		<svg class="h-5" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+	<div class="p-6">
+		<svg class="h-4" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
 			<circle cx="23" cy="23" r="20" fill="transparent" stroke="#ff776e" stroke-width="3" />
-			<circle cx="74" cy="23" r="20" fill="transparent" stroke="#ffdf67" stroke-width="3" />
-			<circle cx="126" cy="23" r="20" fill="transparent" stroke="#6bc45a" stroke-width="3" />
+			<circle cx="90" cy="23" r="20" fill="transparent" stroke="#ffdf67" stroke-width="3" />
+			<circle cx="158" cy="23" r="20" fill="transparent" stroke="#6bc45a" stroke-width="3" />
 		</svg>
 	</div>
-	<div class="flex-1 font-mono text-xl overflow-hidden px-3">
+	<div class="flex-1 font-mono text-xl overflow-hidden px-6">
 		<x-torchlight-code language="php" :contents="$page->openGraph('src', '')" />
 	</div>
 	<div class="bg-gray-50 p-6">

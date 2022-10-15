@@ -14,6 +14,9 @@ class OpenGraphImageController extends Controller
 			return 'No such page';
         }
 		
+		config()->set('torchlight.options.lineNumbers', true);
+		config()->set('torchlight.options.lineNumbersStyle', 'margin-right: 24px; opacity: 50%;');
+		
         return view('og-image', [
             'page' => $page,
 	        'version' => DEFAULT_VERSION,
