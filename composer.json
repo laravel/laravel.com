@@ -23,6 +23,7 @@
         "fakerphp/faker": "^1.19",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^5.0",
+        "php-webdriver/webdriver": "^1.13",
         "phpunit/phpunit": "^9.0"
     },
     "config": {
