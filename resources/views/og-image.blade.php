@@ -12,7 +12,7 @@
 </head>
 <body class="language-php h-full w-full font-sans text-gray-900 antialiased">
 
-<div class="w-[1200px] h-[627px] bg-[#151314] mx-auto my-24 flex flex-col">
+<div id="og-image" class="w-[1200px] h-[627px] bg-[#151314] mx-auto my-24 flex flex-col">
 	<div class="p-6">
 		<svg class="h-4" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
 			<circle cx="23" cy="23" r="20" fill="transparent" stroke="#ff776e" stroke-width="3" />
