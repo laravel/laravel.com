@@ -17,8 +17,8 @@ jobs:
           extensions: dom, curl, libxml, mbstring, zip, pcntl, bcmath, intl, iconv
           tools: composer:v2
           
-      - name: Install Dependencies
-        run: composer install
+      - name: Set Up Project
+        run: ./bin/setup.sh
 
       - name: Set Up Chrome Driver
         uses: nanasess/setup-chromedriver@v1
