@@ -39,6 +39,8 @@ jobs:
         env:
           TORCHLIGHT_HOST: ${{ secrets.TORCHLIGHT_HOST }}
           TORCHLIGHT_TOKEN: ${{ secrets.TORCHLIGHT_TOKEN }}
+          APP_ENV: local
+          APP_URL: http://127.0.0.1:8000/
         run: php artisan og:generate-images
 
       - name: Commit Open Graph Images
