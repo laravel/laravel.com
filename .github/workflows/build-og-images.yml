@@ -16,6 +16,9 @@ jobs:
           php-version: 8.1
           extensions: dom, curl, libxml, mbstring, zip, pcntl, bcmath, intl, iconv
           tools: composer:v2
+          
+      - name: Install Dependencies
+        run: composer install
 
       - name: Set Up Chrome Driver
         uses: nanasess/setup-chromedriver@v1
