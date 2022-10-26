@@ -7,6 +7,7 @@ use App\Markdown\GithubFlavoredMarkdownConverter;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\HtmlString;
+use Illuminate\Support\Str;
 use League\CommonMark\Extension\FrontMatter\Output\RenderedContentWithFrontMatter;
 use Symfony\Component\DomCrawler\Crawler;
 
@@ -78,12 +79,28 @@ class Page implements Htmlable
 	 *
 	 * @return string|null
 	 */
-	public function firstCodeBlock()
+	public function representativeCodeBlock()
 	{
-		$title = (new Crawler((string) $this->content))->filterXPath('//pre[code]');
-		return count($title)
-			? new HtmlString($title->html())
-			: null;
+		for ($size = 16; $size > 0; $size = $size - 4) {
+			if ($match = $this->firstCodeBlockOfSize($size)) {
+				return $match;
+			}
+		}
+		
+		return null;
+	}
+	
+	protected function firstCodeBlockOfSize($size = 16)
+	{
+		$blocks = (new Crawler((string) $this->content))->filterXPath('//pre[code]');
+		
+		return collect($blocks)
+			->map(function($block) {
+				return new HtmlString((new Crawler($block))->html());
+			})
+			->first(function($html) use ($size) {
+				return Str::substrCount((string) $html, '<div') >= $size;
+			});
 	}
 	
 	/**

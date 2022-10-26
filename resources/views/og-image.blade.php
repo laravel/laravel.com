@@ -24,7 +24,7 @@
 		@if($src = $page->openGraph('src'))
 			<x-torchlight-code language="php" :contents="$src" />
 		@else
-			{{ $page->firstCodeBlock() }}
+			{{ $page->representativeCodeBlock() }}
 		@endif
 	</div>
 	<div class="bg-gray-50 p-6">
