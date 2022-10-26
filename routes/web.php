@@ -26,7 +26,7 @@ if (! defined('SHOW_PROMO')) {
     }
 }
 
-if (App::isLocal()) {
+if (! App::isProduction()) {
 	Route::get('og-image/{page}', OpenGraphImageController::class)->middleware(RenderTorchlight::class);
 }
 

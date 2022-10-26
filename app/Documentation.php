@@ -73,7 +73,7 @@ class Documentation
             if ($this->files->exists($path)) {
                 $content = $this->files->get($path);
 
-                return new Page($content, $version);
+                return new Page($page, $content, $version);
             }
 
             return null;

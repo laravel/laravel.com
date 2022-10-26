@@ -10,14 +10,14 @@
     <meta property="og:url" content="https://laravel.com/">
     <meta property="og:title" content="{{ $content->title() }} - Laravel - The PHP Framework For Web Artisans">
     <meta name="og:description" content="{{ $content->openGraph('description', 'Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.') }}">
-    <meta property="og:image" content="{{ asset($content->openGraph('image', 'og-image.jpg')) }}">
+    <meta property="og:image" content="{{ asset($content->openGraphImage()) }}">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://laravel.com/">
     <meta property="twitter:title" content="{{ $content->title() }} - Laravel - The PHP Framework For Web Artisans">
     <meta property="twitter:description" content="{{ $content->twitter('description', 'Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.') }}">
-    <meta property="twitter:image" content="{{ asset($content->twitter('image', 'og-image.jpg')) }}">
+    <meta property="twitter:image" content="{{ asset($content->twitter('image', $content->openGraphImage())) }}">
 @endsection
 
 @section('content')

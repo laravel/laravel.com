@@ -6,11 +6,19 @@ use App\Documentation;
 use App\Markdown\GithubFlavoredMarkdownConverter;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
+use Illuminate\Support\HtmlString;
 use League\CommonMark\Extension\FrontMatter\Output\RenderedContentWithFrontMatter;
 use Symfony\Component\DomCrawler\Crawler;
 
 class Page implements Htmlable
 {
+	/**
+	 * The name of this page.
+	 *
+	 * @var string
+	 */
+	protected $name;
+	
 	/**
 	 * The docs version number for this page.
 	 * 
@@ -35,12 +43,14 @@ class Page implements Htmlable
 	/**
 	 * Constructor.
 	 * 
+	 * @param  string  $name
 	 * @param  string  $markdown
 	 * @param  string|int  $version
 	 * @return void
 	 */
-	public function __construct($markdown, $version)
+	public function __construct($name, $markdown, $version)
 	{
+		$this->name = $name;
 		$this->content = (new GithubFlavoredMarkdownConverter())->convert($markdown);
 		$this->version = $version;
 		
@@ -61,6 +71,19 @@ class Page implements Htmlable
 			$title = (new Crawler((string) $this->content))->filterXPath('//h1');
 			return count($title) ? $title->text() : $default;
 		});
+	}
+	
+	/**
+	 * Get the first code block on the page.
+	 *
+	 * @return string|null
+	 */
+	public function firstCodeBlock()
+	{
+		$title = (new Crawler((string) $this->content))->filterXPath('//pre[code]');
+		return count($title)
+			? new HtmlString($title->html())
+			: null;
 	}
 	
 	/**
@@ -99,6 +122,22 @@ class Page implements Htmlable
 	{
 		return Arr::get($this->metadata, "twitter.$key")
 			?? $this->openGraph($key, $default);
+	}
+	
+	/**
+	 * Get the path to the page's open graph image.
+	 *
+	 * @return string
+	 */
+	public function openGraphImage()
+	{
+		return $this->openGraph('image', function() {
+			$default = "img/og/{$this->name}.png";
+			
+			return file_exists(public_path($default))
+				? $default
+				: 'img/og-image.png';
+		});
 	}
 	
 	/**

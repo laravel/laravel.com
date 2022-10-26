@@ -21,7 +21,7 @@ class GenerateOpenGraphImages extends Command implements SignalableCommandInterf
 	 *
 	 * @var string
 	 */
-	protected $signature = 'og:generate-image {--page=}';
+	protected $signature = 'og:generate-images {--page=}';
 	
 	/**
 	 * The console command description.
@@ -65,11 +65,6 @@ class GenerateOpenGraphImages extends Command implements SignalableCommandInterf
 				
 				try {
 					$page = $this->docs->get(DEFAULT_VERSION, $name);
-					
-					if (! $page->openGraph('src')) {
-						$this->line("<info>Skipping</info> (no open graph data)");
-						return;
-					}
 					
 					$this->screenShotOpenGraphImage(
 						$name, $destination = public_path($page->openGraph('image', 'img/og/'.$name.'.png'))
