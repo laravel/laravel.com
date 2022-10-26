@@ -17,10 +17,6 @@ jobs:
           extensions: dom, curl, libxml, mbstring, zip, pcntl, bcmath, intl, iconv
           tools: composer:v2
           
-      - name: Configure Git
-        run: |
-          git config --global url."https://github".insteadOf git://github
-          
       - name: Set Up Project
         run: ./bin/setup.sh
 

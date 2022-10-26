@@ -24,6 +24,6 @@ for v in "${DOCS_VERSIONS[@]}"; do
         (cd resources/docs/$v && git pull)
     else
         echo "Cloning $v..."
-        git clone --single-branch --branch "$v" git@github.com:laravel/docs.git "resources/docs/$v"
+        git clone --single-branch --branch "$v" https://github.com:laravel/docs.git "resources/docs/$v"
     fi;
 done
