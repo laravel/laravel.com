@@ -30,13 +30,19 @@ jobs:
           sudo Xvfb -ac :99 -screen 0 1400x1200x24 > /dev/null 2>&1 &
 
       - name: Start Laravel Server
+        env:
+          TORCHLIGHT_HOST: ${{ secrets.TORCHLIGHT_HOST }}
+          TORCHLIGHT_TOKEN: ${{ secrets.TORCHLIGHT_TOKEN }}
         run: php artisan serve --no-reload &
 
       - name: Generate Open Graph Images
+        env:
+          TORCHLIGHT_HOST: ${{ secrets.TORCHLIGHT_HOST }}
+          TORCHLIGHT_TOKEN: ${{ secrets.TORCHLIGHT_TOKEN }}
         run: php artisan og:generate-images
 
       - name: Commit Open Graph Images
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: public/img/og/*.png
+          file_pattern: 'public/img/og/*.png'
           commit_message: Add open graph images
