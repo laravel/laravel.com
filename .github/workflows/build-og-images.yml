@@ -1,6 +1,11 @@
 name: Build Open Graph Images
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - main
+      - dynamic-og-tags
 
 jobs:
   build:
