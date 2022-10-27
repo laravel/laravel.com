@@ -98,7 +98,7 @@ class DocsController extends Controller
                 'canonical' => null,
             ], 404);
         }
-		
+
         $section = '';
 
         if ($this->docs->sectionExists($version, $page)) {
