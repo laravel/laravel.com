@@ -158,6 +158,16 @@ class Page implements Htmlable
 	}
 	
 	/**
+	 * Get a hash of this page's content.
+	 * 
+	 * @return string
+	 */
+	public function hash()
+	{
+		return md5((string) $this->content);
+	}
+	
+	/**
 	 * Convert markdown to HTML.
 	 * 
 	 * @return string

@@ -8,6 +8,7 @@ use Facebook\WebDriver\Remote\DesiredCapabilities;
 use Facebook\WebDriver\Remote\RemoteWebDriver;
 use Facebook\WebDriver\WebDriverBy;
 use Illuminate\Console\Command;
+use Illuminate\Support\Arr;
 use Illuminate\Support\LazyCollection;
 use Symfony\Component\Console\Command\SignalableCommandInterface;
 use Symfony\Component\Finder\Finder;
@@ -45,6 +46,11 @@ class GenerateOpenGraphImages extends Command implements SignalableCommandInterf
 	protected $driver;
 	
 	/**
+	 * Hashes to track changed files.
+	 */
+	protected $manifest = [];
+	
+	/**
 	 * Execute the console command.
 	 *
 	 * @param \App\Documentation $docs
@@ -59,12 +65,22 @@ class GenerateOpenGraphImages extends Command implements SignalableCommandInterf
 			$this->quit();
 		});
 		
+		$this->loadManifest();
+		
 		try {
 			$this->pages()->each(function($name) {
 				$this->getOutput()->write(str_pad("{$name}:", 30));
 				
 				try {
 					$page = $this->docs->get(DEFAULT_VERSION, $name);
+					$hash = $page->hash();
+					
+					if ($hash === Arr::get($this->manifest, $name)) {
+						$this->line('No changes');
+						return;
+					}
+					
+					$this->manifest[$name] = $hash;
 					
 					$this->screenShotOpenGraphImage(
 						$name, $destination = public_path($page->openGraph('image', 'img/og/'.$name.'.png'))
@@ -78,6 +94,8 @@ class GenerateOpenGraphImages extends Command implements SignalableCommandInterf
 		} finally {
 			$this->quit();
 		}
+		
+		$this->writeManifest();
 		
 		return 0;
 	}
@@ -174,5 +192,21 @@ class GenerateOpenGraphImages extends Command implements SignalableCommandInterf
 		$capabilities->setCapability(ChromeOptions::CAPABILITY_W3C, $options);
 		
 		return RemoteWebDriver::create('http://localhost:4444', $capabilities);
+	}
+	
+	protected function loadManifest()
+	{
+		$path = public_path('img/og/manifest.json');
+		
+		if (file_exists($path)) {
+			$this->manifest = json_decode(file_get_contents($path), true, 2, JSON_THROW_ON_ERROR);
+		}
+	}
+	
+	protected function writeManifest()
+	{
+		$path = public_path('img/og/manifest.json');
+		
+		file_put_contents($path, json_encode($this->manifest, JSON_THROW_ON_ERROR));
 	}
 }

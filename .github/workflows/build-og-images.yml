@@ -46,5 +46,5 @@ jobs:
       - name: Commit Open Graph Images
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: 'public/img/og/*.png'
+          file_pattern: 'public/img/og/*'
           commit_message: Add open graph images
