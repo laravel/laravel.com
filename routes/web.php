@@ -27,7 +27,7 @@ if (! defined('SHOW_PROMO')) {
 }
 
 if (! App::isProduction()) {
-	Route::get('og-image/{page}', OpenGraphImageController::class)->middleware(RenderTorchlight::class);
+    Route::get('og-image/{page}', OpenGraphImageController::class)->middleware(RenderTorchlight::class);
 }
 
 Route::get('docs', [DocsController::class, 'showRootPage']);

@@ -207,6 +207,6 @@ class GenerateOpenGraphImages extends Command implements SignalableCommandInterf
     {
         $path = public_path('img/og/manifest.json');
 
-        file_put_contents($path, json_encode($this->manifest, JSON_THROW_ON_ERROR));
+        file_put_contents($path, json_encode($this->manifest, JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR));
     }
 }
