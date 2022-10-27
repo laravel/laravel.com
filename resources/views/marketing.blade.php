@@ -447,8 +447,8 @@
                 </x-slot>
             </x-testimonial>
             <x-testimonial
-                name="Jess Archer"
-                content="Laravel and its community inspire me to be a better developer and allow me to focus on the unique parts of my apps."
+                name="Zuzana Kunckova"
+                content="I found Laravel by chance, but I knew right away that I found my thing. The framework, the ecosystem and the community - it’s the perfect package. I’ve worked on amazing projects and met incredible people; it’s safe to say that Laravel changed my life."
             >
                 <x-slot name="title">
                     Full-Stack Developer
