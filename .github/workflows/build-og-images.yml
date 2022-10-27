@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-        
+
       - name: Set Up PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -30,14 +30,14 @@ jobs:
           export DISPLAY=:99
           chromedriver --port=4444 &
           sudo Xvfb -ac :99 -screen 0 1400x1200x24 > /dev/null 2>&1 &
-      
+
       - name: Prepare Composer Cache
         id: composer-cache
         run: |
           echo "CACHE_FILES_DIR=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
 
       - name: Load Composer Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ steps.composer-cache.outputs.CACHE_FILES_DIR }}
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
