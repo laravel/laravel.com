@@ -21,9 +21,6 @@ jobs:
           php-version: 8.1
           extensions: dom, curl, libxml, mbstring, zip, pcntl, bcmath, intl, iconv
           tools: composer:v2
-          
-      - name: Set Up Project
-        run: ./bin/setup.sh
 
       - name: Set Up Chrome Driver
         uses: nanasess/setup-chromedriver@v1
@@ -33,6 +30,30 @@ jobs:
           export DISPLAY=:99
           chromedriver --port=4444 &
           sudo Xvfb -ac :99 -screen 0 1400x1200x24 > /dev/null 2>&1 &
+      
+      - name: Prepare Composer Cache
+        id: composer-cache
+        run: |
+          echo "CACHE_FILES_DIR=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Load Composer Cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.CACHE_FILES_DIR }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+
+      - name: Install Dependencies
+        run: composer install
+
+      - name: Set Up Environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: Clone Latest Docs
+        run: git clone --single-branch --branch "9.x" https://github.com/laravel/docs.git "resources/docs/9.x"
 
       - name: Start Laravel Server
         env:
