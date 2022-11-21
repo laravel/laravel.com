@@ -2,11 +2,13 @@
 
 namespace App;
 
+use App\Documentation\Page;
 use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
 use App\Markdown\GithubFlavoredMarkdownConverter;
 use Carbon\CarbonInterval;
 use Illuminate\Contracts\Cache\Repository as Cache;
+use League\CommonMark\Extension\FrontMatter\Output\RenderedContentWithFrontMatter;
 
 class Documentation
 {
@@ -61,7 +63,7 @@ class Documentation
      *
      * @param  string  $version
      * @param  string  $page
-     * @return string|null
+     * @return Page|null
      */
     public function get($version, $page)
     {
@@ -71,9 +73,7 @@ class Documentation
             if ($this->files->exists($path)) {
                 $content = $this->files->get($path);
 
-                $content = (new GithubFlavoredMarkdownConverter())->convert($content);
-
-                return $this->replaceLinks($version, $content);
+                return new Page($page, $content, $version);
             }
 
             return null;

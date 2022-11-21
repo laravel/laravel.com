@@ -1,8 +1,10 @@
 <?php
 
-use App\Documentation;
+use App\Http\Controllers\OpenGraphImageController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocsController;
+use Torchlight\Middleware\RenderTorchlight;
 
 if (! defined('DEFAULT_VERSION')) {
     define('DEFAULT_VERSION', '9.x');
@@ -22,6 +24,10 @@ if (! defined('SHOW_PROMO')) {
     } elseif ($int === 3) {
         define('SHOW_PROMO', 'PARTNERS');
     }
+}
+
+if (! App::isProduction()) {
+    Route::get('og-image/{page}', OpenGraphImageController::class)->middleware(RenderTorchlight::class);
 }
 
 Route::get('docs', [DocsController::class, 'showRootPage']);

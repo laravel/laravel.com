@@ -2,9 +2,9 @@
 
 namespace App\Markdown;
 
+use League\CommonMark\Extension\FrontMatter\FrontMatterExtension;
 use League\CommonMark\MarkdownConverter;
 use League\CommonMark\Environment\Environment;
-use App\Markdown\GithubFlavoredMarkdownExtension;
 use Torchlight\Commonmark\V2\TorchlightExtension;
 use League\CommonMark\Environment\EnvironmentInterface;
 use League\CommonMark\Extension\Attributes\AttributesExtension;
@@ -23,6 +23,7 @@ class GithubFlavoredMarkdownConverter extends MarkdownConverter
     public function __construct(array $config = [])
     {
         $environment = new Environment($config);
+        $environment->addExtension(new FrontMatterExtension());
         $environment->addExtension(new CommonMarkCoreExtension());
         $environment->addExtension(new GithubFlavoredMarkdownExtension());
         $environment->addExtension(new AttributesExtension());

@@ -1,0 +1,76 @@
+name: Build Open Graph Images
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - dynamic-og-tags
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set Up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.1
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, bcmath, intl, iconv
+          tools: composer:v2
+
+      - name: Set Up Chrome Driver
+        uses: nanasess/setup-chromedriver@v1
+
+      - name: Start Chrome Driver
+        run: |
+          export DISPLAY=:99
+          chromedriver --port=4444 &
+          sudo Xvfb -ac :99 -screen 0 1400x1200x24 > /dev/null 2>&1 &
+
+      - name: Prepare Composer Cache
+        id: composer-cache
+        run: |
+          echo "CACHE_FILES_DIR=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Load Composer Cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.composer-cache.outputs.CACHE_FILES_DIR }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+
+      - name: Install Dependencies
+        run: composer install
+
+      - name: Set Up Environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: Clone Latest Docs
+        run: git clone --single-branch --branch "9.x" https://github.com/laravel/docs.git "resources/docs/9.x"
+
+      - name: Start Laravel Server
+        env:
+          TORCHLIGHT_HOST: ${{ secrets.TORCHLIGHT_HOST }}
+          TORCHLIGHT_TOKEN: ${{ secrets.TORCHLIGHT_TOKEN }}
+        run: php artisan serve --no-reload &
+
+      - name: Generate Open Graph Images
+        env:
+          TORCHLIGHT_HOST: ${{ secrets.TORCHLIGHT_HOST }}
+          TORCHLIGHT_TOKEN: ${{ secrets.TORCHLIGHT_TOKEN }}
+          APP_ENV: local
+          APP_URL: http://127.0.0.1:8000/
+        run: php artisan og:generate-images
+
+      - name: Commit Open Graph Images
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: 'public/img/og/*'
+          commit_message: Add open graph images
