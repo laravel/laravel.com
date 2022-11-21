@@ -1,2 +1,3 @@
+Sitemap: https://laravel.com/sitemap.xml
 User-agent: *
 Disallow:
