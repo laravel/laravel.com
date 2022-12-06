@@ -159,7 +159,7 @@
                                     <select
                                         id="version-switcher"
                                         aria-label="Laravel version"
-                                        class="appearance-none flex-1 w-full px-0 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:bg-dark-700 dark:text-gray-400 dark:placeholder-gray-500"
+                                        class="appearance-none flex-1 w-full px-0 py-1 placeholder-gray-900 tracking-wide bg-white cursor-pointer focus:outline-none dark:bg-dark-700 dark:text-gray-400 dark:placeholder-gray-500"
                                         @change="window.location = $event.target.value"
                                     >
                                         @foreach ($versions as $key => $display)
