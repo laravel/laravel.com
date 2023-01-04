@@ -197,6 +197,10 @@
     }
 }
 
+.max-w-prose {
+    max-width: 90ch !important;
+}
+
 .list-custom li {
     position: relative;
     padding-left: 1rem;
