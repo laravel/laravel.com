@@ -120,11 +120,10 @@ function replaceBlockquote(el, regex, getImageAndColorByType) {
 }
 
 function highlightSupportPolicyTable() {
-    const table = document.querySelector('.docs_main #support-policy ~ div table:first-of-type');
-
-    if (table) {
+    
+    function highlightCells(table) {
         const currentDate = new Date().valueOf();
-
+    
         Array.from(table.rows).forEach((row, rowIndex) => {
             if (rowIndex > 0) {
                 const cells = row.cells;
@@ -142,6 +141,22 @@ function highlightSupportPolicyTable() {
             }
         });
     }
+
+    const table = document.querySelector('.docs_main #support-policy ~ div table:first-of-type');
+
+    if (table) {
+        highlightCells(table);
+
+        return;
+    }
+
+    // Documentation in <=v9 branches uses the old dom structure which doesn't contain the table overflow fix. It's easier to maintain backwards compatibility than to go back and change all the <=v9 branches.
+    const oldTable = document.querySelector('.docs_main #support-policy ~ table:first-of-type');
+
+    if (oldTable) {
+        highlightCells(oldTable);
+    }
+    
 }
 
 function getCellDate(cell) {
