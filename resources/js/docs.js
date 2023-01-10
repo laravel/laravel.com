@@ -150,7 +150,7 @@ function highlightSupportPolicyTable() {
         return;
     }
 
-    // Documentation in <=v9 branches uses the old dom structure which doesn't contain the table overflow fix. It's easier to maintain backwards compatibility than to go back and change all the <=v9 branches.
+    // <=v9 documentation branches use the old dom structure which doesn't contain the table overflow fix. It's easier to maintain backwards compatibility than to go back and change all the <=v9 branches.
     const oldTable = document.querySelector('.docs_main #support-policy ~ table:first-of-type');
 
     if (oldTable) {
