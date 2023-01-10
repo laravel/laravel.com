@@ -123,7 +123,7 @@ function highlightSupportPolicyTable() {
     
     function highlightCells(table) {
         const currentDate = new Date().valueOf();
-    
+
         Array.from(table.rows).forEach((row, rowIndex) => {
             if (rowIndex > 0) {
                 const cells = row.cells;
