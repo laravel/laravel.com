@@ -120,7 +120,7 @@ function replaceBlockquote(el, regex, getImageAndColorByType) {
 }
 
 function highlightSupportPolicyTable() {
-    const table = document.querySelector('.docs_main #support-policy ~ table:first-of-type');
+    const table = document.querySelector('.docs_main #support-policy ~ div table:first-of-type');
 
     if (table) {
         const currentDate = new Date().valueOf();
