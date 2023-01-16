@@ -42,7 +42,6 @@
             "App\\": "app/"
         }
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
