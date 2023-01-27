@@ -515,7 +515,7 @@
                 content="I've been using Laravel for every project over the past ten years in a time where a new framework launches every day. To this date, there's just nothing like it."
             >
                 <x-slot name="title">
-                    Founder of <a href="https://unlock.sh/" target="_blank" class="text-red-500">Anystack</a>
+                    Founder of <a href="https://anystack.sh/" target="_blank" class="text-red-500">Anystack</a>
                 </x-slot>
             </x-testimonial>
             <x-testimonial
