@@ -198,6 +198,8 @@
                                         <p class="mb-0 lg:ml-4">
                                             <strong>WARNING</strong> You're browsing the documentation for an old version of Laravel.
                                             Consider upgrading your project to <a href="{{ route('docs.version', DEFAULT_VERSION) }}">Laravel {{ DEFAULT_VERSION }}</a>.
+                                            <a href="{{ preg_replace('/https:\/\/laravel.com\/docs\/([^\/]*)\/(.*)$/', route('docs.version', DEFAULT_VERSION) . '/$2', url()->full()) }}">
+                                            Latest version of this page</a> (may not exist).
                                         </p>
                                     </div>
                                 </blockquote>
