@@ -133,3 +133,7 @@ Route::get('team', function () {
         ]
     ]);
 })->name('team');
+
+Route::get('/trademark', function () {
+    return view('trademark');
+});
