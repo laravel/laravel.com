@@ -4,7 +4,7 @@
     @include('partials.header')
 
     <div class="relative overflow-hidden">
-        <div class="hidden absolute right-[20%] top-12 pointer-events-nonesm:block ">
+        <div class="hidden absolute right-[20%] top-12 pointer-events-none sm:block ">
             <x-cube />
         </div>
         <div class="hidden absolute top-[25%] pointer-events-none sm:block md:right-1/2">
