@@ -53,6 +53,7 @@
         $routesThatAreAlwaysLightMode = collect([
             'marketing',
             'team',
+            'trademark',
         ])
     @endphp
 

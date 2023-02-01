@@ -136,4 +136,4 @@ Route::get('team', function () {
 
 Route::get('/trademark', function () {
     return view('trademark');
-});
+})->name('trademark');
