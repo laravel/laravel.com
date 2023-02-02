@@ -36,17 +36,13 @@
                  'Vehikl' => 'https://vehikl.com',
                  'Tighten' => 'https://tighten.co',
                  '64 Robots' => 'https://64robots.com/',
-                 'A2 Design' => 'https://www.a2design.biz/',
-                 'ABOUT YOU' => 'https://corporate.aboutyou.de/app/uploads/2019/08/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&utm_medium=socialgroups&utm_campaign=tech',
+                 'Active Logic' => 'https://activelogic.io/',
                  'Byte 5' => 'https://www.byte5.net/',
-                 'Cubet' => 'https://cubettech.com/',
                  'Curotec' => 'https://www.curotec.com/services/technologies/laravel/',
                  'Cyber-Duck' => 'https://www.cyber-duck.co.uk/how-we-work/technology/laravel?utm_source=Laravel%20Partner&utm_medium=Sponsorship',
                  'DevSquad' => 'https://devsquad.com/',
-                 'Ideil' => 'https://www.ideil.com/',
                  'Jump24' => 'https://jump24.co.uk/',
                  'Kirschbaum' => 'https://kirschbaumdevelopment.com/',
-                 'Worksome' => 'https://www.worksome.com/',
              ]
          ],
         [
