@@ -22,10 +22,12 @@
     /* Tables */
     & table th {
         @apply dark:text-gray-200;
+        @apply dark:border-gray-700;
     }
 
     & table td {
         @apply dark:text-gray-400;
+        @apply dark:border-gray-700;
     }
 
     & table td.support-policy-highlight {
