@@ -11,5 +11,3 @@ cd ${docs}/8.x && git pull origin 8.x
 cd ${docs}/9.x && git pull origin 9.x
 cd ${docs}/10.x && git pull origin 10.x
 cd ${docs}/master && git pull origin master
-
-cd $base && php artisan docs:clear-cache
