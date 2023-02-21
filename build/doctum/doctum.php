@@ -14,6 +14,7 @@ $iterator = Finder::create()
 	->in($dir = __DIR__.'/laravel/src');
 
 $versions = GitVersionCollection::create($dir)
+	->add('8.x', 'Laravel 8.x')
 	->add('9.x', 'Laravel 9.x')
 	->add('10.x', 'Laravel 10.x')
 	->add('master', 'Laravel Dev');
