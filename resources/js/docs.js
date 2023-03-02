@@ -120,7 +120,7 @@ function replaceBlockquote(el, regex, getImageAndColorByType) {
 }
 
 function highlightSupportPolicyTable() {
-    
+
     function highlightCells(table) {
         const currentDate = new Date().valueOf();
 
@@ -156,7 +156,7 @@ function highlightSupportPolicyTable() {
     if (oldTable) {
         highlightCells(oldTable);
     }
-    
+
 }
 
 function getCellDate(cell) {

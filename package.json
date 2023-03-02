@@ -11,7 +11,8 @@
     },
     "devDependencies": {
         "@alpinejs/focus": "^3.9.6",
-        "algoliasearch": "^4.6.0",
+        "@docsearch/css": "^3.3.3",
+        "@docsearch/js": "^3.3.3",
         "alpinejs": "^3.7.1",
         "autoprefixer": "^10.4.0",
         "babel-plugin-prismjs": "^2.0.1",

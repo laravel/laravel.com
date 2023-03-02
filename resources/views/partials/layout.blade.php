@@ -62,12 +62,12 @@
     </script>
 
     @include('partials.theme')
+
+    @yield('head')
 </head>
 <body
     x-data="{
         navIsOpen: false,
-        searchIsOpen: false,
-        search: '',
     }"
     class="language-php h-full w-full font-sans text-gray-900 antialiased"
 >
@@ -75,8 +75,6 @@
 @yield('content')
 
 @include('partials.footer')
-
-<x-search-modal />
 
 <script>
     var algolia_app_id = '{{ config('algolia.connections.main.id', false) }}';

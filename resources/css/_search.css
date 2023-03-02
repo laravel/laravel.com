@@ -1,0 +1,39 @@
+@import '@docsearch/css/dist/_variables.css';
+@import '@docsearch/css/dist/modal.css';
+
+:root{--docsearch-primary-color:#FF2E1F;}
+
+.DocSearch-Button {
+    width: 100%;
+    text-align: left;
+}
+
+.DocSearch-Button-Container {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.DocSearch-Search-Icon {
+    display: inline-block;
+    margin-right: 14px;
+    margin-top: -2px;
+    color: theme('colors.gray.900');
+    width: 15px;
+    height: 15px;
+    stroke-width: 2;
+}
+
+.main-header .DocSearch-Button-Placeholder,
+.main-header .DocSearch-Button-Keys {
+    display: none;
+}
+
+.main-header .DocSearch-Button-Container {
+    margin-right: 0;
+}
+
+.main-header .DocSearch-Search-Icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.5;
+}
