@@ -72,7 +72,15 @@
     class="language-php h-full w-full font-sans text-gray-900 antialiased"
 >
 
-@yield('content')
+<div id="wrapper">
+    <div id="content">
+        @yield('content')
+    </div>
+</div>
+
+<div class="fixed">
+    <input type="text">
+</div>
 
 @include('partials.footer')
 
