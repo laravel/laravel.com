@@ -276,7 +276,7 @@
                 <li><a href="https://partners.laravel.com">Partners</a></li>
             </ul>
             <div class="flex-1 flex items-center justify-end">
-                <button id="docsearch"></button>
+                <button id="docsearch" class="text-gray-800 transition-colors dark:text-gray-400"></button>
                 <x-button.secondary href="/docs" class="hidden lg:ml-4 lg:inline-flex">Documentation</x-button.secondary>
                 <button
                     class="ml-2 relative w-10 h-10 inline-flex items-center justify-center p-2 text-gray-700 lg:hidden"

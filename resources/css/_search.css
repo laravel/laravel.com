@@ -17,7 +17,6 @@
     display: inline-block;
     margin-right: 14px;
     margin-top: -2px;
-    color: theme('colors.gray.900');
     width: 15px;
     height: 15px;
     stroke-width: 2;
@@ -33,6 +32,7 @@
 }
 
 .main-header .DocSearch-Search-Icon {
+    color: theme('colors.gray.900');
     width: 20px;
     height: 20px;
     stroke-width: 1.5;
