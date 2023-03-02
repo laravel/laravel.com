@@ -72,15 +72,7 @@
     class="language-php h-full w-full font-sans text-gray-900 antialiased"
 >
 
-<div id="wrapper">
-    <div id="content">
-        @yield('content')
-    </div>
-</div>
-
-<div class="fixed">
-    <input type="text">
-</div>
+@yield('content')
 
 @include('partials.footer')
 
@@ -100,5 +92,10 @@
         s.parentNode.insertBefore(g,s)
     }(document,'script'));
 </script>
+
+<div class="fixed">
+    <input type="text">
+</div>
+
 </body>
 </html>
