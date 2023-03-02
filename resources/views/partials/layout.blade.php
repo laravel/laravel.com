@@ -40,6 +40,8 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="color-scheme" content="light">
 
+    <link rel="preconnect" href="https://{{ config('algolia.connections.main.id') }}-dsn.algolia.net" crossorigin />
+
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
     <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
 
@@ -62,8 +64,6 @@
     </script>
 
     @include('partials.theme')
-
-    @yield('head')
 </head>
 <body
     x-data="{

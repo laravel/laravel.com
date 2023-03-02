@@ -1,9 +1,5 @@
 @extends('partials.layout')
 
-{{-- @section('head')
-    <link rel="preconnect" href="https://YOUR_APP_ID-dsn.algolia.net" crossorigin />
-@endsection --}}
-
 @section('content')
     <x-accessibility.skip-to-content-link />
 
