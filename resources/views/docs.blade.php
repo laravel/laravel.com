@@ -223,6 +223,42 @@
                             <x-accessibility.main-content-wrapper>
                                 {!! $content !!}
                                 <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
+                                
+                                <button id="scroll-to-top-btn" onclick="scrollToTop()"
+                                    class="p-2 md:p-3 lg:p-4 rounded-full bg-red-500 fixed bottom-4 right-4 sm:bottom-5 lg:right-48 cursor-pointer z-50 transition-opacity duration-200 hidden shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-white">
+                                        <path fill-rule="evenodd"
+                                            d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+
+                                <script>
+                                    var scrollToTopBtn = document.getElementById('scroll-to-top-btn');
+                                    var lastScrollToTop = 0;
+                                    window.onscroll = function() {
+                                        var scroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                                        // scrolling up
+                                        if(scroll < lastScrollToTop && 
+                                            (document.body.scrollTop > 480
+                                                || document.documentElement.scrollTop > 480)
+                                        ) {
+
+                                            scrollToTopBtn.classList.remove('hidden');
+                                        } else {
+                                            scrollToTopBtn.classList.add('hidden');
+                                        }
+
+                                        lastScrollToTop = scroll;
+                                    }
+
+
+                                    function scrollToTop() {
+                                        document.body.scrollTop = 0;
+                                        document.documentElement.scrollTop = 0;
+                                    }
+                                </script>
                             </x-accessibility.main-content-wrapper>
                         </section>
                     </section>
@@ -231,32 +267,3 @@
         </div>
     </div>
 @stop
-
-
-<button id="scroll-to-top-btn" onclick="scrollToTop()"
-    class="p-2 sm:p-4 rounded-full bg-red-500 fixed bottom-4 right-4 sm:bottom-8 sm:right-8 cursor-pointer z-50 transition-opacity duration-200 hidden shadow-sm">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-white">
-        <path fill-rule="evenodd"
-            d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"
-            clip-rule="evenodd" />
-    </svg>
-
-</button>
-
-<script>
-    var scrollToTopBtn = document.getElementById('scroll-to-top-btn');
-
-    window.onscroll = function() {
-        if (document.body.scrollTop > 480 || document.documentElement.scrollTop > 480) {
-            scrollToTopBtn.classList.remove('hidden');
-        } else {
-            scrollToTopBtn.classList.add('hidden');
-        }
-    }
-
-
-    function scrollToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
