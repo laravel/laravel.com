@@ -2,10 +2,9 @@ import Alpine from 'alpinejs';
 import Focus from '@alpinejs/focus';
 
 import './clipboard';
+import './components/search';
 
 window.Alpine = Alpine;
-
-window.searchComponent = require('./components/search').default;
 
 Alpine.plugin(Focus);
 Alpine.start();

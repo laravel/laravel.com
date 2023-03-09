@@ -10,7 +10,7 @@
 * @license MIT, https://github.com/focus-trap/focus-trap/blob/master/LICENSE
 */
 
-/*! algoliasearch-lite.umd.js | 4.13.0 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
+/*! @docsearch/js 3.3.3 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 
 /**
  * Prism: Lightweight, robust, elegant syntax highlighting
