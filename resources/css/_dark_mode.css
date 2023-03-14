@@ -42,6 +42,20 @@
     }
 }
 
+/* Algolia modal */
+.DocSearch-Modal {
+    @apply dark:bg-dark-800;
+    @apply dark:text-gray-400;
+
+    & .DocSearch-Footer, & .DocSearch-Form {
+        @apply dark:bg-dark-600;
+    }
+
+    & .DocSearch-Input {
+        @apply dark:text-gray-200;
+    }
+}
+
 /* Pound sign before headings */
 .dark .docs_main {
     & h4 a:before, & h3 a:before, & h2 a:before {
