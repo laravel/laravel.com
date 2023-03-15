@@ -175,7 +175,7 @@
                         </div>
                         <div class="relative mt-8 flex items-center justify-end w-full h-10 lg:mt-0">
                             <div class="flex-1 flex items-center">
-                                <button id="docsearch" class="text-gray-800 transition-colors dark:text-gray-400"></button>
+                                <button id="docsearch" class="text-gray-800 transition-colors dark:text-gray-400 w-full"></button>
                             </div>
                         </div>
                     </div>
