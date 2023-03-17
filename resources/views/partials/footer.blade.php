@@ -33,6 +33,7 @@
         [
              'title' => 'Partners',
              'links' => [
+                 'WebReinvent' => 'https://webreinvent.com/?utm_source=laravel&utm_medium=laravel.com&utm_campaign=footer-link',
                  'Vehikl' => 'https://vehikl.com',
                  'Tighten' => 'https://tighten.co',
                  '64 Robots' => 'https://64robots.com/',
