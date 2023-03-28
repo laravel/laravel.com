@@ -11,8 +11,8 @@ Alpine.start();
 
 document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('#docsScreen')) {
-        require('./docs.js');
+        import('./docs.js');
     }
 
-    require('./components/accessibility');
+    import('./components/accessibility');
 });

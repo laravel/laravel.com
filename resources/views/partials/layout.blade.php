@@ -43,7 +43,7 @@
     <link rel="preconnect" href="https://{{ config('algolia.connections.main.id') }}-dsn.algolia.net" crossorigin />
 
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
-    <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @production
         <!-- Fathom - beautiful, simple website analytics -->
@@ -69,7 +69,7 @@
     x-data="{
         navIsOpen: false,
     }"
-    class="language-php h-full w-full font-sans text-gray-900 antialiased"
+    class="w-full h-full font-sans antialiased text-gray-900 language-php"
 >
 
 @yield('content')
@@ -81,8 +81,6 @@
     var algolia_search_key = '{{ config('algolia.connections.main.search_key', false) }}';
     var version = '{{ isset($currentVersion) ? $currentVersion : DEFAULT_VERSION }}';
 </script>
-
-<script src="{{ mix('js/app.js') }}"></script>
 
 <script>
     var _gaq=[['_setAccount','UA-23865777-1'],['_trackPageview']];
