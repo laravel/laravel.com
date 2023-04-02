@@ -1,7 +1,9 @@
 @import '@docsearch/css/dist/_variables.css';
 @import '@docsearch/css/dist/modal.css';
 
-:root{--docsearch-primary-color:#FF2E1F;}
+:root{--docsearch-primary-color:theme('colors.red.500');}
+
+html[data-theme=dark]:root{--docsearch-primary-color:theme('colors.red.700');}
 
 .DocSearch-Button {
     width: 100%;
