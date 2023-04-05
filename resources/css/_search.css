@@ -3,7 +3,7 @@
 
 :root{--docsearch-primary-color:theme('colors.red.500');}
 
-html[data-theme=dark]:root{--docsearch-primary-color:theme('colors.red.700');}
+html[data-theme=dark]:root{--docsearch-primary-color:theme('colors.red.500');}
 
 .DocSearch-Button {
     width: 100%;
