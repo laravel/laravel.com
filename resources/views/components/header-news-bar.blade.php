@@ -1,5 +1,5 @@
 <?php
-    $news = Illuminate\Support\Arr::random(['laracon', 'forge', 'vapor']);
+    $news = Illuminate\Support\Arr::random(['forge', 'vapor']);
 ?>
 
 <div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm">
