@@ -191,7 +191,7 @@
 
                                         <p class="mb-0 lg:ml-4">
                                             <strong>WARNING</strong> You're browsing the documentation for an old version of Laravel.
-                                            Consider upgrading your project to <a href="{{ route('docs.version', DEFAULT_VERSION) }}">Laravel {{ DEFAULT_VERSION }}</a>.
+                                            Consider upgrading your project to <a href="{{ route('docs.version', ['version' => DEFAULT_VERSION, 'page' => request()->route()->parameter('page')]) }}">Laravel {{ DEFAULT_VERSION }}</a>.
                                         </p>
                                     </div>
                                 </blockquote>
