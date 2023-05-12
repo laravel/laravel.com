@@ -62,25 +62,6 @@
     }
 }
 
-html #docs_search__version_arrow_dark {
-    display: none;
-}
-
-/* Dark mode icons */
-html.dark {
-    #docs_search__version_arrow {
-        display: none;
-    }
-
-    #docs_search__version_arrow_dark,
-    #footer__twitter_dark,
-    #footer__github_dark,
-    #footer__discord_dark,
-    #footer__youtube_dark {
-        display: block;
-    }
-}
-
 /* Color mode buttons */
 #header__sun, #header__moon, #header__indeterminate { display: none; }
 html[color-theme="dark"] #header__moon { display: block; }
