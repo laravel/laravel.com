@@ -46,7 +46,7 @@
         >
             <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
                 <div>
-                    <h1 class="max-w-lg sm:max-w-5xl mx-auto text-4xl font-bold text-center sm:text-5xl md:text-6xl lg:text-7xl pointer-events-auto">
+                    <h1 class="max-w-lg sm:max-w-5xl px-4 mx-auto text-4xl font-bold text-center sm:text-5xl md:text-6xl lg:text-7xl pointer-events-auto">
                         The Powerhouse Behind <br><span class="text-red-500">Your <span class="whitespace-nowrap"><span x-text="label">Big Idea</span></span></span>
                     </h1>
                     <p class="hidden sm:block mt-6 max-w-2xl mx-auto text-center text-gray-700 text-md leading-relaxed md:mt-8 md:text-lg lg:mt-10 pointer-events-auto">Laravel is an intensely productive full-stack web framework. Pair Laravel and its rich ecosystem with Livewire, React, or Vue to build your next big idea and ship faster than you ever thought possible.</p>
