@@ -172,7 +172,7 @@
 
             @include('partials.features')
 
-            <p class="mt-12 text-gray-700 leading-relaxed max-w-3xl">We've just scratched the surface. Laravel has you covered for everything you will need to build a web application, including email verification, rate limiting, and custom console commands. Check out the <a href="https://laravel.com/docs" class="text-red-600 underline hover:no-underline">Laravel documentation</a> to keep learning.</p>
+            <p class="mt-12 text-gray-700 leading-relaxed max-w-3xl">We've just scratched the surface. Laravel has you covered for everything you will need to build a web application, including email verification, rate limiting, and custom console commands. Check out the <a href="https://laravel.com/docs" class="text-red-600 underline hover:no-underline">Laravel documentation</a> to keep learning or get started right away with our <a href="https://bootcamp.laravel.com" class="text-red-600 underline hover:no-underline">Laravel bootcamp</a>.</p>
         </div>
     </section>
 
@@ -555,7 +555,7 @@
         <div class="max-w-screen-xl px-5 mx-auto">
             <h2 class="text-4xl font-bold md:text-5xl">Dive in with<br class="hidden md:inline"> a Starter Kit.</h2>
             <p class="mt-6 text-gray-700 leading-relaxed max-w-3xl">
-                Whether your prefer Livewire or React, Laravel's starter kits let you hit the ground running. In minutes, you can have a fully functioning application that pairs Laravel and Tailwind with the frontend of your choice.
+                Whether you prefer Livewire or React, Laravel's starter kits let you hit the ground running. In minutes, you can have a fully functioning application that pairs Laravel and Tailwind with the frontend of your choice.
             </p>
 
             <div class="mt-12 md:grid grid-cols-1 md:grid-cols-2 md:gap-8 bg-white rounded-t-lg border">
