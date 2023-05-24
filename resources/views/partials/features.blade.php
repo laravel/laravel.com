@@ -14,9 +14,6 @@
 
             // Get the currently authenticated user...
             $user = Auth::user();
-
-            // Get the currently authenticated user's ID...
-            $id = Auth::id();
         </x-torchlight-code></pre>
 
         <p>Of course, you may define your own authentication middleware, allowing you to customize the authentication process.</p>

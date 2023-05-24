@@ -172,7 +172,7 @@
 
             @include('partials.features')
 
-            <p class="mt-12 text-gray-700 leading-relaxed max-w-3xl">We've just scratched the surface. Laravel has solutions for nearly everything you'll need when building a web application, such as email verification, rate limiting, and custom console commands. Check out the <a href="https://laravel.com/docs" class="text-red-600 underline hover:no-underline">Laravel documentation</a> to dig in further.</p>
+            <p class="mt-12 text-gray-700 leading-relaxed max-w-3xl">We've just scratched the surface. Laravel has you covered for everything you will need to build a web application, including email verification, rate limiting, and custom console commands. Check out the <a href="https://laravel.com/docs" class="text-red-600 underline hover:no-underline">Laravel documentation</a> to keep learning.</p>
         </div>
     </section>
 
