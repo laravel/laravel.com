@@ -24,6 +24,7 @@
                 'Laravel News' => 'https://laravel-news.com',
                 'Laracon' => 'https://laracon.us',
                 'Laracon EU' => 'https://laracon.eu/',
+                'Laracon AU' => 'https://laracon.au',
                 'Laracon India' => 'https://laracon.in/',
                 'Jobs' => 'https://larajobs.com',
                 'Forums' => 'https://laracasts.com/discuss',
