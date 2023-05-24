@@ -1,7 +1,7 @@
 @extends('partials.layout')
 
 @section('content')
-    <div class="lg:absolute top-0 w-full bg-gradient-to-b from-white z-10">
+    <div class="lg:absolute top-0 w-full bg-gradient-to-b from-white z-20">
         @include('partials.header', ['news' => false])
     </div>
 
