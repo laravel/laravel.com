@@ -85,7 +85,7 @@
                     <p class="mt-6 text-gray-700 leading-relaxed">Or, let Laravel serve as a robust backend API for your Next.js application, mobile application, or other frontend. Either way, our starter kits will have you productive in minutes.</p>
 
                     <x-button.secondary class="mt-6" href="/frontend">
-                        Empower Your Front-end
+                        Empower Your Frontend
                     </x-button.secondary>
                 </div>
             </div>

@@ -87,7 +87,7 @@
     </x-tabs.tab>
 
     <x-tabs.tab name="validation" title="Validation" icon="check-badge">
-        <p>Laravel has over 90 powerful, built-in validation rules and, using Laravel Precognition, can provide live validation on your front-end:</p>
+        <p>Laravel has over 90 powerful, built-in validation rules and, using Laravel Precognition, can provide live validation on your frontend:</p>
 
         <pre><x-torchlight-code language="php">
             public function update(Request $request)
@@ -217,7 +217,7 @@
             }
         </x-torchlight-code></pre>
 
-        <p>Your front-end application can even subscribe to your Laravel events using <a href="https://laravel.com/docs/broadcasting">Laravel Echo</a> and WebSockets, allowing you to build real-time, dynamic applications:</p>
+        <p>Your frontend application can even subscribe to your Laravel events using <a href="https://laravel.com/docs/broadcasting">Laravel Echo</a> and WebSockets, allowing you to build real-time, dynamic applications:</p>
 
         <pre><x-torchlight-code language="javascript">
             Echo.private(`orders.${orderId}`)

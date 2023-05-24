@@ -179,7 +179,7 @@
     {{-- Approaches --}}
     <section class="py-16 sm:py-24 max-w-screen-xl px-5 mx-auto">
         <h2 class="text-4xl font-bold md:text-5xl">One Framework,<br>Many Flavors.</h2>
-        <p class="mt-6 text-gray-700 leading-relaxed max-w-3xl">There are dozens of ways to build your application's front-end. Thankfully, your options are wide open with Laravel. Whether you prefer a traditional PHP backend, a modern front-end using Laravel Livewire, or can't get enough React and Vue, Laravel allows you to deliver highly polished and maintainable applications in a fraction of the time.</p>
+        <p class="mt-6 text-gray-700 leading-relaxed max-w-3xl">There are dozens of ways to build your application's frontend. Thankfully, your options are wide open with Laravel. Whether you prefer a traditional PHP backend, a modern frontend using Laravel Livewire, or can't get enough React and Vue, Laravel allows you to deliver highly polished and maintainable applications in a fraction of the time.</p>
 
         <div
             x-data="{
@@ -361,7 +361,7 @@
             <div class="mt-8 md:mt-12">
                 <a name="inertia" class="absolute top-0"></a>
                 <div x-cloak x-show="tab === 'inertia'">
-                    <p class="text-gray-700 max-w-4xl leading-relaxed">Laravel Inertia handles routing and transferring data between your Laravel back-end and front-end — no need to build an API or maintain two sets of routes. Pass data effortlessly from your database directly to the props of your front-end page components with all of the features of Laravel at your fingertips in one fantastic monorepo</p>
+                    <p class="text-gray-700 max-w-4xl leading-relaxed">Laravel Inertia handles routing and transferring data between your Laravel back-end and frontend — no need to build an API or maintain two sets of routes. Pass data effortlessly from your database directly to the props of your frontend page components with all of the features of Laravel at your fingertips in one fantastic monorepo</p>
 
                     <div class="mt-12 bg-dark-600 grid grid-cols-1 md:grid-cols-2 divide-x divide-dark-500 rounded-lg overflow-hidden">
                         <div class="flex flex-col">
@@ -412,7 +412,7 @@
                     <div class="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-12 items-center">
                         <div>
                             <p class="text-gray-700 max-w-4xl leading-relaxed">Inertia gives you the developer experience and simplicity of creating a server-rendered, multi-page application with the user experience and responsiveness of a JavaScript SPA.</p>
-                            <p class="mt-4 text-gray-700 max-w-4xl leading-relaxed">Your front-end components can focus on user interactions instead of API calls and data manipulation &mdash; no more manually triggering HTTP requests and juggling responses.</p>
+                            <p class="mt-4 text-gray-700 max-w-4xl leading-relaxed">Your frontend components can focus on user interactions instead of API calls and data manipulation &mdash; no more manually triggering HTTP requests and juggling responses.</p>
                             <p class="mt-4 text-gray-700 max-w-4xl leading-relaxed">Inertia even offers server-side rendering on initial page loads for applications that benefit from search engine optimization.</p>
                             <p class="mt-4 leading-relaxed"><a href="https://inertiajs.com" class="text-red-600 underline hover:no-underline">Learn more</a></p>
                         </div>
@@ -478,7 +478,7 @@
                     <div class="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-12 items-center">
                         <div>
                             <p class="text-gray-700 max-w-4xl leading-relaxed">When using Livewire, you won't need JavaScript to manage the DOM or state - you'll just sprinkle it in for some thoughtful interactions. <a href="https://alpinejs.dev" target="_blank" class="text-red-600 underline hover:no-underline">Alpine.js</a> is the perfect light-weight JavaScript library to pair with your Livewire application.</p>
-                            <p class="mt-4 text-gray-700 max-w-4xl leading-relaxed">As the state of your Livewire component changes, your front-end will automatically be updated. But, Livewire doesn't stop there. Support for real-time validation, event handling, file downloads, authorization and more is included.</p>
+                            <p class="mt-4 text-gray-700 max-w-4xl leading-relaxed">As the state of your Livewire component changes, your frontend will automatically be updated. But, Livewire doesn't stop there. Support for real-time validation, event handling, file downloads, authorization and more is included.</p>
                             <p class="mt-4 leading-relaxed"><a href="https://laravel-livewire.com/" class="text-red-600 underline hover:no-underline">Learn more</a></p>
                         </div>
 
@@ -491,7 +491,7 @@
 
                 <a name="traditional" class="absolute top-0"></a>
                 <div x-cloak x-show="tab === 'traditional'">
-                    <p class="text-gray-700 max-w-4xl leading-relaxed">Don't need a front-end? No problem. Laravel is the perfect back-end API for your JavaScript SPAs and mobile applications. You'll have access to all of Laravel's features while maintaining the front-end development workflow you're used to.</p>
+                    <p class="text-gray-700 max-w-4xl leading-relaxed">Don't need a frontend? No problem. Laravel is the perfect back-end API for your JavaScript SPAs and mobile applications. You'll have access to all of Laravel's features while maintaining the frontend development workflow you're used to.</p>
 
                     <div class="mt-8 md:mt-12 bg-dark-600 grid grid-cols-1 md:grid-cols-2 divide-x divide-dark-500 rounded-lg overflow-hidden">
                         <div class="flex flex-col">
@@ -543,7 +543,7 @@
                         </div>
                     </div>
 
-                    <p class="mt-8 text-gray-700 max-w-4xl leading-relaxed">For authentication, you may leverage Laravel's secure, cookie-based authentication. Or, you may use Laravel Sanctum or Laravel Passport if you're building a mobile application or your front-end is hosted separately from your back-end API.</p>
+                    <p class="mt-8 text-gray-700 max-w-4xl leading-relaxed">For authentication, you may leverage Laravel's secure, cookie-based authentication. Or, you may use Laravel Sanctum or Laravel Passport if you're building a mobile application or your frontend is hosted separately from your back-end API.</p>
                     <p class="mt-4 text-gray-700 max-w-4xl leading-relaxed">If your API operates at extreme scale, pair your Laravel application with <a href="https://laravel.com/docs/octane" class="text-red-600 underline hover:no-underline">Laravel Octane</a> and <a href="https://vapor.laravel.com" class="text-red-600 underline hover:no-underline">Laravel Vapor</a> to handle your traffic without breaking a sweat.</p>
                 </div>
             </div>
@@ -555,7 +555,7 @@
         <div class="max-w-screen-xl px-5 mx-auto">
             <h2 class="text-4xl font-bold md:text-5xl">Dive in with<br class="hidden md:inline"> a Starter Kit.</h2>
             <p class="mt-6 text-gray-700 leading-relaxed max-w-3xl">
-                Whether your prefer Livewire or React, Laravel's starter kits let you hit the ground running. In minutes, you can have a fully functioning application that pairs Laravel and Tailwind with the front-end of your choice.
+                Whether your prefer Livewire or React, Laravel's starter kits let you hit the ground running. In minutes, you can have a fully functioning application that pairs Laravel and Tailwind with the frontend of your choice.
             </p>
 
             <div class="mt-12 md:grid grid-cols-1 md:grid-cols-2 md:gap-8 bg-white rounded-t-lg border">
