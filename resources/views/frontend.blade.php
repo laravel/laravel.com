@@ -12,7 +12,7 @@
                 current: null,
                 intervalId: null,
                 items: {
-                    vue: 'Vue.js App',
+                    vue: 'Vue App',
                     react: 'React App',
                     svelte: 'Svelte App',
                     alpine: 'Alpine.js App',
