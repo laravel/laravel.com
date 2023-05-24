@@ -1,4 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+import colors from 'tailwindcss/colors';
 
 export default {
   content: [
@@ -34,6 +35,7 @@ export default {
     },
     colors: {
         transparent: 'transparent',
+        current: 'currentColor',
         black: '#000',
         white: '#fff',
         gray: {
@@ -61,6 +63,10 @@ export default {
             700: '#ec0e00',
             600: '#EB4432',
             500: '#F9322C',
+            400: '#f87171',
+            300: '#fca5a5',
+            200: '#fecaca',
+            100: '#fee2e2',
         },
         orange: {
             600: '#f49d37',
@@ -70,10 +76,7 @@ export default {
             600: '#0782b1',
             500: '#0AB2F5',
         },
-        green: {
-            600: '#669900',
-            500: '#8FD600',
-        },
+        green: colors.green,
         purple: {
             600: '#8338ec',
         },

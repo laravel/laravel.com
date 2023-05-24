@@ -55,3 +55,7 @@ pre code.torchlight .line {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+pre code.torchlight .line-number {
+    @apply pr-4;
+}

@@ -134,6 +134,10 @@ Route::get('team', function () {
     ]);
 })->name('team');
 
+Route::get('/frontend', function () {
+    return view('frontend');
+})->name('frontend');
+
 Route::get('/trademark', function () {
     return view('trademark');
 })->name('trademark');
