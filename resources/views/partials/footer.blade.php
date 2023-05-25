@@ -23,6 +23,7 @@
                 'Laracasts' => 'https://laracasts.com',
                 'Laravel News' => 'https://laravel-news.com',
                 'Laracon' => 'https://laracon.us',
+                'Laracon AU' => 'https://laracon.au',
                 'Laracon EU' => 'https://laracon.eu/',
                 'Laracon India' => 'https://laracon.in/',
                 'Jobs' => 'https://larajobs.com',
