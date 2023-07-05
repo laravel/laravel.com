@@ -26,6 +26,14 @@ if (! defined('SHOW_PROMO')) {
 
 Route::get('docs', [DocsController::class, 'showRootPage']);
 
+Route::get('docs/cashier', function () {
+    return redirect(trim('/docs/'.DEFAULT_VERSION.'/billing/'), 301);
+});
+
+Route::get('docs/{version}/cashier', function ($version) {
+    return redirect(trim('/docs/'.$version.'/billing/'), 301);
+});
+
 Route::get('docs/6.0/{page?}', function ($page = null) {
     $page = $page ?: 'installation';
     $page = $page == DEFAULT_VERSION ? 'installation' : $page;
