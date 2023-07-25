@@ -104,6 +104,7 @@ export default {
         octane: '#CA3A31',
         breeze: '#F3C14B',
         pint: '#ffd000',
+        pennant: '#2f2f2f',
     },
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
