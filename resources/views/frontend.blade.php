@@ -160,7 +160,7 @@
             <div class="hidden lg:block z-0 absolute x-translate-y-12 top-[50px] pointer-events-none right-[300px]">
                 <x-cube />
             </div>
-            <div class="hidden lg:block z-0 absolute x-translate-y-20 pointer-events-none -right-[40px]">
+            <div class="hidden lg:block z-0 absolute x-translate-y-20 pointer-events-none">
                 <x-cube :delay="2000" />
             </div>
             <div class="hidden lg:block z-0 absolute top-[300px] x-translate-y-20 pointer-events-none right-[80px]">
