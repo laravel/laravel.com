@@ -120,7 +120,7 @@
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Herd</div>
-                                            <span class="text-gray-700 text-xs">One click PHP development environment. Zero dependencies. Zero headaches.</span>
+                                            <span class="text-gray-700 text-xs">The fastest Laravel local development experience - exclusively for macOS.</span>
                                         </div>
                                     </a>
                                 </li>
@@ -265,18 +265,6 @@
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Telescope</div>
                                             <span class="text-gray-700 text-xs">Debug your application using our debugging and insight UI.</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/docs/{{DEFAULT_VERSION}}/valet" class="flex">
-                                        <div class="relative shrink-0 w-12 h-12 bg-valet flex items-center justify-center rounded-lg overflow-hidden">
-                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/valet.min.svg" alt="Icon" class="w-7 h-7" width="40" height="26">
-                                        </div>
-                                        <div class="ml-4 leading-5">
-                                            <div class="text-gray-900">Valet</div>
-                                            <span class="text-gray-700 text-xs">The fastest Laravel local development experience - exclusively for macOS.</span>
                                         </div>
                                     </a>
                                 </li>
