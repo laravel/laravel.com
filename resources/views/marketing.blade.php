@@ -240,6 +240,18 @@
                 </a>
             </li>
             <li>
+                <a href="https://herd.laravel.com" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-valet flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-red-500 to-red-600"></span>
+                        <img src="/img/ecosystem/herd.min.svg" alt="laravel herd logomark" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Herd</div>
+                        <div class="mt-1 text-sm text-gray-700">One click PHP development environment. Zero dependencies. Zero headaches.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
                 <a href="/docs/{{DEFAULT_VERSION}}/horizon" class="flex p-4 border border-gray-200 border-opacity-60">
                     <div class="relative shrink-0 bg-horizon flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                         <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
@@ -290,8 +302,8 @@
             <li>
                 <a href="/docs/{{DEFAULT_VERSION}}/pennant" class="flex p-4 border border-gray-200 border-opacity-60">
                     <div class="relative shrink-0 bg-pennant flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
-                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/pennant.min.svg" alt="Icon" class="relative w-9 h-9">
+                        <span class="absolute w-full h-full inset-0" style="background:#1aa44a"></span>
+                        <img src="/img/ecosystem/pennant.min.svg" alt="laravel pennant logomark" class="relative w-9 h-9">
                     </div>
                     <div class="ml-4 leading-5">
                         <div>Pennant</div>
@@ -387,7 +399,7 @@
                 <a href="/docs/{{DEFAULT_VERSION}}/valet" class="flex p-4 border border-gray-200 border-opacity-60">
                     <div class="relative shrink-0 bg-valet flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                         <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                        <img src="/img/ecosystem/valet.min.svg" alt="Icon" class="relative w-7 h-7">
+                        <img src="/img/ecosystem/valet.min.svg" alt="vapor logomark" class="relative w-7 h-7">
                     </div>
                     <div class="ml-4 leading-5">
                         <div>Valet</div>
