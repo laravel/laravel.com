@@ -163,8 +163,8 @@
                                 <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/pennant" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-pennant flex items-center justify-center rounded-lg overflow-hidden">
-                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/pennant.min.svg" alt="Icon" class="w-9 h-9" width="32" height="33">
+                                            <span class="absolute inset-0 w-full h-full" style="background:#1aa44a"></span>
+                                            <img src="/img/ecosystem/pennant.min.svg" alt="laravel pennant logomark" class="w-9 h-9 relative">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Pennant</div>
