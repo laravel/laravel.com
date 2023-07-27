@@ -272,11 +272,23 @@
                                     <a href="https://vapor.laravel.com" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-vapor flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/vapor.min.svg" alt="Icon" class="w-7 h-7" width="150" height="150">
+                                            <img src="/img/ecosystem/vapor.min.svg" alt="laravel herd logomark" class="w-7 h-7" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Vapor</div>
                                             <span class="text-gray-700 text-xs">Laravel Vapor is a serverless deployment platform for Laravel, powered by AWS.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://herd.laravel.com" class="flex">
+                                        <div class="relative shrink-0 w-12 h-12 bg-vapor flex items-center justify-center rounded-lg overflow-hidden">
+                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-red-500 to-red-600"></span>
+                                            <img src="/img/ecosystem/herd.min.svg" alt="laravel herd logomark relative" class="w-7 h-7 relative">
+                                        </div>
+                                        <div class="ml-4 leading-5">
+                                            <div class="text-gray-900">Herd</div>
+                                            <span class="text-gray-700 text-xs">One click PHP development environment. Zero dependencies. Zero headaches.</span>
                                         </div>
                                     </a>
                                 </li>
