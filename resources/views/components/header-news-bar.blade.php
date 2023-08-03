@@ -59,7 +59,7 @@
         </div>
 
         <div class="mt-px ml-1">
-            Shop the latest Laravel merchandise in our <a href="https://laravel.bigcartel.com" class="underline">official store</a>.
+            Shop the latest Laravel merchandise in our <a href="https://laravel.bigcartel.com/products" class="underline">official store</a>.
         </div>
     @endif
 </div>
