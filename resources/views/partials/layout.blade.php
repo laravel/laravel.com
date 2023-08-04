@@ -3,7 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ isset($title) ? $title . ' - ' : null }}Laravel - The PHP Framework For Web Artisans</title>
+
+    @if (isset($currentVersion) && $currentVersion == 'master')
+    <title>{{ isset($title) ? $title . ' - ' : null }}Laravel Upcoming - The PHP Framework For Web Artisans</title>
+    @else
+    <title>{{ isset($title) ? $title . ' - ' : null }}Laravel {{ isset($currentVersion) ? $currentVersion . ' ' : null }}- The PHP Framework For Web Artisans</title>
+    @endif
+
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     @if (isset($canonical))
