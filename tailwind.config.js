@@ -105,6 +105,7 @@ export default {
         breeze: '#F3C14B',
         pint: '#ffd000',
         pennant: '#2f2f2f',
+        livewire: '#fb70a9',
     },
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
