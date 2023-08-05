@@ -106,6 +106,7 @@ export default {
         pint: '#ffd000',
         pennant: '#2f2f2f',
         livewire: '#fb70a9',
+        inertia: '#9553e9',
     },
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
