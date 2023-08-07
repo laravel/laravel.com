@@ -44,7 +44,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/starter-kits#laravel-breeze" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/breeze.min.svg" alt="Icon" class="w-7 h-7" width="47" height="32">
+                                            <img src="/img/ecosystem/breeze.min.svg" alt="Laravel Breeze Icon" class="w-7 h-7" width="47" height="32">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Breeze</div>
@@ -56,7 +56,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/billing" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-cashier flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/cashier.min.svg" alt="Icon" class="w-7 h-7" width="47" height="32">
+                                            <img src="/img/ecosystem/cashier.min.svg" alt="Laravel Cashier Icon" class="w-7 h-7" width="47" height="32">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Cashier</div>
@@ -68,7 +68,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/dusk" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-dusk flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/dusk.min.svg" alt="Icon" class="w-7 h-7" width="45" height="44">
+                                            <img src="/img/ecosystem/dusk.min.svg" alt="Laravel Dusk Icon" class="w-7 h-7" width="45" height="44">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Dusk</div>
@@ -80,7 +80,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/broadcasting" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-echo flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/echo.min.svg" alt="Icon" class="w-7 h-7" width="48" height="48">
+                                            <img src="/img/ecosystem/echo.min.svg" alt="Laravel Echo Icon" class="w-7 h-7" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Echo</div>
@@ -92,7 +92,7 @@
                                     <a href="https://envoyer.io" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-envoyer flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/envoyer.min.svg" alt="Icon" class="w-7 h-7" width="41" height="50">
+                                            <img src="/img/ecosystem/envoyer.min.svg" alt="Envoyer Icon" class="w-7 h-7" width="41" height="50">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Envoyer</div>
@@ -104,7 +104,7 @@
                                     <a href="https://forge.laravel.com" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-forge flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/forge.min.svg" alt="Icon" class="w-7 h-7" width="41" height="32">
+                                            <img src="/img/ecosystem/forge.min.svg" alt="Forge Icon" class="w-7 h-7" width="41" height="32">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Forge</div>
@@ -116,7 +116,7 @@
                                     <a href="https://herd.laravel.com" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-vapor flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-red-500 to-red-600"></span>
-                                            <img src="/img/ecosystem/herd.min.svg" alt="laravel herd logomark relative" class="w-7 h-7 relative">
+                                            <img src="/img/ecosystem/herd.min.svg" alt="Laravel Herd Logo" class="w-7 h-7 relative">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Herd</div>
@@ -128,7 +128,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/horizon" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-horizon flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/horizon.min.svg" alt="Icon" class="w-7 h-7" width="48" height="48">
+                                            <img src="/img/ecosystem/horizon.min.svg" alt="Laravel Horizon Icon" class="w-7 h-7" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Horizon</div>
@@ -140,7 +140,7 @@
                                     <a href="https://inertiajs.com" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-inertia flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/inertia.min.svg" alt="laravel herd logomark" class="w-7 h-7" width="150" height="150">
+                                            <img src="/img/ecosystem/inertia.min.svg" alt="Inertia Icon" class="w-7 h-7" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Inertia</div>
@@ -152,7 +152,7 @@
                                     <a href="https://jetstream.laravel.com" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-jetstream flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/jetstream.min.svg" alt="Icon" class="w-7 h-7" width="150" height="150">
+                                            <img src="/img/ecosystem/jetstream.min.svg" alt="Laravel Jetstream Icon" class="w-7 h-7" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Jetstream</div>
@@ -164,7 +164,7 @@
                                     <a href="https://livewire.laravel.com" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-livewire flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/livewire.min.svg" alt="laravel herd logomark" class="w-7 h-7" width="150" height="150">
+                                            <img src="/img/ecosystem/livewire.min.svg" alt="Laravel Livewire Icon" class="w-7 h-7" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Livewire</div>
@@ -176,7 +176,7 @@
                                     <a href="https://nova.laravel.com/" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-nova flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/nova.min.svg" alt="Icon" class="w-7 h-7" width="39" height="40">
+                                            <img src="/img/ecosystem/nova.min.svg" alt="Nova Icon" class="w-7 h-7" width="39" height="40">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Nova</div>
@@ -188,7 +188,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/octane" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-octane flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/octane.min.svg" alt="Icon" class="w-7 h-7" width="32" height="33">
+                                            <img src="/img/ecosystem/octane.min.svg" alt="Laravel Octane Icon" class="w-7 h-7" width="32" height="33">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Octane</div>
@@ -200,7 +200,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/pennant" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-pennant flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full" style="background:#1aa44a"></span>
-                                            <img src="/img/ecosystem/pennant.min.svg" alt="laravel pennant logomark" class="w-9 h-9 relative">
+                                            <img src="/img/ecosystem/pennant.min.svg" alt="Laravel Pennant Icon" class="w-9 h-9 relative">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Pennant</div>
@@ -212,7 +212,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/pint" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-pint flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/pint.min.svg" alt="Icon" class="w-7 h-7" width="32" height="33">
+                                            <img src="/img/ecosystem/pint.min.svg" alt="Laravel Pint Icon" class="w-7 h-7" width="32" height="33">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Pint</div>
@@ -224,7 +224,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/prompts" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-prompts flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/prompts.min.svg" alt="Laravel Prompts Logo" class="w-7 h-7" width="150" height="150">
+                                            <img src="/img/ecosystem/prompts.min.svg" alt="Laravel Prompts Icon" class="w-7 h-7" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Prompts</div>
@@ -236,7 +236,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/sail" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-sail flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/sail.min.svg" alt="Icon" class="w-7 h-7" width="48" height="48">
+                                            <img src="/img/ecosystem/sail.min.svg" alt="Laravel Sail Icon" class="w-7 h-7" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Sail</div>
@@ -248,7 +248,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/sanctum" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-sanctum flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum logomark" class="w-7 h-7" width="48" height="48">
+                                            <img src="/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum Icon" class="w-7 h-7" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Sanctum</div>
@@ -260,7 +260,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/scout" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-scout flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/scout.min.svg" alt="Icon" class="w-7 h-7" width="36" height="36">
+                                            <img src="/img/ecosystem/scout.min.svg" alt="Laravel Scout Icon" class="w-7 h-7" width="36" height="36">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Scout</div>
@@ -272,7 +272,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/socialite" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-socialite flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/socialite.min.svg" alt="Icon" class="w-7 h-7" width="32" height="33">
+                                            <img src="/img/ecosystem/socialite.min.svg" alt="Laravel Socialite Icon" class="w-7 h-7" width="32" height="33">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Socialite</div>
@@ -284,7 +284,7 @@
                                     <a href="https://spark.laravel.com" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-spark flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/spark.min.svg" alt="Icon" class="w-7 h-7" width="48" height="48">
+                                            <img src="/img/ecosystem/spark.min.svg" alt="Laravel Spark Icon" class="w-7 h-7" width="48" height="48">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Spark</div>
@@ -296,7 +296,7 @@
                                     <a href="/docs/{{DEFAULT_VERSION}}/telescope" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-telescope flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/telescope.min.svg" alt="Icon" class="w-7 h-7" width="42" height="43">
+                                            <img src="/img/ecosystem/telescope.min.svg" alt="Laravel Telescope Icon" class="w-7 h-7" width="42" height="43">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Telescope</div>
@@ -308,7 +308,7 @@
                                     <a href="https://vapor.laravel.com" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-vapor flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/vapor.min.svg" alt="laravel herd logomark" class="w-7 h-7" width="150" height="150">
+                                            <img src="/img/ecosystem/vapor.min.svg" alt="Vapor Icon" class="w-7 h-7" width="150" height="150">
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Vapor</div>
