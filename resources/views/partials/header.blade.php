@@ -40,7 +40,23 @@
                             @click.away="expanded = false"
                         >
                             <ul class="grid gap-6 relative sm:grid-cols-2 md:grid-cols-3">
-                                <li>
+
+                                @foreach (ECOSYSTEM_ITEMS as $ecosystemItem)
+                                    <li>
+                                        <a href="{{ $ecosystemItem['href'] }}" class="flex">
+                                            <div class="relative shrink-0 w-12 h-12 bg-{{ $ecosystemItem['id'] }} flex items-center justify-center rounded-lg overflow-hidden">
+                                                <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                                                <img src="/img/ecosystem/{{ $ecosystemItem['id'] }}.min.svg" alt="{{ $ecosystemItem['image-alt'] }} Icon" class="@if ($ecosystemItem['id'] === 'pennant') w-9 h-9 @else w-7 h-7 @endif" width="47" height="32">
+                                            </div>
+                                            <div class="ml-4 leading-5">
+                                                <div class="text-gray-900">{{ $ecosystemItem['name'] }}</div>
+                                                <span class="text-gray-700 text-xs">{{ $ecosystemItem['description'] }}</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                @endforeach
+
+                                {{-- <li>
                                     <a href="/docs/{{DEFAULT_VERSION}}/starter-kits#laravel-breeze" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
@@ -315,7 +331,7 @@
                                             <span class="text-gray-700 text-xs">Laravel Vapor is a serverless deployment platform for Laravel, powered by AWS.</span>
                                         </div>
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>

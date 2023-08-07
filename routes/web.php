@@ -12,6 +12,8 @@ if (! defined('SHOW_VAPOR')) {
     define('SHOW_VAPOR', random_int(1, 2) === 1);
 }
 
+require __DIR__.'/constants/ecosystem.php';
+
 if (! defined('SHOW_PROMO')) {
     $int = random_int(1, 3);
 

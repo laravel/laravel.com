@@ -51,28 +51,14 @@
         [
             'title' => 'Ecosystem',
             'links' => [
-                'Cashier' => '/docs/' . DEFAULT_VERSION . '/billing',
-                'Dusk' => '/docs/' . DEFAULT_VERSION . '/dusk',
-                'Echo' => '/docs/' . DEFAULT_VERSION . '/broadcasting',
-                'Envoyer' => 'https://envoyer.io',
-                'Forge' => 'https://forge.laravel.com',
-                'Herd' => 'https://herd.laravel.com',
-                'Horizon' => '/docs/' . DEFAULT_VERSION . '/horizon',
-                'Inertia' => 'https://inertiajs.com/',
-                'Livewire' => 'https://livewire.laravel.com/',
-                'Nova' => 'https://nova.laravel.com',
-                'Octane' => '/docs/' . DEFAULT_VERSION . '/octane',
-                'Pennant' => '/docs/' . DEFAULT_VERSION . '/pennant',
-                'Prompts' => '/docs/' . DEFAULT_VERSION . '/prompts',
-                'Sail' => '/docs/' . DEFAULT_VERSION . '/sail',
-                'Sanctum' => '/docs/' . DEFAULT_VERSION . '/sanctum',
-                'Scout' => '/docs/' . DEFAULT_VERSION . '/scout',
-                'Spark' => 'https://spark.laravel.com',
-                'Telescope' => '/docs/' . DEFAULT_VERSION . '/telescope',
-                'Vapor' => 'https://vapor.laravel.com',
+                // See down below
             ],
         ],
     ];
+    
+    foreach (ECOSYSTEM_ITEMS as $key => $ecosystemItem) {
+        $links[3]['links'][$ecosystemItem['name']] = $ecosystemItem['href'];
+    }
     
     $is_docs_page = request()->is('docs/*');
 @endphp
