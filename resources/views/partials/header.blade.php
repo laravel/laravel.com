@@ -288,7 +288,7 @@
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Livewire</div>
-                                            <span class="text-gray-700 text-xs">Livewire is a real-time web framework for Laravel.</span>
+                                            <span class="text-gray-700 text-xs">Build real-time applications without knowledge of JavaScript.</span>
                                         </div>
                                     </a>
                                 </li>
