@@ -69,6 +69,7 @@
                 'Vapor' => 'https://vapor.laravel.com',
                 'Livewire' => 'https://livewire.laravel.com/',
                 'Inertia' => 'https://inertiajs.com/',
+                'Prompts' => '/docs/' . DEFAULT_VERSION . '/prompts',
             ],
         ],
     ];

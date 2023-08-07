@@ -107,6 +107,7 @@ export default {
         pennant: '#2f2f2f',
         livewire: '#fb70a9',
         inertia: '#9553e9',
+        prompts: '#4ade80'
     },
     fontFamily: {
         sans: ['scandia-web', ...defaultTheme.fontFamily.sans],
