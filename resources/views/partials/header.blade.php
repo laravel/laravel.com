@@ -300,7 +300,7 @@
                                         </div>
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Inertia</div>
-                                            <span class="text-gray-700 text-xs">Inertia is the modern monolith.</span>
+                                            <span class="text-gray-700 text-xs">Simplicity of JavaScript frameworks without the hassle of APIs.</span>
                                         </div>
                                     </a>
                                 </li>
