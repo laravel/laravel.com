@@ -137,6 +137,18 @@
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="https://inertiajs.com" class="flex">
+                                        <div class="relative shrink-0 w-12 h-12 bg-inertia flex items-center justify-center rounded-lg overflow-hidden">
+                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                                            <img src="/img/ecosystem/inertia.min.svg" alt="laravel herd logomark" class="w-7 h-7" width="150" height="150">
+                                        </div>
+                                        <div class="ml-4 leading-5">
+                                            <div class="text-gray-900">Inertia</div>
+                                            <span class="text-gray-700 text-xs">Simplicity of JavaScript frameworks without the hassle of APIs.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="https://jetstream.laravel.com" class="flex">
                                         <div class="relative shrink-0 w-12 h-12 bg-jetstream flex items-center justify-center rounded-lg overflow-hidden">
                                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
@@ -145,6 +157,18 @@
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Jetstream</div>
                                             <span class="text-gray-700 text-xs">Robust starter kit including authentication and team management.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://livewire.laravel.com" class="flex">
+                                        <div class="relative shrink-0 w-12 h-12 bg-livewire flex items-center justify-center rounded-lg overflow-hidden">
+                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                                            <img src="/img/ecosystem/livewire.min.svg" alt="laravel herd logomark" class="w-7 h-7" width="150" height="150">
+                                        </div>
+                                        <div class="ml-4 leading-5">
+                                            <div class="text-gray-900">Livewire</div>
+                                            <span class="text-gray-700 text-xs">Build real-time applications without knowledge of JavaScript.</span>
                                         </div>
                                     </a>
                                 </li>
@@ -193,6 +217,18 @@
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Pint</div>
                                             <span class="text-gray-700 text-xs">Opinionated PHP code style fixer for minimalists.</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/docs/{{DEFAULT_VERSION}}/prompts" class="flex">
+                                        <div class="relative shrink-0 w-12 h-12 bg-prompts flex items-center justify-center rounded-lg overflow-hidden">
+                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                                            <img src="/img/ecosystem/prompts.min.svg" alt="Laravel Prompts Logo" class="w-7 h-7" width="150" height="150">
+                                        </div>
+                                        <div class="ml-4 leading-5">
+                                            <div class="text-gray-900">Prompts</div>
+                                            <span class="text-gray-700 text-xs">Next generation prompts for CLI tools.</span>
                                         </div>
                                     </a>
                                 </li>
@@ -277,42 +313,6 @@
                                         <div class="ml-4 leading-5">
                                             <div class="text-gray-900">Vapor</div>
                                             <span class="text-gray-700 text-xs">Laravel Vapor is a serverless deployment platform for Laravel, powered by AWS.</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://livewire.laravel.com" class="flex">
-                                        <div class="relative shrink-0 w-12 h-12 bg-livewire flex items-center justify-center rounded-lg overflow-hidden">
-                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/livewire.min.svg" alt="laravel herd logomark" class="w-7 h-7" width="150" height="150">
-                                        </div>
-                                        <div class="ml-4 leading-5">
-                                            <div class="text-gray-900">Livewire</div>
-                                            <span class="text-gray-700 text-xs">Build real-time applications without knowledge of JavaScript.</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://inertiajs.com" class="flex">
-                                        <div class="relative shrink-0 w-12 h-12 bg-inertia flex items-center justify-center rounded-lg overflow-hidden">
-                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/inertia.min.svg" alt="laravel herd logomark" class="w-7 h-7" width="150" height="150">
-                                        </div>
-                                        <div class="ml-4 leading-5">
-                                            <div class="text-gray-900">Inertia</div>
-                                            <span class="text-gray-700 text-xs">Simplicity of JavaScript frameworks without the hassle of APIs.</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/docs/{{DEFAULT_VERSION}}/prompts" class="flex">
-                                        <div class="relative shrink-0 w-12 h-12 bg-prompts flex items-center justify-center rounded-lg overflow-hidden">
-                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/prompts.min.svg" alt="Laravel Prompts Logo" class="w-7 h-7" width="150" height="150">
-                                        </div>
-                                        <div class="ml-4 leading-5">
-                                            <div class="text-gray-900">Prompts</div>
-                                            <span class="text-gray-700 text-xs">Next generation prompts for CLI tools.</span>
                                         </div>
                                     </a>
                                 </li>
