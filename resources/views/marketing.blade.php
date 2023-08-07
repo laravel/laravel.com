@@ -264,6 +264,18 @@
                 </a>
             </li>
             <li>
+                <a href="https://inertiajs.com" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-inertia flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/inertia.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Inertia</div>
+                        <div class="mt-1 text-sm text-gray-700">Simplicity of JavaScript frameworks without the hassle of APIs.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
                 <a href="https://jetstream.laravel.com" class="flex p-4 border border-gray-200 border-opacity-60">
                     <div class="relative shrink-0 bg-jetstream flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                         <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
@@ -272,6 +284,18 @@
                     <div class="ml-4 leading-5">
                         <div>Jetstream</div>
                         <div class="mt-1 text-sm text-gray-700">Robust starter kit including authentication and team management.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://livewire.laravel.com" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-livewire flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/livewire.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Livewire</div>
+                        <div class="mt-1 text-sm text-gray-700">Build real-time applications without knowledge of JavaScript.</div>
                     </div>
                 </a>
             </li>
@@ -320,6 +344,18 @@
                     <div class="ml-4 leading-5">
                         <div>Pint</div>
                         <div class="mt-1 text-sm text-gray-700">Opinionated PHP code style fixer for minimalists.</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/docs/{{DEFAULT_VERSION}}/prompts" class="flex p-4 border border-gray-200 border-opacity-60">
+                    <div class="relative shrink-0 bg-prompts flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
+                        <img src="/img/ecosystem/prompts.min.svg" alt="Icon" class="relative w-7 h-7">
+                    </div>
+                    <div class="ml-4 leading-5">
+                        <div>Prompts</div>
+                        <div class="mt-1 text-sm text-gray-700">Next generation prompts for CLI tools.</div>
                     </div>
                 </a>
             </li>
