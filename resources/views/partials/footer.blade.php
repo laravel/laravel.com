@@ -88,9 +88,9 @@
                 <p class="max-w-sm text-xs text-gray-700 sm:text-sm {{ $is_docs_page ? 'dark:text-gray-500' : '' }}">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in most web projects.</p>
                 <ul class="mt-6 flex items-center space-x-3">
                     <li>
-                        <a href="https://twitter.com/laravelphp">
-                            <img class="{{ $is_docs_page ? 'hidden dark:inline-block' : 'hidden' }} w-6 h-6" src="/img/social/twitter.dark.min.svg" alt="Twitter" width="24" height="20" loading="lazy">
-                            <img class="{{ $is_docs_page ? 'inline-block dark:hidden' : 'inline-block' }} w-6 h-6" src="/img/social/twitter.min.svg" alt="Twitter" width="24" height="20" loading="lazy">
+                        <a href="https://x.com/laravelphp">
+                            <img class="{{ $is_docs_page ? 'hidden dark:inline-block' : 'hidden' }} w-6 h-6" src="/img/social/x.dark.min.svg" alt="X" width="24" height="20" loading="lazy">
+                            <img class="{{ $is_docs_page ? 'inline-block dark:hidden' : 'inline-block' }} w-6 h-6" src="/img/social/x.min.svg" alt="X" width="24" height="20" loading="lazy">
                         </a>
                     </li>
                     <li>
