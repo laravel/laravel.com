@@ -56,7 +56,7 @@
         ],
     ];
     
-    foreach (ECOSYSTEM_ITEMS as $key => $ecosystemItem) {
+    foreach (ECOSYSTEM_ITEMS as $ecosystemItem) {
         $links[3]['links'][$ecosystemItem['name']] = $ecosystemItem['href'];
     }
     

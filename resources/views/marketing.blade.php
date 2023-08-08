@@ -310,15 +310,15 @@
             @php
                 $ecosystemItems = array_diff_key(ECOSYSTEM_ITEMS, TOP_MARKETING_ITEMS);
             @endphp
-            @foreach (TOP_MARKETING_ITEMS as $ecosystemItem)
+            @foreach (TOP_MARKETING_ITEMS as $ecosystemItemId => $ecosystemItem)
                 <li>
                     <a href="{{ $ecosystemItem['href'] }}"
                         class="flex items-start pt-4 pb-6 px-4 border border-gray-200 border-opacity-60">
                         <div
-                            class="relative shrink-0 bg-{{ $ecosystemItem['id'] }} flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                            class="relative shrink-0 bg-{{ $ecosystemItemId }} flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                             <span
                                 class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="/img/ecosystem/{{ $ecosystemItem['id'] }}.min.svg" alt="{{ $ecosystemItem['image-alt'] }} Icon" class="relative w-7 h-7">
+                            <img src="/img/ecosystem/{{ $ecosystemItemId }}.min.svg" alt="{{ $ecosystemItem['image-alt'] }}" class="relative w-7 h-7">
                         </div>
                         <div class="ml-4 leading-5">
                             <div>{{ $ecosystemItem['name'] }}</div>
@@ -354,12 +354,12 @@
         </ul>
 
         <ul class="mt-10 relative grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            @foreach ($ecosystemItems as $ecosystemItem)
+            @foreach ($ecosystemItems as $ecosystemItemId => $ecosystemItem)
                 <li>
                     <a href="{{ $ecosystemItem['href'] }}" class="flex p-4 border border-gray-200 border-opacity-60">
-                        <div class="relative shrink-0 bg-{{ $ecosystemItem['id'] }} flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+                        <div class="relative shrink-0 bg-{{ $ecosystemItemId }} flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                             <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="/img/ecosystem/{{ $ecosystemItem['id'] }}.min.svg" alt="{{ $ecosystemItem['image-alt'] }}" class="relative @if ($ecosystemItem['id'] === 'pennant') w-9 h-9 @else w-7 h-7 @endif">
+                            <img src="/img/ecosystem/{{ $ecosystemItemId }}.min.svg" alt="{{ $ecosystemItem['image-alt'] }}" class="relative @if ($ecosystemItemId === 'pennant') w-9 h-9 @else w-7 h-7 @endif">
                         </div>
                         <div class="ml-4 leading-5">
                             <div>{{ $ecosystemItem['name'] }}</div>
