@@ -20,7 +20,7 @@
                     @isset ($twitter)
                         <li>
                             <a href="{{ $twitter }}">
-                                <img class="opacity-25" src="/img/social/twitter.min.svg" alt="Twitter">
+                                <img class="opacity-25" src="/img/social/x.min.svg" alt="X">
                             </a>
                         </li>
                     @endif
