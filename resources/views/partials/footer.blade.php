@@ -56,7 +56,7 @@
         ],
     ];
     
-    foreach (ECOSYSTEM_ITEMS as $ecosystemItem) {
+    foreach (App\Ecosystem::items() as $ecosystemItem) {
         $links[3]['links'][$ecosystemItem['name']] = $ecosystemItem['href'];
     }
     

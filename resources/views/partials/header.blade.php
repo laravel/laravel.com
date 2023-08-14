@@ -41,7 +41,7 @@
                         >
                             <ul class="grid gap-6 relative sm:grid-cols-2 md:grid-cols-3">
 
-                                @foreach (ECOSYSTEM_ITEMS as $ecosystemItemId => $ecosystemItem)
+                                @foreach (App\Ecosystem::items() as $ecosystemItemId => $ecosystemItem)
                                     <li>
                                         <a href="{{ $ecosystemItem['href'] }}" class="flex">
                                             <div class="relative shrink-0 w-12 h-12 bg-{{ $ecosystemItemId }} flex items-center justify-center rounded-lg overflow-hidden">

@@ -308,9 +308,10 @@
         </div>
         <ul class="mt-10 relative grid gap-6 md:grid-cols-2">
             @php
-                $ecosystemItems = array_diff_key(ECOSYSTEM_ITEMS, TOP_MARKETING_ITEMS);
+                $ecosystemItems = array_diff_key(App\Ecosystem::items(), App\Ecosystem::featured());
             @endphp
-            @foreach (TOP_MARKETING_ITEMS as $ecosystemItemId => $ecosystemItem)
+
+            @foreach (App\Ecosystem::featured() as $ecosystemItemId => $ecosystemItem)
                 <li>
                     <a href="{{ $ecosystemItem['href'] }}"
                         class="flex items-start pt-4 pb-6 px-4 border border-gray-200 border-opacity-60">
