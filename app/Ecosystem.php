@@ -76,7 +76,7 @@ final class Ecosystem
             'inertia' => [
                 'name' => 'Inertia',
                 'image-alt' => 'Inertia Logo',
-                'description' => 'Create modern single-page React and Vue apps using classic server-side routing.',
+                'description' => 'Create modern single-page React, Vue and Svelte apps using classic server-side routing.',
                 'href' => 'https://inertiajs.com',
             ],
             'jetstream' => [
