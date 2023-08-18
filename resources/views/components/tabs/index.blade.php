@@ -41,7 +41,7 @@
 
         <ul
             id="feature-nav"
-            class="flex-1 divide-x lg:divide-x-0 lg:divide-y divide-gray-100 max-h-full overflow-x-auto lg:overflow-x-visible lg:overflow-y-auto lg:overscroll-y-contain flex lg:block whitespace-nowrap text-sm lg:text-base"
+            class="flex-1 divide-x lg:divide-x-0 lg:divide-y divide-gray-100 max-h-full overflow-x-auto lg:overflow-x-visible lg:overflow-y-auto lg:overscroll-y-contain flex lg:block whitespace-nowrap text-sm lg:text-base scrollbar_custom"
             @scroll.throttle.50ms="updateScrollPosition"
         >
             @stack('nav')
@@ -54,7 +54,7 @@
         </button>
     </nav>
 
-    <div class="flex-1 overflow-y-auto">
+    <div class="flex-1 overflow-y-auto scrollbar_custom">
         {{ $slot }}
     </div>
 
