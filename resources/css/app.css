@@ -9,6 +9,7 @@
 @import "./_docs.css";
 @import "./_carbon_ads.css";
 @import "./_accessibility.css";
+@import "./_scrollbar.css";
 
 @import 'tailwindcss/utilities';
 
