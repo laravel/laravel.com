@@ -184,15 +184,17 @@
                         <section class="docs_main max-w-prose">
                             @unless ($currentVersion == 'master' || version_compare($currentVersion, DEFAULT_VERSION) >= 0)
                                 <blockquote>
-                                    <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg dark:bg-dark-600 lg:flex lg:items-center">
-                                        <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 bg-orange-600 lg:mb-0">
-                                            <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
-                                        </div>
+                                    <div class="callout">
+                                        <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg dark:bg-dark-600 lg:flex lg:items-center">
+                                            <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 bg-orange-600 lg:mb-0">
+                                                <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" />
+                                            </div>
 
-                                        <p class="mb-0 lg:ml-4">
-                                            <strong>WARNING</strong> You're browsing the documentation for an old version of Laravel.
-                                            Consider upgrading your project to <a href="{{ route('docs.version', DEFAULT_VERSION) }}">Laravel {{ DEFAULT_VERSION }}</a>.
-                                        </p>
+                                            <p class="mb-0 lg:ml-4">
+                                                <strong>WARNING</strong> You're browsing the documentation for an old version of Laravel.
+                                                Consider upgrading your project to <a href="{{ route('docs.version', DEFAULT_VERSION) }}">Laravel {{ DEFAULT_VERSION }}</a>.
+                                            </p>
+                                        </div>
                                     </div>
                                 </blockquote>
                             @endunless
