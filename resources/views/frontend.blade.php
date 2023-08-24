@@ -479,7 +479,7 @@
                         <div>
                             <p class="text-gray-700 max-w-4xl leading-relaxed">When using Livewire, you won't need JavaScript to manage the DOM or state - you'll just sprinkle it in for some thoughtful interactions. <a href="https://alpinejs.dev" target="_blank" class="text-red-600 underline hover:no-underline">Alpine.js</a> is the perfect light-weight JavaScript library to pair with your Livewire application.</p>
                             <p class="mt-4 text-gray-700 max-w-4xl leading-relaxed">As the state of your Livewire component changes, your frontend will automatically be updated. But, Livewire doesn't stop there. Support for real-time validation, event handling, file downloads, authorization and more is included.</p>
-                            <p class="mt-4 leading-relaxed"><a href="https://laravel-livewire.com/" class="text-red-600 underline hover:no-underline">Learn more</a></p>
+                            <p class="mt-4 leading-relaxed"><a href="https://livewire.laravel.com/" class="text-red-600 underline hover:no-underline">Learn more</a></p>
                         </div>
 
                         <div class="mt-8 sm:mt-0 border p-6">

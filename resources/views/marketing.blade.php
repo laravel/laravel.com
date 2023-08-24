@@ -193,7 +193,7 @@
                 <div class="sm:max-w-[480px]">
                     <h2 class="text-4xl font-bold md:text-5xl">One Framework, Many Flavors</h2>
                     <p class="mt-6 text-gray-700 leading-relaxed">Build robust, full-stack applications in PHP using
-                        Laravel and <a class="underline" href="https://laravel-livewire.com">Livewire</a>. Love
+                        Laravel and <a class="underline" href="https://livewire.laravel.com">Livewire</a>. Love
                         JavaScript? Build a monolithic React or Vue driven frontend by pairing Laravel with <a
                             class="underline" href="https://inertiajs.com">Inertia</a>.</p>
                     <p class="mt-6 text-gray-700 leading-relaxed">Or, let Laravel serve as a robust backend API for your
@@ -415,7 +415,7 @@
             <x-testimonial name="Caleb Porzio"
                 content="Laravel is nothing short of a delight. It allows me to build any web-y thing I want in record speed with joy.">
                 <x-slot name="title">
-                    Creator of <a href="https://laravel-livewire.com" target="_blank" class="text-red-500">Livewire</a>
+                    Creator of <a href="https://livewire.laravel.com" target="_blank" class="text-red-500">Livewire</a>
                     and <a href="https://alpinejs.dev" target="_blank" class="text-red-500">Alpine.js</a>
                 </x-slot>
             </x-testimonial>
