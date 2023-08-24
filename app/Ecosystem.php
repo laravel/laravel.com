@@ -89,7 +89,7 @@ final class Ecosystem
                 'name' => 'Livewire',
                 'image-alt' => 'Laravel Livewire Logo',
                 'description' => 'Build reactive, dynamic applications using Laravel and Blade.',
-                'href' => 'https://laravel-livewire.com',
+                'href' => 'https://livewire.laravel.com',
             ],
             'nova' => [
                 'name' => 'Nova',
