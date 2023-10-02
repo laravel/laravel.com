@@ -39,6 +39,7 @@
                 'WebReinvent' => 'https://webreinvent.com/?utm_source=laravel&utm_medium=laravel.com&utm_campaign=footer-link',
                 'Vehikl' => 'https://vehikl.com',
                 'Tighten' => 'https://tighten.co',
+                'Bacancy' => 'https://bacancy.com/',
                 '64 Robots' => 'https://64robots.com/',
                 'Active Logic' => 'https://activelogic.com/',
                 'Byte 5' => 'https://www.byte5.net/',
