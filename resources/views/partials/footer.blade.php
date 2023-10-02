@@ -36,10 +36,10 @@
         [
             'title' => 'Partners',
             'links' => [
-                'WebReinvent' => 'https://webreinvent.com/?utm_source=laravel&utm_medium=laravel.com&utm_campaign=footer-link',
                 'Vehikl' => 'https://vehikl.com',
+                'WebReinvent' => 'https://webreinvent.com/?utm_source=laravel&utm_medium=laravel.com&utm_campaign=footer-link',
                 'Tighten' => 'https://tighten.co',
-                'Bacancy' => 'https://bacancy.com/',
+                'Bacancy' => 'https://www.bacancytechnology.com/hire-laravel-developer?utm_source=laravel&utm_medium=partners.laravel&utm_campaign=sponsors',
                 '64 Robots' => 'https://64robots.com/',
                 'Active Logic' => 'https://activelogic.com/',
                 'Byte 5' => 'https://www.byte5.net/',
