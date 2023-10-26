@@ -98,7 +98,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://discord.gg/mPZNm7A">
+                        <a href="https://discord.gg/laravel">
                             <img class="{{ $is_docs_page ? 'hidden dark:inline-block' : 'hidden' }} w-6 h-6"
                                 src="/img/social/discord.dark.min.svg" alt="Discord" width="21" height="24"
                                 loading="lazy">
