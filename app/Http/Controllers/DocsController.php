@@ -15,6 +15,8 @@ class DocsController extends Controller
      */
     protected $docs;
 
+	protected $latestLaravelVersion;
+
     /**
      * Create a new controller instance.
      *
@@ -24,6 +26,7 @@ class DocsController extends Controller
     public function __construct(Documentation $docs)
     {
         $this->docs = $docs;
+		$this->latestLaravelVersion = Documentation::getLatestLaravelVersion();
     }
 
     /**
@@ -33,7 +36,7 @@ class DocsController extends Controller
      */
     public function showRootPage()
     {
-        return redirect('docs/'.DEFAULT_VERSION);
+        return redirect('docs/'.$this->latestLaravelVersion);
     }
 
     /**
@@ -52,7 +55,7 @@ class DocsController extends Controller
         }
 
         if (! $this->isVersion($version)) {
-            return redirect('docs/'.DEFAULT_VERSION.'/index.json', 301);
+            return redirect('docs/'.$this->latestLaravelVersion.'/index.json', 301);
         }
 
         if ($major !== 'master' && $major < 9) {
@@ -72,7 +75,7 @@ class DocsController extends Controller
     public function show($version, $page = null)
     {
         if (! $this->isVersion($version)) {
-            return redirect('docs/'.DEFAULT_VERSION.'/'.$version, 301);
+            return redirect('docs/'.$this->latestLaravelVersion.'/'.$version, 301);
         }
 
         if (! defined('CURRENT_VERSION')) {
@@ -111,8 +114,8 @@ class DocsController extends Controller
 
         $canonical = null;
 
-        if ($this->docs->sectionExists(DEFAULT_VERSION, $sectionPage)) {
-            $canonical = 'docs/'.DEFAULT_VERSION.'/'.$sectionPage;
+        if ($this->docs->sectionExists($this->latestLaravelVersion, $sectionPage)) {
+            $canonical = 'docs/'.$this->latestLaravelVersion.'/'.$sectionPage;
         }
 
         return view('docs', [

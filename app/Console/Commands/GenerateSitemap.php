@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Documentation;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Psr\Http\Message\UriInterface;
@@ -46,7 +47,7 @@ class GenerateSitemap extends Command
             })
             ->writeToFile(public_path('sitemap_pages.xml'));
 
-        SitemapGenerator::create(config('app.url').'/docs/'.DEFAULT_VERSION)
+        SitemapGenerator::create(config('app.url') . '/docs/' . Documentation::getLatestLaravelVersion())
             ->shouldCrawl(function (UriInterface $url) {
                 return Str::contains($url->getPath(), 'docs');
             })
