@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\DocsLink;
+
 final class Ecosystem
 {
     public static function featured(): array
@@ -29,25 +31,25 @@ final class Ecosystem
                 'name' => 'Breeze',
                 'image-alt' => 'Laravel Breeze Logo Logo',
                 'description' => 'Lightweight starter kit scaffolding for new applications with Blade or Inertia.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/starter-kits#laravel-breeze',
+                'href' => DocsLink::get('starter-kits#laravel-breeze'),
             ],
             'cashier' => [
                 'name' => 'Cashier',
                 'image-alt' => 'Laravel Cashier Logo',
                 'description' => 'Take the pain out of managing subscriptions on Stripe or Paddle.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/billing',
+                'href' => DocsLink::get('billing'),
             ],
             'dusk' => [
                 'name' => 'Dusk',
                 'image-alt' => 'Laravel Dusk Logo',
                 'description' => 'Automated browser testing to ship your application with confidence.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/dusk',
+                'href' => DocsLink::get('dusk'),
             ],
             'echo' => [
                 'name' => 'Echo',
                 'image-alt' => 'Laravel Echo Logo',
                 'description' => 'Listen for WebSocket events broadcast by your Laravel application.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/broadcasting',
+                'href' => DocsLink::get('broadcasting'),
             ],
             'envoyer' => [
                 'name' => 'Envoyer',
@@ -71,7 +73,7 @@ final class Ecosystem
                 'name' => 'Horizon',
                 'image-alt' => 'Laravel Horizon Logo',
                 'description' => 'Beautiful UI for monitoring your Redis driven Laravel queues.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/horizon',
+                'href' => DocsLink::get('horizon'),
             ],
             'inertia' => [
                 'name' => 'Inertia',
@@ -101,49 +103,49 @@ final class Ecosystem
                 'name' => 'Octane',
                 'image-alt' => 'Laravel Octane Logo',
                 'description' => 'Supercharge your application\'s performance by keeping it in memory.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/octane',
+                'href' => DocsLink::get('octane'),
             ],
             'pennant' => [
                 'name' => 'Pennant',
                 'image-alt' => 'Laravel Pennant Logo',
                 'description' => 'A simple, lightweight library for managing feature flags.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/pennant',
+                'href' => DocsLink::get('pennant'),
             ],
             'pint' => [
                 'name' => 'Pint',
                 'image-alt' => 'Laravel Pint Logo',
                 'description' => 'Opinionated PHP code style fixer for minimalists.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/pint',
+                'href' => DocsLink::get('pint'),
             ],
             'prompts' => [
                 'name' => 'Prompts',
                 'image-alt' => 'Laravel Prompts Logo',
                 'description' => 'Beautiful and user-friendly forms for command-line applications.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/prompts',
+                'href' => DocsLink::get('prompts'),
             ],
             'sail' => [
                 'name' => 'Sail',
                 'image-alt' => 'Laravel Sail Logo',
                 'description' => 'Hand-crafted Laravel local development experience using Docker.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/sail',
+                'href' => DocsLink::get('sail'),
             ],
             'sanctum' => [
                 'name' => 'Sanctum',
                 'image-alt' => 'Laravel Sanctum Logo',
                 'description' => 'API and mobile application authentication without wanting to pull your hair out.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/sanctum',
+                'href' => DocsLink::get('sanctum'),
             ],
             'scout' => [
                 'name' => 'Scout',
                 'image-alt' => 'Laravel Scout Logo',
                 'description' => 'Lightning fast full-text search for your application\'s Eloquent models.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/scout',
+                'href' => DocsLink::get('scout'),
             ],
             'socialite' => [
                 'name' => 'Socialite',
                 'image-alt' => 'Laravel Socialite Logo',
                 'description' => 'Social authentication via Facebook, Twitter, GitHub, LinkedIn, and more.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/socialite',
+                'href' => DocsLink::get('socialite'),
             ],
             'spark' => [
                 'name' => 'Spark',
@@ -155,7 +157,7 @@ final class Ecosystem
                 'name' => 'Telescope',
                 'image-alt' => 'Laravel Telescope Logo',
                 'description' => 'Debug your application using our debugging and insight UI.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/telescope',
+                'href' => DocsLink::get('telescope'),
             ],
             'vapor' => [
                 'name' => 'Vapor',
