@@ -186,4 +186,14 @@ class Documentation
             '4.2' => '4.2',
         ];
     }
+
+	/**
+     * Get the latest Laravel version.
+     *
+     * @return string
+     */
+	public static function getLatestLaravelVersion()
+	{
+		return config('docs.latest_laravel_version');
+	}
 }
