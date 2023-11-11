@@ -33,21 +33,7 @@
                         </nav>
 
                         @php
-                            $promote = null;
-
-                            switch(random_int(1, 3)) {
-                                case 1:
-                                    $promote = 'forge';
-                                    break;
-
-                                case 2:
-                                    $promote = 'vapor';
-                                    break;
-
-                                case 3:
-                                    $promote = 'nova';
-                                    break;
-                            }
+						$promote = Illuminate\Support\Arr::random(['forge', 'vapor', 'nova'])
                         @endphp
 
                         @if ($promote == 'forge')
@@ -182,7 +168,7 @@
 
                     <section class="mt-8 md:mt-16">
                         <section class="docs_main max-w-prose">
-                            @unless ($currentVersion == 'master' || version_compare($currentVersion, DEFAULT_VERSION) >= 0)
+                            @unless ($currentVersion == 'master' || version_compare($currentVersion, $latestVersion) >= 0)
                                 <blockquote>
                                     <div class="callout">
                                         <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg dark:bg-dark-600 lg:flex lg:items-center">
@@ -192,14 +178,14 @@
 
                                             <p class="mb-0 lg:ml-4">
                                                 <strong>WARNING</strong> You're browsing the documentation for an old version of Laravel.
-                                                Consider upgrading your project to <a href="{{ route('docs.version', DEFAULT_VERSION) }}">Laravel {{ DEFAULT_VERSION }}</a>.
+                                                Consider upgrading your project to <a href="{{ route('docs.version', $latestVersion) }}">Laravel {{ $latestVersion }}</a>.
                                             </p>
                                         </div>
                                     </div>
                                 </blockquote>
                             @endunless
 
-                            @if ($currentVersion == 'master' || version_compare($currentVersion, DEFAULT_VERSION) > 0)
+                            @if ($currentVersion == 'master' || version_compare($currentVersion, $latestVersion) > 0)
                                 <blockquote>
                                     <div class="callout">
                                         <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center">
