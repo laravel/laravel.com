@@ -4,19 +4,8 @@ use App\Team;
 use App\Logos;
 use App\DocsLink;
 use App\Documentation;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocsController;
-
-if (! defined('SHOW_VAPOR')) {
-    define('SHOW_VAPOR', random_int(1, 2) === 1);
-}
-
-if (! defined('SHOW_PROMO')) {
-	$promo = Arr::random(['FORGE', 'VAPOR', 'PARTNERS']);
-	
-	define('SHOW_PROMO', $promo);
-}
 
 Route::group(['prefix' => 'docs'], function () {
     Route::get('/', [DocsController::class, 'showRootPage']);
