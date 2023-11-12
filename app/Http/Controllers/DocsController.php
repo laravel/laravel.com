@@ -77,11 +77,7 @@ class DocsController extends Controller
         if (! $this->isVersion($version)) {
             return redirect('docs/'.$this->latestLaravelVersion.'/'.$version, 301);
         }
-
-        if (! defined('CURRENT_VERSION')) {
-            define('CURRENT_VERSION', $version);
-        }
-
+		
         $sectionPage = $page ?: 'installation';
         $content = $this->docs->get($version, $sectionPage);
 
