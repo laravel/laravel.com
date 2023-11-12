@@ -15,7 +15,7 @@ class DocsController extends Controller
      */
     protected $docs;
 
-	protected $latestLaravelVersion;
+	protected string $latestLaravelVersion;
 
     /**
      * Create a new controller instance.
