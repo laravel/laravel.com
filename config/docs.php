@@ -8,7 +8,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This variable represents the latest Laravel version used in links to
-	| documentation and redirects. 
+    | documentation and redirects. 
     |
     */
 
