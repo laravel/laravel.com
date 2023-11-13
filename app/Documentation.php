@@ -202,8 +202,8 @@ class Documentation
      */
 	public static function getLink(string $section, string $version = null): string
 	{
-		$latestLaravelVersion = $version ?? self::getLatestLaravelVersion();
+		$selectedVersion = $version ?? self::getLatestLaravelVersion();
 
-		return '/docs/' . $latestLaravelVersion . '/' . $section;
+		return '/docs/' . $selectedVersion . '/' . $section;
 	}
 }
