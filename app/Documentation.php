@@ -196,4 +196,14 @@ class Documentation
 	{
 		return config('docs.latest_laravel_version');
 	}
+
+	/**
+     * Get the URL for a specific documentation section.
+     */
+	public static function getLink(string $section, string $version = null): string
+	{
+		$latestLaravelVersion = $version ?? self::getLatestLaravelVersion();
+
+		return '/docs/' . $latestLaravelVersion . '/' . $section;
+	}
 }

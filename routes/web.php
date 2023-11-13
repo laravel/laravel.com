@@ -2,7 +2,6 @@
 
 use App\Team;
 use App\Logos;
-use App\DocsLink;
 use App\Documentation;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocsController;
@@ -11,18 +10,18 @@ Route::group(['prefix' => 'docs'], function () {
     Route::get('/', [DocsController::class, 'showRootPage']);
 
     Route::get('/cashier', function () {
-        return redirect(trim(DocsLink::get('billing/')), 301);
+        return redirect(trim(Documentation::getLink('billing/')), 301);
     });
 
     Route::get('/{version}/cashier', function ($version) {
-        return redirect(trim(DocsLink::get('billing/'), $version), 301);
+        return redirect(trim(Documentation::getLink('billing/'), $version), 301);
     });
 
     Route::get('/6.0/{page?}', function ($page = null) {
         $page = $page ?: 'installation';
         $page = $page == Documentation::getLatestLaravelVersion() ? 'installation' : $page;
 
-        return redirect(trim(DocsLink::get("$page/")), 301);
+        return redirect(trim(Documentation::getLink("$page/")), 301);
     });
 
     Route::get('/{version}/index.json', [DocsController::class, 'index']);
