@@ -142,6 +142,11 @@ Route::get('team', function () {
                 'github_username' => 'christophrumpel',
                 'twitter_username' => 'christophrumpel',
                 'location' => 'Austria',
+            ], [
+                'name' => 'Mohamed Said',
+                'github_username' => 'themsaid',
+                'twitter_username' => 'themsaid',
+                'location' => 'Dubai',
             ],
         ]
     ]);
