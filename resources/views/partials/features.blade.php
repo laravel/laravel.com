@@ -174,7 +174,7 @@
         <pre><x-torchlight-code language="php">
             $schedule->job(NotifySubscribers::class)
                 ->dailyAt('9:00')
-                ->onOneServer();
+                ->onOneServer()
                 ->withoutOverlapping();
         </x-torchlight-code></pre>
 
