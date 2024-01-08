@@ -69,11 +69,11 @@ function replaceBlockquotesWithCalloutsInDocs() {
         });
 
         // GitHub styled notes...
-        replaceBlockquote(el, /^<strong>(.*?)<\/strong>(?:<br>\n?)?/, (type) => {
+        replaceBlockquote(el, /^\[\!(.*?)\](?:<br>\n?)?/, (type) => {
             switch (type) {
-                case "Warning":
+                case "WARNING":
                     return ['/img/callouts/exclamation.min.svg', 'bg-red-600'];
-                case "Note":
+                case "NOTE":
                     return ['/img/callouts/lightbulb.min.svg', 'bg-purple-600'];
                 default:
                     return [null, null];
