@@ -79,6 +79,18 @@ function replaceBlockquotesWithCalloutsInDocs() {
                     return [null, null];
             }
         });
+
+        // Legagcy GitHub styled notes...
+        replaceBlockquote(el, /^<strong>(.*?)<\/strong>(?:<br>\n?)?/, (type) => {
+            switch (type) {
+                case "Warning":
+                    return ['/img/callouts/exclamation.min.svg', 'bg-red-600'];
+                case "Note":
+                    return ['/img/callouts/lightbulb.min.svg', 'bg-purple-600'];
+                default:
+                    return [null, null];
+            }
+        });
     });
 }
 
