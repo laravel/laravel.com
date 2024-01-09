@@ -69,6 +69,18 @@ function replaceBlockquotesWithCalloutsInDocs() {
         });
 
         // GitHub styled notes...
+        replaceBlockquote(el, /^\[\!(.*?)\](?:<br>\n?)?/, (type) => {
+            switch (type) {
+                case "WARNING":
+                    return ['/img/callouts/exclamation.min.svg', 'bg-red-600'];
+                case "NOTE":
+                    return ['/img/callouts/lightbulb.min.svg', 'bg-purple-600'];
+                default:
+                    return [null, null];
+            }
+        });
+
+        // Legagcy GitHub styled notes...
         replaceBlockquote(el, /^<strong>(.*?)<\/strong>(?:<br>\n?)?/, (type) => {
             switch (type) {
                 case "Warning":
