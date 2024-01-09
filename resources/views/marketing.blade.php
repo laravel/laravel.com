@@ -451,7 +451,7 @@
             <x-testimonial name="Jason Beggs"
                 content="Laravel and its ecosystem of tools help me build client projects faster, more secure, and higher quality than any other tools out there.">
                 <x-slot name="title">
-                    Owner of <a href="https://roasted.dev" target="_blank" class="text-red-500">roasted.dev</a>
+                    Owner of <a href="https://designtotailwind.com" target="_blank" class="text-red-500">Design to Tailwind</a>
                 </x-slot>
             </x-testimonial>
             <x-testimonial name="Joseph Silber"

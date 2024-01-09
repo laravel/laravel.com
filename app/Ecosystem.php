@@ -121,6 +121,12 @@ final class Ecosystem
                 'description' => 'Beautiful and user-friendly forms for command-line applications.',
                 'href' => '/docs/' . DEFAULT_VERSION . '/prompts',
             ],
+            'pulse' => [
+                'name' => 'Pulse',
+                'image-alt' => 'Laravel Pulse Logo',
+                'description' => 'At-a-glance insights into your application\'s performance and usage.',
+                'href' => 'https://pulse.laravel.com',
+            ],
             'sail' => [
                 'name' => 'Sail',
                 'image-alt' => 'Laravel Sail Logo',

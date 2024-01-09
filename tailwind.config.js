@@ -31,7 +31,8 @@ const accentColors = {
     livewire: '#fb70a9',
     inertia: '#9553e9',
     prompts: '#4ade80',
-    herd: '#dc2626'
+    herd: '#dc2626',
+    pulse: '#7c2fc7',
 };
 
 export default {
