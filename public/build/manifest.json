@@ -9,7 +9,7 @@
       "resources/js/docs.js",
       "resources/js/components/accessibility.js"
     ],
-    "file": "assets/app-6dd0bd45.js",
+    "file": "assets/app-2c9b9d45.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -19,7 +19,7 @@
     "src": "resources/js/components/accessibility.js"
   },
   "resources/js/docs.js": {
-    "file": "assets/docs-fb64461c.js",
+    "file": "assets/docs-80215298.js",
     "imports": [
       "resources/js/app.js"
     ],
