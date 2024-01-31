@@ -59,3 +59,43 @@ pre code.torchlight .line {
 pre code.torchlight .line-number {
     @apply pr-4;
 }
+
+.tabbed-code {
+    @apply my-5 bg-dark-500 rounded-md overflow-hidden;
+
+    pre {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .tabbed-code-nav {
+        @apply flex px-2 pt-2;
+
+        .tabbed-code-nav-button {
+            @apply px-3 pt-2.5 pb-2.5 rounded-t text-sm text-gray-300;
+
+            &[data-tab="Pest"],
+            &[data-tab="PHPUnit"] {
+                background-size: 1rem;
+                background-repeat: no-repeat;
+                background-position: 0.75rem center;
+            }
+
+            &.active {
+                background-color: #292D3E;
+            }
+        }
+    }
+
+    .tabbed-code-body {
+        background-color: #292D3E;
+
+        .code-container {
+            @apply m-0 rounded-none hidden;
+
+            &.active {
+                @apply block;
+            }
+        }
+    }
+}

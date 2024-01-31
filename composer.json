@@ -10,8 +10,9 @@
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
-        "laravel/tinker": "^2.8",
         "laravel/sanctum": "^3.2",
+        "laravel/tinker": "^2.8",
+        "laravel/unfenced": "dev-main",
         "spatie/laravel-sitemap": "^6.0",
         "symfony/browser-kit": "^6.0",
         "torchlight/torchlight-commonmark": "^0.5.2",
@@ -24,6 +25,12 @@
         "nunomaduro/collision": "^7.0",
         "phpunit/phpunit": "^10.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:laravel-labs/unfenced.git"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
