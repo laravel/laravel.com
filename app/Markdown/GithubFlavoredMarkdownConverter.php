@@ -6,6 +6,7 @@ use League\CommonMark\MarkdownConverter;
 use League\CommonMark\Environment\Environment;
 use App\Markdown\GithubFlavoredMarkdownExtension;
 use Torchlight\Commonmark\V2\TorchlightExtension;
+use Laravel\Unfenced\UnfencedExtension;
 use League\CommonMark\Environment\EnvironmentInterface;
 use League\CommonMark\Extension\Attributes\AttributesExtension;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
@@ -25,6 +26,7 @@ class GithubFlavoredMarkdownConverter extends MarkdownConverter
         $environment = new Environment($config);
         $environment->addExtension(new CommonMarkCoreExtension());
         $environment->addExtension(new GithubFlavoredMarkdownExtension());
+        $environment->addExtension(new UnfencedExtension());
         $environment->addExtension(new AttributesExtension());
         $environment->addExtension(new TorchlightExtension());
 
