@@ -82,13 +82,13 @@ pre code.torchlight .line-number {
             }
 
             &.active {
-                background-color: #292D3E;
+                background-color: rgb(38, 42, 54, 1);
             }
         }
     }
 
     .tabbed-code-body {
-        background-color: #292D3E;
+        background-color: rgb(38, 42, 54, 1);
 
         .code-container {
             @apply m-0 rounded-none hidden;
