@@ -39,16 +39,16 @@
         </section>
     </div>
 
-    <div class="hidden md:block md:overflow-hidden md:mt-24">
+{{--     <div class="hidden md:block md:overflow-hidden md:mt-24">
         <div class="flex items-center justify-center gap-x-10">
             @foreach ($logos as $logo)
                 <img src="/images/companies/{{ \Str::slug($logo['company']) }}.png" alt="{{ $logo['company'] }}"
                     style="height: {{ $logo['logo-height'] }}px">
             @endforeach
         </div>
-    </div>
+    </div> --}}
 
-    <div class="relative overflow-hidden py-16 md:pt-24 lg:pt-64">
+    <div class="relative overflow-hidden py-16 md:pt-24 lg:pt-48">
         <x-radial-blur class="right-[-20%] top-0 w-[640px] h-[640px]" />
         <div class="hidden lg:block absolute -right-2 bottom-40 pointer-events-none">
             <x-cube :delay="2000" />
