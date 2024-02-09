@@ -3,7 +3,7 @@
         [
             'title' => 'Highlights',
             'links' => [
-                'Our Team' => '/team',
+                // 'Our Team' => '/team',
                 'Release Notes' => '/docs/' . DEFAULT_VERSION . '/releases',
                 'Getting Started' => '/docs/' . DEFAULT_VERSION . '/installation',
                 'Routing' => '/docs/' . DEFAULT_VERSION . '/routing',
