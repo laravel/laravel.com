@@ -48,8 +48,8 @@
         </div>
     </div> --}}
 
-    <div class="relative overflow-hidden py-16 md:pt-24 lg:pt-48">
-        <x-radial-blur class="right-[-20%] top-0 w-[640px] h-[640px]" />
+    <div class="relative overflow-hidden py-16 md:pt-24 lg:pt-36">
+        {{-- <x-radial-blur class="right-[-20%] top-0 w-[640px] h-[640px]" /> --}}
         <div class="hidden lg:block absolute -right-2 bottom-40 pointer-events-none">
             <x-cube :delay="2000" />
         </div>
