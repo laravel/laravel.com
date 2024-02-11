@@ -58,11 +58,11 @@
             ],
         ],
     ];
-    
+
     foreach (App\Ecosystem::items() as $ecosystemItem) {
         $links[3]['links'][$ecosystemItem['name']] = $ecosystemItem['href'];
     }
-    
+
     $is_docs_page = request()->is('docs/*');
 @endphp
 
@@ -144,5 +144,46 @@
                 Code highlighting provided by <a href="https://torchlight.dev">Torchlight</a>
             </p>
         </div>
+        <div onclick="scrollToTop()" title="Scroll to top" id="scrollToTop" style="position: fixed; bottom: 20px; right: 20px; background-color: #f7f8fb; z-index: 100; box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.25); padding: 0.1em;max-width: 130px; box-sizing: content-box; display: none;" class="flex items-center justify-center h-screen">
+            <button class="" style="display: block:">
+                <svg
+                    width="2em"
+                    height="2em"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                >
+                    <path
+                        d="M12 10.545L7.176 15.37a1.86 1.86 0 11-2.631-2.631l6.077-6.077a1.949 1.949 0 012.756 0l6.077 6.077a1.86 1.86 0 11-2.631 2.63L12 10.546z"
+                        fill="currentcolor"
+                        fillRule="evenodd">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <script type="text/javascript">
+            window.onscroll = function() {scrollFunction()};
+                function scrollFunction() {
+                    const ads = document.getElementById("carbonads")
+                    const btn = document.getElementById("scrollToTop")
+
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    ads.style.bottom = "65px"
+                    ads.style.transition = "bottom 0.3s ease";
+                    btn.style.display = "flex"
+                } else {
+                    ads.style.bottom = "20px"
+                    ads.style.transition = "bottom 0.3s ease";
+                    btn.style.display = "none"
+                }
+            }
+
+            function scrollToTop(params) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            }
+        </script>
     </div>
 </footer>
