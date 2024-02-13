@@ -2,7 +2,7 @@
     $news = Illuminate\Support\Arr::random(['nova', 'forge', 'vapor', 'pulse', 'laracon-in']);
 ?>
 
-<div class="items-center justify-center hidden p-2 text-sm text-center text-white lg:flex bg-gradient-to-b from-red-500 to-red-600">
+<div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm">
     @if ($news === 'herd')
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round">
