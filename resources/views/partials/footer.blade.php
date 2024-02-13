@@ -29,7 +29,7 @@
                 'Larabelles' => 'https://larabelles.com/',
                 'Jobs' => 'https://larajobs.com',
                 'Forums' => 'https://laracasts.com/discuss',
-                'Shop' => 'https://laravel.bigcartel.com/products',
+                // 'Shop' => 'https://laravel.bigcartel.com/products',
                 'Trademark' => '/trademark',
             ],
         ],

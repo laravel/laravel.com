@@ -61,7 +61,7 @@
                 </li>
                 <li><a href="https://laravel-news.com">News</a></li>
                 <li><a href="https://partners.laravel.com">Partners</a></li>
-                <li><a href="https://laravel.bigcartel.com/">Shop</a></li>
+                {{-- <li><a href="https://laravel.bigcartel.com/">Shop</a></li> --}}
             </ul>
             <div class="flex-1 flex items-center justify-end">
                 <button id="docsearch"></button>
@@ -96,7 +96,7 @@
                     <li><a class="block w-full py-2" href="https://vapor.laravel.com">Vapor</a></li>
                     <li><a class="block w-full py-3" href="https://laravel-news.com">News</a></li>
                     <li><a class="block w-full py-3" href="https://partners.laravel.com">Partners</a></li>
-                    <li><a class="block w-full py-3" href="https://laravel.bigcartel.com/products">Shop</a></li>
+                    {{-- <li><a class="block w-full py-3" href="https://laravel.bigcartel.com/products">Shop</a></li> --}}
                     <li class="flex sm:justify-center"><x-button.secondary class="mt-3 w-full max-w-md" href="/docs">Documentation</x-button.secondary></li>
                 </ul>
             </div>
