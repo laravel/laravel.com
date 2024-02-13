@@ -55,6 +55,9 @@
         <!-- Fathom - beautiful, simple website analytics -->
         <script src="https://cdn.usefathom.com/script.js" data-site="DVMEKBYF" defer></script>
         <!-- / Fathom -->
+
+        <!-- Clearbit -->
+        <script async src="https://tag.clearbitscripts.com/v1/pk_97d2bf69f817feb07be42fcda1460119/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script>
     @endproduction
 
     @php
