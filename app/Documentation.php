@@ -96,7 +96,7 @@ class Documentation
             }
 
             return [
-                'pages' => collect(explode(PHP_EOL, $this->replaceLinks($version, $this->files->get($path))))
+                'pages' => collect(explode(PHP_EOL, $this->files->get($path)))
                     ->filter(fn ($line) => Str::contains($line, '/docs/{{version}}/'))
                     ->map(fn ($line) => resource_path(Str::of($line)->afterLast('(/')->before(')')->replace('{{version}}', $version)->append('.md')))
                     ->filter(fn ($path) => $this->files->exists($path))
