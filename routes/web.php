@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocsController;
 
 if (! defined('DEFAULT_VERSION')) {
-    define('DEFAULT_VERSION', '10.x');
+    define('DEFAULT_VERSION', '11.x');
 }
 
 if (! defined('SHOW_VAPOR')) {
