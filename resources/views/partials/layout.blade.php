@@ -58,6 +58,9 @@
 
         <!-- Clearbit -->
         <script async src="https://tag.clearbitscripts.com/v1/pk_97d2bf69f817feb07be42fcda1460119/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script>
+
+        <!-- HubSpot -->
+          <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/45240648.js"></script>
     @endproduction
 
     @php
