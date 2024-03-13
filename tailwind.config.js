@@ -33,6 +33,7 @@ const accentColors = {
     prompts: '#4ade80',
     herd: '#dc2626',
     pulse: '#7c2fc7',
+    reverb: '#F85D06',
 };
 
 export default {

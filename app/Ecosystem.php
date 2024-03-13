@@ -173,7 +173,7 @@ final class Ecosystem
                 'name' => 'Reverb',
                 'image-alt' => 'Laravel Reverb Logo',
                 'description' => 'Laravel Reverb brings real-time WebSocket communication for Laravel applications.',
-                'href' => '/docs/' . DEFAULT_VERSION . '/reverb',
+                'href' => 'https://reverb.laravel.com/',
             ],
         ];
     }
