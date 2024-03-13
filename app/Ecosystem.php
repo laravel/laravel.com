@@ -127,6 +127,12 @@ final class Ecosystem
                 'description' => 'At-a-glance insights into your application\'s performance and usage.',
                 'href' => 'https://pulse.laravel.com',
             ],
+            'reverb' => [
+                'name' => 'Reverb',
+                'image-alt' => 'Laravel Reverb Logo',
+                'description' => 'Blazing fast and scalable WebSockets for your application.',
+                'href' => 'https://reverb.laravel.com',
+            ],
             'sail' => [
                 'name' => 'Sail',
                 'image-alt' => 'Laravel Sail Logo',
