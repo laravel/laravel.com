@@ -168,7 +168,13 @@ final class Ecosystem
                 'image-alt' => 'Laravel Vapor Logo',
                 'description' => 'Laravel Vapor is a serverless deployment platform for Laravel, powered by AWS.',
                 'href' => 'https://vapor.laravel.com',
-            ]
+            ],
+            'reverb' => [
+                'name' => 'Reverb',
+                'image-alt' => 'Laravel Reverb Logo',
+                'description' => 'Laravel Reverb brings real-time WebSocket communication for Laravel applications.',
+                'href' => '/docs/' . DEFAULT_VERSION . '/reverb',
+            ],
         ];
     }
 }
