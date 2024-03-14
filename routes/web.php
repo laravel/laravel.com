@@ -155,3 +155,5 @@ Route::get('/', function () {
 Route::view('frontend', 'frontend')->name('frontend');
 
 Route::view('trademark', 'trademark')->name('trademark');
+
+Route::view('hiring', 'hiring')->name('hiring');
