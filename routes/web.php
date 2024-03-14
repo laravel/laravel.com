@@ -156,4 +156,4 @@ Route::view('frontend', 'frontend')->name('frontend');
 
 Route::view('trademark', 'trademark')->name('trademark');
 
-Route::view('hiring', 'hiring')->name('hiring');
+Route::view('careers', 'careers')->name('careers');
