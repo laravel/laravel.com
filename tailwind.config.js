@@ -1,6 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import colors from 'tailwindcss/colors';
-import { version } from 'vite';
 
 const accentColors = {
     vapor: '#25c4f2',
