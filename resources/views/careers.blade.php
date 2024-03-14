@@ -69,7 +69,7 @@
 
     <hr class="bg-gradient-to-r from-white from-10% via-red-500 via-50% to-white to-90% border-none h-[1px] max-w-screen-xl w-full mx-auto xl:px-5">
 
-    <div class="max-w-screen-xl w-full mx-auto px-5 py-20 space-y-16">
+    <div class="max-w-screen-xl w-full mx-auto px-5 py-20 space-y-16" id="positions">
         <h2 class="text-4xl font-bold md:text-5xl">Open positions</h2>
         <div class="space-y-4">
             @foreach ([
