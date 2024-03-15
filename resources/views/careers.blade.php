@@ -10,7 +10,7 @@
     <section class="relative overflow-hidden pt-48 pb-20 lg:pt-48 xl:pt-56 xl:pb-28">
         <div class="relative max-w-screen-xl px-5 mx-auto">
             <div class="relative">
-                <h1 class="max-w-3xl mx-auto text-5xl sm:text-5xl font-bold text-center md:text-6xl lg:text-7xl">Join us.<br>Make the web.<br>Better.</h1>
+                <h1 class="max-w-3xl mx-auto text-5xl sm:text-5xl font-bold text-center md:text-6xl lg:text-7xl">Make the web.<br>Better.<br>Together.</h1>
                 <div
                     class="mt-6 max-w-sm mx-auto flex flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
                     <x-button.primary class="w-full sm:w-auto" href="#positions">
@@ -28,34 +28,34 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
             @foreach ([
                 [
-                    'image' => 'resources/images/health-benefits.svg',
-                    'title' => 'Inclusive health package',
-                    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                ],
-                [
                     'image' => 'resources/images/learn-and-grow.svg',
                     'title' => 'Learn and grow',
-                    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'description' => 'Work with the best and brightest in the Laravel ecosystem, building the tools that Laravel developers love.',
+                ],
+                [
+                    'image' => 'resources/images/health-benefits.svg',
+                    'title' => 'Health benefits',
+                    'description' => 'Laravel is proud to offer robust, private health benefits no matter what country you reside in.',
                 ],
                 [
                     'image' => 'resources/images/life-work-balance.svg',
-                    'title' => 'Balanced working life',
-                    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'title' => 'Remote workplace',
+                    'description' => 'We are a fully distributed team working together to build the next generation of Laravel packages and products.',
                 ],
                 [
-                    'image' => 'resources/images/diversity-inclusion.svg',
-                    'title' => 'Diversity and inclusion',
-                    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'image' => 'resources/images/vacation.svg',
+                    'title' => 'Take a vacation',
+                    'description' => 'We believe well-rested employees do their best work. Laravel offers generous vacation time plus your country\'s holidays.',
                 ],
                 [
                     'image' => 'resources/images/perks.svg',
-                    'title' => 'Generous perks program',
-                    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'title' => 'Retirement contributions',
+                    'description' => 'Retirement fund / pension contributions are available to Laravel employees, tailored to your country.',
                 ],
                 [
                     'image' => 'resources/images/diversity-inclusion.svg',
-                    'title' => 'Inclusive health package',
-                    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'title' => 'Stock option eligibility',
+                    'description' => 'Laravel employees are eligible for stock options so that you share in Laravel\'s overall success.',
                 ],
             ] as $benefit)
                 <div class="space-y-4">

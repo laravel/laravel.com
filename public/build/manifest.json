@@ -32,6 +32,10 @@
     "file": "assets/perks-1c409941.svg",
     "src": "resources/images/perks.svg"
   },
+  "resources/images/vacation.svg": {
+    "file": "assets/vacation-9c4fa166.svg",
+    "src": "resources/images/vacation.svg"
+  },
   "resources/js/app.js": {
     "dynamicImports": [
       "resources/js/docs.js",
