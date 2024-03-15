@@ -74,17 +74,17 @@
         <div class="space-y-4">
             @foreach ([
                 [
-                    'title' => 'Vibes master',
-                    'location' => 'Bow Tie Nebula',
+                    'title' => 'Lead Infrastructure Engineer',
+                    'location' => 'Remote',
                     'link' => '#',
                 ],
                 [
-                    'title' => 'Front-end developer',
-                    'location' => 'United States',
+                    'title' => 'Full-Stack Developer',
+                    'location' => 'Remote',
                     'link' => '#',
                 ],
                 [
-                    'title' => 'Product owner',
+                    'title' => 'Infrastructure Support',
                     'location' => 'Remote',
                     'link' => '#',
                 ],
