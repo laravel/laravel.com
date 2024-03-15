@@ -4,6 +4,10 @@ import Focus from '@alpinejs/focus';
 import './clipboard';
 import './components/search';
 
+import.meta.glob([
+  '../images/**',
+]);
+
 window.Alpine = Alpine;
 
 Alpine.plugin(Focus);

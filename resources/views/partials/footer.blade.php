@@ -27,6 +27,7 @@
                 'Laracon EU' => 'https://laracon.eu/',
                 'Laracon India' => 'https://laracon.in/',
                 'Larabelles' => 'https://larabelles.com/',
+                'Careers' => route('careers'),
                 'Jobs' => 'https://larajobs.com',
                 'Forums' => 'https://laracasts.com/discuss',
                 // 'Shop' => 'https://laravel.bigcartel.com/products',
