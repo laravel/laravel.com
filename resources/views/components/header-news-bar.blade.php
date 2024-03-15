@@ -1,5 +1,5 @@
 <?php
-    $news = Illuminate\Support\Arr::random(['nova', 'forge', 'vapor', 'pulse', 'laracon-in', 'careers']);
+    $news = Illuminate\Support\Arr::random(['nova', 'forge', 'vapor', 'pulse', 'careers']);
 ?>
 
 <div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm">
@@ -73,7 +73,7 @@
         </div>
 
         <div class="mt-px ml-1">
-            Laravel is hiring! Join us and make the web. Better. View <a href="{{ route('careers') }}" class="underline">open positions</a>.
+            Laravel is hiring! <a href="{{ route('careers') }}" class="underline">Help us build the future of Laravel</a>.
         </div>
 
     @endif
