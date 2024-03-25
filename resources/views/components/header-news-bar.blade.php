@@ -1,5 +1,5 @@
 <?php
-    $news = Illuminate\Support\Arr::random(['nova', 'forge', 'vapor', 'pulse', 'reverb']);
+    $news = Illuminate\Support\Arr::random(['nova', 'forge', 'vapor', 'pulse', 'reverb', 'laracon']);
 ?>
 
 <div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm">
@@ -17,6 +17,13 @@
 
         <div class="mt-px ml-1">
             On macOS? Get started with PHP and Laravel faster than ever using <a href="https://herd.laravel.com" class="underline">Laravel Herd</a>.
+        </div>
+
+    @elseif ($news === 'laracon')
+        <div><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+
+        <div class="mt-px ml-1">
+            Join us in Dallax, TX! Tickets are now available for <a href="https://laracon.us" class="underline">Laracon US</a>.
         </div>
 
     @elseif ($news === 'laracon-in')
