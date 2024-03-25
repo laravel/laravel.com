@@ -75,7 +75,7 @@
         </div>
 
         <div class="mt-px ml-1">
-            Incoming transmission received. <a href="https://pulse.laravel.com" class="underline">Laravel Reverb</a> is now available!
+            Incoming transmission received. <a href="https://reverb.laravel.com" class="underline">Laravel Reverb</a> is now available!
         </div>
 
     @elseif ($news === 'nova')
