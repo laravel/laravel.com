@@ -16,7 +16,7 @@
         </div>
 
         <div class="mt-px ml-1">
-            On macOS? Get started with PHP and Laravel faster than ever using <a href="https://herd.laravel.com" class="underline">Laravel Herd</a>.
+            Get started with PHP and Laravel faster than ever using <a href="https://herd.laravel.com" class="underline">Laravel Herd</a>.
         </div>
 
     @elseif ($news === 'laracon')
