@@ -64,7 +64,7 @@ final class Ecosystem
             'herd' => [
                 'name' => 'Herd',
                 'image-alt' => 'Herd Logo',
-                'description' => 'The fastest Laravel local development experience - exclusively for macOS and Windows.',
+                'description' => 'The fastest Laravel local dev environment - now for macOS and Windows.',
                 'href' => 'https://herd.laravel.com',
             ],
             'horizon' => [
