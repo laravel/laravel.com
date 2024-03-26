@@ -1,8 +1,10 @@
 <?php
 
 use App\Documentation;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocsController;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Route;
 
 if (! defined('DEFAULT_VERSION')) {
     define('DEFAULT_VERSION', '11.x');
@@ -156,4 +158,12 @@ Route::view('frontend', 'frontend')->name('frontend');
 
 Route::view('trademark', 'trademark')->name('trademark');
 
-Route::view('careers', 'careers')->name('careers');
+Route::get('careers', function () {
+    $jobs = Cache::remember('jobs', 3600, function () {
+        return Http::withToken(
+            config('services.workable.token')
+        )->get('https://laravel.workable.com/spi/v3/jobs')['jobs'];
+    });
+
+    return view('careers', ['jobs' => $jobs]);
+})->name('careers');

@@ -72,29 +72,13 @@
     <div class="max-w-screen-xl w-full mx-auto px-5 py-20 space-y-16" id="positions">
         <h2 class="text-4xl font-bold md:text-5xl">Open positions</h2>
         <div class="space-y-4">
-            @foreach ([
-                [
-                    'title' => 'Lead Infrastructure Engineer',
-                    'location' => 'Remote',
-                    'link' => '#',
-                ],
-                [
-                    'title' => 'Full-Stack Developer',
-                    'location' => 'Remote',
-                    'link' => '#',
-                ],
-                [
-                    'title' => 'Infrastructure Support',
-                    'location' => 'Remote',
-                    'link' => '#',
-                ],
-            ] as $job)
+            @foreach ($jobs as $job)
                 <div class="p-6 bg-gray-50 border border-gray-100 space-y-4 sm:space-y-0 sm:flex sm:items-center sm:justify-between">
                     <div class="space-y-2">
                         <h3 class="text-xl font-bold leading-tight">{{ $job['title'] }}</h3>
-                        <p>{{ $job['location'] }}</p>
+                        <p>Remote</p>
                     </div>
-                    <x-button.primary class="w-full sm:w-auto" href="{{ $job['link'] }}">
+                    <x-button.primary class="w-full sm:w-auto" href="{{ $job['url'] }}">
                         Apply
                     </x-button.primary>
                 </div>
