@@ -79,7 +79,7 @@
                         <p>Remote</p>
                     </div>
                     <x-button.primary class="w-full sm:w-auto" href="{{ $job['url'] }}">
-                        Apply
+                        Read more
                     </x-button.primary>
                 </div>
             @endforeach
