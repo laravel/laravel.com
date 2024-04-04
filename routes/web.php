@@ -165,5 +165,7 @@ Route::get('careers', function () {
         )->get('https://laravel.workable.com/spi/v3/jobs')['jobs'];
     });
 
+    $jobs = collect($jobs)->filter(fn ($job) => $job['state'] === 'published')->all();
+
     return view('careers', ['jobs' => $jobs]);
 })->name('careers');
