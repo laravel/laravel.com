@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-409e9bd3.css",
+    "file": "assets/app-ad1fa258.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -41,7 +41,7 @@
       "resources/js/docs.js",
       "resources/js/components/accessibility.js"
     ],
-    "file": "assets/app-2c9b9d45.js",
+    "file": "assets/app-d0efee03.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -51,7 +51,7 @@
     "src": "resources/js/components/accessibility.js"
   },
   "resources/js/docs.js": {
-    "file": "assets/docs-80215298.js",
+    "file": "assets/docs-563d1b63.js",
     "imports": [
       "resources/js/app.js"
     ],

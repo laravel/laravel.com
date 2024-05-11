@@ -9,9 +9,12 @@
     <div class="relative max-w-screen-2xl mx-auto w-full py-4 bg-white transition duration-200 lg:bg-transparent lg:py-6">
         <div class="max-w-screen-xl mx-auto px-5 flex items-center justify-between">
             <div class="flex-1">
-                <a href="/" class="inline-flex items-center">
+                <a href="/" class="uwu-hidden inline-flex items-center">
                     <img class="w-12" src="/img/logomark.min.svg" alt="Laravel" width="50" height="52">
                     <img class="ml-5 sm:block" src="/img/logotype.min.svg" alt="Laravel" width="114" height="29">
+                </a>
+                <a href="/" class="uwu-visible inline-flex items-center">
+                    <img alt="Laravel" width="150" height="85" src="/img/logo.uwu.png">
                 </a>
             </div>
             <ul class="relative hidden lg:flex lg:items-center lg:justify-center lg:gap-6 xl:gap-10">

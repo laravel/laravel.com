@@ -1,0 +1,15 @@
+.uwu-visible {
+    display: none;
+}
+.uwu-hidden {
+    display: inline-flex;
+}
+
+.uwu {
+    .uwu-visible {
+        display: inline-flex;
+    }
+    .uwu-hidden {
+        display: none;
+    }
+}

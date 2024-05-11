@@ -9,7 +9,7 @@
         <div class="relative lg:flex lg:items-start">
             <aside class="hidden fixed top-0 bottom-0 left-0 z-20 h-full w-16 bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:shrink-0 lg:flex lg:flex-col lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full dark:from-dark-800 dark:to-dark-700">
                 <div class="relative min-h-0 flex-1 flex flex-col xl:w-80">
-                    <a href="/" class="flex items-center py-8 px-4 lg:px-8 xl:px-16">
+                    <a href="/" class="uwu-hidden flex items-center py-8 px-4 lg:px-8 xl:px-16">
                         <img
                             class="w-8 h-8 shrink-0 transition-all duration-300 lg:w-12 lg:h-12"
                             src="/img/logomark.min.svg"
@@ -24,6 +24,9 @@
                             width="114"
                             height="29"
                         >
+                    </a>
+                    <a href="/" class="uwu-visible inline-flex items-center py-8 px-4 lg:px-8 xl:px-16">
+                        <img alt="Laravel" width="150" height="85" src="/img/logo.uwu.png">
                     </a>
                     <div class="overflow-y-auto overflow-x-hidden px-4 lg:overflow-hidden lg:px-8 xl:px-16">
                         <nav id="indexed-nav" class="hidden lg:block lg:mt-4">
@@ -98,9 +101,12 @@
             >
                 <div class="relative mx-auto w-full py-10 bg-white transition duration-200 dark:bg-dark-700">
                     <div class="mx-auto px-8 sm:px-16 flex items-center justify-between">
-                        <a href="/" class="flex items-center">
+                        <a href="/" class="uwu-hidden flex items-center">
                             <img class="" src="/img/logomark.min.svg" alt="Laravel">
                             <img class="hidden ml-5 sm:block" src="/img/logotype.min.svg" alt="Laravel">
+                        </a>
+                        <a href="/" class="uwu-visible inline-flex items-center">
+                            <img alt="Laravel" width="75" height="42" src="/img/logo.uwu.png">
                         </a>
                         <div class="flex-1 flex items-center justify-end">
                             <button id="header__sun" onclick="toSystemMode()" title="Switch to system theme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">

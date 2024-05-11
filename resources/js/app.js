@@ -3,6 +3,7 @@ import Focus from '@alpinejs/focus';
 
 import './clipboard';
 import './components/search';
+import './uwu';
 
 import.meta.glob([
   '../images/**',
