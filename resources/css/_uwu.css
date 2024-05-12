@@ -1,6 +1,11 @@
 .uwu-visible {
     display: none;
 }
+
+.uwu-visible-block {
+    display: none;
+}
+
 .uwu-hidden {
     display: inline-flex;
 }
@@ -9,6 +14,11 @@
     .uwu-visible {
         display: inline-flex;
     }
+
+    .uwu-visible-block {
+        display: block;
+    }
+
     .uwu-hidden {
         display: none;
     }

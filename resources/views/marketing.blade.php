@@ -19,6 +19,7 @@
                     <x-cube :delay="1000" />
                 </div>
                 <div class="relative">
+                    <img class="mx-auto p-4 uwu-visible-block" alt="Laravel" width="480" height="271" src="/img/logo.uwu.png">
                     <h1 class="max-w-3xl mx-auto text-5xl font-bold text-center md:text-6xl lg:text-7xl">The PHP Framework
                         <br class="hidden lg:inline"><span class="text-red-500">for Web Artisans</span></h1>
                     <p
