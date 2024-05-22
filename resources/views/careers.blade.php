@@ -72,17 +72,23 @@
     <div class="max-w-screen-xl w-full mx-auto px-5 py-20 space-y-16" id="positions">
         <h2 class="text-4xl font-bold md:text-5xl">Open positions</h2>
         <div class="space-y-4">
-            @foreach ($jobs as $job)
-                <div class="p-6 bg-gray-50 border border-gray-100 space-y-4 sm:space-y-0 sm:flex sm:items-center sm:justify-between">
-                    <div class="space-y-2">
-                        <h3 class="text-xl font-bold leading-tight">{{ $job['title'] }}</h3>
-                        <p>Remote</p>
+            @if (count($jobs) > 0)
+                @foreach ($jobs as $job)
+                    <div class="p-6 bg-gray-50 border border-gray-100 space-y-4 sm:space-y-0 sm:flex sm:items-center sm:justify-between">
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold leading-tight">{{ $job['title'] }}</h3>
+                            <p>Remote</p>
+                        </div>
+                        <x-button.primary class="w-full sm:w-auto" href="{{ $job['url'] }}">
+                            Read more
+                        </x-button.primary>
                     </div>
-                    <x-button.primary class="w-full sm:w-auto" href="{{ $job['url'] }}">
-                        Read more
-                    </x-button.primary>
+                @endforeach
+            @else
+                <div class="text-xl max-w-4xl">
+                    Thank you for your interest in joining Laravel. Unfortunately, we do not have any open positions at the moment. Please check back later for future opportunities.
                 </div>
-            @endforeach
+            @endif
         </div>
     </div>
 @stop
