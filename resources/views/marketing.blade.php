@@ -526,7 +526,7 @@
                             </svg>
                             <span class="ml-3 text-sm">Forums</span>
                         </a>
-                        <a href="https://larajobs.com" target="_blank" class="inline-flex items-center">
+                        <a href="https://larajobs.com/?partner=5" target="_blank" class="inline-flex items-center">
                             <svg class="text-red-600 w-8 h-8" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke="currentColor" d="M.5.5h31v31H.5z" />

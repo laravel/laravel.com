@@ -28,7 +28,7 @@
                 'Laracon India' => 'https://laracon.in/',
                 'Larabelles' => 'https://larabelles.com/',
                 'Careers' => route('careers'),
-                'Jobs' => 'https://larajobs.com',
+                'Jobs' => 'https://larajobs.com/?partner=5',
                 'Forums' => 'https://laracasts.com/discuss',
                 // 'Shop' => 'https://laravel.bigcartel.com/products',
                 'Trademark' => '/trademark',
