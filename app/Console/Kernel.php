@@ -27,7 +27,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('sitemap:generate')->daily();
         $schedule->exec('bash /home/forge/laravel.com/build/api.sh')->daily();
-        $schedule->exec('bash /home/forge/laravel.com/build/docs.sh', Config::get(['services.cloudflare.zone', 'services.cloudflare.token']))->everyFiveMinutes();
+        $schedule->exec('bash /home/forge/laravel.com/build/docs.sh', Config::get(['services.cloudflare.zone', 'services.cloudflare.token']));
     }
 
     /**
