@@ -3,35 +3,32 @@
 set -e
 
 base=${base:-/home/forge/laravel.com}
-docs=${base}/resources/docs
-hashes=${base}/build/hashes
 versions=('8.x' '9.x' '10.x' '11.x' 'master')
-shouldBustCache=0
 
-for v in "${versions[@]}"
+for version in "${versions[@]}"
 do
-    # Update repositories...
-    cd "${docs}/${v}"
-    git pull origin "${v}"
+    cd "${base}/resources/docs/${version}"
+    previousHash=$(git rev-parse "${version}")
+    git fetch origin "${version}"
 
-    # Calculate md5 of the pulled markdown files and compare to the previous...
-    find "." -type f -name "*.md" | xargs md5sum > "${hashes}/${v}.pulled"
-    if ! cmp -s "${hashes}/${v}.pulled" "${hashes}/${v}.previous"; then
-        shouldBustCache=1
+    if [[ "${previousHash}" == $(git rev-parse "origin/${version}") ]]; then
+        continue
     fi
+
+    git pull origin "${version}"
+    git diff --name-only $previousHash HEAD | while read markdownFile; do
+        echo "https://laravel.com/docs/${version}/$(basename $markdownFile '.md')" >> "${base}/modified"
+    done
 done
 
-# Bust the Cloudflare cache...
-if [[ $shouldBustCache == 1 ]]; then
-    curl -X POST \
-      "https://api.cloudflare.com/client/v4/zones/${1}/purge_cache" \
-      -H 'Content-Type: application/json' \
-      -H "Authorization: Bearer ${2}" \
-      -d '{ "purge_everything": true }'
+if [ ! -f "${base}/modified" ]; then
+    exit 0
 fi
 
-# Mark pulled files as the previous files...
-for v in "${versions[@]}"
-do
-    mv -f "${hashes}/${v}.pulled" "${hashes}/${v}.previous"
-done
+files=$(jq --raw-input --slurp 'split("\n") | map(select(. != "")) | unique' "${base}/modified")
+curl -X POST --fail \
+  "https://api.cloudflare.com/client/v4/zones/${1}/purge_cache" \
+  -H 'Content-Type: application/json' \
+  -H "Authorization: Bearer ${2}" \
+  -d "{ \"files\": ${files} }"
+rm "${base}/modified"
