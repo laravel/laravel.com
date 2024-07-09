@@ -5,6 +5,7 @@
 /public/sitemap*.xml
 /storage/*.key
 /vendor
+/modified
 .DS_Store
 .env
 .phpunit.result.cache

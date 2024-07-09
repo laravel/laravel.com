@@ -34,4 +34,8 @@ return [
         'token' => env('WORKABLE_TOKEN'),
     ],
 
+    'cloudflare' => [
+        'zone' => env('CLOUDFLARE_ZONE'),
+        'token' => env('CLOUDFLARE_TOKEN'),
+    ],
 ];
