@@ -1,6 +1,7 @@
 import Alpine from 'alpinejs';
 import Focus from '@alpinejs/focus';
 import docsearch from '@docsearch/js';
+import 'instant.page'
 
 import.meta.glob([
   '../images/**',
