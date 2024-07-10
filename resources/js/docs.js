@@ -1,7 +1,39 @@
-wrapHeadingsInAnchors();
-setupNavCurrentLinkHandling();
-replaceBlockquotesWithCalloutsInDocs();
-highlightSupportPolicyTable();
+import './clipboard';
+
+window.toDarkMode = () => {
+    localStorage.theme = 'dark';
+    window.updateTheme();
+}
+
+window.toLightMode = () => {
+    localStorage.theme = 'light';
+    window.updateTheme();
+}
+
+window.toSystemMode = () => {
+    localStorage.theme = 'system';
+    window.updateTheme();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    wrapHeadingsInAnchors();
+    setupNavCurrentLinkHandling();
+    replaceBlockquotesWithCalloutsInDocs();
+    highlightSupportPolicyTable();
+
+    const skipToContentLink = document.querySelector('#skip-to-content-link');
+    const mainContentWrapper = document.querySelector('#main-content');
+
+    skipToContentLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        mainContentWrapper.setAttribute('tabindex', -1);
+        mainContentWrapper.focus();
+    });
+
+    mainContentWrapper.addEventListener('blur', () => {
+        mainContentWrapper.removeAttribute('tabindex');
+    });
+})
 
 function wrapHeadingsInAnchors() {
     [...document.querySelector('.docs_main').querySelectorAll('a[name]')].forEach(anchor => {
@@ -164,8 +196,3 @@ function highlightSupportPolicyTable() {
 function getCellDate(cell) {
     return Date.parse(cell.innerHTML.replace(/(\d+)(st|nd|rd|th)/, '$1'));
 }
-
-import { toDarkMode, toLightMode, toSystemMode } from './components/theme';
-window.toDarkMode = toDarkMode;
-window.toLightMode = toLightMode;
-window.toSystemMode = toSystemMode;
