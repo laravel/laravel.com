@@ -1,19 +1,5 @@
 import './clipboard';
-
-window.toDarkMode = () => {
-    localStorage.theme = 'dark';
-    window.updateTheme();
-}
-
-window.toLightMode = () => {
-    localStorage.theme = 'light';
-    window.updateTheme();
-}
-
-window.toSystemMode = () => {
-    localStorage.theme = 'system';
-    window.updateTheme();
-}
+import './theme'
 
 document.addEventListener('DOMContentLoaded', () => {
     wrapHeadingsInAnchors();
