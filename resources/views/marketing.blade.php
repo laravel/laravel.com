@@ -319,7 +319,7 @@
                             class="relative shrink-0 bg-{{ $ecosystemItemId }} flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                             <span
                                 class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="/img/ecosystem/{{ $ecosystemItemId }}.min.svg" alt="{{ $ecosystemItem['image-alt'] }}" class="relative w-7 h-7">
+                            <img src="/img/ecosystem/{{ $ecosystemItemId }}.min.svg" alt="{{ $ecosystemItem['image-alt'] }}" class="relative w-7 h-7" width="28" height="28" loading="lazy">
                         </div>
                         <div class="ml-4 leading-5">
                             <div>{{ $ecosystemItem['name'] }}</div>
@@ -360,7 +360,7 @@
                     <a href="{{ $ecosystemItem['href'] }}" class="flex p-4 border border-gray-200 border-opacity-60">
                         <div class="relative shrink-0 bg-{{ $ecosystemItemId }} flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
                             <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="/img/ecosystem/{{ $ecosystemItemId }}.min.svg" alt="{{ $ecosystemItem['image-alt'] }}" class="relative @if ($ecosystemItemId === 'pennant') w-9 h-9 @else w-7 h-7 @endif">
+                            <img src="/img/ecosystem/{{ $ecosystemItemId }}.min.svg" alt="{{ $ecosystemItem['image-alt'] }}" class="relative @if ($ecosystemItemId === 'pennant') w-9 h-9 @else w-7 h-7 @endif" @if ($ecosystemItemId === 'pennant') width="36" height="36" @else width="28" height="28" @endif loading="lazy">
                         </div>
                         <div class="ml-4 leading-5">
                             <div>{{ $ecosystemItem['name'] }}</div>
@@ -563,7 +563,7 @@
             </div>
             <div class="flex justify-center lg:justify-end">
                 <div class="max-w-sm w-full pt-8 pb-12 px-6 border border-gray-200 -rotate-1 lg:px-12 lg:border-red-600">
-                    <img src="/images/laracon.png" class="max-w-[218px] w-full mx-auto" alt="laracon" />
+                    <img src="/images/laracon.png" class="max-w-[218px] w-full mx-auto" alt="laracon" width="222" height="241" loading="lazy"/>
                     <h3 class="mt-8 font-bold text-red-700 uppercase text-xs">Watch us on Laracasts</h3>
                     <h2 class="mt-3 font-bold text-4xl">Tune In</h2>
                     <p class="mt-4 text-gray-700 text-sm leading-relaxed">Laracasts includes free videos and tutorials
@@ -583,7 +583,7 @@
                 <div class="absolute right-8 top-0 -translate-y-12 pointer-events-none">
                     <x-cube />
                 </div>
-                <img class="relative max-w-[480px] w-full lg:rotate-1" src="/images/partners.png" alt="partners" />
+                <img class="relative max-w-[480px] w-full lg:rotate-1" src="/images/partners.png" alt="partners" width="484" height="298" loading="lazy" />
             </div>
             <div class="relative flex justify-center lg:justify-end">
                 <div class="sm:max-w-md">

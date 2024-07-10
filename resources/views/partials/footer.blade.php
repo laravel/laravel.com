@@ -71,7 +71,7 @@
     <div class="max-w-screen-2xl mx-auto w-full {{ $is_docs_page ? 'px-8' : 'px-5' }}">
         <div>
             <a href="/" class="inline-flex">
-                <img class="w-16 h-16" src="/img/logomark.min.svg" alt="Laravel" loading="lazy">
+                <img class="w-16 h-16" src="/img/logomark.min.svg" alt="Laravel" width="64" height="64" loading="lazy">
             </a>
         </div>
 
