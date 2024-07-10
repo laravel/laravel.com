@@ -11,12 +11,10 @@
         "@docsearch/js": "^3.3.3",
         "alpinejs": "^3.7.1",
         "autoprefixer": "^10.4.14",
-        "babel-plugin-prismjs": "^2.0.1",
         "clipboard": "^2.0.10",
         "laravel-vite-plugin": "^0.7.6",
         "postcss": "^8.4.21",
         "postcss-import": "^14.0.0",
-        "prismjs": "^1.22.0",
         "tailwindcss": "^3.3.0",
         "vite": "^4.3.9"
     }

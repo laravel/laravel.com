@@ -1,17 +1,25 @@
-import Prism from 'prismjs';
-Prism.manual = true;
+import './clipboard';
+import './theme'
 
-// highlightCode();
-wrapHeadingsInAnchors();
-setupNavCurrentLinkHandling();
-replaceBlockquotesWithCalloutsInDocs();
-highlightSupportPolicyTable();
+document.addEventListener('DOMContentLoaded', () => {
+    wrapHeadingsInAnchors();
+    setupNavCurrentLinkHandling();
+    replaceBlockquotesWithCalloutsInDocs();
+    highlightSupportPolicyTable();
 
-function highlightCode() {
-    [...document.querySelectorAll('pre code')].forEach(el => {
-        Prism.highlightElement(el);
+    const skipToContentLink = document.querySelector('#skip-to-content-link');
+    const mainContentWrapper = document.querySelector('#main-content');
+
+    skipToContentLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        mainContentWrapper.setAttribute('tabindex', -1);
+        mainContentWrapper.focus();
     });
-}
+
+    mainContentWrapper.addEventListener('blur', () => {
+        mainContentWrapper.removeAttribute('tabindex');
+    });
+})
 
 function wrapHeadingsInAnchors() {
     [...document.querySelector('.docs_main').querySelectorAll('a[name]')].forEach(anchor => {
@@ -174,8 +182,3 @@ function highlightSupportPolicyTable() {
 function getCellDate(cell) {
     return Date.parse(cell.innerHTML.replace(/(\d+)(st|nd|rd|th)/, '$1'));
 }
-
-import { toDarkMode, toLightMode, toSystemMode } from './components/theme';
-window.toDarkMode = toDarkMode;
-window.toLightMode = toLightMode;
-window.toSystemMode = toSystemMode;

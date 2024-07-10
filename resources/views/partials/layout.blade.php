@@ -49,7 +49,11 @@
     <link rel="preconnect" href="https://{{ config('algolia.connections.main.id') }}-dsn.algolia.net" crossorigin />
 
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite([
+        'resources/css/app.css',
+        'resources/js/app.js',
+        ...request()->is('docs/*') ? ['resources/js/docs.js'] : [],
+    ])
 
     @production
         <!-- Fathom - beautiful, simple website analytics -->

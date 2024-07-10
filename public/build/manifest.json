@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-409e9bd3.css",
+    "file": "assets/app-416e1687.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -37,25 +37,13 @@
     "src": "resources/images/vacation.svg"
   },
   "resources/js/app.js": {
-    "dynamicImports": [
-      "resources/js/docs.js",
-      "resources/js/components/accessibility.js"
-    ],
-    "file": "assets/app-2c9b9d45.js",
+    "file": "assets/app-f72b41bb.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
-  "resources/js/components/accessibility.js": {
-    "file": "assets/accessibility-1f45336a.js",
-    "isDynamicEntry": true,
-    "src": "resources/js/components/accessibility.js"
-  },
   "resources/js/docs.js": {
-    "file": "assets/docs-80215298.js",
-    "imports": [
-      "resources/js/app.js"
-    ],
-    "isDynamicEntry": true,
+    "file": "assets/docs-59af3d22.js",
+    "isEntry": true,
     "src": "resources/js/docs.js"
   }
 }
