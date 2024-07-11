@@ -51,7 +51,7 @@
                     </h1>
                     <p class="hidden sm:block mt-6 max-w-2xl mx-auto text-center text-gray-700 text-md leading-relaxed md:mt-8 md:text-lg lg:mt-10 pointer-events-auto">Laravel is an intensely productive full-stack web framework. Pair Laravel and its rich ecosystem with Livewire, React, or Vue to build your next big idea and ship faster than you ever thought possible.</p>
                     <div class="hidden sm:flex mt-6 max-w-sm mx-auto flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
-                        <x-button.primary class="w-full sm:w-auto pointer-events-auto" href="/docs">
+                        <x-button.primary class="w-full sm:w-auto pointer-events-auto" href="/docs/{{ DEFAULT_VERSION }}">
                             Get Started
                         </x-button.primary>
                         <x-button.secondary class="w-full sm:w-auto pointer-events-auto" href="https://laracasts.com" target="_blank">
@@ -145,7 +145,7 @@
         <p class="sm:hidden px-4 text-center text-gray-700 text-md leading-relaxed">Laravel is an intensely productive full-stack web framework. Pair Laravel and its rich ecosystem with Livewire, React, or Vue to build your next big idea and ship faster than you ever thought possible.</p>
 
         <div class="sm:hidden px-4 flex mt-6 max-w-sm mx-auto flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
-            <x-button.primary class="w-full sm:w-auto" href="/docs">
+            <x-button.primary class="w-full sm:w-auto" href="/docs/{{ DEFAULT_VERSION }}">
                 Get Started
             </x-button.primary>
             <x-button.secondary class="w-full sm:w-auto" href="https://laracasts.com" target="_blank">
@@ -172,7 +172,7 @@
 
             @include('partials.features')
 
-            <p class="mt-12 text-gray-700 leading-relaxed max-w-3xl">We've just scratched the surface. Laravel has you covered for everything you will need to build a web application, including email verification, rate limiting, and custom console commands. Check out the <a href="https://laravel.com/docs" class="text-red-600 underline hover:no-underline">Laravel documentation</a> to keep learning or get started right away with our <a href="https://bootcamp.laravel.com" class="text-red-600 underline hover:no-underline">Laravel bootcamp</a>.</p>
+            <p class="mt-12 text-gray-700 leading-relaxed max-w-3xl">We've just scratched the surface. Laravel has you covered for everything you will need to build a web application, including email verification, rate limiting, and custom console commands. Check out the <a href="https://laravel.com/docs/{{ DEFAULT_VERSION }}" class="text-red-600 underline hover:no-underline">Laravel documentation</a> to keep learning or get started right away with our <a href="https://bootcamp.laravel.com" class="text-red-600 underline hover:no-underline">Laravel bootcamp</a>.</p>
         </div>
     </section>
 

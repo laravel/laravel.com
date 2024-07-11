@@ -66,7 +66,7 @@
             </ul>
             <div class="flex-1 flex items-center justify-end">
                 <button id="docsearch"></button>
-                <x-button.secondary href="/docs" class="hidden lg:ml-4 lg:inline-flex">Documentation</x-button.secondary>
+                <x-button.secondary href="/docs/{{ DEFAULT_VERSION }}" class="hidden lg:ml-4 lg:inline-flex">Documentation</x-button.secondary>
                 <button
                     class="ml-2 relative w-10 h-10 inline-flex items-center justify-center p-2 text-gray-700 lg:hidden"
                     aria-label="Toggle Menu"
@@ -99,7 +99,7 @@
                     <li><a class="block w-full py-3" href="https://partners.laravel.com">Partners</a></li>
                     <li><a class="block w-full py-3" href="{{ route('careers') }}">Careers</a></li>
                     {{-- <li><a class="block w-full py-3" href="https://laravel.bigcartel.com/products">Shop</a></li> --}}
-                    <li class="flex sm:justify-center"><x-button.secondary class="mt-3 w-full max-w-md" href="/docs">Documentation</x-button.secondary></li>
+                    <li class="flex sm:justify-center"><x-button.secondary class="mt-3 w-full max-w-md" href="/docs/{{ DEFAULT_VERSION }}">Documentation</x-button.secondary></li>
                 </ul>
             </div>
         </nav>

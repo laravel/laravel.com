@@ -27,7 +27,7 @@
                         foundation — freeing you to create without sweating the small things.</p>
                     <div
                         class="mt-6 max-w-sm mx-auto flex flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
-                        <x-button.primary class="w-full sm:w-auto" href="/docs">
+                        <x-button.primary class="w-full sm:w-auto" href="/docs/{{ DEFAULT_VERSION }}">
                             Get Started
                         </x-button.primary>
                         <x-button.secondary class="w-full sm:w-auto" href="https://laracasts.com" target="_blank">
@@ -109,7 +109,7 @@
                         <p class="mt-6 text-gray-700 leading-relaxed">Laravel values beauty. We love clean code just as much
                             as you do. Simple, elegant syntax puts amazing functionality at your fingertips. Every feature
                             has been thoughtfully considered to provide a wonderful developer experience.</p>
-                        <x-button.secondary class="mt-6" href="/docs">
+                        <x-button.secondary class="mt-6" href="/docs/{{ DEFAULT_VERSION }}">
                             Start Learning
                         </x-button.secondary>
                     </div>
@@ -230,7 +230,7 @@
 
             <p class="mt-12 text-gray-700 leading-relaxed max-w-3xl">We've just scratched the surface. Laravel has you
                 covered for everything you will need to build a web application, including email verification, rate
-                limiting, and custom console commands. Check out the <a href="https://laravel.com/docs"
+                limiting, and custom console commands. Check out the <a href="https://laravel.com/docs/{{ DEFAULT_VERSION }}"
                     class="text-red-600 underline hover:no-underline">Laravel documentation</a> to keep learning.</p>
         </div>
     </div>
