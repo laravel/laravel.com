@@ -45,7 +45,7 @@ class Documentation
      */
     public function getIndex($version)
     {
-        return $this->cache->remember('docs.'.$version.'.index', 5, function () use ($version) {
+        $index = $this->cache->remember('docs.'.$version.'.index', 5, function () use ($version) {
             $path = base_path('resources/docs/'.$version.'/documentation.md');
 
             if ($this->files->exists($path)) {
@@ -54,6 +54,26 @@ class Documentation
 
             return null;
         });
+
+        $currentPath = '/'.request()->path();
+
+        $index = str_replace(
+            "<li>\n<a href=\"$currentPath\">",
+            $activeElement = "<li class=\"active\">\n<a href=\"$currentPath\">",
+            $index
+        );
+
+        $parentH2Text = str($index)
+            ->before($activeElement)
+            ->afterLast('<h2>')
+            ->before('</h2>')
+            ->toString();
+
+        return str_replace(
+            "<li>\n<h2>$parentH2Text</h2>",
+            "<li class=\"sub--on\">\n<h2>$parentH2Text</h2>",
+            $index
+        );
     }
 
     /**
