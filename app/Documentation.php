@@ -57,6 +57,8 @@ class Documentation
 
         $currentPath = '/'.request()->path();
 
+        $currentPath = $currentPath == '/docs/11.x' ? '/docs/11.x/installation' : $currentPath;
+
         $index = str_replace(
             "<li>\n<a href=\"$currentPath\">",
             $activeElement = "<li class=\"active\">\n<a href=\"$currentPath\">",
