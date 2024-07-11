@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 })
 
+document.addEventListener('readystatechange', () => {
+    if (document.readyState === 'complete') {
+        document.body.classList.add('ready');
+    }
+})
+
 function wrapHeadingsInAnchors() {
     [...document.querySelector('.docs_main').querySelectorAll('a[name]')].forEach(anchor => {
         const heading = anchor.parentNode.nextElementSibling;

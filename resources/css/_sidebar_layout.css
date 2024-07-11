@@ -17,10 +17,18 @@
                 text-decoration: none;
                 margin-bottom: 0;
                 cursor: pointer;
-                transition: all 0.3s ease;
+                transition: transform 0.3s ease;
 
                 &:hover {
                     transform: translate3d(5px, 0, 0);
+                }
+
+                /**
+                 * Only enable `margin-bottom` transition after page has loaded to prevent
+                 * an undesired layout-flash slide-down effect when visiting a new URL.
+                 */
+                body.ready & {
+                    transition-property: transform, margin-bottom;
                 }
             }
 
