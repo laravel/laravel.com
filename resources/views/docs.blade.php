@@ -25,7 +25,7 @@
                             height="29"
                         >
                     </a>
-                    <div class="px-4 pb-12 lg:px-8 xl:px-16">
+                    <div class="px-4 pb-10 lg:px-8 xl:px-16">
                         <nav id="indexed-nav" class="hidden lg:block lg:mt-4">
                             <div class="docs_sidebar">
                                 {!! $index !!}
