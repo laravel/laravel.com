@@ -117,7 +117,7 @@ class DocsController extends Controller
 
         return view('docs', [
             'title' => count($title) ? $title->text() : null,
-            'index' => $this->docs->getIndex($version),
+            'index' => $this->docs->getIndex($version, request()->getPathInfo()),
             'content' => $content,
             'currentVersion' => $version,
             'versions' => Documentation::getDocVersions(),

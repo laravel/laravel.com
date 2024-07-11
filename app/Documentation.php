@@ -40,20 +40,71 @@ class Documentation
     /**
      * Get the documentation index page.
      *
-     * @param  string  $version
+     * @param  string $version
+     * @param  string $currentPagePath
      * @return string|null
      */
-    public function getIndex($version)
+    public function getIndex($version, $currentPagePath = null)
     {
-        return $this->cache->remember('docs.'.$version.'.index', 5, function () use ($version) {
+        $cachePath = 'docs.'.$version.'.index';
+
+        if($currentPagePath) {
+            $cachePath .= '.'.$currentPagePath;
+        }
+
+        return $this->cache->remember($cachePath, 5, function () use ($version, $currentPagePath) {
             $path = base_path('resources/docs/'.$version.'/documentation.md');
 
             if ($this->files->exists($path)) {
-                return $this->replaceLinks($version, (new GithubFlavoredMarkdownConverter())->convert($this->files->get($path)));
+                $content = (new GithubFlavoredMarkdownConverter())
+                    ->convert($this->files->get($path));
+
+                $content = $this->replaceLinks($version, $content);
+
+                if($currentPagePath) {
+                    $content = $this->markCurrentNavigation($currentPagePath, $content);
+                }
+
+                return $content;
             }
 
             return null;
         });
+    }
+
+    /**
+     * Add the "sub--on" class to the current navigation.
+     *
+     * @param string $currentPagePath
+     * @param string $content
+     * @return string
+     */
+    public function markCurrentNavigation($currentPagePath, $content)
+    {
+        $doc = new \DOMDocument();
+
+        libxml_use_internal_errors(true);
+
+        $doc->loadHTML($content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+
+        libxml_clear_errors();
+
+        $xpath = new \DOMXPath($doc);
+
+        foreach ($xpath->query('//a') as $link) {
+            if ($link->getAttribute('href') !== $currentPagePath) {
+                continue;
+            }
+
+            $link->parentNode
+                ->parentNode
+                ->parentNode
+                ->setAttribute('class', 'sub--on');
+
+            break;
+        }
+
+        return $doc->saveHTML();
     }
 
     /**

@@ -39,7 +39,6 @@ function setupNavCurrentLinkHandling() {
         const current = nav.querySelector('li a[href="' + (pathLength === 3 ? window.location.pathname+"/installation" : window.location.pathname) + '"]');
 
         if (current) {
-            current.parentNode.parentNode.parentNode.classList.add('sub--on');
             current.parentNode.classList.add('active');
         }
     });
