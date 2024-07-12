@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupNavCurrentLinkHandling();
     replaceBlockquotesWithCalloutsInDocs();
     highlightSupportPolicyTable();
+    scrollToActiveLinkInSidebarIntoView();
 
     const skipToContentLink = document.querySelector('#skip-to-content-link');
     const mainContentWrapper = document.querySelector('#main-content');
@@ -170,7 +171,26 @@ function highlightSupportPolicyTable() {
     }
 
 }
+function scrollToActiveLinkInSidebarIntoView() {
+    const sidebarScrollContainer = document.querySelector(
+        "[data-sidebar-scroll-container]"
+    );
+    const activeLink = document.querySelector(".docs_sidebar li.active");
 
+    if (activeLink && sidebarScrollContainer) {
+        //scroll the container to get the active link into the middle of it
+        const containerHeight = sidebarScrollContainer.clientHeight;
+        const linkTop = activeLink.getBoundingClientRect().top;
+        const linkHeight = activeLink.clientHeight;
+        const containerTop = sidebarScrollContainer.getBoundingClientRect().top;
+
+        const scrollPosition = linkTop - containerTop - (containerHeight / 2) + (linkHeight / 2);
+
+        sidebarScrollContainer.scrollTo({
+            top: scrollPosition,
+        });
+    }
+}
 function getCellDate(cell) {
     return Date.parse(cell.innerHTML.replace(/(\d+)(st|nd|rd|th)/, '$1'));
 }
