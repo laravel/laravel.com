@@ -36,6 +36,12 @@
                     transform: translate3d(5px, 0, 0);
                 }
             }
+
+            &.active {
+                a:hover {
+                    transform: none;
+                }
+            }
         }
 
         ul {
@@ -54,8 +60,10 @@
                 &.active a::before {
                     content: "";
                     position: absolute;
-                    top: .25em; left: 0;
-                    width: .5rem; height: .5rem;
+                    top: .25rem;
+                    left: 0;
+                    width: .5rem;
+                    height: .5rem;
                     background: url(/img/icons/active_marker.min.svg) no-repeat center;
                 }
             }
