@@ -615,7 +615,7 @@
                     <p class="mt-6"><a href="/docs/starter-kits#laravel-breeze" class="font-semibold text-[#d97707] underline hover:no-underline">Learn more</a></p>
                 </div>
                 <div class="hidden md:block relative overflow-hidden mt-10">
-                    <img width="1372" height="907" class="absolute max-w-none border shadow-xl rounded-lg" src="img/frontend/breeze-profile.png" />
+                    <img width="1372" height="907" class="absolute max-w-none border shadow-xl rounded-lg" src="img/frontend/breeze-profile.png" loading="lazy" />
                 </div>
             </div>
 
@@ -694,10 +694,10 @@
         </div>
 
         <div class="mt-12 max-w-screen-2xl w-full mx-auto grid grid-cols-2 md:grid-cols-4 px-4">
-            <img src="/img/frontend/community-2.jpg" class="md:-mx-2 scale-105 md:scale-100 border-[10px] lg:border-[16px] w-full border-white shadow-xl -rotate-2 lg:-rotate-2" />
-            <img src="/img/frontend/community-1.jpg" class="md:-mx-3 scale-105 md:scale-100 border-[10px] lg:border-[16px] w-full border-white shadow-xl rotate-2 lg:rotate-1" />
-            <img src="/img/frontend/community-3.jpg" class="md:-mx-2 scale-105 md:scale-100 border-[10px] lg:border-[16px] w-full border-white shadow-xl -rotate-2 lg:-rotate-3" />
-            <img src="/img/frontend/community-4.jpg" class="md:-mx-3 scale-105 md:scale-100 border-[10px] lg:border-[16px] w-full border-white shadow-xl rotate-2 lg:rotate-2" />
+            <img src="/img/frontend/community-2.jpg" class="md:-mx-2 scale-105 md:scale-100 border-[10px] lg:border-[16px] w-full border-white shadow-xl -rotate-2 lg:-rotate-2" width="388" height="388" loading="lazy" />
+            <img src="/img/frontend/community-1.jpg" class="md:-mx-3 scale-105 md:scale-100 border-[10px] lg:border-[16px] w-full border-white shadow-xl rotate-2 lg:rotate-1" width="388" height="388" loading="lazy" />
+            <img src="/img/frontend/community-3.jpg" class="md:-mx-2 scale-105 md:scale-100 border-[10px] lg:border-[16px] w-full border-white shadow-xl -rotate-2 lg:-rotate-3" width="388" height="388" loading="lazy" />
+            <img src="/img/frontend/community-4.jpg" class="md:-mx-3 scale-105 md:scale-100 border-[10px] lg:border-[16px] w-full border-white shadow-xl rotate-2 lg:rotate-2" width="388" height="388" loading="lazy" />
         </div>
 
         <div class="mt-24 max-w-screen-xl px-5 mx-auto flex flex-wrap justify-center items-center gap-12">

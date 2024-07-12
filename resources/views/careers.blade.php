@@ -59,7 +59,7 @@
                 ],
             ] as $benefit)
                 <div class="space-y-4">
-                    <img src="{{ Vite::asset($benefit['image']) }}" class="h-8 w-6 pb-2" loading="lazy">
+                    <img src="{{ Vite::asset($benefit['image']) }}" class="h-8 w-6 pb-2" height="32" width="24" loading="lazy">
                     <h3 class="text-xl font-bold leading-tight">{{ $benefit['title'] }}</h3>
                     <p>{{ $benefit['description'] }}</p>
                 </div>
