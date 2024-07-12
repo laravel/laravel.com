@@ -5,15 +5,15 @@
     "src": "resources/css/app.css"
   },
   "resources/images/diversity-inclusion.svg": {
-    "file": "assets/diversity-inclusion-24faa377.svg",
+    "file": "assets/diversity-inclusion-fc4ce0be.svg",
     "src": "resources/images/diversity-inclusion.svg"
   },
   "resources/images/flexible-working-style.svg": {
-    "file": "assets/flexible-working-style-8d5d591c.svg",
+    "file": "assets/flexible-working-style-399ea2b6.svg",
     "src": "resources/images/flexible-working-style.svg"
   },
   "resources/images/health-benefits.svg": {
-    "file": "assets/health-benefits-88d44faa.svg",
+    "file": "assets/health-benefits-52591f6d.svg",
     "src": "resources/images/health-benefits.svg"
   },
   "resources/images/l11-background-blur.png": {
@@ -21,19 +21,19 @@
     "src": "resources/images/l11-background-blur.png"
   },
   "resources/images/learn-and-grow.svg": {
-    "file": "assets/learn-and-grow-28357457.svg",
+    "file": "assets/learn-and-grow-bc3acbef.svg",
     "src": "resources/images/learn-and-grow.svg"
   },
   "resources/images/life-work-balance.svg": {
-    "file": "assets/life-work-balance-c6a5271c.svg",
+    "file": "assets/life-work-balance-8708d8f8.svg",
     "src": "resources/images/life-work-balance.svg"
   },
   "resources/images/perks.svg": {
-    "file": "assets/perks-85053349.svg",
+    "file": "assets/perks-1c409941.svg",
     "src": "resources/images/perks.svg"
   },
   "resources/images/vacation.svg": {
-    "file": "assets/vacation-93559bbe.svg",
+    "file": "assets/vacation-9c4fa166.svg",
     "src": "resources/images/vacation.svg"
   },
   "resources/js/app.js": {
