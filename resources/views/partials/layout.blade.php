@@ -85,6 +85,7 @@
         navIsOpen: false,
     }"
     class="w-full h-full font-sans antialiased text-gray-900 language-php"
+    data-instant-intensity="0"
 >
 
 @yield('content')
