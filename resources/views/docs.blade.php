@@ -33,60 +33,45 @@
                         </nav>
 
                         @php
-                            $promote = null;
-
-                            switch(random_int(1, 5)) {
-                                case 1:
-                                    $promote = 'forge';
-                                    break;
-
-                                case 2:
-                                    $promote = 'vapor';
-                                    break;
-
-                                case 3:
-                                    $promote = 'nova';
-                                    break;
-
-                                case 4:
-                                    $promote = 'pulse';
-                                    break;
-
-                                case 5:
-                                    $promote = 'reverb';
-                                    break;
-                            }
+                            $promotions = ['forge', 'vapor', 'nova', 'pulse', 'reverb'];
                         @endphp
 
-                        @if ($promote == 'forge')
+                        <template id="promote-forge">
                             <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
                                 <span class="font-medium">Laravel Forge:</span> create and manage PHP 8 servers. Deploy your Laravel applications in seconds. <a class="underline text-red-600" href="https://forge.laravel.com">Sign up now!</a>.
                             </div>
-                        @endif
+                        </template>
 
-                        @if ($promote == 'vapor')
+                        <template id="promote-vapor">
                             <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
                                 <span class="font-medium">Laravel Vapor:</span> experience extreme scale on a dedicated serverless platform for Laravel. <a class="underline text-red-600" href="https://vapor.laravel.com">Sign up now!</a>.
                             </div>
-                        @endif
+                        </template>
 
-                        @if ($promote == 'nova')
+                        <template id="promote-nova">
                             <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
                                 <span class="font-medium">Laravel Nova:</span> The next generation of Nova is <a class="underline text-red-600" href="https://nova.laravel.com">now available</a>.
                             </div>
-                        @endif
+                        </template>
 
-                        @if ($promote == 'pulse')
+                        <template id="promote-pulse">
                             <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
                                 <span class="font-medium">Laravel Pulse:</span> How's your health? Check your application's vital signs using <a href="https://pulse.laravel.com" class="underline text-red-600">Laravel Pulse</a>.
                             </div>
-                        @endif
+                        </template>
 
-                        @if ($promote == 'reverb')
+                        <template id="promote-reverb">
                             <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
                                 <span class="font-medium">Laravel Reverb:</span> You can easily build dynamic, real-time Laravel applications using WebSockets. <a href="https://reverb.laravel.com" class="underline text-red-600">Laravel Reverb</a> is now available!
                             </div>
-                        @endif
+                        </template>
+                        <script>
+                            const activePromotionTemplate = document.getElementById(
+                                'promote-'+@js($promotions)[Math.floor(Math.random() * {{ count($promotions) }})]
+                            )
+
+                            activePromotionTemplate.replaceWith(activePromotionTemplate.content)
+                        </script>
                     </div>
                 </div>
             </aside>
