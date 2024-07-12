@@ -1,6 +1,6 @@
 #carbonads {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
     background-color: #F7F8FB;
     z-index: 100;
@@ -8,6 +8,7 @@
     padding: .625em;
     max-width: 130px;
     box-sizing: content-box;
+    transition: bottom 0.5s ease-in-out;
 
     span {
         display: block;
@@ -36,35 +37,39 @@
 
 
 @media only screen and (min-width: 320px) and (max-width: 1239px) {
-  #carbonads {
-    position: relative;
-    float: none;
-    bottom: initial;
-    right: initial;
-    margin: 20px 0;
-    max-width: 330px;
-    padding: 1em;
+    #carbonads {
+        position: relative;
+        float: none;
+        bottom: initial;
+        right: initial;
+        margin: 20px 0;
+        max-width: 330px;
+        padding: 1em;
 
-    .carbon-wrap {
-        display: flex;
-        flex-direction: row;
-    }
+        .carbon-wrap {
+            display: flex;
+            flex-direction: row;
+        }
 
-    img {
-        margin: 0 1em 0 0;
-    }
+        img {
+            margin: 0 1em 0 0;
+        }
 
-    .carbon-text {
-        font-size: .825em;
-        margin-bottom: 1em;
-    }
+        .carbon-text {
+            font-size: .825em;
+            margin-bottom: 1em;
+        }
 
-    .carbon-poweredby {
-        position: absolute;
-        left: 162px;
-        bottom: 15px;
+        .carbon-poweredby {
+            position: absolute;
+            left: 162px;
+            bottom: 15px;
+        }
     }
-  }
+}
+
+#carbonads.scroll-beyond-400 {
+    bottom: 90px !important;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 429px) {

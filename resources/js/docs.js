@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setupNavCurrentLinkHandling();
     replaceBlockquotesWithCalloutsInDocs();
     highlightSupportPolicyTable();
+    initScrollToTopBtn();
+    initCarbonAds();
 
     const skipToContentLink = document.querySelector('#skip-to-content-link');
     const mainContentWrapper = document.querySelector('#main-content');
@@ -170,4 +172,52 @@ function highlightSupportPolicyTable() {
 
 function getCellDate(cell) {
     return Date.parse(cell.innerHTML.replace(/(\d+)(st|nd|rd|th)/, '$1'));
+}
+
+
+function initScrollToTopBtn() {
+    const scrollToTopBtn = document.querySelector('#scrollToTopBtn');
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    window.addEventListener('scroll', adjustCarbonAds);
+}
+
+let carbonAdsFound = false;
+let attempts = 0;
+const maxAttempts = 10;
+let checkInterval;
+
+function initCarbonAds() {
+    checkAndModifyCarbonAds();
+    checkInterval = setInterval(checkAndModifyCarbonAds, 1000);
+}
+
+function adjustCarbonAds() {
+    const carbonAds = document.querySelector('#carbonads');
+    const scrollToTopBtn = document.querySelector('#scrollToTopBtn');
+    if (window.scrollY > 400) {
+        scrollToTopBtn.classList.add('show');
+        carbonAds.classList.add('scroll-beyond-400');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+        carbonAds.classList.remove('scroll-beyond-400');
+    }
+}
+
+function checkAndModifyCarbonAds() {
+    const carbonAds = document.querySelector('#carbonads');
+    if (carbonAds) {
+        carbonAdsFound = true;
+        adjustCarbonAds();
+    } else if (attempts < maxAttempts) {
+        attempts++;
+    } else {
+        clearInterval(checkInterval);
+    }
 }

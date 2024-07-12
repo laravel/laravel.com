@@ -66,8 +66,8 @@
     }
 
     h4 a, h3 a, h2 a {
-		color: theme('colors.gray.900');
-	}
+        color: theme('colors.gray.900');
+    }
 
     h4 a:before,
     h3 a:before,
@@ -176,4 +176,22 @@
             }
         }
     }
+}
+
+.scroll-to-top-btn {
+    font-size: 24px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.scroll-to-top-btn:not(.show) {
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.scroll-to-top-btn.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
 }

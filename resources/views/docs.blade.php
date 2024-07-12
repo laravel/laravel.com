@@ -108,7 +108,7 @@
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <circle cx="12" cy="12" r="4"></circle>
                                     <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
-                                 </svg>
+                                </svg>
                             </button>
                             <button id="header__moon" onclick="toLightMode()" title="Switch to light mode" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -161,7 +161,7 @@
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <circle cx="12" cy="12" r="4"></circle>
                                     <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
-                                 </svg>
+                                </svg>
                             </button>
                             <button id="header__moon" onclick="toLightMode()" title="Switch to light mode" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -238,12 +238,16 @@
 
                             <x-accessibility.main-content-wrapper>
                                 {!! $content !!}
-                                <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
+                                <script type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                             </x-accessibility.main-content-wrapper>
+                            <button id="scrollToTopBtn" class="scroll-to-top-btn fixed bottom-5 right-5 w-10 h-10 border-none rounded-full flex justify-center items-center cursor-pointer bg-gradient-to-b from-red-500 to-red-600 text-white">
+                                ↑
+                            </button>
                         </section>
                     </section>
                 </div>
             </section>
         </div>
     </div>
+
 @stop
