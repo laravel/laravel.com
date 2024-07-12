@@ -238,7 +238,7 @@
 
                             <x-accessibility.main-content-wrapper>
                                 {!! $content !!}
-                                <script type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
+                                <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                             </x-accessibility.main-content-wrapper>
                             <button id="scrollToTopBtn" class="scroll-to-top-btn fixed bottom-5 right-5 w-10 h-10 border-none rounded-full flex justify-center items-center cursor-pointer bg-gradient-to-b from-red-500 to-red-600 text-white">
                                 ↑
