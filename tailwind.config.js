@@ -37,6 +37,7 @@ const accentColors = {
 
 export default {
   content: [
+      'app/Markdown/*.php',
       'resources/views/**/*.blade.php',
       'resources/js/**/*.js',
   ],
