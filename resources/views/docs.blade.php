@@ -192,7 +192,9 @@
                                     <div class="callout">
                                         <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg dark:bg-dark-600 lg:flex lg:items-center">
                                             <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 bg-orange-600 lg:mb-0">
-                                                <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" width="6" height="35"/>
+                                                <div class="opacity-75">
+                                                    {!! Vite::content('resources/images/exclamation.svg') !!}
+                                                </div>
                                             </div>
 
                                             <p class="mb-0 lg:ml-4">
@@ -209,7 +211,9 @@
                                     <div class="callout">
                                         <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center">
                                             <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 bg-orange-600 lg:mb-0">
-                                                <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon" class="opacity-75" width="6" height="35"/>
+                                                <div class="opacity-75">
+                                                    {!! Vite::content('resources/images/exclamation.svg') !!}
+                                                </div>
                                             </div>
 
                                             <p class="mb-0 lg:ml-4">

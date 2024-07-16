@@ -8,6 +8,10 @@
     "file": "assets/diversity-inclusion-fc4ce0be.svg",
     "src": "resources/images/diversity-inclusion.svg"
   },
+  "resources/images/exclamation.svg": {
+    "file": "assets/exclamation-c1673397.svg",
+    "src": "resources/images/exclamation.svg"
+  },
   "resources/images/flexible-working-style.svg": {
     "file": "assets/flexible-working-style-399ea2b6.svg",
     "src": "resources/images/flexible-working-style.svg"
@@ -20,6 +24,10 @@
     "file": "assets/l11-background-blur-fcb5ac5e.png",
     "src": "resources/images/l11-background-blur.png"
   },
+  "resources/images/laracast.svg": {
+    "file": "assets/laracast-a56494c6.svg",
+    "src": "resources/images/laracast.svg"
+  },
   "resources/images/learn-and-grow.svg": {
     "file": "assets/learn-and-grow-bc3acbef.svg",
     "src": "resources/images/learn-and-grow.svg"
@@ -27,6 +35,10 @@
   "resources/images/life-work-balance.svg": {
     "file": "assets/life-work-balance-8708d8f8.svg",
     "src": "resources/images/life-work-balance.svg"
+  },
+  "resources/images/lightbulb.svg": {
+    "file": "assets/lightbulb-ab2e1311.svg",
+    "src": "resources/images/lightbulb.svg"
   },
   "resources/images/perks.svg": {
     "file": "assets/perks-1c409941.svg",
@@ -42,7 +54,7 @@
     "src": "resources/js/app.js"
   },
   "resources/js/docs.js": {
-    "file": "assets/docs-7c75c91c.js",
+    "file": "assets/docs-8564cabe.js",
     "isEntry": true,
     "src": "resources/js/docs.js"
   }
