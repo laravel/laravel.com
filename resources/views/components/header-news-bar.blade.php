@@ -1,5 +1,5 @@
 @php
-    $news = ['nova', 'forge', 'vapor', 'herd', 'pulse', 'reverb', 'laracon', 'laracon-au'];
+    $news = ['nova', 'forge', 'vapor', 'herd', 'pulse', 'reverb', 'laracon-au'];
 @endphp
 
 <div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm h-9">
