@@ -9,9 +9,9 @@ use League\CommonMark\Node\Block\Paragraph;
 
 class ConfigureHeadingLinks
 {
-    public function __invoke(DocumentParsedEvent $event): void
+    public function __invoke(DocumentParsedEvent $documentParsedEvent): void
     {
-        $walker = $event->getDocument()->walker();
+        $walker = $documentParsedEvent->getDocument()->walker();
 
         while ($event = $walker->next()) {
             [$paragraph, $heading, $linkOpener, $linkCloser] = [
@@ -48,4 +48,3 @@ class ConfigureHeadingLinks
         }
     }
 }
-

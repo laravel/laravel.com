@@ -38,9 +38,7 @@ class GithubFlavoredMarkdownConverter extends MarkdownConverter
         $environment->addExtension(new AttributesExtension());
         $environment->addExtension(new TorchlightExtension());
 
-        $environment->addRenderer(BlockQuote::class, new BlockQuoteRenderer());
-
-
+        $environment->addRenderer(BlockQuote::class, new BlockQuoteRenderer);
         $environment->addEventListener(DocumentParsedEvent::class, new ConfigureHeadingLinks);
 
         parent::__construct($environment);
