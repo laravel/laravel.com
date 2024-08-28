@@ -106,7 +106,10 @@
         }
     }
 
-    ul:not(:first-of-type), .content-list ul {
+    ul:not(:first-of-type),
+    .content-list ul,
+    ol {
+        counter-reset: ordered-list;
         list-style-type: none;
         margin: 0 0 2.5em 0; padding: 0;
 
@@ -126,16 +129,30 @@
             code {
                 font-size: .875em;
             }
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: .40em; left: 0;
-                width: 9px; height: 10px;
-                background: url(/img/icons/ul_marker.min.svg) no-repeat center;
-                background-size: contain;
-            }
         }
+    }
+
+    ul:not(:first-of-type) li::before,
+    .content-list ul li::before {
+        content: "";
+        position: absolute;
+        top: .40em;
+        left: 0;
+        width: 9px;
+        height: 10px;
+        background: url(/img/icons/ul_marker.min.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    ol li::before {
+        font-variant-numeric: tabular-nums;
+        position: absolute;
+        top: 0; 
+        left: 0;
+        counter-increment: ordered-list;
+        content: counter(ordered-list) ". ";
+        background-image: none;
+        color: #FF2D20;
     }
 }
 
