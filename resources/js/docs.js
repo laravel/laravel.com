@@ -2,7 +2,6 @@ import './clipboard';
 import './theme'
 
 document.addEventListener('DOMContentLoaded', () => {
-    wrapHeadingsInAnchors();
     setupNavCurrentLinkHandling();
     highlightSupportPolicyTable();
 
@@ -19,17 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mainContentWrapper.removeAttribute('tabindex');
     });
 })
-
-function wrapHeadingsInAnchors() {
-    [...document.querySelector('.docs_main').querySelectorAll('a[name]')].forEach(anchor => {
-        const heading = anchor.parentNode.nextElementSibling;
-        heading.id = anchor.name;
-        anchor.href = `#${anchor.name}`;
-        anchor.removeAttribute('name');
-        [...heading.childNodes].forEach(node => anchor.appendChild(node));
-        heading.appendChild(anchor);
-    });
-}
 
 function setupNavCurrentLinkHandling() {
     [...document.querySelectorAll('.docs_sidebar h2')].forEach(el => {

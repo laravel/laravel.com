@@ -2,25 +2,19 @@
 
 namespace App\Markdown;
 
-use Illuminate\Support\Str;
+use Laravel\Unfenced\UnfencedExtension;
+use League\CommonMark\Environment\Environment;
+use League\CommonMark\Environment\EnvironmentInterface;
+use League\CommonMark\Event\DocumentParsedEvent;
+use League\CommonMark\Extension\Attributes\AttributesExtension;
 use League\CommonMark\Extension\Autolink\AutolinkExtension;
+use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
+use League\CommonMark\Extension\CommonMark\Node\Block\BlockQuote;
 use League\CommonMark\Extension\Strikethrough\StrikethroughExtension;
 use League\CommonMark\Extension\Table\TableExtension;
 use League\CommonMark\Extension\TaskList\TaskListExtension;
 use League\CommonMark\MarkdownConverter;
-use League\CommonMark\Environment\Environment;
-use App\Markdown\GithubFlavoredMarkdownExtension;
-use Illuminate\Support\Facades\Vite;
-use League\CommonMark\Node\Node;
-use League\CommonMark\Renderer\ChildNodeRendererInterface;
-use League\CommonMark\Util\HtmlElement;
 use Torchlight\Commonmark\V2\TorchlightExtension;
-use Laravel\Unfenced\UnfencedExtension;
-use League\CommonMark\Environment\EnvironmentInterface;
-use League\CommonMark\Extension\Attributes\AttributesExtension;
-use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
-use League\CommonMark\Extension\CommonMark\Node\Block\BlockQuote;
-use League\CommonMark\Renderer\NodeRendererInterface;
 
 /**
  * Converts GitHub Flavored Markdown to HTML.
@@ -44,7 +38,8 @@ class GithubFlavoredMarkdownConverter extends MarkdownConverter
         $environment->addExtension(new AttributesExtension());
         $environment->addExtension(new TorchlightExtension());
 
-        $environment->addRenderer(BlockQuote::class, new BlockQuoteRenderer());
+        $environment->addRenderer(BlockQuote::class, new BlockQuoteRenderer);
+        $environment->addEventListener(DocumentParsedEvent::class, new ConfigureHeadingLinks);
 
         parent::__construct($environment);
     }
