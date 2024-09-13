@@ -79,6 +79,8 @@
     </script>
 
     @include('partials.theme')
+
+    @stack('head')
 </head>
 <body
     x-data="{

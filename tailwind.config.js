@@ -1,5 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import colors from 'tailwindcss/colors';
+import forms from '@tailwindcss/forms';
 
 const accentColors = {
     vapor: '#25c4f2',
@@ -130,5 +131,5 @@ export default {
         pattern: new RegExp(`bg-(${Object.keys(accentColors).join('|')})`),
     }
   ],
-  plugins: [],
+  plugins: [forms],
 }
