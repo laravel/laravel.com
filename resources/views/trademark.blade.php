@@ -1,11 +1,18 @@
 @extends('partials.layout')
 
+@pushOnce('head')
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+@endPushOnce
+
 @section('content')
     @include('partials.header')
 
     <div class="relative overflow-hidden">
         <div class="relative max-w-screen-xl mx-auto px-5 pt-12 md:pt-12">
-            <h1 class="text-4xl font-medium">Trademark Policy</h1>
+            <div class="flex items-center gap-6">
+                <h1 class="text-4xl font-medium">Trademark Policy</h1>
+                <x-button.secondary href="#request-form">Make a Request</x-button.secondary>
+            </div>
 
             <div class="mt-8 space-y-4 max-w-4xl">
                 <p class="italic">This Trademarks and Logos use policy (the "Policy") is based on the Ubuntu trademark policy and published under the CC-BY-SA license. You are welcome to base your own project trademark policies off it, just let others use your changes and give credit to the Ubuntu project as the original source!</p>
@@ -35,6 +42,49 @@
                     <li>Use for services relating to any of the above.</li>
                 </ul>
                 <p>If you wish to have permission for any of the uses above or for any other use which is not specifically referred to in this Policy, please contact us and we'll let you know as soon as possible if your proposed use is permissible. Permission may only be granted subject to certain conditions and these may include the requirement that you enter into an agreement with us to maintain the quality of the product and/or service which you intend to supply at a prescribed level.</p>
+            </div>
+
+            <div id="request-form" class="mt-20 scroll-m-20 max-w-xl">
+                <h2 class="text-3xl font-medium">Make a Trademark Request</h2>
+                <form action="https://fieldgoal.io/f/O3Xsqr" method="POST" class="mt-8 space-y-4">
+                    <div>
+                        <x-forms.label for="name">Name</x-forms.label>
+                        <x-forms.input name="name" class="mt-2" required />
+                    </div>
+                    <div>
+                        <x-forms.label for="organization">Organization</x-forms.label>
+                        <x-forms.input name="organization" class="mt-2" required />
+                    </div>
+                    <div>
+                        <x-forms.label for="email">Email</x-forms.label>
+                        <x-forms.input name="email" class="mt-2" required type="email" />
+                    </div>
+                    <div class="!mt-8">
+                        <x-forms.label>Requested Use (check all that apply)</x-forms.label>
+                        <div class="mt-4 flex items-start gap-2.5">
+                            <x-forms.checkbox id="requested_use_1" name="requested_use" value="Commercial Use (training, event, or other services)" />
+                            <x-forms.label for="requested_use_1" class="!font-normal">Commercial Use (training, event, or other services)</x-forms.label>
+                        </div>
+                        <div class="mt-2 flex items-start gap-2.5">
+                            <x-forms.checkbox id="requested_use_2" name="requested_use" value="Commercial Use (training, event, or other services)" />
+                            <x-forms.label for="requested_use_2" class="!font-normal">Software Product</x-forms.label>
+                        </div>
+                        <div class="mt-2 flex items-start gap-2.5">
+                            <x-forms.checkbox id="requested_use_3" name="requested_use" value="Commercial Use (training, event, or other services)" />
+                            <x-forms.label for="requested_use_3" class="!font-normal">Domain Name or URL</x-forms.label>
+                        </div>
+                        <div class="mt-2 flex items-start gap-2.5">
+                            <x-forms.checkbox id="requested_use_4" name="requested_use" value="Commercial Use (training, event, or other services)" />
+                            <x-forms.label for="requested_use_4" class="!font-normal">Another type of service</x-forms.label>
+                        </div>
+                    </div>
+                    <div>
+                        <x-forms.label for="details">Details</x-forms.label>
+                        <x-forms.textarea name="details" class="mt-2 min-h-[160px]" required />
+                    </div>
+                    <div class="min-h-[78px] g-recaptcha" data-sitekey="{{ config('services.recaptcha.site_key') }}"></div>
+                    <x-button.primary type="submit" class="w-full !mt-8">Submit Request</x-button.primary>
+                </form>
             </div>
         </div>
     </div>

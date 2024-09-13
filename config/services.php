@@ -38,4 +38,8 @@ return [
         'zone' => env('CLOUDFLARE_ZONE'),
         'token' => env('CLOUDFLARE_TOKEN'),
     ],
+
+    'recaptcha' => [
+        'site_key' => env('RECAPTCHA_SITE_KEY'),
+    ],
 ];
