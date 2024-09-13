@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-d2613379.css",
+    "file": "assets/app-70286f82.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -49,12 +49,12 @@
     "src": "resources/images/vacation.svg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-3647e7c5.js",
+    "file": "assets/app-70a5a3a6.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/docs.js": {
-    "file": "assets/docs-143568ce.js",
+    "file": "assets/docs-45166933.js",
     "isEntry": true,
     "src": "resources/js/docs.js"
   }
