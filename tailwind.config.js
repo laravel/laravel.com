@@ -131,5 +131,9 @@ export default {
         pattern: new RegExp(`bg-(${Object.keys(accentColors).join('|')})`),
     }
   ],
-  plugins: [forms],
+  plugins: [
+    forms({
+        strategy: 'class',
+    })
+  ],
 }
