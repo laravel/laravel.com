@@ -1,0 +1,14 @@
+{
+  "name": "Laravel",
+  "description": "Laravel is the PHP framework for web artisans. Participating in the Open Source Pledge is just one of the ways we continue to invest in the future of open source. By supporting these projects—both financially and through direct contributions—we hope to ensure that the tools developers rely on remain powerful, reliable, and innovative.",
+  "urlLearnMore": "https://blog.laravel.com/taylors-morning-routine-laravels-open-source-pledge",
+  "urlSquareLogoWithBackground": "https://avatars.githubusercontent.com/u/958072",
+  "annualReports": [
+    {
+      "url": "https://blog.laravel.com/taylors-morning-routine-laravels-open-source-pledge",
+      "dateYearEnding": "2024-10-31",
+      "averageNumberOfDevs": 25,
+      "payments": 50000
+    }
+  ]
+}
