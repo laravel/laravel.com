@@ -86,7 +86,7 @@
     x-data="{
         navIsOpen: false,
     }"
-    class="w-full h-full font-sans antialiased text-gray-900 language-php"
+    class="w-full h-full font-sans antialiased text-gray-900 language-php {{ version_compare($currentVersion, DEFAULT_VERSION) !== 0 ? 'border-4 border-orange-600' : '' }}"
     data-instant-intensity="0"
 >
 
