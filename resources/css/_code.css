@@ -44,6 +44,7 @@ pre .copyBtn:active {
 }
 
 pre code.torchlight {
+    color: white;
     display: block;
     min-width: max-content;
     padding-top: 1rem;
