@@ -100,3 +100,33 @@ pre code.torchlight .line-number {
         }
     }
 }
+
+.code-container {
+    .code-container-filename:before {
+        content: '\01F4C4\FE0E';
+        margin-inline-end: 1em;
+    }
+  
+    .code-container-filename {
+        --tw-bg-opacity: 1;
+        background-color: rgb(37 42 55 / var(--tw-bg-opacity));
+        /*! background: #292D3E; */
+        border-start-start-radius: .5rem;
+        border-start-end-radius: .5rem;
+        color: var(--docsearch-muted-color);
+        padding: 1rem;
+        font-size: .8em;
+        font-family: source-code-pro,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        border-block-end: 1px solid var(--docsearch-muted-color);
+    }
+  
+    .code-container-filename + .code-block-wrapper {
+        pre {
+            margin-block-start: 0;
+            border-start-start-radius: 0;
+            border-start-end-radius: 0;
+        }
+    }
+}
