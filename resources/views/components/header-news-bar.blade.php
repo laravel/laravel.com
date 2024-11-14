@@ -79,7 +79,7 @@
 
     <template id="news-nightwatch">
         <div class="mt-px ml-1">
-            Join the waitlist for <a href="https://nightwatch.laravel.com" class="underline">Laravel Nightwatch</a>, first-class monitoring without the mess.
+            Join the waitlist for <a href="https://nightwatch.laravel.com" class="underline">Laravel Nightwatch</a>, first-class monitoring designed for Laravel.
         </div>
     </template>
 
