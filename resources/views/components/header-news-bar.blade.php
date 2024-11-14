@@ -1,6 +1,6 @@
 @php
     $news = ['nova', 'forge', 'vapor', 'herd', 'pulse', 'reverb', 'laracon-au'];
-    $news = ['cloud'];
+    $news = ['cloud', 'nightwatch'];
 @endphp
 
 <div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm h-9">
@@ -74,6 +74,12 @@
 
         <div class="mt-px ml-1">
             Join the waitlist for <a href="https://cloud.laravel.com" class="underline">Laravel Cloud</a>, the future of shipping.
+        </div>
+    </template>
+
+    <template id="news-nightwatch">
+        <div class="mt-px ml-1">
+            Join the waitlist for <a href="https://nightwatch.laravel.com" class="underline">Laravel Nightwatch</a>, first-class monitoring without the mess.
         </div>
     </template>
 
