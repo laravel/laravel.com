@@ -3,7 +3,7 @@
     $news = ['cloud', 'nightwatch'];
 @endphp
 
-<div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm h-9">
+<div class="items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm h-9">
     <template id="news-herd">
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round">
@@ -73,13 +73,13 @@
         {{-- <div><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg></div> --}}
 
         <div class="mt-px ml-1">
-            Join the waitlist for <a href="https://cloud.laravel.com" class="underline">Laravel Cloud</a>, the future of shipping.
+            Join the waitlist for <a href="https://cloud.laravel.com" class="underline">Laravel Cloud</a><span class="hidden md:inline">, the future of shipping</span>.
         </div>
     </template>
 
     <template id="news-nightwatch">
         <div class="mt-px ml-1">
-            Join the waitlist for <a href="https://nightwatch.laravel.com" class="underline">Laravel Nightwatch</a>, first-class monitoring designed for Laravel.
+            Join the waitlist for <a href="https://nightwatch.laravel.com" class="underline">Laravel Nightwatch</a><span class="hidden md:inline">, first-class monitoring designed for Laravel</span>.
         </div>
     </template>
 
