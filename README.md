@@ -1,4 +1,4 @@
-## Laravel Website
+# Laravel Website
 
 This is the source of the official [Laravel website](https://laravel.com).
 
@@ -6,21 +6,26 @@ This is the source of the official [Laravel website](https://laravel.com).
 
 If you want to work on this project on your local machine, you may follow the instructions below. These instructions assume you are serving the site using Laravel Valet out of your `~/Sites` directory:
 
-1. Fork this repository 
+1. Fork this repository
 2. Open your terminal and `cd` to your `~/Sites` folder
 3. Clone your fork into the `~/Sites/laravel` folder, by running the following command *with your username placed into the {username} slot*:
+
     ```bash
     git clone git@github.com:{username}/laravel.com laravel
     ```
+
 4. CD into the new directory you just created:
+
     ```bash
     cd laravel
     ```
+
 5. Run the `setup.sh` bin script, which will take all the steps necessary to prepare your local install:
+
     ```bash
     ./bin/setup.sh
     ```
-   
+
 ### Torchlight Integration
 
 This project relies on Torchlight for syntax highlighting. You will need to create an account at [torchlight.dev](https://torchlight.dev/) and generate a free personal token for use in this project. Once generated, add your token to your .env file:
@@ -29,7 +34,7 @@ This project relies on Torchlight for syntax highlighting. You will need to crea
 TORCHLIGHT_TOKEN=your-torchlight-token
 ```
 
-### Syncing Upstream Changes Into Your Fork 
+### Syncing Upstream Changes Into Your Fork
 
 This [GitHub article](https://help.github.com/en/articles/syncing-a-fork) provides instructions on how to pull the latest changes from this repository into your fork.
 
