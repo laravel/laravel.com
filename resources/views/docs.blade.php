@@ -146,7 +146,7 @@
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <circle cx="12" cy="12" r="4"></circle>
                                     <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
-                                 </svg>
+                                </svg>
                             </button>
                             <button id="header__moon" onclick="toLightMode()" title="Switch to light mode" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -229,6 +229,24 @@
                                 {!! $content !!}
                                 <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                             </x-accessibility.main-content-wrapper>
+
+                            @if (isset($currentVersion) && isset($currentSection))
+                                <div class="flex my-10">
+                                    <a 
+                                        target="_blank"
+                                        href="https://github.com/laravel/docs/edit/{{$currentVersion}}{{$currentSection}}.md"
+                                        class="group flex justify-start items-center gap-2 text-red-600 font-medium text-sm dark:text-red-600"
+                                    >
+                                        <div class="h-4 w-4">
+                                            {!! Vite::content('resources/images/square-pen.svg') !!}
+                                        </div>
+                                        <span class="leading-none group-hover:underline text-center">
+                                            Edit this page on GitHub
+                                        </span>
+                                    </a>
+                                </div>
+                            @endif
+
                         </section>
                     </section>
                 </div>
