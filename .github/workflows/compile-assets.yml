@@ -7,4 +7,3 @@ jobs:
     uses: laravel/.github/.github/workflows/compile-assets.yml@main
     with:
       cmd: build
-      node: 'lts/*'
