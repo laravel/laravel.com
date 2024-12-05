@@ -89,7 +89,7 @@
             x-show="navIsOpen"
             x-transition.opacity
             x-cloak
-            class="fixed inset-0 w-full pt-[4.2rem] z-10 pointer-events-none"
+            class="fixed inset-0 w-full pt-28 z-10 pointer-events-none"
         >
             <div class="relative h-full w-full py-8 px-5 bg-white pointer-events-auto overflow-y-auto">
                 <ul>
