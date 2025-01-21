@@ -43,6 +43,7 @@
                 'Bacancy' => 'https://www.bacancytechnology.com/hire-laravel-developer?utm_source=laravel&utm_medium=partners.laravel&utm_campaign=sponsors',
                 '64 Robots' => 'https://64robots.com/',
                 'Active Logic' => 'https://activelogic.com/',
+                'Adeva' => 'https://adevait.com/laravel',
                 'Black Airplane' => 'https://www.blackairplane.com/',
                 'Byte 5' => 'https://www.byte5.net/',
                 'Curotec' => 'https://www.curotec.com/services/technologies/laravel/',
