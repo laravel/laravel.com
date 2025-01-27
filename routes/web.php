@@ -154,6 +154,6 @@ Route::get('careers', function () {
     return view('careers', ['jobs' => $jobs]);
 })->name('careers');
 
-Route::redirect('meetups', function () {
+Route::get('meetups', function () {
     return redirect('https://forms.reform.app/laravel/meetups/5UQs6l', 302);
 });
