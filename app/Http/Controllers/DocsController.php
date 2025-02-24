@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Documentation;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Symfony\Component\DomCrawler\Crawler;
 
@@ -67,7 +68,7 @@ class DocsController extends Controller
      *
      * @param  string  $version
      * @param  string|null  $page
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View|\Illuminate\Http\Response
      */
     public function show($version, $page = null)
     {
@@ -79,7 +80,25 @@ class DocsController extends Controller
             define('CURRENT_VERSION', $version);
         }
 
+        $isMarkdownRequest = str($page)->endsWith('.md');
+        $page = $isMarkdownRequest ? str($page)->rtrim('.md')->toString() : $page;
         $sectionPage = $page ?: 'installation';
+
+        if ($isMarkdownRequest) {
+            $content = $this->docs->getMarkdown($version, $sectionPage);
+
+            if (is_null($content)) {
+                 abort(404);
+            }
+
+            return response()
+                ->view('llms', [
+                    'content' => $content,
+                    'version' => $version,
+                ])
+                ->header('Content-Type', 'text/plain');
+        }
+
         $content = $this->docs->get($version, $sectionPage);
 
         if (is_null($content)) {
@@ -124,6 +143,44 @@ class DocsController extends Controller
             'currentSection' => $section,
             'canonical' => $canonical,
         ]);
+    }
+
+    public function showRootLlmsTxt()
+    {
+        return redirect('docs/'.DEFAULT_VERSION.'/llms.txt', 301);
+    }
+
+    public function showRootLlmsFullTxt()
+    {
+        return redirect('docs/'.DEFAULT_VERSION.'/llms-full.txt', 301);
+    }
+
+    public function showLlmsTxt($version)
+    {
+        if (! $this->isVersion($version)) {
+            return redirect('docs/'.DEFAULT_VERSION.'/llms.txt', 301);
+        }
+
+        return response()
+            ->view('llms', [
+                'content' => $this->docs->getIndexMarkdown($version),
+                'version' => $version,
+            ])
+            ->header('Content-Type', 'text/plain');
+    }
+
+    public function showLlmsFullTxt($version)
+    {
+        if (! $this->isVersion($version)) {
+            return redirect('docs/'.DEFAULT_VERSION.'/llms-full.txt', 301);
+        }
+
+        return response()
+            ->view('llms', [
+                'content' => $this->docs->getAllMarkdown($version),
+                'version' => $version,
+            ])
+            ->header('Content-Type', 'text/plain');
     }
 
     /**

@@ -10,6 +10,9 @@ if (! defined('DEFAULT_VERSION')) {
     define('DEFAULT_VERSION', '11.x');
 }
 
+Route::get('llms.txt', [DocsController::class, 'showRootLlmsTxt']);
+Route::get('llms-full.txt', [DocsController::class, 'showRootLlmsFullTxt']);
+
 Route::get('docs', [DocsController::class, 'showRootPage']);
 
 Route::get('docs/cashier', function () {
@@ -28,7 +31,11 @@ Route::get('docs/6.0/{page?}', function ($page = null) {
 });
 
 Route::get('docs/{version}/index.json', [DocsController::class, 'index']);
-Route::get('docs/{version}/{page?}', [DocsController::class, 'show'])->name('docs.version');
+Route::get('docs/{version}/llms.txt', [DocsController::class, 'showLlmsTxt']);
+Route::get('docs/{version}/llms-full.txt', [DocsController::class, 'showLlmsFullTxt']);
+Route::get('docs/{version}/{page?}', [DocsController::class, 'show'])
+    ->name('docs.version')
+    ->where('page', '^(?!\.md$).+(\.md)?$');
 
 Route::redirect('partners', 'https://partners.laravel.com');
 
