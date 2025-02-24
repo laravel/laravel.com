@@ -20,6 +20,7 @@ $versions = GitVersionCollection::create($dir)
 	->add('9.x', 'Laravel 9.x')
 	->add('10.x', 'Laravel 10.x')
 	->add('11.x', 'Laravel 11.x')
+	->add('12.x', 'Laravel 12.x')
 	->add('master', 'Laravel Dev');
 
 return new Doctum($iterator, [

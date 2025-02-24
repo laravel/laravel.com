@@ -2,6 +2,7 @@
 
 DOCS_VERSIONS=(
   master
+  12.x
   11.x
   10.x
   9.x

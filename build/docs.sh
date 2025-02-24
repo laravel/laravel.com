@@ -3,7 +3,7 @@
 set -e
 
 base=${base:-/home/forge/laravel.com}
-versions=('8.x' '9.x' '10.x' '11.x' 'master')
+versions=('8.x' '9.x' '10.x' '11.x', '12.x', 'master')
 
 for version in "${versions[@]}"
 do
